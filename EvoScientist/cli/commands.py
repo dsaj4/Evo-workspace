@@ -4,6 +4,7 @@ import logging
 import os
 import queue
 import re
+import sys
 from datetime import datetime
 from importlib.metadata import version as _pkg_version
 from pathlib import Path
@@ -1160,6 +1161,45 @@ def _main_callback(
         )
 
 
+def _write_warning_fallback(message: str) -> None:
+    """Write a plain warning line without going through Rich rendering.
+
+    Some legacy Windows consoles still use GBK and can fail while Rich renders
+    styled output, even if the fallback text is ASCII-only. Writing directly to
+    stderr avoids that rendering path altogether.
+    """
+    line = f"Warning: {message}\n"
+    try:
+        sys.stderr.write(line)
+    except UnicodeEncodeError:
+        encoding = getattr(sys.stderr, "encoding", None) or "utf-8"
+        safe_line = line.encode(encoding, errors="backslashreplace").decode(
+            encoding, errors="ignore"
+        )
+        sys.stderr.write(safe_line)
+
+    try:
+        sys.stderr.flush()
+    except Exception:
+        pass
+
+
+def _console_supports_text(text: str) -> bool:
+    """Check whether stderr can encode the given text."""
+    encoding = getattr(sys.stderr, "encoding", None)
+    if not encoding:
+        return True
+
+    try:
+        text.encode(encoding)
+    except UnicodeEncodeError:
+        return False
+    except LookupError:
+        return False
+
+    return True
+
+
 def _configure_logging():
     """Configure logging with warning symbols for better visibility."""
     from rich.logging import RichHandler
@@ -1171,9 +1211,15 @@ def _configure_logging():
             if record.levelno == logging.WARNING:
                 # Use Rich console to print dim warning
                 msg = record.getMessage()
-                console.print(
-                    f"[dim yellow]\u26a0\ufe0f  Warning:[/dim yellow] [dim]{escape(msg)}[/dim]"
-                )
+                rendered = f"[dim yellow]\u26a0\ufe0f  Warning:[/dim yellow] [dim]{escape(msg)}[/dim]"
+                if not _console_supports_text("\u26a0\ufe0f"):
+                    _write_warning_fallback(msg)
+                    return
+                try:
+                    console.print(rendered)
+                except UnicodeEncodeError:
+                    # Legacy Windows consoles using GBK can choke on the warning symbol.
+                    _write_warning_fallback(msg)
             else:
                 super().emit(record)
 

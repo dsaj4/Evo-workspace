@@ -30,6 +30,10 @@ from .prompts import RESEARCHER_INSTRUCTIONS, get_system_prompt
 
 # Suppress noisy warnings from deepagents skill loader (non-string frontmatter fields, etc.)
 logging.getLogger("deepagents.middleware.skills").setLevel(logging.ERROR)
+# Suppress verbose transport tracebacks from the MCP SDK. EvoScientist emits a
+# concise per-server warning after catching these failures during tool loading.
+logging.getLogger("mcp.client.streamable_http").setLevel(logging.CRITICAL)
+logging.getLogger("mcp.client.sse").setLevel(logging.CRITICAL)
 
 # =============================================================================
 # Constants

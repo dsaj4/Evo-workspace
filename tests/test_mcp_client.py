@@ -3,6 +3,7 @@
 import textwrap
 from types import SimpleNamespace
 
+import httpx
 import pytest
 import yaml
 
@@ -12,6 +13,7 @@ from EvoScientist.mcp.client import (
     _interpolate_env,
     _resolve_command,
     _route_tools,
+    _summarize_mcp_load_error,
     add_mcp_server,
     edit_mcp_server,
     load_mcp_config,
@@ -94,6 +96,35 @@ class TestLoadMcpConfig:
         )
         result = load_mcp_config()
         assert result["my-server"]["headers"]["Authorization"] == "Bearer tok_abc"
+
+
+class TestSummarizeMcpLoadError:
+    def test_missing_env_var_summary(self):
+        exc = ExceptionGroup(
+            "unhandled errors in a TaskGroup",
+            [RuntimeError("PERPLEXITY_API_KEY environment variable is required")],
+        )
+        assert (
+            _summarize_mcp_load_error(exc)
+            == "missing required environment variable: PERPLEXITY_API_KEY"
+        )
+
+    def test_network_error_summary(self):
+        exc = ExceptionGroup(
+            "unhandled errors in a TaskGroup",
+            [httpx.ConnectError("boom")],
+        )
+        assert (
+            _summarize_mcp_load_error(exc)
+            == "network/connectivity issue while contacting the MCP server"
+        )
+
+    def test_falls_back_to_specific_message(self):
+        exc = ExceptionGroup(
+            "unhandled errors in a TaskGroup",
+            [RuntimeError("server returned malformed tool schema")],
+        )
+        assert _summarize_mcp_load_error(exc) == "server returned malformed tool schema"
 
 
 # ---- _build_connections ----

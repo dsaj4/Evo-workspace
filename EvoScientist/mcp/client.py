@@ -33,6 +33,8 @@ VALID_TRANSPORTS = {"stdio", "http", "streamable_http", "sse", "websocket"}
 # URL-based transports (share the same connection shape)
 _URL_TRANSPORTS = {"http", "streamable_http", "sse", "websocket"}
 
+_MISSING_ENV_RE = re.compile(r"([A-Z0-9_]+) environment variable is required")
+
 
 def _get_mcp_config_dir() -> Path:
     """Get the MCP configuration directory, respecting XDG_CONFIG_HOME."""
@@ -78,6 +80,70 @@ def _interpolate_value(value: Any) -> Any:
     if isinstance(value, list):
         return [_interpolate_value(v) for v in value]
     return value
+
+
+def _iter_nested_exceptions(exc: BaseException):
+    """Yield an exception and any nested causes / grouped exceptions."""
+    seen: set[int] = set()
+    stack: list[BaseException] = [exc]
+
+    while stack:
+        current = stack.pop()
+        current_id = id(current)
+        if current_id in seen:
+            continue
+        seen.add(current_id)
+        yield current
+
+        if isinstance(current, BaseExceptionGroup):
+            stack.extend(reversed(current.exceptions))
+
+        cause = getattr(current, "__cause__", None)
+        if isinstance(cause, BaseException):
+            stack.append(cause)
+
+        context = getattr(current, "__context__", None)
+        if isinstance(context, BaseException):
+            stack.append(context)
+
+
+def _summarize_mcp_load_error(exc: BaseException) -> str:
+    """Collapse noisy transport/task-group errors into actionable summaries."""
+    flattened = list(_iter_nested_exceptions(exc))
+
+    for current in flattened:
+        match = _MISSING_ENV_RE.search(str(current))
+        if match:
+            return f"missing required environment variable: {match.group(1)}"
+
+    for current in flattened:
+        type_name = type(current).__name__
+        module_name = type(current).__module__
+        message = str(current)
+        upper_message = message.upper()
+
+        if (
+            module_name.startswith(("httpx", "httpcore"))
+            or type_name
+            in {
+                "ConnectError",
+                "ConnectTimeout",
+                "ReadTimeout",
+                "RemoteProtocolError",
+                "TimeoutError",
+            }
+            or "SSL" in upper_message
+            or "EOF OCCURRED IN VIOLATION OF PROTOCOL" in upper_message
+            or "TIMED OUT" in upper_message
+        ):
+            return "network/connectivity issue while contacting the MCP server"
+
+    for current in flattened:
+        message = str(current).strip()
+        if message and "unhandled errors in a TaskGroup" not in message:
+            return message
+
+    return str(exc)
 
 
 # =============================================================================
@@ -653,7 +719,11 @@ async def _load_tools(config: dict[str, Any]) -> dict[str, list]:
             server_tools[server_name] = tools
             logger.info("MCP server %r: loaded %d tool(s)", server_name, len(tools))
         except Exception as exc:
-            logger.warning("MCP server %r: failed to load tools: %s", server_name, exc)
+            logger.warning(
+                "MCP server %r: failed to load tools: %s",
+                server_name,
+                _summarize_mcp_load_error(exc),
+            )
             server_tools[server_name] = []
 
     return server_tools
