@@ -1,0 +1,62 @@
+[
+    {
+        "user_id": "1785635810",
+        "nickname": "Aaron两个a",
+        "sex": "保密",
+        "sign": "大家好，我是Aaron，一位爱好文艺的硅谷程序员，\n我用轻松有趣的方式带大家走进科技的世界，\n如果有幸得到你的喜欢，不要忘记订阅哦",
+        "avatar": "https://i2.hdslb.com/bfs/face/9759d6df197e7a33ac646777817ec9910fef4948.jpg",
+        "last_modify_ts": 1774586100665,
+        "total_fans": 242,
+        "total_liked": 529,
+        "user_rank": 2,
+        "is_official": -1
+    },
+    {
+        "user_id": "600005047",
+        "nickname": "爱AI的小智",
+        "sex": "男",
+        "sign": "希望给大家分享简洁明了、无套路、可实操的AI干货，感谢每一位支持我的小伙伴！我是原大厂研发，现在是独立开发者。",
+        "avatar": "https://i1.hdslb.com/bfs/face/70ebb3b57fd4f8656707396480deb49e6aa584bc.jpg",
+        "last_modify_ts": 1774586100679,
+        "total_fans": 375,
+        "total_liked": 682,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "73414544",
+        "nickname": "机器之心官方",
+        "sex": "保密",
+        "sign": "机器之心：专业的人工智能服务平台  合作邮箱：liyazhou@jiqizhixin.com",
+        "avatar": "https://i2.hdslb.com/bfs/face/cb838ff9e6f57c1d3499621c91df8e013adad4fd.jpg",
+        "last_modify_ts": 1774586100693,
+        "total_fans": 85518,
+        "total_liked": 271928,
+        "user_rank": 6,
+        "is_official": 1
+    },
+    {
+        "user_id": "280534030",
+        "nickname": "为什么叫QQ",
+        "sex": "男",
+        "sign": "分享最新科技资讯和发掘新观点",
+        "avatar": "https://i1.hdslb.com/bfs/face/ca400e6e3e2f430c4a993dd870b4876dc3905aaa.jpg",
+        "last_modify_ts": 1774586100706,
+        "total_fans": 4427,
+        "total_liked": 29740,
+        "user_rank": 5,
+        "is_official": -1
+    },
+    {
+        "user_id": "1122798707",
+        "nickname": "Mindofuture",
+        "sex": "男",
+        "sign": "经常翻译一些优质学习资源",
+        "avatar": "https://i2.hdslb.com/bfs/face/3c52f6528c684083d01062b411dbed8a6e3de3a7.jpg",
+        "last_modify_ts": 1774586100718,
+        "total_fans": 68800,
+        "total_liked": 92423,
+        "user_rank": 6,
+        "is_official": -1
+    }
+]

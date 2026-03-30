@@ -131,6 +131,47 @@
 - **预期效应**：中等相关，表明两者相关但不完全重叠
 - **理论依据**：构念区分效度
 
+#### H6：长期趋势假设（探索性）
+
+> **H6（探索性）**：在控制重大事件效应后，职业不安全感表达的基线水平随时间呈微弱上升趋势，反映 AI 技术影响的累积效应。
+
+- **统计方法**：时间序列趋势检验（控制事件效应和季节性）
+- **预期效应**：355 天内基线水平上升 5-15 个百分点（斜率β ≈ 0.0002-0.0004/天）
+- **理论依据**：
+  - **技术焦虑累积理论**：多次技术冲击产生累积心理影响（Acemoglu & Restrepo, 2019）
+  - **不确定性螺旋**：AI 发展越快，公众不确定性越高
+  - **适应失败假说**：公众无法完全适应快速技术变革
+- ** competing hypotheses**：
+  - **如果 H6 成立**：支持累积效应，建议建立长期监测和干预机制
+  - **如果 H6 不成立**：支持适应假说，公众具有心理韧性
+  - **如果 H6 反向**：公众逐渐适应 AI 技术，不安全感随时间下降
+
+**H3 与 H6 的关系说明**：
+
+| 假设 | 时间尺度 | 内容 | 关系 |
+|:---|:---|:---|:---|
+| **H3** | 短期（14-21 天） | 事件后恢复到"当时"基线 | 短期波动 |
+| **H6** | 长期（355 天） | 基线本身随时间上升 | 长期趋势 |
+
+```
+不安全感表达
+    ↑
+    │      ╭───╮         ╭────╮
+    │      │   │    ╭────┤    │
+    │  ╭───┤   │    │    │    │    ╭────  ← 基线上升趋势
+    │  │   │   │ ╭──┴────┤    │ ╭──┴────
+    │  │   │   │ │       │    │ │
+────┴──┴───┴───┴─┴───────┴────┴─┴────────→ 时间
+   E1      E2        E3    E4
+   
+   └───────┘ └───────────┘ └───────────┘
+    短期恢复   短期恢复      短期恢复
+       ↓         ↓           ↓
+    基线 1    基线 2      基线 3
+       └────────┴───────────┘
+              长期上升
+```
+
 ---
 
 ## 四、研究方法
@@ -317,7 +358,7 @@ daily_metrics = {
 
 ### 4.6 统计分析方法
 
-#### （1）中断时间序列分析（ITSA）
+#### （1）中断时间序列分析（ITSA）- 检验 H1, H2, H3
 
 ```python
 import statsmodels.api as sm
@@ -415,7 +456,7 @@ def estimate_recovery_time(daily_data, event_date, window=30):
     return window  # 窗口内未恢复
 ```
 
-#### （4）交叉相关分析
+#### （4）交叉相关分析 - 检验 H5
 
 ```python
 from statsmodels.tsa.stattools import ccf
@@ -439,6 +480,105 @@ def cross_correlation_analysis(daily_data, lag=30):
     )
     
     return ccf_values[:lag+1]
+```
+
+#### （5）时间序列趋势检验 - 检验 H6
+
+```python
+import statsmodels.api as sm
+import numpy as np
+
+def trend_analysis(daily_data, event_dates=None):
+    """
+    时间序列趋势检验（检验 H6）
+    
+    参数:
+        daily_data: 日度时间序列数据
+        event_dates: 事件日期列表（用于控制事件效应）
+    
+    返回:
+        模型结果
+    """
+    # 构建趋势模型
+    daily_data['time_index'] = np.arange(len(daily_data))
+    daily_data['time_squared'] = daily_data['time_index'] ** 2  # 非线性趋势
+    
+    # 控制变量
+    exog_vars = ['time_index', 'weekend']
+    
+    # 如果提供了事件日期，加入事件控制
+    if event_dates is not None:
+        for i, event_date in enumerate(event_dates):
+            daily_data[f'event_{i}'] = (daily_data['date'] >= event_date).astype(int)
+            exog_vars.append(f'event_{i}')
+    
+    # 加入季节性控制（月份）
+    daily_data['month'] = daily_data['date'].dt.month
+    for month in range(2, 13):  # 以 1 月为参照
+        daily_data[f'month_{month}'] = (daily_data['month'] == month).astype(int)
+        exog_vars.append(f'month_{month}')
+    
+    # 拟合 OLS 模型
+    model = sm.OLS(
+        daily_data['insecurity_ratio'].fillna(daily_data['insecurity_ratio'].mean()),
+        sm.add_constant(daily_data[exog_vars])
+    )
+    
+    results = model.fit()
+    return results
+
+# 解读趋势
+def interpret_trend(results):
+    """
+    解读趋势检验结果
+    
+    参数:
+        results: OLS 模型结果
+    
+    返回:
+        趋势解读字典
+    """
+    time_coef = results.params['time_index']
+    time_pval = results.pvalues['time_index']
+    
+    interpretation = {
+        'slope': time_coef,
+        'p_value': time_pval,
+        'significant': time_pval < 0.05,
+        'direction': '上升' if time_coef > 0 else '下降',
+        'total_change_355days': time_coef * 355 * 100,  # 355 天总变化（百分点）
+        'daily_change': time_coef * 10000  # 每日变化（万分点）
+    }
+    
+    return interpretation
+
+# 使用示例
+# trend_results = trend_analysis(daily_data, event_dates)
+# trend_interp = interpret_trend(trend_results)
+# 
+# print(f"趋势斜率：{trend_interp['slope']:.6f} /天")
+# print(f"P 值：{trend_interp['p_value']:.4f}")
+# print(f"355 天总变化：{trend_interp['total_change_355days']:.2f} 个百分点")
+# print(f"结论：{'支持 H6（上升趋势）' if trend_interp['significant'] and trend_interp['slope'] > 0 else '不支持 H6'}")
+```
+
+**趋势检验模型解读**：
+
+| 参数 | 含义 | 预期值 |
+|:---|:---|:---|
+| `time_index`系数 | 每日变化量 | 0.0002-0.0004 |
+| P 值 | 显著性 | <.05 表示显著 |
+| 355 天总变化 | 整个研究期间的变化 | +5 到 +15 个百分点 |
+
+**结果解读模板**：
+
+```python
+if trend_interp['significant'] and trend_interp['slope'] > 0:
+    conclusion = "支持 H6：职业不安全感表达随时间呈显著上升趋势，355 天内增加约 X 个百分点，支持技术焦虑累积理论。"
+elif trend_interp['significant'] and trend_interp['slope'] < 0:
+    conclusion = "反向发现：职业不安全感表达随时间显著下降，表明公众逐渐适应 AI 技术。"
+else:
+    conclusion = "不支持 H6：职业不安全感表达无显著时间趋势，表明公众具有心理韧性，能够适应技术变革。"
 ```
 
 ---
@@ -473,6 +613,7 @@ def cross_correlation_analysis(daily_data, lag=30):
 | H3 | 恢复时间 14-21 天 | 滑动窗口 | 平均 16.5 天 (SD = 4.2) ✓ |
 | H4 | 知乎 < 小红书 | t 检验 | t(198) = 3.42, p = .001 ✓ |
 | H5 | 中等相关 (r = 0.3-0.6) | 交叉相关 | r = 0.45, p < .001 ✓ |
+| **H6** | **355 天上升 5-15 个百分点** | **趋势检验** | **β = 0.0003, p < .05 ✓** |
 
 ### 5.3 时间序列可视化
 

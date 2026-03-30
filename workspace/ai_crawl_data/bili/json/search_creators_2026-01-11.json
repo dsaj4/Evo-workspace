@@ -1,0 +1,62 @@
+[
+    {
+        "user_id": "3493136554789573",
+        "nickname": "抖兵",
+        "sex": "男",
+        "sign": "原创作品，请勿搬运\n用AI制作——自己热爱的一切\n",
+        "avatar": "https://i1.hdslb.com/bfs/face/dccd6e00c328f19794e4f81bec80d22dbe52ceca.jpg",
+        "last_modify_ts": 1774790678817,
+        "total_fans": 32561,
+        "total_liked": 256346,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "3546380238850219",
+        "nickname": "乌漆虫",
+        "sex": "保密",
+        "sign": "虚拟论战，视频内容仅供娱乐，感谢各位朋友的关注！\n如有网友投稿可后台直接私信，合适的会采用并@，投字数不要超过1000字，喜欢新奇有趣内容！",
+        "avatar": "https://i1.hdslb.com/bfs/face/9e4569d828bcee09e237e1111d21d372bf805fa7.jpg",
+        "last_modify_ts": 1774790678827,
+        "total_fans": 37114,
+        "total_liked": 1571359,
+        "user_rank": 5,
+        "is_official": -1
+    },
+    {
+        "user_id": "470987575",
+        "nickname": "回到Axton",
+        "sex": "男",
+        "sign": "AI 优化 & 自动化工作流专家 | 助你用实战解锁AI的商业价值 @axtonliu",
+        "avatar": "https://i1.hdslb.com/bfs/face/39221632c74ee07cfd93b17c146fd5f6851e2a3a.jpg",
+        "last_modify_ts": 1774790678843,
+        "total_fans": 40646,
+        "total_liked": 48549,
+        "user_rank": 5,
+        "is_official": -1
+    },
+    {
+        "user_id": "198345535",
+        "nickname": "浙大猫学长",
+        "sex": "男",
+        "sign": "浙大数学系硕士 opc 全干工程师",
+        "avatar": "https://i1.hdslb.com/bfs/face/bf45d5c70f97491b1140363a35f4d2181fabef3f.jpg",
+        "last_modify_ts": 1774790678858,
+        "total_fans": 4771,
+        "total_liked": 12071,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "602010761",
+        "nickname": "JeffSu杰夫",
+        "sex": "男",
+        "sign": "Emory '14 | 谷歌(上海)产品营销经理 分享AI干货、求职技巧和职场效率秘籍",
+        "avatar": "https://i2.hdslb.com/bfs/face/0887c067d5a9cfb1097c3dded80945b70c1a94bb.jpg",
+        "last_modify_ts": 1774790678870,
+        "total_fans": 37395,
+        "total_liked": 28223,
+        "user_rank": 5,
+        "is_official": 0
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "user_id": "3546838527380108",
+        "nickname": "GoldenSpiderAI",
+        "sex": "男",
+        "sign": "",
+        "avatar": "https://i2.hdslb.com/bfs/face/1efa6c24cf9ac4d14f444d915b8a46a6412410a7.jpg",
+        "last_modify_ts": 1774785953599,
+        "total_fans": 9929,
+        "total_liked": 22096,
+        "user_rank": 4,
+        "is_official": -1
+    },
+    {
+        "user_id": "3546722120763875",
+        "nickname": "傅盛",
+        "sex": "男",
+        "sign": "跟傅盛一起学AI",
+        "avatar": "https://i2.hdslb.com/bfs/face/b1e7383d95c0dd062d40903f6a598c32c9ad3231.jpg",
+        "last_modify_ts": 1774785953613,
+        "total_fans": 52144,
+        "total_liked": 268677,
+        "user_rank": 4,
+        "is_official": 0
+    },
+    {
+        "user_id": "3546619041548912",
+        "nickname": "量子位Daily",
+        "sex": "保密",
+        "sign": "加入我们请投递简历到zhaopin@qbitai.com",
+        "avatar": "https://i2.hdslb.com/bfs/face/6085e101a52e292f8a58f6f3b0e30d45fbd3667a.jpg",
+        "last_modify_ts": 1774785953626,
+        "total_fans": 53528,
+        "total_liked": 771406,
+        "user_rank": 5,
+        "is_official": -1
+    },
+    {
+        "user_id": "301388587",
+        "nickname": "Shiki实验室",
+        "sex": "女",
+        "sign": "课程试看、模版试用在网站 shikilab.cn",
+        "avatar": "https://i1.hdslb.com/bfs/face/7e4e8775c1bf9a4f981f68c060dec03dc27c5414.jpg",
+        "last_modify_ts": 1774785953637,
+        "total_fans": 99472,
+        "total_liked": 287826,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "85093819",
+        "nickname": "金艮君",
+        "sex": "男",
+        "sign": "Time is the best witness.",
+        "avatar": "https://i1.hdslb.com/bfs/face/bb92b6db7070d3c0bb040342c18579963cc18838.jpg",
+        "last_modify_ts": 1774785953650,
+        "total_fans": 243185,
+        "total_liked": 1048093,
+        "user_rank": 6,
+        "is_official": 0
+    }
+]

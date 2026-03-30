@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2005456028590965657",
+        "content_type": "answer",
+        "content_text": "很久以前我就说过：别看人工智能在什么alphacode啊什么chatgpt啊上取得惊人成绩，其实这些LLM工作离人类的智能比看上去远很多。如何看待中国工程院院士高文提出的「今天的人工智能处于低水平智能，仅存中水平假象」的观点？AI 能不能做出真正意义的创新？现在看来，里面的预测完全正确。尽管每年openai anthropic之流都叫嚣着程序员就要被取代了，事实证明这只是为了骗投资人而硬造的‘持续性被取代’幻象而已。道理十分，十分简单，就是一道小学数学题。这个工作用了两万美金，写了十万行代码，而LLVM核心不到三百万行代码。那，其实一百万美金，不就能写五百万行代码，超越LLVM了吗？为什么不这样做呢？因为LLM不能做创新，而是一个搜索引擎Pro Max。当LLM开始写编译器的时候，这是最威风的时光：语料库里面有一百万个编译器，怎么搜怎么有！当LLM开始写基本pass比如inlining跟DCE的时候，还有十万个pass，LLM很行！复杂一些的pass，比如LICM，SCCP，GVN，互联网上还有一千个，hmm。。还可以？当我们考虑一些数十个不到一百个的东西的时候，比如EGraph，Alive，SuperCompiler，LLM直接玩消失，把天赋带到南海岸，赢！但是人类呢？人类需要多少数据？0。比如Chris Lattner做的是，给LLVM，输出MLIR这个完全不在语料里面的东西！其他程序员也一样 - 给定一个编译器，输出Alive/EGraph，或者发明算法法并行化增量化之。从抽象角度看，人类做的是给出程序，输出更好的程序，这必然不在语料里面。而LLM做的是给出程序，输出更差的程序，一个是正，一个是负，两个有可比性吗？当然，AI人可以狡辩说，什么量变引起质变什么more is different，什么复制复制着就学会创新了，但是问题是，LLM在不到100个数据的时候完全不行，这跟人类有100倍差距，现在数据scale完了，算力也scale完了，拿什么填补这个100X？",
+        "content_url": "https://www.zhihu.com/question/2003524766523473932/answer/2005456028590965657",
+        "question_id": "2003524766523473932",
+        "title": "如何看待Anthropic用纯AI实现的CCC编译器可编译Linux?",
+        "desc": "看了一下，感觉编译器这样的圣杯都能AI实现了，意义重大啊",
+        "created_time": 1770917976,
+        "updated_time": 1770917976,
+        "voteup_count": 333,
+        "comment_count": 50,
+        "source_keyword": "ai",
+        "user_id": "0251012c87c2d3f56ac34de7d71cdcbc",
+        "user_link": "https://www.zhihu.com/people/marisa.moe",
+        "user_nickname": "圆角骑士魔理沙",
+        "user_avatar": "https://picx.zhimg.com/50/466406875631534fc5629e5c75a58a7a_l.jpg?source=4e949a73",
+        "user_url_token": "marisa.moe",
+        "last_modify_ts": 1774606728030
+    }
+]
