@@ -1,0 +1,14 @@
+event_id,date,event_type
+E001,2024-10-15,tech_positive
+E002,2024-11-01,job_negative
+E003,2024-12-10,tech_positive
+E004,2025-01-20,tech_positive
+E005,2025-02-15,job_negative
+E006,2025-03-10,policy
+E007,2025-05-20,tech_positive
+E008,2025-07-15,job_negative
+E009,2025-09-01,report
+E010,2025-11-10,tech_positive
+E011,2026-01-15,job_negative
+E012,2026-02-20,tech_positive
+E013,2026-03-10,policy

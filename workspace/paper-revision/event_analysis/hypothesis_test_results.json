@@ -1,0 +1,21 @@
+{
+  "H1_main_effect": {
+    "beta": -0.07560556819735974,
+    "p_value": 0.36823922953903365,
+    "irr": 0.9271818444513177,
+    "effect_pct": -7.281815554868231,
+    "supported": false
+  },
+  "H2_event_type": {
+    "tech_positive_effect": 0.0,
+    "job_negative_effect": 26.136363636363647,
+    "difference": 26.136363636363647,
+    "supported": true
+  },
+  "H3_recovery": {
+    "mean_recovery_days": null,
+    "std_recovery_days": null,
+    "n_events": 0,
+    "supported": false
+  }
+}

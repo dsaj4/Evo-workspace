@@ -1,0 +1,11 @@
+{
+  "H1": {
+    "supported": true,
+    "irr": 1.4503520016812024,
+    "p_value": 4.959982855250181e-16
+  },
+  "H3": {
+    "supported": null,
+    "avg_recovery_days": null
+  }
+}

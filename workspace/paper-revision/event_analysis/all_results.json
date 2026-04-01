@@ -1,0 +1,30 @@
+{
+  "H1": {
+    "supported": true,
+    "irr": 1.4504,
+    "p_value": 0.0
+  },
+  "H2": {
+    "supported": false,
+    "job_effect": -0.6029040404040404,
+    "tech_effect": 0.43018018018018017,
+    "p_value": 6.121456548984419e-07
+  },
+  "H3": {
+    "supported": false,
+    "avg_recovery_days": 7.0
+  },
+  "H4": {
+    "supported": true
+  },
+  "H5": {
+    "supported": false,
+    "correlation": 0.17523714031684737
+  },
+  "H6": {
+    "supported": true,
+    "trend_coef": 0.026579391670466704,
+    "p_value": 0.0,
+    "total_change_pct": 145919353.34487015
+  }
+}
