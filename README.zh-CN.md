@@ -15,7 +15,7 @@
 <a href="https://pypi.org/project/EvoScientist/"><picture>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EvoScientist/EvoScientist/main/.github/assets/badge-pypi-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EvoScientist/EvoScientist/main/.github/assets/badge-pypi-dark.svg">
-  <img alt="PyPI v0.0.4" src="https://raw.githubusercontent.com/EvoScientist/EvoScientist/main/.github/assets/badge-pypi-light.svg" height="28">
+  <img alt="PyPI v0.0.5" src="https://raw.githubusercontent.com/EvoScientist/EvoScientist/main/.github/assets/badge-pypi-light.svg" height="28">
 </picture></a><a href="https://EvoScientist.github.io/"><picture>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EvoScientist/EvoScientist/main/.github/assets/badge-website-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EvoScientist/EvoScientist/main/.github/assets/badge-website-dark.svg">
@@ -56,17 +56,34 @@ EvoScientist 超越了传统的人在回路（Human-in-the-Loop）模式，采�
     <td align="center" valign="top" width="33%">
       <img src="https://raw.githubusercontent.com/EvoScientist/EvoScientist/main/.github/assets/ICAIS_awards.JPG" height="180" alt="ICAIS 2025 Awards"/>
       <br />
-      <sub><b>Best Paper & Appraisal Award</b></sub>
+      <sub><b>最佳论文与评审奖</b></sub>
     </td>
     <td align="center" valign="top" width="33%">
       <img src="https://raw.githubusercontent.com/EvoScientist/EvoScientist/main/.github/assets/ICAIS_best_paper.png" height="180" alt="Best Paper"/>
       <br />
-      <sub><b>AI-Generated Best Paper</b></sub>
+      <sub><b>AI 生成最佳论文</b></sub>
     </td>
     <td align="center" valign="top" width="33%">
       <img src="https://raw.githubusercontent.com/EvoScientist/EvoScientist/main/.github/assets/deepresearch_bench_2.JPG" height="180" alt="DeepResearch Bench II #1"/>
       <br />
       <sub><b>DeepResearch Bench II 第一名</b></sub>
+    </td>
+  </tr>
+</table>
+
+<br />
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <img src="https://raw.githubusercontent.com/EvoScientist/EvoScientist/main/.github/assets/asta_bench_code.png" height="180" alt="AstaBench Code & Execution #1"/>
+      <br />
+      <sub><b>AstaBench 代码与执行榜第一名</b></sub>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <img src="https://raw.githubusercontent.com/EvoScientist/EvoScientist/main/.github/assets/asta_bench_data.png" height="180" alt="AstaBench Data Analysis #1"/>
+      <br />
+      <sub><b>AstaBench 数据分析榜第一名</b></sub>
     </td>
   </tr>
 </table>
@@ -99,6 +116,7 @@ EvoScientist 超越了传统的人在回路（Human-in-the-Loop）模式，采�
 - **🌐 多模型供应商** — Anthropic、OpenAI、Google、MiniMax、NVIDIA——一处配置，随时切换。
 - **📱 多渠道接入** — CLI 为中心；Telegram、Slack、飞书、微信等——共享同一智能体会话。
 - **🔬 科学工作流** — 需求采集 → 规划 → 执行 → 评估 → 撰写 → 验证。
+- **🔄 代码生成模式** — More Effort（迭代精修），持续迭代提升代码生成质量。
 - **🔌 MCP 与 Skills** — 即插即用 MCP 服务器，或从 GitHub 一键安装技能包。
 
 > [!TIP]
@@ -106,6 +124,8 @@ EvoScientist 超越了传统的人在回路（Human-in-the-Loop）模式，采�
 
 ## 🔥 动态
 
+- **[2026 年 3 月 26 日]** 🥇 提交时在 [AstaBench 数据分析](https://allenai-asta-bench-leaderboard.hf.space/home) 排名第一！[**排行榜**](https://allenai-asta-bench-leaderboard.hf.space/data-analysis) 👈
+- **[2026 年 3 月 25 日]** 🥇 提交时在 [AstaBench 代码与执行](https://allenai-asta-bench-leaderboard.hf.space/home) 排名第一！[**排行榜**](https://allenai-asta-bench-leaderboard.hf.space/code-execution) 👈
 - **[2026 年 3 月 13 日]** 🚀 [**EvoScientist**](https://github.com/EvoScientist/EvoScientist) 正式亮相！
 - **[2026 年 3 月 11 日]** ⛳ 技术报告已上线！[**查看详情**](https://arxiv.org/abs/2603.08127) 👈
 - **[2026 年 3 月 6 日]** 🥇 提交时在 [DeepResearch Bench II](https://agentresearchlab.com/benchmarks/deepresearch-bench-ii/index.html#leaderboard) 排名第一！[**排行榜**](https://agentresearchlab.com/benchmarks/deepresearch-bench-ii/index.html#leaderboard) 👈
@@ -144,6 +164,12 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ```bash
 uv tool install EvoScientist
 ```
+
+> [!NOTE]
+> 更新已安装的版本到最新，请使用 `uv tool upgrade`：
+> ```bash
+> uv tool upgrade EvoScientist
+> ```
 
 或安装到当前环境：
 

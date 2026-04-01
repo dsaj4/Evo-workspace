@@ -33,10 +33,11 @@ bridge/package-lock.json
 
 # Project specific
 .langgraph_api/
-# workspace/  # 已移除，允许跟踪论文工作区文件
+# workspace/  # keep workspace tracked in this local repo
 skills/
 memory/
 media/
+conversation_history/
 .deno_cache/
 *.ipynb
 *CLAUDE.md

@@ -115,6 +115,8 @@ def _build_welcome_banner(
     info.append(" \u2022 Type ", style="#ffe082")
     info.append("/", style="#ffe082 bold")
     info.append(" for commands", style="#ffe082")
+    info.append(" \u2022 ", style="#ffe082")
+    info.append("@ files", style="#ffe082 bold")
     info.append(" \u2022 Ctrl+C ", style="#ffe082")
     info.append("interrupt", style="#ffe082 bold")
     banner.append_text(info)
@@ -696,10 +698,12 @@ def run_textual_interactive(
             self,
             user_text: str,
             *,
+            display_text: str | None = None,
             on_thinking_cb: Callable[[str], None] | None = None,
             on_todo_cb: Callable[[list[dict]], None] | None = None,
             on_media_cb: Callable[[str], None] | None = None,
             skip_user_message: bool = False,
+            file_warnings: list[str] | None = None,
             channel_hitl_fn: Callable[[list], list[dict] | None] | None = None,
             channel_ask_user_fn: Callable[[dict], dict] | None = None,
         ) -> str:
@@ -709,6 +713,11 @@ def run_textual_interactive(
             ``_process_channel_message`` (channel).
 
             Args:
+                display_text: Text to show in UserMessage widget. When
+                    ``None`` (default), falls back to *user_text*.  This
+                    allows callers to show the original user input while
+                    sending the resolved (e.g. @file-expanded) text to
+                    the agent.
                 skip_user_message: If True, don't mount UserMessage (caller
                     already mounted it — e.g. channel messages with labels).
                 channel_hitl_fn: Optional channel-based HITL approval function.
@@ -722,7 +731,11 @@ def run_textual_interactive(
 
             # 1. Mount user message + loading spinner
             if not skip_user_message:
-                await container.mount(UserMessage(user_text))
+                await container.mount(UserMessage(display_text or user_text))
+            # Mount file warnings after user message so they appear in the
+            # correct position (between user input and model response).
+            for w in file_warnings or []:
+                self._append_system(f"⚠ {w}", style="yellow")
             loading = LoadingWidget()
             await container.mount(loading)
             container.scroll_end(animate=False)
@@ -1388,13 +1401,19 @@ def run_textual_interactive(
             self._render_status()
             cancelled = False
 
-            # Resolve @file mentions — inject file contents before sending to agent
-            _, message_to_send = await asyncio.to_thread(
-                resolve_file_mentions, user_text, workspace_dir
+            # Resolve @file mentions — inject file contents before sending to agent.
+            # Use self._workspace_dir (current session) not the startup-captured
+            # workspace_dir closure, which becomes stale after /new or /resume.
+            _, message_to_send, file_warnings = await asyncio.to_thread(
+                resolve_file_mentions, user_text, self._workspace_dir
             )
 
             try:
-                await self._stream_with_widgets(message_to_send)
+                await self._stream_with_widgets(
+                    message_to_send,
+                    display_text=user_text,
+                    file_warnings=file_warnings,
+                )
             except asyncio.CancelledError:
                 cancelled = True
                 self._append_system("\nInterrupted by user", style="dim italic #ffe082")
@@ -1796,12 +1815,8 @@ def run_textual_interactive(
                 return
 
             prompt = self.query_one("#prompt", ChatTextArea)
-            # Insert at cursor position
-            pos = prompt.cursor_position
-            current = prompt.value
-            new_value = current[:pos] + text + current[pos:]
-            prompt.value = new_value
-            prompt.cursor_position = pos + len(text)
+            prompt.insert(text)
+            prompt.focus()
 
         def action_tab_complete(self) -> None:
             """Handle TAB: cycle completions when visible, otherwise no-op.
@@ -1864,8 +1879,6 @@ def run_textual_interactive(
                 prompt.value = new_val
             else:
                 prompt.value = selected + " "
-
-            prompt.cursor_position = len(prompt.value)
 
         def _hide_completions(self) -> None:
             self._comp_items = []
@@ -1999,6 +2012,10 @@ def run_textual_interactive(
                 quit_timeout,
                 lambda: setattr(self, "_quit_pending", False),
             )
+
+        def force_quit(self) -> None:
+            """Exit immediately without double-press confirmation (used by /exit command)."""
+            self._do_exit()
 
         def _do_exit(self) -> None:
             """Clean up channels and exit."""

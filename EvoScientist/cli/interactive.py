@@ -120,6 +120,8 @@ def print_banner(
     info.append(" \u2022 Type ", style="#ffe082")
     info.append("/", style="#ffe082 bold")
     info.append(" for commands", style="#ffe082")
+    info.append(" \u2022 ", style="#ffe082")
+    info.append("@ files", style="#ffe082 bold")
     info.append(" \u2022 Ctrl+C ", style="#ffe082")
     info.append("interrupt", style="#ffe082 bold")
     console.print(info)
@@ -922,11 +924,15 @@ def cmd_interactive(
                             continue
 
                         # Resolve @file mentions — inject file contents inline
-                        _, message_to_send = resolve_file_mentions(
+                        _, message_to_send, file_warnings = resolve_file_mentions(
                             user_input, state["workspace_dir"]
                         )
 
                         # Stream agent response with metadata for persistence
+                        # Warnings printed here so they appear just before the
+                        # model response, not before the user input echo.
+                        for w in file_warnings:
+                            console.print(f"[yellow]⚠ {escape(w)}[/yellow]")
                         console.print()
                         meta = build_metadata(state["workspace_dir"], model)
                         run_streaming(
