@@ -9,6 +9,12 @@ from EvoScientist.backends import (
     validate_command,
 )
 
+
+def _endswith_parts(path: Path, *parts: str) -> bool:
+    """Return True when *path* ends with the given path components."""
+    return Path(path).parts[-len(parts) :] == parts
+
+
 # === validate_command ===
 
 
@@ -192,12 +198,12 @@ class TestResolvePath:
         ws.mkdir()
         backend = CustomSandboxBackend(root_dir=str(ws), virtual_mode=True)
         resolved = backend._resolve_path("/Users/someone/experiment-1/data/out.csv")
-        assert str(resolved).endswith("data/out.csv")
+        assert _endswith_parts(resolved, "data", "out.csv")
 
     def test_normal_virtual_path(self, tmp_workspace):
         backend = CustomSandboxBackend(root_dir=tmp_workspace, virtual_mode=True)
         resolved = backend._resolve_path("/src/main.py")
-        assert str(resolved).endswith("src/main.py")
+        assert _endswith_parts(resolved, "src", "main.py")
 
 
 # === CustomSandboxBackend.id ===
@@ -233,11 +239,18 @@ class TestExecuteCwdSanitization:
         """execute() should replace literal workspace root path with ./"""
         backend = CustomSandboxBackend(root_dir=tmp_workspace, virtual_mode=True)
         # Create a subdir via the sanitized path
-        resp = backend.execute(f"mkdir -p {tmp_workspace}/test-sanitized && echo ok")
+        resp = backend.execute(
+            'python -c "from pathlib import Path; '
+            f"Path(r'{tmp_workspace}/test-sanitized').mkdir(parents=True, exist_ok=True); "
+            "print('ok')\""
+        )
         assert resp.exit_code == 0
+        assert "ok" in resp.output
         # The dir should be created at workspace/test-sanitized, not nested
         assert (Path(tmp_workspace) / "test-sanitized").is_dir()
-        assert not (Path(tmp_workspace) / tmp_workspace.lstrip("/")).exists()
+        assert not (
+            Path(tmp_workspace) / Path(tmp_workspace).name / "test-sanitized"
+        ).exists()
 
 
 # === execute() output truncation ===
@@ -251,7 +264,7 @@ class TestExecuteTruncation:
             max_output_bytes=100,
         )
         # Generate output larger than 100 bytes
-        resp = backend.execute("python3 -c \"print('A' * 200)\"")
+        resp = backend.execute("python -c \"print('A' * 200)\"")
         assert resp.truncated is True
         assert "... Output truncated at 100 bytes" in resp.output
         # Output body (before truncation message) should be ≤ 100 bytes
@@ -279,7 +292,7 @@ class TestExecuteStderr:
             virtual_mode=True,
         )
         resp = backend.execute(
-            "python3 -c \"import sys; sys.stderr.write('warning\\n')\""
+            "python -c \"import sys; sys.stderr.write('warning\\n')\""
         )
         assert "[stderr] warning" in resp.output
 
@@ -288,7 +301,7 @@ class TestExecuteStderr:
             root_dir=tmp_workspace,
             virtual_mode=True,
         )
-        resp = backend.execute('python3 -c "raise SystemExit(42)"')
+        resp = backend.execute('python -c "raise SystemExit(42)"')
         assert resp.exit_code == 42
         assert "Exit code: 42" in resp.output
 
@@ -298,7 +311,7 @@ class TestExecuteStderr:
             virtual_mode=True,
         )
         resp = backend.execute(
-            "python3 -c \"import sys; print('out'); sys.stderr.write('err\\n')\""
+            "python -c \"import sys; print('out'); sys.stderr.write('err\\n')\""
         )
         assert "out" in resp.output
         assert "[stderr] err" in resp.output
@@ -522,24 +535,24 @@ class TestAbsolutePathDetection:
 class TestExecuteTimeoutRecovery:
     def test_timeout_includes_recovery_guidance(self, tmp_workspace):
         backend = CustomSandboxBackend(root_dir=tmp_workspace, timeout=1)
-        resp = backend.execute("sleep 10")
+        resp = backend.execute('python -c "import time; time.sleep(10)"')
         assert resp.exit_code == 124
         assert "Recovery" in resp.output
         assert "background" in resp.output.lower()
 
     def test_timeout_includes_background_command(self, tmp_workspace):
         backend = CustomSandboxBackend(root_dir=tmp_workspace, timeout=1)
-        resp = backend.execute("sleep 10")
-        assert "sleep 10" in resp.output
+        resp = backend.execute('python -c "import time; time.sleep(10)"')
+        assert "time.sleep(10)" in resp.output
         assert "> /output.log 2>&1 &" in resp.output
 
     def test_timeout_preserves_original_error(self, tmp_workspace):
         backend = CustomSandboxBackend(root_dir=tmp_workspace, timeout=1)
-        resp = backend.execute("sleep 10")
+        resp = backend.execute('python -c "import time; time.sleep(10)"')
         assert "timed out" in resp.output.lower()
 
     def test_non_timeout_not_enhanced(self, tmp_workspace):
         backend = CustomSandboxBackend(root_dir=tmp_workspace)
-        resp = backend.execute("python3 -c 'raise SystemExit(1)'")
+        resp = backend.execute('python -c "raise SystemExit(1)"')
         assert resp.exit_code == 1
         assert "Recovery" not in resp.output
