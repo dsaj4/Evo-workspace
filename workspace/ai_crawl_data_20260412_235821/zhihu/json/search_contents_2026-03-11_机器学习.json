@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2015332027587655225",
+        "content_type": "article",
+        "content_text": "ML/LLM实验本质上是探索一个高维随机的黑盒的性质，要遵循以下几个准则：实验设计要“简单”比方说人类并不擅长理解同时很多变量变化时复杂系统的行为，因此需要引入控制变量法，在某个regime下只改变一个变量（对应折线图或者table），或者两个变量（对应heatplot），方便观察变量怎么影响系统行为实验要高效因为时间，算力有限，所以实验一定要高效：分成实现和跑两个层面，实现层面可以利用claude opus等工具去最大化执行的速度，避免被写代码or debug速度限制，跑的话从最小的可复现现象的模型开始，可以通过markdown specify实现要尽量efficient（比方说避免cpu和gpu太多通信，还有dataloader设计，batch size设置等），这样就能在固定时间内获取尽量多的实验数据实验目的是最大化目前有的信息量设计实验的主要目的是获取这个黑盒更多的信息以及inspire下一轮的实验需要有error bar研究神经网络这种随机物体，它的输出也是随机的，因此需要多次取平均并画好error bar结果才有说服力，对于简单的MLP来说可以非常高效的实现这件事情（GitHub - Matheart/experiment-templates），也可以用jax这些准则虽然简单，但是也是我这两年总结出来的经验，实践中发现这些准则也是非常有用",
+        "content_url": "https://zhuanlan.zhihu.com/p/2015332027587655225",
+        "question_id": "",
+        "title": "对机器学习实验的理解",
+        "desc": "ML/LLM实验本质上是探索一个高维随机的黑盒的性质，要遵循以下几个准则： 实验设计要“简单”比方说人类并不擅长理解同时很多变量变化时复杂系统的行为，因此需要引入控制变量法，在某个regime下只改变一个变量（对应折线图或者table），或者两个变量（对应heatplot）",
+        "created_time": 1773273335,
+        "updated_time": 1773274005,
+        "voteup_count": 27,
+        "comment_count": 1,
+        "source_keyword": "机器学习",
+        "user_id": "6446ed7868a041a3244e644b7ee8dfc7",
+        "user_link": "https://www.zhihu.com/people/33-25-89-8",
+        "user_nickname": "MH2025",
+        "user_avatar": "https://picx.zhimg.com/50/v2-5dceda465ecf23e4e1354e92e8c1ad19_l.jpg?source=4e949a73",
+        "user_url_token": "33-25-89-8",
+        "last_modify_ts": 1776004656579
+    }
+]

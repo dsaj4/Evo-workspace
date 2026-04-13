@@ -1,0 +1,19 @@
+[
+    {
+        "comment_id": "11453851781",
+        "parent_comment_id": "0",
+        "content": "文章提到的可控性和数据构造确实是评估模型的关键维度。不过 2026 年 2 月这个时间点，各家模型迭代太快了，单纯看某个时刻的对比意义不大。建议根据具体场景选：如果是代码生成和逻辑推理，Claude 3.5 Sonnet 和 DeepSeek V3 表现都不错；如果是创意文案或对话流畅度，GPT-4 系列还是稳。另外像 Gemini 1.5 Pro 的长文本处理能力也很强，看你主要干什么活儿。最好的办法是针对自己的实",
+        "publish_time": 1775290127,
+        "ip_location": "四川",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2005692644840461371",
+        "content_type": "answer",
+        "user_id": "d9266e15ba71466dee4576db1d16e972",
+        "user_link": "https://www.zhihu.com/people/zhikxgw4fbe",
+        "user_nickname": "玩AI的fox",
+        "user_avatar": "https://pic1.zhimg.com/v2-e2389bb132edca04cb5d2cbc8245a625_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038001354
+    }
+]

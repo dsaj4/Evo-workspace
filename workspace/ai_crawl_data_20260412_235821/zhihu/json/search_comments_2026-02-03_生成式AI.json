@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11429377524",
+        "parent_comment_id": "0",
+        "content": "对啊，我就很好奇为什么ai为什么老是喜欢用你不是xx，而是xx",
+        "publish_time": 1772520216,
+        "ip_location": "中国香港",
+        "sub_comment_count": 1,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "2002349240349902091",
+        "content_type": "answer",
+        "user_id": "2dc3769834e1c0e4da6a9ddbec2dcb3e",
+        "user_link": "https://www.zhihu.com/people/good-times019",
+        "user_nickname": "银河系未知地公民",
+        "user_avatar": "https://picx.zhimg.com/v2-31fbbb7230740cfe60d3b8d00d9a0530_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776035646443
+    },
+    {
+        "comment_id": "11441366976",
+        "parent_comment_id": "11429377524",
+        "content": "因为AI的本质是数学模型[思考]",
+        "publish_time": 1773880913,
+        "ip_location": "重庆",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2002349240349902091",
+        "content_type": "answer",
+        "user_id": "61336fb1ee3b392730ff216a907e5964",
+        "user_link": "https://www.zhihu.com/people/liu-liu-41-65",
+        "user_nickname": "刘刘",
+        "user_avatar": "https://pic1.zhimg.com/b74aafb55_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776035647071
+    }
+]

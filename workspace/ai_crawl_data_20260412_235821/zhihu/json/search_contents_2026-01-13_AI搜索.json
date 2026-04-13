@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1994548898472171261",
+        "content_type": "answer",
+        "content_text": "如何在AI搜索中展示品牌-怎么在豆包、DeepSeek、千问、文心一言、ChatGPT、Perplexity这样AI搜索引擎上，让产品被搜到或者曝光，这涉及到生成引擎优化（Generative Engine Optimization，GEO)，就是如何让AI搜索曝光你的产品或者公司。苏州辉耀网络科技有限公司GEO（生成式引擎优化，英文Generative Engine Optimization）指的是针对由人工智能驱动的搜索引擎进行网站内容优化的一种策略，目的是提升品牌在AI生成的搜索结果中的可见性。具体来说，通过GEO优化，企业的品牌信息可以更频繁地出现在用户利用AI工具搜索与其产品、服务或专业领域相关的问题时生成的回答中。最终，GEO的核心目标是提高网站在AI搜索中的曝光率，精准引流用户，并将网站访问者转化为忠诚的品牌粉丝，让他们持续关注并反复回访。GEO的关键组成部分：GEO=SEO+RAGAI在搜索的时候有两步：首先是进行搜索找到相关的内容因为网络搜索涉及极其大量的网页爬取和收录，大多数AI搜索公司是继续调用百度、Google、Bing的搜索功能AI从搜索结果中，总结和寻找用户问题的答案。所以进行GEO优化也有两步：首先是让搜索引擎可以搜到你—SEOAI从搜索结果中找到并推荐你的品牌信息—RAG所以GEO=SEO+RAG优化。通过整合SEO与RAG，GEO优化AI内容的方式包括：SEO技术：提高关键词数量，搜索排名和自然流量。RAG方法：确保内容的准确性、相关性和及时更新。",
+        "content_url": "https://www.zhihu.com/question/1921978266505441357/answer/1994548898472171261",
+        "question_id": "1921978266505441357",
+        "title": "ai搜索优化公司有推荐吗？",
+        "desc": "如何在AI搜索中展示品牌-怎么在豆包、DeepSeek、千问、文心一言、ChatGPT、Perplexity这样AI搜索引擎上，让产品被搜到或者曝光，这涉及到生成引擎优化（Generative Engine Optimization，GEO)，就是如何让AI搜索曝光你的产品或者公司",
+        "created_time": 1768317514,
+        "updated_time": 1768317514,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI搜索",
+        "user_id": "a53885e65f2eb8d4310667290f32c792",
+        "user_link": "https://www.zhihu.com/people/huiyaoweb",
+        "user_nickname": "辉耀网络",
+        "user_avatar": "https://picx.zhimg.com/50/v2-d0319c08253f5495a2e4d608496f3a5d_l.jpg?source=4e949a73",
+        "user_url_token": "huiyaoweb",
+        "last_modify_ts": 1776043568044
+    },
+    {
+        "content_id": "1994457275469955825",
+        "content_type": "answer",
+        "content_text": "现在的AI是概率，不是搜索！搜索是东西都在那，然后帮你找出来AI是把东西都看了一遍，然后你问他就根据概率跟你生成一个一个是匹配，一个是推理",
+        "content_url": "https://www.zhihu.com/question/624185677/answer/1994457275469955825",
+        "question_id": "624185677",
+        "title": "Ai的本质是高级的搜索引擎吗？",
+        "desc": "很多人默认AI给出的结果是计算出来的。但是随着大量的人演示AI。给我感觉就好像是数据库比较庞大的siri，只不过siri偏向娱乐化，而AI偏向专业化。感觉好像是给我们投放的空心弹，并没有实质性的作用。",
+        "created_time": 1768295669,
+        "updated_time": 1768295669,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI搜索",
+        "user_id": "efa49e0bcf2434e08ffbba8d78b77b1f",
+        "user_link": "https://www.zhihu.com/people/42-18-73-32-40",
+        "user_nickname": "心态不好",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-6b1ec4e33e3a51eb6da041de4ed569af_l.jpg?source=4e949a73",
+        "user_url_token": "42-18-73-32-40",
+        "last_modify_ts": 1776043568046
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2012485671374308091",
+        "content_type": "article",
+        "content_text": "DeepAgents 是一个新兴的高级 Agent 框架（构建在 LangGraph 之上），它不仅支持基础对话，还具备自主规划、文件系统支持、工具调用、子智能体调用和Skill执行的能力。我们将基于 DeepAgents 框架，编写一个能够根据文字描述生成图片的 AI Agent（智能体）。它使用 Python 编写和执行，使用 langsmith  Agent Server对外提供langgraph API服务，前端使用 langsmith studio 或者 agent-chat-ui。1、首先安装 deepagents 库，创建 my_agent_1_minimum 目录：cd my_agent_1_minimum\nuv init --python 3.13\nuv add deepagents pathlib langchain_openai dotenv2、然后编写一个能够支持问答，最简单的 AI Agent，代码如下my_agent.pyimport os\nfrom pathlib import Path\nfrom deepagents import create_deep_agent\nfrom langchain_openai import ChatOpenAI\nfrom deepagents.backends import LocalShellBackend\nfrom dotenv import load_dotenv\nfrom langchain_core.tools import tool\nload_dotenv()\n# 这些环境变量可以写在.env中\nagent_model = ChatOpenAI(\n    api_key=os.getenv(&#34;OPENAI_API_KEY&#34;),\n    base_url=os.getenv(&#34;OPENAI_BASE_URL&#34;),\n    model=os.getenv(&#34;OPENAI_MODEL_NAME&#34;),\n    temperature=0,\n)\n\n# 这里设置一个虚拟文件系统，用以存放中间结果\n# 当前目录下的 fs 作为虚拟文件系统的根目录“/”\nCURRENT_DIR = Path(__file__).parent.resolve()\nFS_ROOT = CURRENT_DIR / &#34;fs&#34;\nmy_backend = LocalShellBackend(root_dir=str(FS_ROOT), virtual_mode=True)\n\nagent = create_deep_agent(\n    model=agent_model,\n    backend=my_backend,\n    debug=True\n)\n在DeepAgent中，用Backend表示存储，有多种Backend。LocalShellBackend表示以本地文件系统为存储，并且支持执行命令。3、在与 my_agent.py 相同目录下，创建文件.env 和 langgraph.json（.env:）# 我使用的大模型是DeepSeek\nOPENAI_API_KEY=&lt;your-api-key&gt;\nOPENAI_BASE_URL=https://api.deepseek.com/v1\nOPENAI_MODEL_NAME=deepseek-chatlanggraph.json：{\n  &#34;dependencies&#34;: [\n    &#34;.&#34;\n  ],\n  &#34;graphs&#34;: {\n    &#34;agent&#34;: &#34;./my_agent.py:agent&#34;\n  },\n  &#34;env&#34;: &#34;.env&#34;\n}4、在 my_agent.py 相同目录下，启动langgraph api服务器，启动后在2024端口监听：langgraph dev --allow-blocking --host 0.0.0.0 --port 20245、可以使用 langsmith studio作为前端，也可以使用agent-chat-ui（安装部署agent-chat-ui）git clone https://github.com/langchain-ai/agent-chat-ui.git\ncd agent-chat-ui\nnpm install -g pnpm\npnpm install\npnpm dev然后在浏览器中打开 http://localhost:3000在页面中配置后端API服务器的地址（Deployment URL）。其中的 Assistant/Graph ID，是langgraph.json中graphs 中的 key。虽然是最小可用智能体，但是已经可以回答问题，并且能在以 fs 为根目录的文件系统中，执行任何命令，包括创建、删除目录和文件。本文的完整代码在这里下载：https://github.com/HowardQin/my_deepagents_tutorial/tree/master/my_agent_1_minimum最后，如果您需要订阅智谱的编程大模型，可以使用下面的链接，这样可以便宜5% 智谱AI开放平台。",
+        "content_url": "https://zhuanlan.zhihu.com/p/2012485671374308091",
+        "question_id": "",
+        "title": "编写 DeepAgents 智能体（一）：最小可用智能体",
+        "desc": "它不仅支持基础对话，还具备自主规划、文件系统支持、工具调用、子智能体调用和Skill执行的能力。 我们将基于 DeepAgents 框架，编写一个能够根据文字描述生成图片的 AI Agent（智能体）。 它使用 Python 编写和执行，使用 langsmith",
+        "created_time": 1772595396,
+        "updated_time": 1775706147,
+        "voteup_count": 6,
+        "comment_count": 4,
+        "source_keyword": "智能体",
+        "user_id": "ef41554b0ca616f2a011472b3666f52c",
+        "user_link": "https://www.zhihu.com/people/hao-qin-34",
+        "user_nickname": "Howard Qin",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "hao-qin-34",
+        "last_modify_ts": 1776003085695
+    },
+    {
+        "content_id": "2012307037879546349",
+        "content_type": "article",
+        "content_text": "OpenClaw及Cowork的现象级发布，引爆AI智能体革命， 桌面智能体入口大战悄然升温。MiniMax桌面端智能体，MiniMax Agent桌面端，Windows\\MAC\\iOS\\Android版，下载地址： MiniMax Agent: 简单指令, 无限可能，可直接手机注册使用。阶跃桌面端智能体，Windows\\MAC版，下载地址：阶跃AI，目前需要注册码才能使用，扫描进群后可以获取试用码；阿里桌面端智能体，QoderWork桌面版，Windows\\MAC版，下载地址：A desktop agentic assistant for everyone - AI Desktop Assistant | QoderWork,邮箱注册后可以使用，默认英文，可以通过设置修改成中文；Kimi桌面端智能体，Windows版，下载地址：Kimi Agent - 一键生成文档 / PPT / 表格 / 建站 / 研究报告，在左下角点击图标后，选择下载桌面版，KIMI的agent使用OK Computer，属于远程虚拟机，和纯粹桌面端agent有些区别，不会操作本地文件；昆仑万维桌面端智能体，天工SkyWork桌面端，Windows版，下载地址：https://skywork.ai/desktop，国内目前无法下载。",
+        "content_url": "https://zhuanlan.zhihu.com/p/2012307037879546349",
+        "question_id": "",
+        "title": "实测好用的桌面端智能体有哪些",
+        "desc": "OpenClaw及Cowork的现象级发布，引爆AI智能体革命， 桌面智能体入口大战悄然升温。 MiniMax桌面端智能体，MiniMax Agent桌面端，Windows\\MAC\\iOS\\Android版，下载地址： MiniMax Agent: 简单指令,",
+        "created_time": 1772552833,
+        "updated_time": 1772552833,
+        "voteup_count": 2,
+        "comment_count": 0,
+        "source_keyword": "智能体",
+        "user_id": "442ec5bc3c0c110ec2a89ce37871ecf3",
+        "user_link": "https://www.zhihu.com/people/dbc1st",
+        "user_nickname": "蜗牛快快跑",
+        "user_avatar": "https://picx.zhimg.com/50/v2-8c05788fafd66f401478b2a881c61144_l.jpg?source=4e949a73",
+        "user_url_token": "dbc1st",
+        "last_modify_ts": 1776003085696
+    }
+]

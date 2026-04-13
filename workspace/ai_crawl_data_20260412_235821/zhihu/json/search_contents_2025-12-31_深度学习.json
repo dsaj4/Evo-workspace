@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1989728052373127511",
+        "content_type": "article",
+        "content_text": "内容：一、概述二、背景三、人脑视觉机理四、关于特征4.1、特征表示的粒度4.2、初级（浅层）特征表示4.3、结构性特征表示4.4、需要有多少个特征？五、Deep Learning的基本思想六、浅层学习（Shallow Learning）和深度学习（Deep Learning）七、Deep learning与Neural Network八、Deep learning训练过程8.1、传统神经网络的训练方法8.2、deep learning训练过程九、Deep Learning的常用模型或者方法9.1、AutoEncoder自动编码器9.2、Sparse Coding稀疏编码9.3、Restricted Boltzmann Machine(RBM)限制波尔兹曼机9.4、Deep BeliefNetworks深信度网络9.5、Convolutional Neural Networks卷积神经网络十、总结",
+        "content_url": "https://zhuanlan.zhihu.com/p/1989728052373127511",
+        "question_id": "",
+        "title": "Deep Learning（深度学习）",
+        "desc": "2、初级（浅层）特征表示 4.3、结构性特征表示 4.4、需要有多少个特征？ 五、Deep Learning的基本思想 六、浅层学习（Shallow Learning）和深度学习（Deep Learning） 七、Deep learning与Neural Network 八、Deep",
+        "created_time": 1767168200,
+        "updated_time": 1767168201,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "深度学习",
+        "user_id": "b716cf057b00ae709fb73ba50a2a5143",
+        "user_link": "https://www.zhihu.com/people/bei-jing-zhong-ke-xin-ruan",
+        "user_nickname": "北京中科信软科技有限公司",
+        "user_avatar": "https://pica.zhimg.com/50/v2-6418a0ea07086baa16e97b8afa1f963a_l.jpg?source=4e949a73",
+        "user_url_token": "bei-jing-zhong-ke-xin-ruan",
+        "last_modify_ts": 1776005888063
+    },
+    {
+        "content_id": "1989842151203430661",
+        "content_type": "answer",
+        "content_text": "不如双5060Ti，牺牲速度换显存，个人认为性价比最能打的卡（特指AI，游戏不清楚）。我的配置单（个人家庭工作站）机箱：LIANLI O11 Vision Black电源：Seasonic FOCUS GX-1000 ATX3 (V4) 80PLUS GOLD 1000W机箱风扇：EZDIY-FAB 120mm RGB 6个（用不到，只能用到4个）内存：Acer Predator Pallas II DDR5 6000MHz 64GB(32GBx2枚) CL30硬盘：Acer Predator M.2 SSD 2TB GM7 NVMe2.0 2280 PCIe Gen4×4CPU：AMD Ryzen 9 9900X BOX Socket AM5 （不用上9950，带核显是为了插便携屏写代码，独立显卡只做计算）主板：MSI MPG X870E CARBON WIFI X870E水冷：玄人志向 水冷  360mm —— 这是个日本牌子，换成国产好一点的一样，反正只能用3-5年显卡：MSI GeForce RTX 5060 Ti 16G GAMING OC x 2：准确来讲是MSI GeForce RTX 5060 Ti 16G GAMING OC A5クリアファイル同梱版 VD9328和MSI GeForce RTX 5060 Ti 16G GAMING OC グラフィックスボード VD9135。总价格在日本的话换算成人民币2.5万左右，都不够买5090的。更新：内存价格涨的让我看不懂，建议大家先租。实测11M参数的Transformer魔改架构预训练（不是通用模型，因此不需要很大的参数）显卡温度65度上下，CPU温度75度上下。GPU温度CPU温度注意点：机箱风道侧面给水冷，冷排水冷管连着的一端要向上接AMD的CPU怕压，如果亮机失败检查是不是水冷螺丝拧太紧了内存插第2个和第4个槽，注意不要插4条内存，插2条才能保证频率上6000，主板里记得开EXPO主板上有个24pin的主板供电插槽，有2个CPU供电，还有一个PCIe PWR口，这些都要插对应的电源线，否则会掉卡，因为MSI的显卡比较大，需要买一个很薄的转接头（高度不超过1.5cm的）插在PCIe PWR供电口上。海韵原生的12pin给一张卡，另外的一张卡用2个PCIE 8pin拼起来的转接线就行。记得装btop，nvtop和sensorsnVidia的驱动用带open的那一个，专属驱动nvidia-smi会提示你找不到显卡我的使用场景：训练小规模模型——deepspeed不用开ZeRO-stage训练大模型——勉强吃的下30B，要开ZeRO-stage 3ComfyUI成图——完全没问题，一张1586x1586的图大概4分钟ComfyUI生成视频——完全没问题，Wan 2.2的魔改说玩就玩",
+        "content_url": "https://www.zhihu.com/question/3218042170/answer/1989842151203430661",
+        "question_id": "3218042170",
+        "title": "大学生学习深度学习，有必要桌面端4090显卡吗，?",
+        "desc": "不如双5060Ti，牺牲速度换显存，个人认为性价比最能打的卡（特指AI，游戏不清楚）。我的配置单（个人家庭工作站）机箱：LIANLI O11 Vision Black电源：Seasonic FOCUS GX-1000 ATX3 (V4) 80PLUS GOLD",
+        "created_time": 1767195338,
+        "updated_time": 1769943783,
+        "voteup_count": 44,
+        "comment_count": 17,
+        "source_keyword": "深度学习",
+        "user_id": "dbcd7fa656dad07e6f2ad9598118a5e8",
+        "user_link": "https://www.zhihu.com/people/ikit_claw",
+        "user_nickname": "伊克特利爪",
+        "user_avatar": "https://picx.zhimg.com/50/v2-6f78c3aaad2f7b628b5ec65d749a94cb_l.jpg?source=4e949a73",
+        "user_url_token": "ikit_claw",
+        "last_modify_ts": 1776024176270
+    }
+]

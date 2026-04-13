@@ -1,0 +1,62 @@
+[
+    {
+        "user_id": "498453546",
+        "nickname": "天天漫舍",
+        "sex": "保密",
+        "sign": "给个关注吧~你的喜爱就是我最大的动力\n宝子们点点赞，投投币，留留言。",
+        "avatar": "https://i0.hdslb.com/bfs/face/a43fbecce33fd820f7316e51e2f3ba22ee26a79f.jpg",
+        "last_modify_ts": 1774808969286,
+        "total_fans": 171354,
+        "total_liked": 862812,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "507249745",
+        "nickname": "SD入门教程",
+        "sex": "男",
+        "sign": "系统学习AIGC，添加老师微信：yshqxxjc，备注：B站",
+        "avatar": "https://i1.hdslb.com/bfs/face/0a76d5b82d1c03a1522cf22389ef7b42a97e8be1.jpg",
+        "last_modify_ts": 1774808969309,
+        "total_fans": 2471,
+        "total_liked": 10886,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "3546916841327055",
+        "nickname": "AI实战课堂",
+        "sex": "保密",
+        "sign": "",
+        "avatar": "https://i0.hdslb.com/bfs/face/a34a1e611c5d6d06d6266c54fa6841024e1703b1.jpg",
+        "last_modify_ts": 1774808969349,
+        "total_fans": 20,
+        "total_liked": 113,
+        "user_rank": 2,
+        "is_official": -1
+    },
+    {
+        "user_id": "3546873369463620",
+        "nickname": "微软测试开发",
+        "sex": "保密",
+        "sign": "",
+        "avatar": "https://i0.hdslb.com/bfs/face/d241f0e606b36bf420c866feee1ea317c9a93343.jpg",
+        "last_modify_ts": 1774808969372,
+        "total_fans": 809,
+        "total_liked": 2920,
+        "user_rank": 4,
+        "is_official": -1
+    },
+    {
+        "user_id": "79018498",
+        "nickname": "马士兵教育",
+        "sex": "男",
+        "sign": "马士兵教育官方账号",
+        "avatar": "https://i1.hdslb.com/bfs/face/c298861f3d58c44a70546667048a543418cb2bc6.jpg",
+        "last_modify_ts": 1774808969390,
+        "total_fans": 42411,
+        "total_liked": 169911,
+        "user_rank": 6,
+        "is_official": 1
+    }
+]

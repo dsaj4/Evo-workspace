@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1954495843840299955",
+        "content_type": "answer",
+        "content_text": "这次我要聊的，是一个我最近狠狠折腾了两天两夜的开源项目 —— Airi。一句话总结：本地AI智能体生态终于有点像样的全家桶方案了！而且还能自己魔改、扩展、跑多模态，关键是效果真不赖！我本来只是想随便测试下，结果一头扎进去根本停不下来，真有点当年折腾 Home Assistant 的感觉了。1）Airi能干嘛？这也太全了！如果你只是以为它是个本地大模型界面套壳，那就大错特错了。Airi是那种典型的“表面平平无奇，点进去真香爆了”的项目。它能干什么？我拆几块说下：本地运行多个大模型内置支持：llama3、Yi-1.5、deepseek、Qwen 等模型，跑在 Ollama 上。还能接 OpenAI API / OpenRouter / Gemini 等，接口统一，模型切换自由。prompt 管理器，连 context prompt、函数提示都能自定义。我用的是 Macbook Pro M1 + 16G 内存，跑 DeepSeek-R1:1.5b 和 Yi-1.5 8B 都能轻松 hold 住，延迟基本在 2~3 秒之间，确实快！多模态支持，语音图像全都有自动语音识别（支持 whisper 和 faster-whisper）TTS语音合成（啥 edge-tts、bark、xtts 都能搞）图像输入解析（OCR、图片问答）图像输出生成（接 diffusers 和 comfyui）等于你直接可以用它做个 AI 语音助手，嘴对嘴聊都没问题！文件处理全家桶支持格式：PDF、Word、Markdown、纯文本图像、PPT、Excel、EPUB并且支持多文档上传、嵌入式检索、可视化摘要 —— 这块真的封神！我丢进去一本 300 页的教材，它不但能全文分析、结构拆分，还能一键生成 summary，提取关键词，甚至可以做知识图谱… 惊艳到了！可拓展、可定制的Agent系统这部分是它最猛的地方：模块式 Agent：每个 Agent 都是独立流程，可以组合多个工具、调用搜索、执行本地函数。支持“思维链式”任务规划（Chain of Thought）集成自定义工具，比如搜索网页、读取文件、调用终端命令（有点 LangChain 内味了）甚至你可以在 UI 上直接点一点创建 Agent 工作流，不用写一行代码，这个体验我给满分。2）部署过程：2小时搞定，但也踩了几个坑我在 Macbook Pro M1 上部署的，官方文档还算靠谱，但还是有些细节你可能会绕进去。下面说说我部署步骤和踩坑点。步骤一：克隆仓库 + 安装依赖git clone https://github.com/moeru-ai/airi.git\ncd airi\n使用的是 Python 3.10，然后用 pip install -r requirements.txt 安装依赖。注意⚠️：一定要用虚拟环境，不然后面你机器乱七八糟包冲突概率大。有几个包下载超慢，建议挂个代理或者改国内源。步骤二：配置 .env 文件这里配置环境变量，包括模型目录、OpenAI Key、Ollama地址等，我推荐：OLLAMA_BASE_URL=http://127.0.0.1:11434\nDEFAULT_MODEL=deepseek-coder:6.7b\n注意！如果你本地有多个大模型，用 ollama list 查下名称，不要拼错了，我一开始就写错了个冒号卡了半小时……步骤三：启动服务启动很简单：python3 app.py\n跑起来后浏览器打开 localhost:8000 就能看到一个非常顺滑的UI界面了！3）真实体验：真的能当助手用了！我拿 Airi 跑了几个真实任务来测试它到底有没有“可替代GPT的本地能力”，结果真的惊到了我。测试一：AI问答 + 文件解析我上传一本《深度学习入门》PDF，然后问它：“请按章节总结每一章核心概念，用 markdown 列出。”它返回了一个超整洁、分章节、带列表的总结，质量媲美 ChatGPT。然后我又问：“请基于第3章写一个教学PPT的大纲”它直接按逻辑拆分出了 6 个幻灯片结构，并给出了每页的内容提要，和我之前写的内容几乎一致！这就很牛了。测试二：多轮语音对话我开启 Whisper + Edge TTS，直接语音输入问它：“用Python写个自动批量重命名文件的脚本”它识别、回答、朗读一气呵成，全程不到10秒！这体验完全是那种“科幻片里的AI管家”的感觉了。测试三：多模型对比我分别让 DeepSeek-R1 和 Yi-8B 来写一段 WebSocket 的客户端示例，结果如下：DeepSeek 写得精炼、偏工程实现Yi-8B 加了很多注释和边界判断，更偏向教学这就看你需求了，反正 Airi 让你自由切换模型，就是舒服！4）对比 CodeGPT + PyCharm：更全能，但也有代价之前我写过用 CodeGPT + DeepSeek 在 PyCharm 里接 AI 编程助手的文章（还上了热榜哈哈），那套方案优点是集成 IDE、界面轻量、专注编程。Airi 的优势是全能，它不仅编程，还能文档解析、语音交互、Agent工作流、搜索执行…而且你还能自己加插件，真正打造“属于自己的 AI OS”。但也有缺点：资源占用高：内存吃紧，建议 16G 起步，不然切模型容易卡。模型加载慢：第一次切模型要等几分钟，之后就好。学习成本高：功能太多，刚上手容易迷失。总结一句话：CodeGPT是轻量选手，Airi是战斗机型，选哪个看你需求。5）未来怎么扩展？这才是最强之处！Airi 最打动我的地方是它的开放性和模块化：想加自己工具？只要用 Python 写个函数，加到 Tools 就行。想接 LangChain / RAG？它支持调用本地搜索引擎（包括faiss, chroma）想接企业微信 / 飞书机器人？自己写个 webhook 转发就能搞！甚至它支持 Agent 之间传参、执行链组合，完全可以做复杂任务自动化流程，啥“自动汇总日报”“自动读财报并投影”这些都能做。",
+        "content_url": "https://www.zhihu.com/question/10741318841/answer/1954495843840299955",
+        "question_id": "10741318841",
+        "title": "国内有哪些比较好用的智能体（AI agent）？",
+        "desc": "这次我要聊的，是一个我最近狠狠折腾了两天两夜的开源项目 —— Airi。一句话总结：本地AI智能体生态终于有点像样的全家桶方案了！而且还能自己魔改、扩展、跑多模态，关键是效果真不赖！我本来只是想随便测试下，结果一头扎进去根本停不下来，真有点当年折腾 Home Assistant",
+        "created_time": 1758768121,
+        "updated_time": 1758768121,
+        "voteup_count": 10,
+        "comment_count": 1,
+        "source_keyword": "AI agent",
+        "user_id": "91eed1c9028742ec6f85a15f1a7d8112",
+        "user_link": "https://www.zhihu.com/people/17-19-53-73-37",
+        "user_nickname": "科技改变生活",
+        "user_avatar": "https://picx.zhimg.com/50/v2-8fc5d2eda2f9242a9831cda1b92722c1_l.jpg?source=4e949a73",
+        "user_url_token": "17-19-53-73-37",
+        "last_modify_ts": 1776004339155
+    }
+]

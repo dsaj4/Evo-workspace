@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11456633171",
+        "parent_comment_id": "0",
+        "content": "其实，现在大模型的能力都已经差不多了。你只要是用到国内主流的这几个模型，应该都可以，比如 Kimi，比如千问 3.6，比如豆包，前段时间我用豆包去写教案，发现比 Gemini 的效果还要好，所以对文案的处理的话 基本上水平都差不多，就看谁更懂你了。",
+        "publish_time": 1775615604,
+        "ip_location": "河南",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1996190341045437050",
+        "content_type": "answer",
+        "user_id": "58333040cbf6a055189edd1f2cfa3788",
+        "user_link": "https://www.zhihu.com/people/dong-meng-83",
+        "user_nickname": "米团儿麻麻",
+        "user_avatar": "https://picx.zhimg.com/794ae67f8dcc1cc439b1d426cd46418b_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776043564071
+    },
+    {
+        "comment_id": "11431393935",
+        "parent_comment_id": "0",
+        "content": "不管什么AI都只是工具，我们要做的就是更好的使用和训练这些工具，更好的为我们服务！",
+        "publish_time": 1772753968,
+        "ip_location": "上海",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1996190341045437050",
+        "content_type": "answer",
+        "user_id": "182892a8148b2ff77cda82aa0e4dd3a4",
+        "user_link": "https://www.zhihu.com/people/tian-xiao-jun-47-67",
+        "user_nickname": "食养事务所",
+        "user_avatar": "https://picx.zhimg.com/v2-000fa67e2f675f6c099dc9a20e6addf7_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776043564074
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1963005391001597936",
+        "content_type": "answer",
+        "content_text": "① 不要把LLM等价于AI。② LLM是“大数据时代”之后的一个总结性成果Transformer很强大，但灵魂是时代的进程——大数据和大算力已经具备，在时代进程不允许时，Transformer作用有限。③ LLM最擅长的是匹配熟知的模式，没有基于第一性原理的“马斯克顿悟”。④ 合成数据，只是在填充知识空泡，让曲线更平滑。⑤ 由于缺乏第一性原理推理，一个领域要达到专家级水平，需要的合成数据是天量的，比如Coding。如果每个行业需要专家数据量都与通识数据相当，那么，我们需要花费十几年去采集和合成数据。Karpathy说的Agent成熟时间是一个Decade。⑥ LLM的机制是固化专家经验（包括文本经验和行为方式），一个LLM（Agent）的天花板取决于有多少专家，什么专家参与了训练。⑦ LLM作用是利用固化在内部的专家经验，辅助用户的工作，由于其本身的不可靠性，需要用户具备相当的验证能力，验证能力是用户侧的天花板。⑧ 不存在“涌现”，这里只有模式匹配和基于概率和概念替换的弱泛化性。“涌现”只是模型在参数和数据量跨越某个阈值后，对复杂模式拟合得足够好而产生的“宏观现象”，其微观本质没有改变，仍是概率和匹配。GPT-4.5就是一个大参数模型的例子，它对当时的数据产生了更好的拟合，出现了更好的表达，但没有出现真正的洞察和主动抽象。⑨ LLM有用，但不能通向超级智能。",
+        "content_url": "https://www.zhihu.com/question/9835217286/answer/1963005391001597936",
+        "question_id": "9835217286",
+        "title": "用一句话，说说你理解的人工智能AI？",
+        "desc": "人工智能将把人类引向何方？可以是前景未来、应用，或者是局限或危害！",
+        "created_time": 1760796956,
+        "updated_time": 1760796956,
+        "voteup_count": 110,
+        "comment_count": 8,
+        "source_keyword": "人工智能",
+        "user_id": "bea84fe95aee12a6939ee59dde16d1b3",
+        "user_link": "https://www.zhihu.com/people/yu-you-56-63",
+        "user_nickname": "Trisimo崔思莫",
+        "user_avatar": "https://picx.zhimg.com/50/v2-f85c56a14245993531a1c36c47721ee4_l.jpg?source=4e949a73",
+        "user_url_token": "yu-you-56-63",
+        "last_modify_ts": 1775894367398
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1942268351775741630",
+        "question_id": "",
+        "title": "咕泡深度赋能企业AI大模型应用实战",
+        "desc": "随着Deep seek为代表的AI大模型应用横空出世，85%的企业投身AI大模型应用，AI大模型已不再是 “是否尝试”的选择题\n而是企业竞逐未来的“必答题”，咕泡联合创始人Mic应邀参加创谷讲堂活动，分享关于DeepSeek大模型从零基础到应用的落地方案，为企业与个人递上“实战工具箱”，让能力与时代同频进阶...\n#咕泡科技 #咕泡AI #大模型 #咕泡AI大模型 #程序员",
+        "created_time": 1755852863,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI应用",
+        "user_id": "85f5d513f8d24d61ac0f24b1fadbd416",
+        "user_link": "https://www.zhihu.com/people/gu-pao-ke-ji",
+        "user_nickname": "咕泡科技",
+        "user_avatar": "https://picx.zhimg.com/50/v2-74bcd96a1a2fc1a34bc9f5be97643714_l.jpg?source=4e949a73",
+        "user_url_token": "gu-pao-ke-ji",
+        "last_modify_ts": 1775928113308
+    },
+    {
+        "content_id": "1942247873266811788",
+        "content_type": "answer",
+        "content_text": "豆包+DeepSeek就行了豆包的「深度思考」可以用来搜索，精度很不错，而且搜索生态做得很不错，靠谱的源都可以搜得到，大部分用户用AI就是为了要一个明确答案what+how，而不是想知道why。DeepSeek可以用来做改写，把豆包搜索到的&#34;素材&#34;，导入DeepSeek，让DeepSeek改写成你想要的文风。比如播客稿，问答稿，科普稿，知乎稿。DeepSeek的搜索是比较拉胯的，搜索生态没有建设好，也没有针对性的深度微调。DeepSeek的改写能力比豆包要好一点，豆包的语言能力还是要比DeepSeek和Gemini Flash要薄脆一点。Qwen和Kimi现在主要是Coding方面做得不错，在Chatbot优化方面，现在还是豆包和DeepSeek做得更好。 DeepSeek没有放弃Chatbot，还在努力做微调，让人挺意外的。",
+        "content_url": "https://www.zhihu.com/question/1922608207504867947/answer/1942247873266811788",
+        "question_id": "1922608207504867947",
+        "title": "国内目前使用的AI智能问答软件，豆包、通义千问、元宝、kimi、deepseek，哪个好用？",
+        "desc": "豆包+DeepSeek就行了豆包的「深度思考」可以用来搜索，精度很不错，而且搜索生态做得很不错，靠谱的源都可以搜得到，大部分用户用AI就是为了要一个明确答案what+how，而不是想知道why。DeepSeek可以用来做改写，把豆包搜索到的&#34;素材&#34;，导入DeepSeek",
+        "created_time": 1755847978,
+        "updated_time": 1755847978,
+        "voteup_count": 719,
+        "comment_count": 0,
+        "source_keyword": "AI应用",
+        "user_id": "bea84fe95aee12a6939ee59dde16d1b3",
+        "user_link": "https://www.zhihu.com/people/yu-you-56-63",
+        "user_nickname": "Trisimo崔思莫",
+        "user_avatar": "https://picx.zhimg.com/50/v2-f85c56a14245993531a1c36c47721ee4_l.jpg?source=4e949a73",
+        "user_url_token": "yu-you-56-63",
+        "last_modify_ts": 1775928313076
+    }
+]

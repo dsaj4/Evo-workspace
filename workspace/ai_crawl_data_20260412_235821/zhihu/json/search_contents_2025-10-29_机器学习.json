@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1967170485251974681",
+        "content_type": "answer",
+        "content_text": "从描述看，你是在高频（tick）级做回归模型（收益预测）。回到问题本质，既然是回归模型，你使用的因子能否预测收益？不清楚你在永什么因子，但是比如你用的是RSI，那它是不能预测收益的（跟反转信号相关，可用于分类模型）。机器学习只是把之前的线性决策拓展到非线性，并不能凭空造因果。因果（相关性）关系得靠你自己的捋顺。以boost gradient decision tree为例，它并不能很好地从特征预测出值来--他更擅长从你预测的数值中，选一个概率更高的数字出来。换句话说，当特征A出现，可能取值有3%和1%，概率在训练前不知道。训练就是解决这个问题的。训练完成，模型就会用这个概率来预测。但模型不知道pred应该是1%还是3%，也可能是-1%。而且你不能简单地把次日收益率当成训练标签-因为金融噪声大，很多只是偶然。所以，你的因子对吗？我很好奇在tick级你在用哪些因子按理说tick级的预测不难，越高频算法越简单，只是技术难度加大，另外很难回测（冲击成本导致）。另外tick级做预测，y值一般出现在order book上，你必须结合这个数据来确定标签值。否则你打的标签只是你的臆想。",
+        "content_url": "https://www.zhihu.com/question/523353835/answer/1967170485251974681",
+        "question_id": "523353835",
+        "title": "互联网大厂机器学习经验转做量化研究，据已有的因子特征去预测收益率，为啥效果一直上不去？求大佬赐教…?",
+        "desc": "互联网大厂经验，现在用机器学习做量化研究，根据已有的因子特征去预测收益率，之前的经验都用上了，但就是效果上不去…现在做的这些算是tick级别的数据…看各位大佬有没有相关经验分享或指导交流一下？感激涕零！",
+        "created_time": 1761789991,
+        "updated_time": 1761790009,
+        "voteup_count": 16,
+        "comment_count": 4,
+        "source_keyword": "机器学习",
+        "user_id": "5544ae099cc3f41df8370ff894042dda",
+        "user_link": "https://www.zhihu.com/people/hbaaron",
+        "user_nickname": "匡醍量化",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-4fa3496e83b9858bc141bc9b489f2842_l.jpg?source=4e949a73",
+        "user_url_token": "hbaaron",
+        "last_modify_ts": 1776005192899
+    },
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1966447440195466339",
+        "question_id": "",
+        "title": "Homework 5-李宏毅（2025）秋《生成式人工智慧與機器學習導論》 AI｜机器学习",
+        "desc": "https://speech.ee.ntu.edu.tw/~hylee/GenAI-ML/2025-fall.php \n- 已联系李宏毅老师得到转载许可 \n\n\n- 本课程核心围绕大模型、人工智能、机器学习，今年的内容更偏实际应用，非常符合当下趋势，想学经典传统机器学习的请认准这一版\nhttps://zhuanlan.zhihu.com/column/c_1958569909916262603\n\n一些以前的视频：\n第1部｜神经网络：https://zhuanlan.zhihu.com/column/c_1954931403474069190",
+        "created_time": 1761732125,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "7d7031986198adc5d48927319c5dceee",
+        "user_link": "https://www.zhihu.com/people/lang-ji-89",
+        "user_nickname": "野生AI产品",
+        "user_avatar": "https://picx.zhimg.com/50/v2-229728282b35e96b8941fccbb83a0b0c_l.jpg?source=4e949a73",
+        "user_url_token": "lang-ji-89",
+        "last_modify_ts": 1776005192900
+    }
+]

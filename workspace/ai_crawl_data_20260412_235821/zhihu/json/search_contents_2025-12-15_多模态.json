@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1984045078776419262",
+        "content_type": "answer",
+        "content_text": "deepseek 不是没有多模态的大模型. 一直有 https://http://github.com/deepseek-ai/DeepSeek-VL包括近期发布的 DeepSeek-OCR.总体来说，deepseek 多模态没有跟上世代的更迭。不过可以预测26年农历过年的模型应该会包含多模态了。",
+        "content_url": "https://www.zhihu.com/question/1981419081384095939/answer/1984045078776419262",
+        "question_id": "1981419081384095939",
+        "title": "为什么deepseek不做多模态大模型？",
+        "desc": "感觉国内的VL模型和gemini，chatgpt还有很大差距",
+        "created_time": 1765813208,
+        "updated_time": 1765813208,
+        "voteup_count": 3,
+        "comment_count": 1,
+        "source_keyword": "多模态",
+        "user_id": "ced4ec82ab14098e27afbbd1747e3048",
+        "user_link": "https://www.zhihu.com/people/wu-liang-di",
+        "user_nickname": "404老吴",
+        "user_avatar": "https://picx.zhimg.com/50/v2-9318143f1c098ed07c698dbffe784518_l.jpg?source=4e949a73",
+        "user_url_token": "wu-liang-di",
+        "last_modify_ts": 1776038887777
+    }
+]

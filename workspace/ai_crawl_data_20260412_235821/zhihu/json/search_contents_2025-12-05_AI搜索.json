@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1980370715007017807",
+        "content_type": "answer",
+        "content_text": "搜国外网站的时候，我用 Grok、ChatGPT、Gemini 做三组对照。国内这边，就选 豆包、元宝、Kimi/智谱清言 当三组对照。（豆包和清言都有 快速多轮搜索，耗时比 Deep Research 短，结果通常就够用了，而 Kimi 经常能搜到一些 罕见问题的答案）千问APP现在的 AI搜索 其实已经挺不错了，但还没进我的候选名单。至于 事实核查，可别把希望寄托在单个AI身上——它们未必总能清晰辨认事实，还可能引入幻觉。",
+        "content_url": "https://www.zhihu.com/question/1980231127227704211/answer/1980370715007017807",
+        "question_id": "1980231127227704211",
+        "title": "哪个AI大模型联网搜索信息的准确度最高，总结出的内容幻觉率最低？",
+        "desc": "随着豆包使用的全民化，网上很多人把豆包当做搜索引擎，并把输出的结果当正确答案，但是豆包的幻觉率极高，无中生有，凭空捏造简直信手拈来，如果泛滥使用和相信的话，人人都会被迫成为新时代的营销号。我觉得一个合格的ai大模型至少得做到：一是得搜索效率高，选择的网站要有置信度排名，不能啥网站的都搜都总结。二是得自我校对，搜出来的内容需要矛盾校验，从而进行二次搜索和校对。",
+        "created_time": 1764937171,
+        "updated_time": 1764937171,
+        "voteup_count": 54,
+        "comment_count": 0,
+        "source_keyword": "AI搜索",
+        "user_id": "bea84fe95aee12a6939ee59dde16d1b3",
+        "user_link": "https://www.zhihu.com/people/yu-you-56-63",
+        "user_nickname": "Trisimo崔思莫",
+        "user_avatar": "https://pica.zhimg.com/50/v2-f85c56a14245993531a1c36c47721ee4_l.jpg?source=4e949a73",
+        "user_url_token": "yu-you-56-63",
+        "last_modify_ts": 1776043715741
+    }
+]

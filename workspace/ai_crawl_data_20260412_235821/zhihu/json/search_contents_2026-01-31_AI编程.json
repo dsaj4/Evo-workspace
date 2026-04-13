@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2001065997898118856",
+        "content_type": "answer",
+        "content_text": "现在的能力已经很强了，可以把你效率提高至少3倍。需求描述是否精准（可以向AI提问，它还需要哪些信息）？技术标准是否有描述，以及你自己的编码原则。如果是老项目修改，老项目的背景是需要投喂给AI。",
+        "content_url": "https://www.zhihu.com/question/1964733992835215702/answer/2001065997898118856",
+        "question_id": "1964733992835215702",
+        "title": "AI编程时代，真的更方便吗?",
+        "desc": "首先我是存疑的，最近用包括cursor，克劳德等agent开发项目，虽然写代码很快，但是写出来后查错花费了我大量时间，同时和项目需求有偏差，最后感觉还不如自己写。",
+        "created_time": 1769871311,
+        "updated_time": 1769871311,
+        "voteup_count": 2,
+        "comment_count": 0,
+        "source_keyword": "AI编程",
+        "user_id": "bde52b1d74c387665f32f7820be03c93",
+        "user_link": "https://www.zhihu.com/people/peter-ye-89",
+        "user_nickname": "七彩",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-8d97b794b12b5cec1682c228896ee8fd_l.jpg?source=4e949a73",
+        "user_url_token": "peter-ye-89",
+        "last_modify_ts": 1776001556667
+    },
+    {
+        "content_id": "2001046437467813323",
+        "content_type": "answer",
+        "content_text": "如果是工具首推claude code，然后就是开源的opencode，如果是ide类用于调试的就cursor，再如果说的是底层大模型这种就是claude opus 4.5，没用过但是代码能排到第一必然不容小觑，国内平替的话感觉glm还OK，不知道最近的kimi如何？",
+        "content_url": "https://www.zhihu.com/question/1978023762545903042/answer/2001046437467813323",
+        "question_id": "1978023762545903042",
+        "title": "各类AI编程工具里，你最看好哪一款？",
+        "desc": "AI编程工具已经逐渐被各类人士应用了，那么，这些年来的AI编程工具，你看好哪一款呢？",
+        "created_time": 1769866648,
+        "updated_time": 1769866648,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI编程",
+        "user_id": "874367e63041e8f21863a64a5c69c6b8",
+        "user_link": "https://www.zhihu.com/people/zhu-xiang-dian",
+        "user_nickname": "不合格牛马",
+        "user_avatar": "https://picx.zhimg.com/50/v2-d6c7440f94d63d62fe7824aae39ce255_l.jpg?source=4e949a73",
+        "user_url_token": "zhu-xiang-dian",
+        "last_modify_ts": 1776001556672
+    }
+]

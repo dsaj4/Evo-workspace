@@ -1,0 +1,53 @@
+[
+    {
+        "comment_id": "11426090733",
+        "parent_comment_id": "0",
+        "content": "这篇论文的作图好精美，是手工画的还是用了什么工具[思考]",
+        "publish_time": 1772208055,
+        "ip_location": "江苏",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1978538723063911926",
+        "content_type": "article",
+        "user_id": "62fd60dac7e5b8078039022eb5f7807c",
+        "user_link": "https://www.zhihu.com/people/Hopeful",
+        "user_nickname": "马小飞",
+        "user_avatar": "https://picx.zhimg.com/v2-8febcdc20306b832c5fe6f0dcbf67c6a_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038296295
+    },
+    {
+        "comment_id": "11426327452",
+        "parent_comment_id": "11426090733",
+        "content": "手工，或者Nano Banana吧",
+        "publish_time": 1772253991,
+        "ip_location": "新加坡",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1978538723063911926",
+        "content_type": "article",
+        "user_id": "d9e78b550f018b9dd758fdc3a590fcc3",
+        "user_link": "https://www.zhihu.com/people/wonglei",
+        "user_nickname": "wangleineo",
+        "user_avatar": "https://pica.zhimg.com/v2-8c2de28ae2740a09f3efc66d5707b2e5_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038296808
+    },
+    {
+        "comment_id": "11357680812",
+        "parent_comment_id": "0",
+        "content": "旧范式的惯性力量是很大的，哪怕提出新范式，往往一句这个能干什么或者评测能跑多少分就轻易能否定，能从第一性原理底层出发去思考其合理性的，不能说没有吧，估计也是凤毛麟角。智能的本质是结果导向吗？智能的本质是优化问题计算过程",
+        "publish_time": 1764733937,
+        "ip_location": "上海",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1978752316682286483",
+        "content_type": "answer",
+        "user_id": "095fe79755822778453ee046ec0b2af8",
+        "user_link": "https://www.zhihu.com/people/38-55-38-77-20",
+        "user_nickname": "浪花",
+        "user_avatar": "https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038399783
+    }
+]

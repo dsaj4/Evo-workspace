@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2019167342584690243",
+        "content_type": "answer",
+        "content_text": "目前有一个明显的方向就是：语言模型，跟视觉模型，音频模型融合成一个大模型，不同模态数据融合能进步相互提升，这个已经被验证过，所以未来应该就叫大模型，不分大模型模型，视觉大模型等。",
+        "content_url": "https://www.zhihu.com/question/2011397946898421073/answer/2019167342584690243",
+        "question_id": "2011397946898421073",
+        "title": "大语言模型（LLM）的未来发展方向有哪些？",
+        "desc": "除了性能提升和多模态融合，您认为未来在伦理、可解释性、能源消耗等方面会有哪些新的挑战和突破？",
+        "created_time": 1774187008,
+        "updated_time": 1774187008,
+        "voteup_count": 2,
+        "comment_count": 1,
+        "source_keyword": "大语言模型",
+        "user_id": "b90935b74830e21f47e745d50ff7f21e",
+        "user_link": "https://www.zhihu.com/people/zhu-zhi-wen-9-90",
+        "user_nickname": "烛之文",
+        "user_avatar": "https://picx.zhimg.com/50/v2-63e1a01c90bdb8436acd9842d0e894b6_l.jpg?source=4e949a73",
+        "user_url_token": "zhu-zhi-wen-9-90",
+        "last_modify_ts": 1776037835490
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11363068556",
+        "parent_comment_id": "0",
+        "content": "不要把依赖变成盲从[赞同][赞同][赞同][赞][赞][赞]",
+        "publish_time": 1765264742,
+        "ip_location": "辽宁",
+        "sub_comment_count": 1,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "1981656810495702769",
+        "content_type": "answer",
+        "user_id": "58960decb4ec8f9f972fe4ea4b31ed5c",
+        "user_link": "https://www.zhihu.com/people/88-72-77-47-23",
+        "user_nickname": "梅香寒",
+        "user_avatar": "https://pica.zhimg.com/v2-51f61d1a7ebc082591d857c33f60c487_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776043709062
+    },
+    {
+        "comment_id": "11362752565",
+        "parent_comment_id": "11363068556",
+        "content": "感谢友友的认可啦！[大笑][大笑][大笑]",
+        "publish_time": 1765268524,
+        "ip_location": "广东",
+        "sub_comment_count": 0,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "1981656810495702769",
+        "content_type": "answer",
+        "user_id": "214595b159fc050afe07720829a2a0fd",
+        "user_link": "https://www.zhihu.com/people/hnzhouhong",
+        "user_nickname": "爱AI的老周",
+        "user_avatar": "https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776043709760
+    }
+]

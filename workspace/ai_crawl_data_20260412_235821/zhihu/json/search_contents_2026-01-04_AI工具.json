@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1991421739415135006",
+        "content_type": "answer",
+        "content_text": "推荐免费的 TRAE CN 或者 Claude Code + GLM 4.7。1. 免费方案 A：TRAE IDE / TRAE 插件 + GLM-4.7目前国内模型里编码能力最强的应该是 GLM-4.7 了，这个不是我说的，是国内外社区的一个共识（自 GLM-4.6 开始就形成的共识）。&amp;amp;quot; data-watermark=TRAE 是字节的 AI Coding IDE，也提供了 IDE 插件，功能挺全的。我自己倾向于常规 IDE（VSCode 或 JetBrains 系）+ TRAE 插件的工作方式，既能充分利用原生 IDE 的能力，又能薅到 TRAE 的羊毛。当然，如果你对 IDE 没有那么执着，也可以直接用 TRAE 的 IDE（本身是 VSCode 套壳）。TRAE CN，也就是 TRAE 国内版（包括插件），提供的模型都是免费的，虽然没有 Claude、Gemini 这些海外模型，但国内的顶流编程模型（GLM、Kimi、Qwen）基本都有。目前 TRAE IDE 已经支持 GLM-4.7 了，TRAE 插件估计过段时间就会支持。TRAE IDEVSCode 中的 TRAE 插件2. 免费方案 B：OpenCode + GLM-4.7如果你还不知道 OpenCode，可以看看这篇介绍：被称为开源版 ClaudeCode 的Opencode 狂飙Star，其爆火原因和影响是什么？OpenCode 提供免费的几款模块，其中就包括 GLM-4.7。不过因为是免费的，用的人多了，可能会遇到限流提示。这个时候可以切换到 MiniMax 或者其他模型。&amp;quot; data-size=如果需要长期稳定使用，OpenCode + 免费模型就不太合适，当然你也可以自己购买套餐，然后在 OpenCode 中使用。3. 便宜方案 A：Claude Code / Claude Code 插件 + GLM-4.7Claude Code 是一个命令行形式的 AI Coding Agent，本身是免费的，可以对接很多模型，包括官方自己的 Claude 系列模型，也可以对接国内的一些模型。Claude Code 在工程设计上有很多巧思，前面提到的 TRAE 本质也是一个 AI Coding Agent，在对接相同模型的情况下，Claude Code 的执行效果要好一些。如果你的场景比较复杂，或者追求更好的效果，那么建议选 Claude Code + GLM 4.7。前面提到 GLM-4.7 代码能力在国内算是顶流了，GLM 官方也支持了接入 Claude Code：Claude Code - 智谱AI开放文档如果你使用 VSCode 或者 JetBrains 系的 IDE，也可以安装 Claude Code 插件：Claude Code IDE 插件 - 智谱AI开放文档这个方案的性价比很高，基本符合一个月 20-30 元的预算，看看 GLM 官方 Coding Plan 的价格就知道：&amp;amp;quot; data-watermark=个人用户选 Lite 计划一般就够用了。目前做活动，前 3 个月 54，平均一个月 18 元，后面续费，一个季度 120，平均一个月 40 元。我建议是先买一个季度的，如果用的不错，等后面做活动（比如发布 GLM 4.8），再买一个一年的。订阅成功后可以看到订阅计划注意要从这个 GLM Coding Plan 的入口订阅：智谱AI开放平台，不要买资源包，要不然接入 Claude Code 后不生效。（不要问我为什么知道）订阅成功后，参考前面提到的文档配置即可。4. 便宜方案 B：火山方舟 Coding Plan最近发现火山引擎也有 Coding Plan 了：https://www.http://volcengine.com/activity/codingplan一次性支持了 Doubao-Seed-Code、GLM-4.7、DeepSeek-V3.2、Kimi-K2-Thinking 等多款模型。价格和 GLM 的套餐几乎一样，普通用户订阅 Lite 计划应该够了。&amp;quot; data-size=同样支持 Claude Code、OpenCode、Cursor、Roo Code 等工具和插件。",
+        "content_url": "https://www.zhihu.com/question/1976414397648876538/answer/1991421739415135006",
+        "question_id": "1976414397648876538",
+        "title": "一个月预算20-30元，有什么AI编码工具推荐吗？",
+        "desc": "Claude Code、Cusror等IDE价格都很昂贵，20-30元之间的有合适的吗",
+        "created_time": 1767571941,
+        "updated_time": 1768387114,
+        "voteup_count": 133,
+        "comment_count": 11,
+        "source_keyword": "AI工具",
+        "user_id": "85fd7a5db77dca43f01e59eceb3f05f2",
+        "user_link": "https://www.zhihu.com/people/animabear",
+        "user_nickname": "零一猴子",
+        "user_avatar": "https://picx.zhimg.com/50/v2-bde9fcdf5712e8330904f3d4c67a974a_l.jpg?source=4e949a73",
+        "user_url_token": "animabear",
+        "last_modify_ts": 1776000698457
+    },
+    {
+        "content_id": "1991267747208909074",
+        "content_type": "article",
+        "content_text": "AI工具集网址：https://ai-bot.cn/#term-86突然发现AI火了，后知后觉吧。打算近期每天研究一个AI工具，大概了解一下都能做点啥，擅长啥。先把计划看的记录一下。AI写作工具：AI搜索引擎：Dia、Perplexity CometAI工作流：Coze、n8n、飞书多维表格、DifyAI输入法：豆包输入法、闪电说AI聊天助手：Gemini 、Kimi、Deekseep、豆包、文心一言、元宝、ChatGPT、千问、OpenAI Deep Research、 GrokAI知识库：IMA、NotebookLMAI智能体：Manus、Lovart(设计Agent)、AI视频Agent：TapNow、opencreator、Medeo、Oiioii、AI办公工具：AI学习网站：AI编程工具：Trae、CodeX、Cursor、Claude Code编程工具组合：Gemini 3.0 Pro+ai studio， Cursor，Claude Code+Claude Sonnet 4.5 , CodeX+GPT5.2AI设计工具：AI图形工具：即梦AI、Nano Banana ProAI视频工具：即梦AI、可灵、ViduAI音频工具：SunoAI开发平台：Google AI Studio、DifyAI训练模型：、Gemini 3.0 Pro、GPT 5.2Thinking、DeepSeek、MiniMax(声音大模型)、veo3.1(视频模型)、Sora2 Pro(视频模型)、AI模型测评：AI内容检测：AI提示指令：开源项目：Qwen本人是做IT的，先从编程工具、知识库、工作流、搜索引擎和AI对话、AI设计开始吧。哈哈哈哈，好像有点多，也不知道这么忙，多久能大概了解一遍。有没有哪位大神可以给我一些建议呀",
+        "content_url": "https://zhuanlan.zhihu.com/p/1991267747208909074",
+        "question_id": "",
+        "title": "AI工具",
+        "desc": "AI工具集网址： 突然发现AI火了，后知后觉吧。打算近期每天研究一个AI工具，大概了解一下都能做点啥，擅长啥。先把计划看的记录一下。 AI写作工具： AI搜索引擎：Dia、Perplexity Comet AI工作流：Coze、n8n、飞书多维表格、Dify AI输入法",
+        "created_time": 1767535996,
+        "updated_time": 1767537328,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI工具",
+        "user_id": "ebec195bda3a3eeffd0b459fa8e66825",
+        "user_link": "https://www.zhihu.com/people/shui-mo-lan-shui",
+        "user_nickname": "水莫岚水",
+        "user_avatar": "https://picx.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "shui-mo-lan-shui",
+        "last_modify_ts": 1776000698457
+    }
+]

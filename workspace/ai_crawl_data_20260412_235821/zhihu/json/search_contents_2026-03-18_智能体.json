@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2017706256446543202",
+        "content_type": "article",
+        "content_text": "很多人一看到复杂任务，第一反应就是「上多智能体」。问题的根本不是「要不要用多智能体」，而是「这个任务到底需要什么样的协作方式」。Claude 给了我们两套完全不同的多智能体方案：Subagents 和 Agent Teams。它们看起来很像，但底层设计哲学完全不同。用错了，不仅解决不了问题，还会让系统变得更复杂、更难维护。这篇文章帮你彻底搞清楚：它们到底是什么、适合什么场景、以及如何做出正确的选择。一、Sub-Agents：通过隔离实现并行性什么是 Subagent？Subagent 是一个运行在独立上下文窗口中的 Claude 实例。打个比方：你是一个研究负责人，你不会自己去读每一篇原始文献。你会把具体问题分配给研究员，他们回来告诉你结论，然后你把这些结论综合起来形成最终输出。这就是 Subagent 的工作方式。每个子智能体都拥有自己的系统提示词（定义它的专长）、特定的工具集（它能访问什么）、干净的、隔离的上下文窗口和一个明确的任务核心机制：只返回结果，不返回过程当 Subagent 完成任务后，只会将最终结果会返回给父 Agent，不会返回中间过程，而且这个结果是压缩后的。这意味着 Subagent 的核心价值不只是并行，而是压缩。你把大量的探索过程压缩成一个干净的信号，不会污染父 Agent 的上下文。关键约束：子Agent不能嵌套，不能互相通信Subagent 有一个硬性约束：不能生成其他子智能体，也不能相互通信每个结果都必须流回父 Agent。父 Agent 是唯一的协调者。这个约束特性让系统变得可预测——你总能知道信息流向何处，以及决策在何处制定。适用场景Subagent 适合的场景：独立的研究流：比如同时搜索 5 个不同主题代码库探索：让一个 subagent 专门找安全漏洞，另一个专门找性能问题并行****查询：需要快速覆盖多个方向，父 Agent 只需要汇总结果一句话总结：如果你只需要结果，不需要过程，用 Subagent。二、Agent Teams：持久 + 通信，核心是「持续协作」什么是 Agent Team？Agent Team 是完全不同的模型。Subagent 是短期存在的工人，完成任务就消失。而 Agent Team 是长期运行的实例，它们会持续存在、直接互相通信、通过共享状态来协调。打个比方：Subagent 像是雇佣承包商完成独立任务；Agent Team 像是组建一个团队，大家在一个房间里一起工作。三个核心组件一个 Agent Team 包含三个部分：Team Lead：协调工作、分配任务、综合结果Teammates：独立的 Agent 实例，各自有自己的上下文窗口，并行工作Shared Task List：追踪待办、进行中、已完成的任务，以及任务之间的依赖关系任务依赖：自动协调看一个典型的生命周期：Claude (Team Lead):\n└── spawnTeam(&#34;auth-feature&#34;)\n    Phase 1 - Planning:\n    └── spawn(&#34;architect&#34;, prompt=&#34;设计 OAuth 流程&#34;)\n\n    Phase 2 - Implementation (并行):\n    └── spawn(&#34;backend-dev&#34;, prompt=&#34;实现 OAuth 控制器&#34;)\n    └── spawn(&#34;frontend-dev&#34;, prompt=&#34;构建登录 UI 组件&#34;)\n    └── spawn(&#34;test-writer&#34;, prompt=&#34;写集成测试&#34;, blockedBy=[&#34;backend-dev&#34;])\n注意 blockedBy 字段。这就是共享任务列表在起作用：测试编写者会等到后端 Agent 完成后才开始，Lead 不需要手动管理这个顺序。直接通信：Peer-to-PeerAgent Team 最大的不同是直接通信。Teammates 可以直接给彼此发消息、分享发现、暴露阻塞点、协商解决方案——不需要所有东西都经过 Lead。你还可以直接和单个 teammate 交互，不必每次都通过 Lead。适用场景Agent Team 适合需要「持续协作」的任务：需要协商的场景：前端 Agent 发现 API 结构需要改，后端 Agent 可以立即调整中途发现会改变其他线程：一个线程的发现会影响另一个线程该做什么复杂的多阶段项目：需要长期上下文积累一句话总结：如果 Agent 之间需要持续协调和共享发现，用 Agent Team。三、核心区别：一次性任务 vs 持续协作用一个表格说清楚：维度SubagentsAgent Teams生命周期短期，任务完成就消失长期，持续存在通信方式只和父 Agent 通信Agent 之间可以直接通信状态共享无共享状态共享任务列表和状态协调方式父 Agent 集中协调分布式协调适用场景独立任务、并行探索需要持续协商的任务最简单的判断方法：Subagents：任务可以独立完成，只需要最终结果Agent Teams：任务之间有依赖，中途需要协调四、5 种编排模式：覆盖大部分实际需求无论你用哪种范式，这 5 种模式能覆盖大部分场景：1. Prompt Chaining（提示链）特点：顺序执行，每一步处理上一步的输出适用场景：顺序很重要、步骤之间有依赖例子：先总结文章 → 再翻译 → 再生成摘要2. Routing（路由）特点：分类器决定哪个专门处理器来处理任务适用场景：简单问题用便宜模型，复杂问题用强模型——控制成本的关键例子：客服系统，简单问题路由到快速模型，复杂投诉路由到强模型3. Parallelization（并行化）特点：独立子任务同时运行适用场景：同一任务跑多次获得多样化输出（投票）不同子任务同时运行（分片）例子：让 3 个 Agent 同时分析同一段代码，取共识4. Orchestrator-Worker（协调者-工作者）特点：中央 Agent 分解任务、分配给工作者、综合结果适用场景：这是 Subagents 和 Agent Teams 的主流架构，大多数生产系统实际在用的模式例子：研究助手系统——编排者分配研究任务，工人返回结果，编排者综合5. Evaluator-Optimizer（评估器-优化器）特点：一个 Agent 生成，另一个评估并提供反馈，循环迭代适用场景：质量比速度重要，单次输出不够可靠例子：代码审查系统——一个写代码，一个审查，迭代直到通过五、什么时候不该用多智能体？这是大部分文章跳过的部分。很多团队花了数月搭建复杂的多智能体管道，最后发现：更好的单智能体提示词就能达到相同效果。值得用多智能体的三种情况上下文保护：子任务产生的信息与主任务无关，用 Subagent 可以防止上下文膨胀真正的并行化：独立的研究或搜索任务，需要同时覆盖多个方向专业化：任务需要冲突的系统提示词，或者一个 Agent 工具太多导致性能下降不该用的情况Agent 频繁需要共享上下文：如果你发现 Agent 之间一直在交换信息，可能应该合并成一个 AgentAgent 间依赖造成的开销比执行价值还大：协调成本超过了并行收益任务足够简单：一个提示词写得好的 Agent 就能搞定一个具体警告：多个 Agent 并行写代码会做出不兼容的假设。当代码合并时，这些隐式决策会以难以调试的方式冲突。写代码的 Subagent 应该回答问题和探索，而不是和主 Agent 同时写代码。六、唯一重要的设计原则按上下文边界设计，不要按角色或组织架构设计。大部分多智能体设计失败的原因是：人们按角色分工（规划者、执行者、测试者），而不是按上下文分工。按角色分工看起来很整齐，但它创造了一个「电话游戏」——信息在每次交接时都会丢失：执行者不知道规划者知道什么测试者不知道执行者决定了什么质量在每个边界都会下降正确的心智模型是以上下文为中心的分解：问自己：这个子任务实际上需要什么上下文？如果两个子任务需要深度重叠的信息，它们可能应该属于同一个 Agent。如果它们可以真正隔离的信息和干净的接口来操作，那就是应该分开的地方。一个实际例子：实现功能的 Agent 应该同时写那个功能的测试。它已经有了上下文。把这两件事分成两个 Agent 会创造交接问题，成本比并行收益更大。只在上下文可以真正隔离时才分开。七、从第一性原理出发的设计方法从单智能体开始推进它，直到找到它崩溃的地方那个失败点会告诉你下一步该加什么只在解决真实、可测量问题时才增加复杂度多智能体系统不是目标，是手段。如果单智能体能搞定，就别加复杂度。参考资料Claude Subagents vs. Agent Teams, explained - Akshay @akshay_pachaarClaude Agent SDK Documentation - Anthropic Official",
+        "content_url": "https://zhuanlan.zhihu.com/p/2017706256446543202",
+        "question_id": "",
+        "title": "Claude 多智能体架构全解析：Subagents vs Agent Teams 怎么选？",
+        "desc": "很多人一看到复杂任务，第一反应就是「上多智能体」。 问题的根本不是「要不要用多智能体」，而是「这个任务到底需要什么样的协作方式」。 Claude 给了我们两套完全不同的多智能体方案： Subagents 和 Agent Teams。它们看起来很像，但底层设计哲学完全不同",
+        "created_time": 1773838954,
+        "updated_time": 1773838954,
+        "voteup_count": 20,
+        "comment_count": 0,
+        "source_keyword": "智能体",
+        "user_id": "b232a7e52647344aee2ee773a38c4580",
+        "user_link": "https://www.zhihu.com/people/keji520",
+        "user_nickname": "克己",
+        "user_avatar": "https://picx.zhimg.com/50/v2-e16bd56cc88c7dcb90e0eec1fc7f677a_l.jpg?source=4e949a73",
+        "user_url_token": "keji520",
+        "last_modify_ts": 1776002928306
+    },
+    {
+        "content_id": "2017933528407499985",
+        "content_type": "answer",
+        "content_text": "先说结论：大模型是智能体的【脑子】大模型（LLM）= 脑子智能体(Agent)= 脑子+手+记忆等做了个图类比一下，",
+        "content_url": "https://www.zhihu.com/question/663495727/answer/2017933528407499985",
+        "question_id": "663495727",
+        "title": "什么是 AI 智能体，和大模型有什么关系？",
+        "desc": "最近看到很多有关智能体应用，什么是智能体，和ChatGPT大模型等有什么区别？",
+        "created_time": 1773892844,
+        "updated_time": 1773892844,
+        "voteup_count": 3,
+        "comment_count": 0,
+        "source_keyword": "智能体",
+        "user_id": "fa151b3caa5b9b5830f3cf31c5ebf42c",
+        "user_link": "https://www.zhihu.com/people/cddengsha",
+        "user_nickname": "sudden",
+        "user_avatar": "https://picx.zhimg.com/50/v2-3c07a800eb4bf26433b80d1f014d4039_l.jpg?source=4e949a73",
+        "user_url_token": "cddengsha",
+        "last_modify_ts": 1776003020195
+    }
+]

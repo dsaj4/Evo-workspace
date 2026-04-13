@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2004900039609296625",
+        "content_type": "article",
+        "content_text": "我原文是英文写的，让AI 翻译成中文，我觉得AI 很厉害，但是不得不说翻译这块味道还是太冲了。。。。1. 越牛逼的东西往往越简单最近“把文件系统当记忆”挺火，我觉得它算是把 Agent 的长期记忆给玩明白了。其实重点不在于是用 Markdown 还是用啥文件，本质在于：Agent 终于舍得花时间、花算力去认真读写信息了。 这其实是计算机科学里老掉牙的套路：用时间换精度。 在这个坑里我折腾好久了。23 年玩知识图谱+RAG，24 年搞工业级 Agent 又碰上 GraphRAG。说实话，不管你换什么 embedding 模型、reranker，或者是死磕切片策略，Agent 还是感觉“差点意思”。后来我看了 Mem0、MemOS 那些方案，总觉得不对劲。直到去年看到“文件系统即记忆”，第一反应是：卧槽，就这？ 但回过神来发现，这才是最狠的。不过我猜最后还是会绕回知识图谱，毕竟文件系统就是棵树，树也是图的一种。我们缺的只是一个够简单的底层抽象。2. 长期记忆就是 Agent 的 “ChatGPT-3.5 时刻”别觉得“读写个 .md 文件”没啥技术含量，这事儿底层逻辑变了：AI 终于有靠谱的记性了。 虽然现在慢，但优化只是时间问题。记忆这东西，是生物实现“瞬间进化”的杀手锏。动物不用改 DNA 就能适应环境，靠的就是记忆；AI 现在不用改权重，靠长期记忆（其实就是 Prompt Tuning）就能学新本事。这逻辑一通，整个 SaaS 行业都得地震。看看 OpenClaw，只要你写个 Skill.md，它啥都能干。最近 SaaS 公司的股价跌成狗，不是没道理的。3. AI 安全真的不是闹着玩的以前 AI 只能跑几分钟，干点杂活，大家不心慌。现在有了长期记忆，Agent 能连轴转好几天。这周初，我试着让 Claude 去练一个 0.6B 的小模型。从处理数据、盯着日志，到上网搜新架构、改配置，最后直接开练带评估，两三个小时全干完。我甚至连 Torch 都没给它装！ 按这节奏，AI “自我复制”简直是板上钉钉的事。现在 OpenClaw 这种全自动 Agent 已经开始露风险苗头了。最要命的是，这玩意儿现在好用到傻瓜化，很多外行根本不知道后台发生了啥就开始乱跑，这才是最吓人的。4. AI 经济体一定会跑出来最后来个大胆预言：AI Agent 迟早会有自己的经济体。 你想啊，有一群效率逆天、智商在线、自己有些资源，而且交流速度比人快得多的“怪物”，它们如果不搞出自己的经济，那才真是见了鬼了。这里的机会，大得没边。",
+        "content_url": "https://zhuanlan.zhihu.com/p/2004900039609296625",
+        "question_id": "",
+        "title": "聊聊 AI Agent 记忆的几点暴论",
+        "desc": "翻译成中文，我觉得AI 很厉害，但是不得不说翻译这块味道还是太冲了。。。。1. 越牛逼的东西往往越简单最近“把文件系统当记忆”挺火，我觉得它算是把 Agent 的长期记忆给玩明白了。其实重点不在于是用 Markdown 还是用啥文件，本质在于： Agent 终于舍得花时间、花算力去认真读写信息了",
+        "created_time": 1770785860,
+        "updated_time": 1770785860,
+        "voteup_count": 27,
+        "comment_count": 4,
+        "source_keyword": "AI agent",
+        "user_id": "d17da10f2c2660f5378aba02306bf861",
+        "user_link": "https://www.zhihu.com/people/wang-qin-yong-96",
+        "user_nickname": "Eddy",
+        "user_avatar": "https://picx.zhimg.com/50/v2-f011272cbb41978045919929d83c49a3_l.jpg?source=4e949a73",
+        "user_url_token": "wang-qin-yong-96",
+        "last_modify_ts": 1776003850318
+    },
+    {
+        "content_id": "2004587022287921952",
+        "content_type": "answer",
+        "content_text": "一眼罕见问题。睁开眼看看，openrouter 排名第一的就是盘古模型",
+        "content_url": "https://www.zhihu.com/question/2004585269987397893/answer/2004587022287921952",
+        "question_id": "2004585269987397893",
+        "title": "为什么没人用遥遥领先的盘古大模型做ai agent呢？",
+        "desc": "余承东和任正非遥遥领先",
+        "created_time": 1770710789,
+        "updated_time": 1770710789,
+        "voteup_count": 4,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "917755b4cdcadeefeb4a10cf757e05fa",
+        "user_link": "https://www.zhihu.com/people/gei-ni-yu-zhou-94-55",
+        "user_nickname": "给你宇宙",
+        "user_avatar": "https://picx.zhimg.com/50/v2-20a680cf95c3ef968b4ded80bcd32aff_l.jpg?source=4e949a73",
+        "user_url_token": "gei-ni-yu-zhou-94-55",
+        "last_modify_ts": 1776003850319
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2016063153256026566",
+        "content_type": "article",
+        "content_text": "🎯 什么是AI Agent？AI Agent（人工智能代理）是一种能自主理解、规划和执行任务的AI系统。与传统AI只能回答问题不同，Agent可以：✅ 自主规划任务步骤✅ 调用工具执行操作✅ 根据反馈迭代优化✅ 长期记忆上下文---🔧 核心组成1️⃣ 大语言模型（LLM） - 作为大脑2️⃣ 规划能力 - ReAct、Chain-of-Thought3️⃣ 工具调用 - Function Calling4️⃣ 记忆系统 - 短期+长期记忆---💡 应用场景📧 自动处理邮件💻 编程辅助📊 数据分析🎯 智能助手---📚 学习路线1. 掌握Python基础2. 了解大语言模型（LLM）3. 学习Prompt Engineering4. 实战LangChain框架5. 开发自己的Agent#AI #人工智能 #Agent #LLM #科技",
+        "content_url": "https://zhuanlan.zhihu.com/p/2016063153256026566",
+        "question_id": "",
+        "title": "AI Agent 全面指南：从入门到实战",
+        "desc": "什么是AI Agent？ AI Agent（人工智能代理）是一种能自主理解、规划和执行任务的AI系统。与传统AI只能回答问题不同，Agent可以： 自主规划任务步骤 调用工具执行操作 根据反馈迭代优化 长期记忆上下文 --- 核心组成 1️⃣ 大语言模型（LLM）",
+        "created_time": 1773446952,
+        "updated_time": 1773446952,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "ea26c437f1efa601424507da86328236",
+        "user_link": "https://www.zhihu.com/people/zhium9pycx",
+        "user_nickname": "zhium9pYCX",
+        "user_avatar": "https://picx.zhimg.com/50/v2-f1be5ed24936a7311e75da3884b2bd6d_l.jpg?source=4e949a73",
+        "user_url_token": "zhium9pycx",
+        "last_modify_ts": 1776004446293
+    }
+]

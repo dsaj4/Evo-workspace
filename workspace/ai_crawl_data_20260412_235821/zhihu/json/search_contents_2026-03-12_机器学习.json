@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2015729899650962009",
+        "content_type": "answer",
+        "content_text": "别纠结了，边学理论边写代码，这才是唯一正确的路。我搞深度学习好多年，见过太多研一新生在这个问题上浪费时间：有的死磕《统计学习方法》三个月，一个神经网络都没跑通；有的直接上PyTorch，调参调得飞起，一问损失函数怎么求导，一脸懵逼。这两种极端，我都见过。第一种人，理论考试满分，一上手项目就卡壳；第二种人，模型能跑，但出了问题完全不会调试，只会瞎改超参数碰运气。真正的高手，从来不是先把书背完了再动手，而是让理论和实践结合。下面我从4个维度拆解，为什么研一新生必须边学边做，以及具体该怎么做。一、先搞清楚：导师要的是啥别被学习PyTorch这几个字骗了。导师让你学PyTorch，不是让你成为一个框架专家，而是要你尽快能够干活。什么叫能干活？给你一篇论文，你能复现里面的模型。 给你一个数据集，你能训练、调优、评估。 模型出问题了，你能定位是数据问题、架构问题还是超参问题。这三个能力，光靠理论背不出来，光看PyTorch文档也练不出来。我带过不少实习生，那种把吴恩达机器学习课看了三遍的，上手写代码依然哆嗦；那种直接跟着PyTorch官方教程敲代码的，跑是能跑，但改个损失函数都费劲。最快上手的，永远是那些一边看理论，一边写代码的人。二、纯学理论的坑：三个月跑不通一个模型我见过一个研一学生，导师让做图像分类，他死磕《深度学习》花书，说先把基础打牢。结果呢？三个月过去了，理论笔记记了两大本，一个模型都没跑通。等他终于开始写代码，发现自己连Python的类、装饰器、生成器都用不明白，更别提理解PyTorch的autograd、DataLoader这些概念了。这就是纯学理论的死穴：1、理论太抽象，记不住书上这么写损失函数：看着很优雅，但你没跑过代码，根本不知道： 和  在代码里长什么样？ 会发生什么？如何避免数值下溢？2、没有负反馈，不知道自己理解错了你背下梯度下降沿着梯度负方向更新参数，但你不知道学习率设太大训练会炸、设太小训练不动。这些直觉，必须靠调参踩坑才能养出来。3、和导师节奏脱节导师三个月后问你，模型训练得怎么样了？你说，我在学理论，马上就上手。导师心里想的是，这人怎么这么慢。。。。。。三、纯学PyTorch的坑：调参调成玄学另一种极端更常见：直接上PyTorch，跟着教程敲代码，把模型跑通就算完事。这种人我见得更多。代码写得飞快，GitHub上抄个ResNet，改改输入输出就能跑。但你问他：为什么用CrossEntropyLoss而不用MSE？ 梯度消失是什么症状？ BatchNorm训练和推理行为有什么区别？哑口无言。后果很严重：1、模型出bug不会修训练损失一直是NaN，怎么办？ 不懂理论的人只会：改学习率、改初始化、换激活函数。。。 瞎改三天，最后发现是数据没归一化2、无法优化模型不懂理论，你永远不会知道什么时候该用残差连接、什么时候该用注意力机制、什么时候该换优化器。你的调参完全是蒙的，效率极低。3、看不懂新论文等你要开始做科研，发现顶会论文里满篇都是公式、理论推导。你后悔想补理论，但这时候时间已经不够了。四、唯一正确的路：理论+实践并行具体怎么操作？第1周：Python基础 + PyTorch环境搭建如果Python基础不牢，先补这些：列表推导式类和继承装饰器（@dataclass、@property）生成器和迭代器PyTorch环境：pip install torch torchvision\npip install jupyter matplotlib pandas第2周：机器学习核心概念 + PyTorch张量操作理论：看吴恩达机器学习课前三章（线性回归、逻辑回归、梯度下降）代码：在PyTorch里手搓一遍import torch\nimport torch.nn as nn\n\n# 线性回归：y = wx + b\nX = torch.tensor([[1.0], [2.0], [3.0]])\ny = torch.tensor([[2.0], [4.0], [6.0]])\n\nmodel = nn.Linear(in_features=1, out_features=1)\ncriterion = nn.MSELoss()\noptimizer = torch.optim.SGD(model.parameters(), lr=0.01)\n\nfor epoch in range(100):\n    y_pred = model(X)\n    loss = criterion(y_pred, y)\n    optimizer.zero_grad()\n    loss.backward()\n    optimizer.step()\n\nprint(f&#39;预测 {4.0} -&gt; {model(torch.tensor([[4.0]])).item():.2f}&#39;)关键：对着理论看代码nn.Linear 里的 w 和 b，就是理论里的 θloss.backward() 就是自动求导optimizer.step() 就是梯度下降更新你这么写一遍，比背十遍公式都管用。第3周：神经网络理论 + PyTorch实战理论：看《动手学深度学习》（PyTorch版）前五章代码：实现一个简单的神经网络import torch\nimport torch.nn as nn\nimport torch.nn.functional as F\n\nclass SimpleNet(nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.fc1 = nn.Linear(784, 128)  # 输入层-&gt;隐藏层\n        self.fc2 = nn.Linear(128, 10)   # 隐藏层-&gt;输出层\n\n    def forward(self, x):\n        x = x.view(-1, 784)  # 展平图像\n        x = F.relu(self.fc1(x))  # ReLU激活\n        x = self.fc2(x)\n        return x\n\nmodel = SimpleNet()\ncriterion = nn.CrossEntropyLoss()\noptimizer = torch.optim.Adam(model.parameters(), lr=0.001)\n\n# 训练循环（伪代码）\nfor epoch in range(10):\n    for images, labels in train_loader:\n        outputs = model(images)\n        loss = criterion(outputs, labels)\n        optimizer.zero_grad()\n        loss.backward()\n        optimizer.step()对着理论问自己：为什么用ReLU而不是sigmoid？（理论：梯度消失）为什么用CrossEntropyLoss？（理论：分类问题的似然函数）Adam和SGD有什么区别？（理论：优化算法）第4周：实战项目 + 论文复现选一个简单任务，从头到尾走一遍完整流程：任务：MNIST手写数字分类1、加载数据 → 理解训练集/测试集划分 2、构建模型 → 理解卷积、池化 3、训练模型 → 理解过拟合、正则化 4、评估模型 → 理解准确率、混淆矩阵 5、调优模型 → 理解超参数、学习率调度这时候你会遇到一堆问题：训练准确率100%，测试准确率只有80%？（过拟合）损失不下降？（学习率太小、数据归一化问题）训练太慢？（batch size、GPU加速）每解决一个问题，你对理论的理解就深一层。五、推荐学习资源理论+实践并重（首选）：《动手学深度学习》（PyTorch版） - 每章都有理论讲解和PyTorch代码，边看边敲PyTorch官方教程 - 从基础到实战，跟着走一遍吴恩达机器学习课程（前3周） - 只看核心概念，别死磕数学推导纯实战（理论学完后）：GitHub-PyTorch精选资源 - 各种实战项目Datawhale《深入浅出PyTorch》 - 要求先了解机器学习算法纯理论（遇到问题时查阅）：《统计学习方法》（李航）- 当工具书查，别从第一页开始背《深度学习》（花书）- 同上，遇到不懂的理论再翻六、给导师的三个关键问题开始学习前，先找导师聊清楚：1、实验室有固定的代码规范吗？ 比如：用哪个PyTorch版本？项目结构怎么划分？用什么预训练模型库（timm、transformers）？2、我的研究主题大概是什么方向？CV？NLP？RL？提前看该方向的经典论文和代码别等学完了发现方向不对3、实验室的计算资源如何？有GPU吗？什么型号？怎么申请使用？本地跑还是服务器跑？这三个问题能帮你精准定位学习重点，避免浪费时间。⭕️ 最后说句实在话我见过太多研一新生在这个问题上纠结一个月，最后啥都没学。别纠结了，今天就开始。上午看一节《动手学深度学习》，下午把里面的代码敲一遍，晚上改改参数试试效果。你会发现原来理论是这么回事，代码是这么写的，两者这么合拍。等导师一个月后问你，PyTorch学得怎么样了？你就能拿出一个能跑的模型，讲得清里面的原理。这，才是导师想看到的。PS：以下内容可能对您有帮助，请参考PyTorch中文官网 - 完整学习路径PyTorch从入门到精通详细路线PyTorch小白学习路线PyTorch官方教程 - 深度学习入门Sources:PyTorch学习路径与基础实践指南PyTorch小白学习路线指导PyTorch官方中文文档PyTorch官方教程《动手学深度学习》PyTorch版",
+        "content_url": "https://www.zhihu.com/question/409923401/answer/2015729899650962009",
+        "question_id": "409923401",
+        "title": "准研一，导师让学习pytroch，之前没接触过机器学习，是直接学pytorch还是先学机器学习？",
+        "desc": "别纠结了，边学理论边写代码，这才是唯一正确的路。我搞深度学习好多年，见过太多研一新生在这个问题上浪费时间：有的死磕《统计学习方法》三个月，一个神经网络都",
+        "created_time": 1773367458,
+        "updated_time": 1773367458,
+        "voteup_count": 18,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "5956129f9bd402a722a7a2608896b9cf",
+        "user_link": "https://www.zhihu.com/people/1-67-9-10",
+        "user_nickname": "元算",
+        "user_avatar": "https://pica.zhimg.com/50/v2-2905da8d7598eb69f1cb53a9d35afdca_l.jpg?source=4e949a73",
+        "user_url_token": "1-67-9-10",
+        "last_modify_ts": 1776004656571
+    },
+    {
+        "content_id": "2015500521570596307",
+        "content_type": "answer",
+        "content_text": "可以先练起来。先训练一个模型，找找感觉。现在有很多AI辅助工具来帮助学习源码，帮助修改错误，可以在练中学。不建议报班。发现大多名不副实，讲的内容的深度都与你想的不一样。譬如B站上的不放出来的视频也不错：【Transformer】最强动画讲解！目前B站最全最详细的Transformer教程，2025最新版！从理论到实战，通俗易懂解释原理，草履虫都学的会！【B站强推】浙江大学大模型公开课，2026最新浙大内部VIP大模型课程，大模型原理与技术教程，从入门到进阶，全程干货讲解，拿走不谢！从0到1手搓484行代码，用普通CPU训练一个3.37M中文GPT模型，耗时不到20分钟，回答的效果很不错，欢迎各位老师检查作业",
+        "content_url": "https://www.zhihu.com/question/2014663674216871495/answer/2015500521570596307",
+        "question_id": "2014663674216871495",
+        "title": "机器学习入门，有哪些资源或学习路径适合小白？",
+        "desc": "我对机器学习非常感兴趣，想开始学习，但面对海量信息无从下手。有没有过来人能分享一下，对于零基础的我来说，最有效的学习路径是怎样的，有没有具体书籍或在线课程推荐呢？",
+        "created_time": 1773312770,
+        "updated_time": 1773312797,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "76a459b0b506908a773a29e0520cee3d",
+        "user_link": "https://www.zhihu.com/people/1gepingguo",
+        "user_nickname": "人生还要往前走",
+        "user_avatar": "https://picx.zhimg.com/50/v2-7dc007f64ff74ef04ee803c7b38f4e3f_l.jpg?source=4e949a73",
+        "user_url_token": "1gepingguo",
+        "last_modify_ts": 1776004656573
+    }
+]

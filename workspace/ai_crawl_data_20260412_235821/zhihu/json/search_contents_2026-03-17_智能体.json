@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2017603794964337146",
+        "content_type": "answer",
+        "content_text": "有三种情况供你选择：1）如果你是娱乐性质的，做个视频玩玩，拿起手机，按照网红教的，1小时差不多吧。2）但你要是想自己开发一个真正适合你的智能体，让它作为你的工作助手发挥作用，或者给别人用，那需要掌握的东西很多。例如，智能体开发平台技术（如coze编程），基础的代码知识（如python，json,...）等。3)如果你没有精力深入研究学习，不被社会大趋势所淘汰，就是想应用智能体解决自己的工作效率和质量，你可将自己具体需求描述清楚，让外包方给你定制开发一个。",
+        "content_url": "https://www.zhihu.com/question/1966083246048679328/answer/2017603794964337146",
+        "question_id": "1966083246048679328",
+        "title": "想创建智能体，需要学习吗？如果需要，求指点?",
+        "desc": "教程要具体详细，小白使用",
+        "created_time": 1773814230,
+        "updated_time": 1773814230,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "智能体",
+        "user_id": "9a2783d7a534561f3ad5b20c48ee8c81",
+        "user_link": "https://www.zhihu.com/people/sealand1967",
+        "user_nickname": "sealand1967",
+        "user_avatar": "https://picx.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "sealand1967",
+        "last_modify_ts": 1776002928308
+    },
+    {
+        "content_id": "2017507456616527426",
+        "content_type": "answer",
+        "content_text": "先说结论：NemoClaw 降低的不是开发门槛，而是企业信任门槛。这两件事看起来像，但完全不同。我是 OpenClaw 的重度用户，1月底开始养虾，一个月20亿个Claude token。GTC 发布消息后，我随即研究了一下 NemoClaw，也问了 AI 关于「我该不该安装它」的问题，顺便整理一下思路。NemoClaw 是什么，不是什么很多报道的标题写「英伟达版 OpenClaw」，这个描述会让人产生一个误解：NemoClaw 是 OpenClaw 的替代品。不是的。更准确的说法是：OpenClaw 是那把钳子（agent runtime），NemoClaw 是 NVIDIA 套在钳子外面的保护手套和操作规范。你要用钳子，你用的还是 OpenClaw；NemoClaw 规定了这把钳子在什么范围内能动、能碰什么、不能碰什么。来源：NVIDIA官网NVIDIA 官方的架构是这样的：NemoClaw 在 OpenClaw 之下加了一层叫 OpenShell 的东西，管三件事：沙盒隔离（Sandbox）、隐私路由（Privacy Router）、网络 policy（Network Guardrails）。简单说，就是让 Agent 有了一套明确的「行为边界」。这对谁有用？对企业 IT 部门有用。一个能自主读写文件、执行代码、访问外网的 Agent 进入企业内网，IT 的第一个问题一定是：它能做什么、不能做什么、谁来负责？OpenClaw 本身对这个问题的回答是「你自己设置」，而 NemoClaw 给了一套开箱即用的 policy 框架。所以「降低门槛」这个说法，要看对谁降低：对个人开发者，门槛变化不大；对需要走合规流程、需要向 IT 总监解释「这个 Agent 不会乱来」的企业用户，门槛确实低了不少。「一键安装」是真的，但有一个大坑curl -fsSL HTTPS://nvidia.com/nemoclaw.sh | bash 然后 nemoclaw onboard——这个流程是真实的，看起来很简洁。但坑在这里：NemoClaw 目前需要全新安装 OpenClaw，不支持叠加到现有的 OpenClaw 环境上。对于一个从零开始的用户，「一键安装」确实很友好。但如果你已经有了跑着的 agents、配置好的 memory、调好的工作流——今天安装 NemoClaw 意味着放弃这些，在一个全新的沙盒环境里从头来过。这个代价，对已经在用 OpenClaw 的人来说是相当高的。现在它的状态是 alpha，NVIDIA 自己都说「expect rough edges」——接口可能随时变，行为可能随时改，不是 GA 版本。我现在会不会装不会。我已经有多个 agents 在跑，记忆、技能、环境都已经搭配好，现有的 setup 不会轻易动。但我认为这个方向是对的，而且对将来的架构设计很有参考价值。NemoClaw 的 policy 是基于 YAML 的，OpenShell 的权限模型可以公开研究。可以把它的 policy 格式作为参考，在现有项目里提前做好兼容性设计——等 NemoClaw 成熟、支持迁移的时候，不需要重写整个权限逻辑，直接接进去就行。这也是我对「降低门槛」这个问题最后的想法：NemoClaw 现在降低的是未来的成本，不是今天的成本。它在用一个更标准化的 policy 体系，替掉将来每个团队自己造轮子做 agent 权限管理这件事。这是基础设施的工作——不是给你快速入门用的，而是给 Agent 生态打地基的。延伸阅读和工具推荐——  OpenClaw Field Notes（中文教程站） 研究 NemoClaw 的过程里，把自己踩过的 OpenClaw 坑也重新梳理了一遍。做了一个中文教程站，从基础安装到 agent 权限设计，给同样在摸索的人少走弯路。   https://openclaw-field-notes.vercel.app  超级简历 WonderCV AI 正在改变每个职业的价值评估方式——当 tokens 成为衡量生产力的新单位，你的简历需要先让市场看懂你在这场变局里的位置。超级简历用 AI 帮你让这份文件更有竞争力：AI 内容优化、多格式模板、ATS 适配、岗位匹配分析。   https://wondercv.com | 知乎机构号： @超级简历WonderCV",
+        "content_url": "https://www.zhihu.com/question/2017180937482367327/answer/2017507456616527426",
+        "question_id": "2017180937482367327",
+        "title": "如何评价黄仁勋推出英伟达版小龙虾 NemoClaw，主打「一键安装」，会让AI 智能体开发门槛降低吗？",
+        "desc": "在美国加州圣何塞举行的 2026 年 GTC 大会上，英伟达推出针对“小龙虾”OpenClaw 智能体平台的 NemoClaw 软件栈，主打“一键安装”体验。在 GTC 2026 活动现场，黄仁勋演示用户只需一条指令，即可快速部署英伟达 Nemotron 模型与全新发布的 OpenShell 运行环境。黄仁勋明确表示，正如 Mac 和 Windows 是个人电脑的操作系统，OpenClaw 将成为“个人 AI 的操作系统”，这标志着软件行业新复兴的开端。同时，OpenClaw 创始人 Peter Steinberger 也强调，通过与英伟达及广泛的生态系统合作，团队正在为 AI 智能体构建强大的“护栏”，让每个人都能轻松打造专属的高性能安全 AI 助手。在技术实现层面，NemoClaw 通过 NVIDIA Agent Toolkit 软件对 OpenClaw 进行了一键优化，内置的 OpenShell 能够提供一个隔离的沙箱环境，从而填补了智能体底层基础设施的空白。黄仁勋推出英伟达版“小龙虾” NemoClaw：主打“一键安装”",
+        "created_time": 1773791261,
+        "updated_time": 1773791305,
+        "voteup_count": 53,
+        "comment_count": 8,
+        "source_keyword": "智能体",
+        "user_id": "3c7d8a0c8bd51d30b7fa5e433ec2539e",
+        "user_link": "https://www.zhihu.com/people/zhuyingnan",
+        "user_nickname": "朱英楠David",
+        "user_avatar": "https://picx.zhimg.com/50/v2-c9c30f66ff18e339d6ab16b9021c11e8_l.jpg?source=4e949a73",
+        "user_url_token": "zhuyingnan",
+        "last_modify_ts": 1776003191282
+    }
+]

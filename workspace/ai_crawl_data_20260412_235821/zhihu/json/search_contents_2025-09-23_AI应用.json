@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1950107734822348188",
+        "question_id": "",
+        "title": "AI+知识库 --如何应用AI+知识库跨学科创新？",
+        "desc": "在现代 TRIZ 理论中，当明确待解决问题后，进入矛盾分析、物场模型和功能化模型这三个解题分支的路径需要结合问题的核心特征与系统特性来判断。\n1、当问题中存在参数冲突（即改善某一参数会导致另一参数恶化）或同一参数的双重需求（如材料需同时坚硬和柔软）时，优先选择矛盾分析。\n2、当问题涉及物质与场（能量）的相互作用（如作用不足、过度或有害）时，优先选择物场模型。\n......\n科学效应知识库（简称知识库）是TRIZ的核心工具之一，通过系统化整合跨学科的自然科学效应和工程原理，为技术问题提供结构化解决方案，实现跨学科创新。",
+        "created_time": 1758674055,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI应用",
+        "user_id": "697655d778aad4e2d96c04292b517084",
+        "user_link": "https://www.zhihu.com/people/huang-jun-36-41",
+        "user_nickname": "Jackwoon",
+        "user_avatar": "https://picx.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "huang-jun-36-41",
+        "last_modify_ts": 1775928113290
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11400092189",
+        "parent_comment_id": "0",
+        "content": "也符合直觉，至少内容推荐的场景下，大多数人其实是对“内容”感兴趣，少部分人会被图像本身的特征吸引（比如色调、布局等），但这些既可以通过文本描述出来，也可以通过传统CV的统计量特征描述出来。",
+        "publish_time": 1769141084,
+        "ip_location": "中国香港",
+        "sub_comment_count": 0,
+        "like_count": 5,
+        "dislike_count": 0,
+        "content_id": "1997703113453360514",
+        "content_type": "article",
+        "user_id": "99e9f19982297110679bb585964ced1c",
+        "user_link": "https://www.zhihu.com/people/18852140885",
+        "user_nickname": "牧濑红",
+        "user_avatar": "https://pic1.zhimg.com/v2-d654272c9d2966b3bde4d9f9890a9306_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038831608
+    },
+    {
+        "comment_id": "11404890687",
+        "parent_comment_id": "0",
+        "content": "图像里包含“风格”的信息量可能还不太大",
+        "publish_time": 1769667386,
+        "ip_location": "北京",
+        "sub_comment_count": 0,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "1997703113453360514",
+        "content_type": "article",
+        "user_id": "5235393fb2ca73a22c58e095c83c7d27",
+        "user_link": "https://www.zhihu.com/people/shui-mu-63-14",
+        "user_nickname": "水木juki",
+        "user_avatar": "https://picx.zhimg.com/v2-d458e4432e18da279d10e13f09ff7814_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038831609
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11401202078",
+        "parent_comment_id": "0",
+        "content": "现有的多模态推荐模型处于一种“文本主导”的状态，它们并没有有效地“看”到图片，利用图像模态信息。",
+        "publish_time": 1769264680,
+        "ip_location": "广东",
+        "sub_comment_count": 0,
+        "like_count": 3,
+        "dislike_count": 0,
+        "content_id": "1998443867918336715",
+        "content_type": "article",
+        "user_id": "cb470a6ed2def441c7d2fd36458a2c96",
+        "user_link": "https://www.zhihu.com/people/robot-2-59",
+        "user_nickname": "爱吃牛油果的璐璐",
+        "user_avatar": "https://pica.zhimg.com/v2-37ad1fcab0465fe1803dac79658c7fe0_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038818627
+    },
+    {
+        "comment_id": "11404500574",
+        "parent_comment_id": "0",
+        "content": "个人认为多模态语义是有用的，但是多模态embedding是鸡肋。",
+        "publish_time": 1769612549,
+        "ip_location": "广东",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1998443867918336715",
+        "content_type": "article",
+        "user_id": "008fe06351fffd81d89959c83ab42639",
+        "user_link": "https://www.zhihu.com/people/peterrk",
+        "user_nickname": "BUGs",
+        "user_avatar": "https://picx.zhimg.com/df265365a11939ab51f4d49a0e49b4c5_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038818630
+    }
+]

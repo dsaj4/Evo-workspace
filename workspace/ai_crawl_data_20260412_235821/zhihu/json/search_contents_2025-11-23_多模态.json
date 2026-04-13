@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1976294093337412059",
+        "content_type": "article",
+        "content_text": "论文链接：https://arxiv.org/pdf/2511.17397开源代码：https://github.com/XuHuangbiao/MCMoEMCMoE: Completing Missing Modalities with Mixture of Experts for Incomplete Multimodal Action Quality Assessment一、研究方向本文属于：多模态学习（Multimodal Learning）动作质量评估（Action Quality Assessment, AQA）不完整多模态学习（Incomplete Multimodal Learning）同时在方法上结合：Missing Modality Completion（模态补全）Mixture of Experts（混合专家 MoE）跨模态表示学习（Cross-modal Representation Learning）二、研究背景多模态 AQA 被广泛应用于： 体育动作评分（FS1000、Fis-V） 艺术体操（RG 数据集） 康复动作评估 长时序动作理解（Long Video Understanding）等现有多模态 AQA 假设 所有模态在训练与推理都完整可用，但现实中常因： 传感器损坏（sensor failure） 环境限制 隐私问题 模态缺失或不可用导致实际推理阶段存在大量 缺失模态。现有方法存在明显不足：1. 依赖生成式模态补全（GAN/ VAE / Diffusion） → 高成本、低效率（论文 p.2 提到这些方法计算代价大）2. 依赖两阶段框架：先单模态 → 再跨模态模型如 Fig.1(a) 所示： 训练阶段复杂 优化困难 推理效率低三、研究方法：MCMoE（单阶段统一框架）论文提出 MCMoE：Missing Completion + MoE 单阶段统一学习框架 （结构如 Fig.2，）核心思想： 用轻量级模态补全 + MoE 动态融合 → 取代重型生成模型与两阶段训练主要包含四大组件：1. Shared Temporal Enhancement Module（STEM）（图 2 左中部） 通过共享 Transformer 编码器 建立 跨模态一致的时序表达 用于解决 RGB / Flow / Audio 间的语义差异2. Adaptive Gated Modality Generator（AGMG）—模态自适应补全（创新点之一）（Fig.3，）AGMG 完成： 从可用模态 → 生成缺失模态 使用 多头 cross-attention + 门控机制（gating） 自适应融合可用模态的信息 多层迭代生成高保真模态AGMG 的优势： 不需 GAN / VAE / Diffusion 轻量高效 综合利用已有模态的跨模态互补性 实验中在 FS1000、RG 生成质量指标均优（见 Fig.6，L1、Cos、MMD 指标）3. Mixture of Experts（MoE）—单模态 + 跨模态联合表示（Fig.1(b)、Fig.2）MoE 包含： 针对每个模态的 unimodal expert 以及 soft router（软路由器） 动态分配专家权重，融合单模态/联合模态特征作用： 学习各模态的特定知识 同时抽取 joint representation 适应不同“模态缺失模式”组合（如 {v}, {v,a}, {f,a}…）4. Cross-modal Fusion Module + Grade-based Regression（最终评分）（Fig.2 右侧） 将 MoE 处理后的特征送入 CFM（卷积层）进行深层跨模态融合 最终采用现有 SOTA 的 Grade-based Regression 框架进行动作评分 输出真实分数（如 PEG、TES、PCS）5. 损失设计论文采用四种损失（Eq.5）：Lrecon：指导模态补全Lalign：引导单模态 – 联合模态语义对齐Ldiv：避免多个 grade prototype 收敛到同一语义Ltask：最终评估回归（MSE）四、实验结果数据集：FS1000（花样滑冰七类）Fis-V（花样滑冰双类别）RG（艺术体操四类别）1. MCMoE 在不完整多模态学习中全面 SOTA如 Table 1（p.5）显示： 在所有 6 种模态缺失组合下均稳定领先 平均提升分别达到： FS1000：+17.1%（ρ） / -38%（MSE） Fis-V：+11.2% / -21.3% RG：+11.9% / -11.5%尤其在困难场景： 单模态 {a}、{f} 模式下仍显著领先 三模态缺失补全效果稳定论文中的 Table 8–10（p.14–15）完整列出所有任务的逐类表现（TES / PCS / SS / TR / CE / IN），MCMoE 在 绝大多数任务上均为最佳。2. 在完整模态条件下也优于现有 SOTA如 Fig.4（p.6）和 Table 7（p.10–11）显示： MCMoE 在三数据集的完整模态下也优于所有 uni-/multi-modal SOTA 不仅适合缺失模态场景，也能成为强有力的 Multimodal AQA 基线3. 计算代价更低（效率高）如 Table 2（p.6）： 参数量：4.90M（远少于大多数模型） FLOPs：1.34G 单阶段训练（效率高）相比： GCNet FLOPs：1191G（近千倍） PAMFN 虽高效但在缺模态任务下降明显4. 可视化验证（t-SNE）论文中的 Fig.5、Fig.7 显示： 加入 AGMG + MoE 后 → Grade 空间形成清晰分类边界  缺失任意模态时 → 表示仍具一致性 → 对动作质量等级分布区分明显五、总结本文提出的 MCMoE 框架对不完整多模态 AQA 具有显著贡献：1. 单阶段统一框架（替代两阶段方法）降低训练复杂度与成本。2. 提出轻量级模态补全 AGMG（替代重型生成模型）高效且效果优异，适合真实应用。3. 引入 MoE 从单模态到跨模态的动态融合机制自然适应各种“模态缺失组合”。4. 在 3 大 AQA 数据集均取得全面 SOTA无论完整还是不完整模态，性能均优。5. 模型高效、轻量，易部署整体来看，本文从根本上解决了多模态 AQA “推理阶段模态缺失”这一现实痛点，理论与工程均具有较高价值。对更多实验结果和文章细节感兴趣的读者，可以阅读一下论文原文~本文仅做学术分享，如有侵权、笔误等，请联系修改、删文。",
+        "content_url": "https://zhuanlan.zhihu.com/p/1976294093337412059",
+        "question_id": "",
+        "title": "AAAI2026 | 用 MoE + 模态补全解决多模态缺失的根本问题",
+        "desc": "Quality Assessment一、研究方向本文属于： 多模态学习（Multimodal Learning）动作质量评估（Action Quality Assessment, AQA）不完整多模态学习（Incomplete Multimodal Learning）同时在方法上结合",
+        "created_time": 1763965639,
+        "updated_time": 1763965648,
+        "voteup_count": 111,
+        "comment_count": 3,
+        "source_keyword": "多模态",
+        "user_id": "1f8b9961f448294f7caee18383efe694",
+        "user_link": "https://www.zhihu.com/people/si-tu-er-ke-chloe",
+        "user_nickname": "智能CV",
+        "user_avatar": "https://picx.zhimg.com/50/v2-be8de742ef1adbe032be705ed12437d6_l.jpg?source=4e949a73",
+        "user_url_token": "si-tu-er-ke-chloe",
+        "last_modify_ts": 1776038926793
+    }
+]

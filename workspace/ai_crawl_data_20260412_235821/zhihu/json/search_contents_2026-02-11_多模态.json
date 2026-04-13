@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2005221814712938516",
+        "content_type": "answer",
+        "content_text": "GroundingDINO属于多模态模型不被归入大模型范畴大模型的核心定义是具备海量参数在通用数据上预训练并能涌现出解决广泛未知任务的能力而不是仅融合多种模态",
+        "content_url": "https://www.zhihu.com/question/648006260/answer/2005221814712938516",
+        "question_id": "648006260",
+        "title": "GroundingDINO算是多模态大模型吗？大模型应该怎么定义？",
+        "desc": "GroundingDINO属于多模态模型不被归入大模型范畴大模型的核心定义是具备海量参数在通用数据上预训练并能涌现出解决广泛未知任务的能力而不是仅融合多种模态",
+        "created_time": 1770862135,
+        "updated_time": 1770862135,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "多模态",
+        "user_id": "c7cac96dc58ea9cc6a5b6d924f08d9e5",
+        "user_link": "https://www.zhihu.com/people/ge-ting-gen-shu-xue-xue-pai",
+        "user_nickname": "哥廷根数学学派",
+        "user_avatar": "https://pica.zhimg.com/50/v2-c25e2c1df36a103fa83e56b661d6b192_l.jpg?source=4e949a73",
+        "user_url_token": "ge-ting-gen-shu-xue-xue-pai",
+        "last_modify_ts": 1776038740389
+    }
+]

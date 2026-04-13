@@ -1,0 +1,19 @@
+[
+    {
+        "comment_id": "11460042706",
+        "parent_comment_id": "0",
+        "content": "最近发布了一个 OpenClaw Skill ，把它开源了 ，分享到群最合适不过了 “让龙虾自动生成机器人程序,不再让龙虾花大量Token的钱、定时任务又快又准确！”工作场景中，用 OpenClaw 或者 智能体 操作浏览器、办公软件、和本地文件做任务时，有几个问题让我很头疼：  用 OpenClaw 让模型直接浏览器、电脑、第三方系统1. 幻觉——模型有时会点错按钮、找错元素、自己编一个不存在的操作2. 费用——每次重复任务都调大模型，token 烧得很快3. 每次用模型，自动化操作，速度很慢于是做了一个 RPA (自动化机器人程序) 技能来根本性地解决问题🔴 核心思路录制一次真实操作 → 自动生成 机器人RPA 脚本 → 以后直接跑脚本。不再调大模型，没有幻觉，每次执行路径完全一致，结果可预期。📖 详细介绍和安装说明：​https://github.com/laziobird/openclaw-rpa/blob/main/README.zh-CN.md里面有案例视频演示Skill 地址 ​https://clawhub.ai/laziobird/openclaw-rpa [图片]",
+        "publish_time": 1775974748,
+        "ip_location": "重庆",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2020813028849923243",
+        "content_type": "answer",
+        "user_id": "fd8b48f5421e109e11f73d1339b69a96",
+        "user_link": "https://www.zhihu.com/people/jiang-zhi-wei-81",
+        "user_nickname": "飞鱼",
+        "user_avatar": "https://picx.zhimg.com/v2-ecab521727a8a3bfbbaf7210ae9975db_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776003643082
+    }
+]

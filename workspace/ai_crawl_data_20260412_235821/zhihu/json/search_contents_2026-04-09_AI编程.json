@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2025724651490264400",
+        "content_type": "answer",
+        "content_text": "严格立法，普遍违法，选择执法。你只要上交投名状就行了，就算真的是古法编程一样有办法治你。AI 编程几乎无法区分，说你是，不是也是。AI 是个好东西，唯一的问题就是 AI 没法坐牢。既然AI无法负责，那谁来负责？只能锁定活人。你到底用没用 AI 不重要，重要的是你的承诺，你对代码附有无限责任。一段代码到底是不是 AI 写的，几乎无法判定。Vibe Coding 算 AI，复制粘贴算 AI，那Tab 补全算 AI 写的吗？IDE 自动完成算 AI 写的吗？AI 生成但是全部手打算 AI 写的吗？古法编程但是用 AI 查漏洞算 AI 写的吗？人工和 AI 的界线是如此的模糊，压根没法判定。要的就是无法判定。你甚至无法自证清白，这就给了权力寻租的空间。以后商战就多了一手盘外招，举报对手产品是 AI 写的。法务一个没处理好，最低也是下架整改，用户严重流失。大公司有法务团队、有预算、有关系，几乎免疫这种打击。小团队和个人开发者就有福了！第二种权力寻租方案就是和现在的毕业论文一样，要求购买指定的反 AI 认证服务。论文查重的 token 计费高的离奇，按照这个收费水平，根据产品规模要花个几千几万块钱才能通过认证。而且这个认证本身毫无意义，更没有可行性，搞不好会认为代码规范就是 AI，逼着每个开发者都把代码改的狗屁不通。小团队和个人开发者又有福了！",
+        "content_url": "https://www.zhihu.com/question/2022610310935115479/answer/2025724651490264400",
+        "question_id": "2022610310935115479",
+        "title": "新版软著申请表要求不得使用AI编写代码或文档，违者纳入征信记录，对行业有哪些影响？",
+        "desc": "【转发】关于共同维护计算机软件版权登记良好生态的通知",
+        "created_time": 1775750393,
+        "updated_time": 1775751930,
+        "voteup_count": 317,
+        "comment_count": 7,
+        "source_keyword": "AI编程",
+        "user_id": "a74574db96f2d0e717fc410bf90dd150",
+        "user_link": "https://www.zhihu.com/people/GalAster",
+        "user_nickname": "酱紫君",
+        "user_avatar": "https://picx.zhimg.com/50/v2-8bec9d5bd4a7b338b2b91d0ce1e70ee3_l.jpg?source=4e949a73",
+        "user_url_token": "GalAster",
+        "last_modify_ts": 1776000847301
+    },
+    {
+        "content_id": "2025945155253838354",
+        "content_type": "article",
+        "content_text": "先说结论在腾讯写了10年代码，去年开始全面转AI辅助编程。Claude Code、Cursor、Copilot、Windsurf、Trae……前前后后折腾了十来款。我的结论很直接：2026年AI编程的核心问题，不是”哪个最强”，而是”怎么组合着用”。最近GitHub上一个叫Hermes Agent的项目一天涨了6485星，加上Superpowers（14.4万星）和Claude Code（31万星），三者的组合被很多人叫”AI编程三件套”。我花了一周深度测了一下，下面从原理、数据、实操三个角度拆解。一、为什么单工具不够用？先看一组对比数据（SWE-bench基准）：工具编程得分自主性上下文窗口价格Claude Code80.8%⭐⭐⭐⭐⭐200万Token20/月 || Cursor 3 | 72.3% | ⭐⭐⭐⭐ | 100万Token | 20/月GitHub Copilot65.2%⭐⭐⭐50万Token$10/月Claude Code编程能力确实最强，但光用它你会发现几个问题：问题1：没有工程规范约束你：&#34;帮我加个用户注册功能&#34;\nClaude Code：直接写了个500行的Controller\n           没测试、没注释、命名随意这就是没有”纪律层”的后果。AI会按自己的理解写代码，不遵循你的项目规范。问题2：经验无法沉淀关掉对话后，AI把之前踩过的坑全忘了。下次遇到类似问题，又要从头来。问题3：每次都要重复描述“我们项目用Go、遵循DDD、数据库是PostgreSQL、测试框架用testify……” 这些话你可能说了无数遍。二、三件套各自的定位2.1 Claude Code —— 执行层它是终端里运行的AI Agent，能直接读你的整个代码库、修改文件、执行命令。核心优势：200万Token上下文，跨文件理解能力强自主任务分解和执行自动错误诊断和修复适合做的事：写代码、改Bug、重构、写测试2.2 Superpowers —— 纪律层（14.4万星）这是一个技能框架，给Claude Code装上”工程纪律”。装上之后，AI会严格遵循：TDD：先写测试再写实现Code Review：自动检查代码质量Debugging：系统化调试，不是乱试Verification：提交前自动验证配置方式很简单，在项目根目录创建一个CLAUDE.md文件就行。实际体感：以前AI写代码像”实习生”，现在像”高级工程师”——有规范、有流程、有自检。2.3 Hermes Agent —— 学习层（日涨6485星）这是今天GitHub上最火的项目，NousResearch出品。它最大的亮点是”自学习”机制：第1次做任务：工具调用25次\n    ↓ 自动生成SKILL.md\n第5次做类似任务：工具调用8-10次\n    ↓ 效率提升60%+它不是存一堆笔记那么简单，而是：完成复杂任务后，自动将经验压缩成技能文件每15次工具调用进行一次”自我检查”总结记忆有严格上限（固定Token），强制提炼关键信息和Claude Code相比，Hermes更像是”部署在服务器上的AI助手”，可以通过Telegram、Discord等消息平台远程交互。三、三件套协同的真实效果用一个真实案例说明：开发一个”用户积分系统”。没有三件套时Day 1: 用Claude Code直接写，3小时搞定功能\nDay 2: 发现测试覆盖率不到40%，重构花了4小时\nDay 3: 产品说需求改了，改了2小时又引入新Bug\nDay 4: 代码Review被同事打回，命名混乱、没注释\n总耗时：约9小时，质量一般有三件套时Step 1: Claude Code + Superpowers\n  → TDD驱动，先写测试\n  → 自动Code Review\n  → 4小时完成，测试覆盖率85%\n  \nStep 2: Hermes Agent沉淀经验\n  → 自动生成积分系统开发技能文件\n  → 记录了并发扣分的事务处理方案\n\nStep 3: 需求变更时\n  → Claude Code按照规范修改\n  → Hermes调用之前的经验快速适配\n总耗时：约6小时，质量可控四、什么时候该用全套？场景推荐组合理由快速原型（&lt;2h）只用Claude Code上手即用个人中型功能（2-8h）Claude Code + Superpowers有规范有质量团队协作/长期项目三件套全套闭环可追溯一次性脚本只用Claude Code不杀鸡用牛刀我的建议：先从Claude Code开始用，熟练了再加Superpowers。等”重复解释需求”或”经验无法沉淀”成为真实瓶颈时，再加Hermes。不要一上来就全套，工具是为人服务的。五、几个容易踩的坑Superpowers不自动触发 —— 必须在CLAUDE.md中明确写入要求，否则apply阶段TDD等技能不会自动执行Hermes记忆不是越多越好 —— 有限记忆机制是刻意设计的，强制AI提炼关键信息。如果你手动塞了大量无用信息，反而会降低效率别给小任务上全套 —— 30分钟的任务用三件套，光配置时间就占了1/3注意API成本 —— Claude Code用的是Anthropic的API，频繁使用月费可能上百美元。建议简单任务用免费模型最后说两句这三件套的本质，是把人类工程师的最佳实践（需求对齐、TDD、Code Review、经验沉淀）编码成AI必须遵守的规则。不是说用了三件套就万事大吉了，而是让AI写的代码，从”能用”变成”可靠”。工具永远只是工具，关键还是用工具的人。你们在用什么AI编程工具？有没有试过三件套组合？欢迎评论区交流。如果觉得有帮助，欢迎点赞收藏关注，持续分享AI工具实战经验。",
+        "content_url": "https://zhuanlan.zhihu.com/p/2025945155253838354",
+        "question_id": "",
+        "title": "AI编程三件套实战指南",
+        "desc": "先说结论在腾讯写了10年代码，去年开始全面转AI辅助编程。Claude Code、Cursor、Copilot、Windsurf、Trae……前前后后折腾了十来款。我的结论很直接： 2026年AI编程的核心问题，不是”哪个最强”，而是”怎么组合着用”。最近GitHub上一个叫Hermes",
+        "created_time": 1775803076,
+        "updated_time": 1775803076,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI编程",
+        "user_id": "06b5d0c4dcda0a294c7927f16c7af443",
+        "user_link": "https://www.zhihu.com/people/wonlon-96",
+        "user_nickname": "一粒黑子",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-ce525fdf47742381fafddfeb7a2f9b77_l.jpg?source=4e949a73",
+        "user_url_token": "wonlon-96",
+        "last_modify_ts": 1776000983084
+    }
+]

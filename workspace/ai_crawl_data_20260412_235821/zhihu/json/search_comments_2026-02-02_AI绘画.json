@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11409023407",
+        "parent_comment_id": "0",
+        "content": "支持，我也玩AI绘画。但视觉效果和受过专业训练的画师做的图差距太大了。我都不知道一些特定名词。我目前的状态一是自己审美不咋地，玩擦边还行但毫无艺术感。第二想象力不够，还是拿擦边说事。我这是硬擦，基本是按着小电影的套路来的，这几天在恶补50—80年代欧美几个黑暗风格的大师作品。第三空间感不够，视觉表现力不足，不是塞的太满就是太空，没有取舍。其实问题我还能在说十几个。但这些想补不是一天两天的事可能几个月会有一个台阶。但下一个台阶在哪不知道，毕竟都有工作，不可能专心研究这些。所以好的画师不会被淘汰的，AI上手太简单了，没道理专业的画师上不了手。淘汰的是工匠，AI是个好工匠，这是人无法比的。一下午刷几百张图出来，总有满意的。",
+        "publish_time": 1770108642,
+        "ip_location": "江苏",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2001976191410792239",
+        "content_type": "answer",
+        "user_id": "9fb62cb7050c24ddda7bea982ce25643",
+        "user_link": "https://www.zhihu.com/people/he-he-da-85-37-86",
+        "user_nickname": "呵呵哒",
+        "user_avatar": "https://picx.zhimg.com/v2-66875856e5562c0a5b50d899c111d996_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776057909431
+    },
+    {
+        "comment_id": "11408964372",
+        "parent_comment_id": "11409023407",
+        "content": "握手！🤝 你这句“AI 是个好工匠”总结得太精准了。看到你说在“恶补 50-80 年代大师作品”，其实你已经走在 90% 的炼丹师前面了——审美才是最后的壁垒。关于你提到的“画面太满”或者“空间感不够”，给你个小建议：下次试试在 Prompt 里做减法，加上 negative space (留白) 或者 composition by rule of thirds (三分法构图)，有时候 AI 这种“好工匠”太勤快了，需要我们强行让它“偷懒”留白，画面呼吸感一下就出来了。一下午刷几百张图也是我的常态，能从几百张里挑出那张“满意的”，就是你的审美在干活。 加油！[酷]",
+        "publish_time": 1770109801,
+        "ip_location": "北京",
+        "sub_comment_count": 0,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "2001976191410792239",
+        "content_type": "answer",
+        "user_id": "2a937ea6269f5857123009a83df92e47",
+        "user_link": "https://www.zhihu.com/people/mai-xin-15-81",
+        "user_nickname": "麦馨",
+        "user_avatar": "https://picx.zhimg.com/v2-4a42d8e8fe14520e78381bda4ad5e944_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776057909790
+    }
+]

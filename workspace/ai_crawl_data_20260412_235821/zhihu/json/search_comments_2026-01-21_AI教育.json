@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11401173494",
+        "parent_comment_id": "0",
+        "content": "未来会不会AI也能从0到1呢",
+        "publish_time": 1769264689,
+        "ip_location": "新疆",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1997629599002150356",
+        "content_type": "answer",
+        "user_id": "1507798e89597aaaf230c8c004380652",
+        "user_link": "https://www.zhihu.com/people/hao-hao-yang-54",
+        "user_nickname": "浩浩洋",
+        "user_avatar": "https://picx.zhimg.com/v2-19503653eb609c54408697ae24d0f29a_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776061195409
+    },
+    {
+        "comment_id": "11401502382",
+        "parent_comment_id": "11401173494",
+        "content": "AI已经做到了80分以上，人脑也需要通过基础教育达到。",
+        "publish_time": 1769320051,
+        "ip_location": "山东",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1997629599002150356",
+        "content_type": "answer",
+        "user_id": "3720ca91f9a20f7c85c8a1a1cd4fef82",
+        "user_link": "https://www.zhihu.com/people/bai-guo-dong-7",
+        "user_nickname": "goodbai",
+        "user_avatar": "https://picx.zhimg.com/4a132d52b48880b2ce43c3a6a0994e44_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776061196066
+    }
+]

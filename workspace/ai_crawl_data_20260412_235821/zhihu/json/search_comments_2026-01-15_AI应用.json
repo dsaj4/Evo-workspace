@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11458758061",
+        "parent_comment_id": "0",
+        "content": "14 天，1 个人，55642 行代码。这是我用 AI 做一个社交网站的真实记录。---## 第 1-3 天：摸索、踩坑、AI 死过 5 次**第一天**：- 装 OpenClaw（装了三遍才成功）- 配置环境（JSON 格式错了两次）- 让 AI 写\"Hello World\"（成功了）**第二天**：- 让 AI 设计数据库（设计了三版）- 让 AI 写 API 接口（写了又改）- AI 删了我的测试数据（没备份）**第三天**：- AI 死机了（重置）- AI 又死机了（再重置）- AI 第五次死机（我学会了服务器快照）**血泪教训**：1. 备份！备份！备份！2. 指令要明确（\"删除最近的文件\"= 删光）3. 别完全信任 AI（要检查代码）---## 第 4-7 天：建立 SOP，6 个 AI 分工我做了个开发任务模板：",
+        "publish_time": 1775809577,
+        "ip_location": "北京",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1995303260400157314",
+        "content_type": "article",
+        "user_id": "b8a9dddfa49465d3689113552b833b82",
+        "user_link": "https://www.zhihu.com/people/ccbaby2813",
+        "user_nickname": "ccbaby2813",
+        "user_avatar": "https://picx.zhimg.com/v2-5c0e867c828c8e941cc0231ce18f2ed7_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775927970726
+    },
+    {
+        "comment_id": "11423690424",
+        "parent_comment_id": "0",
+        "content": "还有mini.16iai.com 速度飞快，生成的应用都很超预期，最核心是自带变现能力[抱抱]，太适合打工人做副业了。[图片]",
+        "publish_time": 1771982070,
+        "ip_location": "陕西",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1995303260400157314",
+        "content_type": "article",
+        "user_id": "6ed8b7de8b0efb11b49923764412f345",
+        "user_link": "https://www.zhihu.com/people/max-dang-47",
+        "user_nickname": "咩咩",
+        "user_avatar": "https://pic1.zhimg.com/v2-43cf7f73c56b53ce94cd79a233b62690_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775927970730
+    }
+]

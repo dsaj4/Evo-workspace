@@ -1,0 +1,25 @@
+[
+    {
+        "note_id": "69b683540000000023023253",
+        "type": "normal",
+        "title": "天塌了！AI竟然帮我斩获了Best Paper 🏆",
+        "desc": "上周，Andrej Karpathy 开源了 autoresearch，让AI Agent能在单卡上彻夜狂跑上百个机器学习实验。这向我们证明了一个硬核的事实：我们睡觉时，AI已经能接管科研循环了。 🤯\n\t\n但今天，我们要把这个愿景推向极致！我们非常激动地宣布开源 EvoScientist 🧬 —— 一个能自我进化、专为「Vibe Research」打造的多智能体（Multi-Agent）框架！\n\t\n如果说 autoresearch 是在优化单个脚本，那么 EvoScientist 则是直接包揽了科研的全生命周期：从文献回顾、提出假设，到代码调试、数据分析，再到最后的论文撰写，一气呵成！📝\n\t\n🔥 它的核心驱动力是什么？\n🧠 1拖6的 Multi-Agent 架构: 1个主 Agent 运筹帷幄，统帅6个高度专业的子 Agent（涵盖：规划、检索、编码、Debug、分析、写作）。\n🔬 海量技能树: 跨越17个科学领域，掌握多达318项独立的科研技能！\n🧬 自我进化机制 (Self-Evolution): 失败会沉淀为“避坑指南 Guardrails”，突破会转化为“可复用策略”。所有知识在跨会话中永久留存！\n💬 无缝跨端唤醒: 命令行 CLI、微信、飞书、Telegram、Slack... 你习惯在哪办公，它就在哪待命。\n\t\n🏆 极限压力测试？全中！ 在 ICAIS 2025 上，EvoScientist 自主产出了6篇论文。结果？6篇100%全部被录用！ 甚至一举斩获了 Best Paper Award和 AI Reviewer's Appraisal Award！🥇\n\t\n💡 什么是真正的 Vibe Research？ 当 AI 接管了极其繁重的“执行循环”，人类科学家的角色就发生了质的转变。科研不再是痛苦的实验搬砖，而是关乎你的 直觉 (Intuition)、视野 (Vision) 和 品味 (Taste)。\n\t\n带上你独一无二的科学品味，用 EvoScientist 去 “Vibe” 你的研究，把剩下的硬核工作全交给我们的 Agents 吧！😎\n\t\n项目链接：https://github.com/EvoScientist/EvoScientist\n#opencla部署[话题]# #人工智能[话题]# #智能体[话题]# #vibecoding大赏[话题]# #LLM[话题]# #论文[话题]# #科研生产力[话题]# #ai[话题]# #科研自动化[话题]# #自动科研[话题]#",
+        "video_url": "",
+        "time": 1773568852000,
+        "last_update_time": 1774522750000,
+        "user_id": "60fbd10a0000000001004cea",
+        "nickname": "Leo",
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31p8sqrg82s005o7rq4508j7av6qq85g",
+        "liked_count": "2381",
+        "collected_count": "4006",
+        "comment_count": "160",
+        "share_count": "2097",
+        "ip_location": "英国",
+        "image_list": "http://sns-webpic-qc.xhscdn.com/202603271257/ffe1285ecd30c19d7d66b5d643c058e2/spectrum/1040g34o31tntd2rpg4005o7rq4508j7a1f4g6mg!nd_dft_wlteh_jpg_3,http://sns-webpic-qc.xhscdn.com/202603271257/09d14ab0270b805cc1e0835a705b547f/spectrum/1040g0k031tnt6kg104005o7rq4508j7a2aan638!nd_dft_wgth_jpg_3,http://sns-webpic-qc.xhscdn.com/202603271257/e5e4cc34ff0b492df30d73340cc37205/spectrum/1040g0k031tnt6mu86q005o7rq4508j7af1jon9o!nd_dft_wgth_jpg_3,http://sns-webpic-qc.xhscdn.com/202603271257/8b3bbac0b07288ef394779b0b391cee1/spectrum/1040g34o31tntcb4fg40g5o7rq4508j7ae0ah4pg!nd_dft_wgth_jpg_3",
+        "tag_list": "opencla部署,人工智能,智能体,vibecoding大赏,LLM,论文,科研生产力,ai,科研自动化,自动科研",
+        "last_modify_ts": 1774587457074,
+        "note_url": "https://www.xiaohongshu.com/explore/69b683540000000023023253?xsec_token=ABhdn20Ru9FxnPG6-u5C3qjYCU1cMeU4Hrddl9JwNXo1w=&xsec_source=pc_search",
+        "source_keyword": "ai",
+        "xsec_token": "ABhdn20Ru9FxnPG6-u5C3qjYCU1cMeU4Hrddl9JwNXo1w="
+    }
+]

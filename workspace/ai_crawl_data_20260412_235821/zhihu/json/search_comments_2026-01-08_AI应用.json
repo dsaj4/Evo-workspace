@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11388347867",
+        "parent_comment_id": "0",
+        "content": "这还需要推荐？搞来搞去就那几个，还什么现在市面产品上太多，再多也都是一回事。巧妇难为无米之炊，模型本身就那样，做应用的都玩不出花",
+        "publish_time": 1767932286,
+        "ip_location": "广东",
+        "sub_comment_count": 1,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "1992911233767187115",
+        "content_type": "article",
+        "user_id": "d3150ba646b00f58ddc719a0f46eba0f",
+        "user_link": "https://www.zhihu.com/people/vinhyl",
+        "user_nickname": "Vincent Hui",
+        "user_avatar": "https://picx.zhimg.com/79f02fec230bff64869aa02fb2b5e4b0_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775927941640
+    },
+    {
+        "comment_id": "11388607621",
+        "parent_comment_id": "11388347867",
+        "content": "有人还是不知道的",
+        "publish_time": 1767937408,
+        "ip_location": "北京",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1992911233767187115",
+        "content_type": "article",
+        "user_id": "e3cdc769ae51ba8fcbbf24b6340fcb15",
+        "user_link": "https://www.zhihu.com/people/nicotine-29-95",
+        "user_nickname": "Blinkoo毕林庫AI",
+        "user_avatar": "https://picx.zhimg.com/v2-4a59cef70e935ea9f3929482cf01393e_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775927943361
+    }
+]

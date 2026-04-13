@@ -1,0 +1,146 @@
+[
+  {
+    "event_id": "E002",
+    "event_date": "2025-02-05",
+    "event_type": "tech_positive",
+    "pre_mean": 0.0,
+    "post_mean": 0.0,
+    "change_pct": 0.0,
+    "irr": 1.5215724088868387e-10,
+    "p_value": 0.9984567894389799,
+    "platform_stats": [
+      {
+        "platform": "bili",
+        "pre_mean": 0.0,
+        "post_mean": 0.0,
+        "change_pct": 0.0
+      },
+      {
+        "platform": "all",
+        "pre_mean": 0.0,
+        "post_mean": 0.0,
+        "change_pct": 0.0
+      },
+      {
+        "platform": "zhihu",
+        "pre_mean": NaN,
+        "post_mean": NaN,
+        "change_pct": 0.0
+      },
+      {
+        "platform": "xhs",
+        "pre_mean": NaN,
+        "post_mean": NaN,
+        "change_pct": 0.0
+      }
+    ]
+  },
+  {
+    "event_id": "E019",
+    "event_date": "2025-09-30",
+    "event_type": "tech_positive",
+    "pre_mean": 0.07142857142857142,
+    "post_mean": 0.06666666666666667,
+    "change_pct": -6.6666666666666625,
+    "irr": 5.533134078776003e-11,
+    "p_value": 0.9985065033402452,
+    "platform_stats": [
+      {
+        "platform": "bili",
+        "pre_mean": 0.07142857142857142,
+        "post_mean": 0.06666666666666667,
+        "change_pct": -6.6666666666666625
+      },
+      {
+        "platform": "all",
+        "pre_mean": 0.07142857142857142,
+        "post_mean": 0.06666666666666667,
+        "change_pct": -6.6666666666666625
+      },
+      {
+        "platform": "zhihu",
+        "pre_mean": NaN,
+        "post_mean": NaN,
+        "change_pct": 0.0
+      },
+      {
+        "platform": "xhs",
+        "pre_mean": NaN,
+        "post_mean": NaN,
+        "change_pct": 0.0
+      }
+    ]
+  },
+  {
+    "event_id": "E031",
+    "event_date": "2025-12-23",
+    "event_type": "tech_positive",
+    "pre_mean": 0.6428571428571429,
+    "post_mean": 2.9375,
+    "change_pct": 356.9444444444444,
+    "irr": 1.0512019318169132,
+    "p_value": 0.872716285726451,
+    "platform_stats": [
+      {
+        "platform": "bili",
+        "pre_mean": 0.6428571428571429,
+        "post_mean": 3.0,
+        "change_pct": 366.66666666666663
+      },
+      {
+        "platform": "all",
+        "pre_mean": 0.6428571428571429,
+        "post_mean": 3.1333333333333333,
+        "change_pct": 387.4074074074074
+      },
+      {
+        "platform": "zhihu",
+        "pre_mean": NaN,
+        "post_mean": 1.0,
+        "change_pct": 0.0
+      },
+      {
+        "platform": "xhs",
+        "pre_mean": NaN,
+        "post_mean": NaN,
+        "change_pct": 0.0
+      }
+    ]
+  },
+  {
+    "event_id": "E001",
+    "event_date": "2024-11-01",
+    "event_type": "job_negative",
+    "pre_mean": 0.0,
+    "post_mean": 0.0,
+    "change_pct": 0.0,
+    "irr": 1.5215724087763675e-10,
+    "p_value": 0.9984567894389811,
+    "platform_stats": [
+      {
+        "platform": "bili",
+        "pre_mean": 0.0,
+        "post_mean": 0.0,
+        "change_pct": 0.0
+      },
+      {
+        "platform": "all",
+        "pre_mean": 0.0,
+        "post_mean": 0.0,
+        "change_pct": 0.0
+      },
+      {
+        "platform": "zhihu",
+        "pre_mean": NaN,
+        "post_mean": NaN,
+        "change_pct": 0.0
+      },
+      {
+        "platform": "xhs",
+        "pre_mean": NaN,
+        "post_mean": NaN,
+        "change_pct": 0.0
+      }
+    ]
+  }
+]

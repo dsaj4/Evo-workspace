@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11433748662",
+        "parent_comment_id": "0",
+        "content": "那就得看以后token是涨价还是降价了[机智]",
+        "publish_time": 1772979692,
+        "ip_location": "广东",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2014077186664068723",
+        "content_type": "article",
+        "user_id": "75581632dbce6f81a880eaf680b51eea",
+        "user_link": "https://www.zhihu.com/people/he-gao-72",
+        "user_nickname": "何高",
+        "user_avatar": "https://pica.zhimg.com/v2-27e48809e93a74ed1b62dfd078d8ec06_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776001366240
+    },
+    {
+        "comment_id": "11433489817",
+        "parent_comment_id": "0",
+        "content": "没有意义了，架构能力也不是靠古法编程能练出来的。但是基本功确实反而需要通过学习和练习来变得更扎实，其实有点矛盾。 本质上，ai放大了架构师和资深开发人员的能力，对新入行的程序员来说，目前看来不太友好。",
+        "publish_time": 1772976350,
+        "ip_location": "上海",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2014077186664068723",
+        "content_type": "article",
+        "user_id": "0a9e16fa43689175c1cab62fc866549e",
+        "user_link": "https://www.zhihu.com/people/wang-wei-63-16",
+        "user_nickname": "石头在上",
+        "user_avatar": "https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776001366244
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1996602577983406520",
+        "content_type": "answer",
+        "content_text": "最近在学习AI Agent，给大家推荐一些相关的书籍。我们一起学习进步。这些书籍比较偏重工程实践，而非理论基础一、LLM工程综合类AI Engineering: Building Applications with Foundation Models《AI工程：基于基础模型构建应用》项目内容作者Chip Huyen出版社O&#39;Reilly Media出版时间2025年1月适合人群中级到高级从业者本书覆盖了AI应用的完整生命周期：提示工程、RAG架构、微调技术、AI智能体、推理优化和生产部署。Cihp Huyen是斯坦福ML系统课程讲师、前NVIDIA开发者，她采用与框架无关的方法，专注于原理而非特定工具。本书独特地介绍了包括AI-as-a-judge在内的评估方法论。推荐理由：获得Luke Metz（ChatGPT联合创始人）推荐，是目前评分最高的AI工程书籍。任何想将AI产品投入生产的人都应该阅读。二、提示工程类Prompt Engineering for Generative AI《生成式AI提示工程》项目内容作者James Phoenix &amp; Mike Taylor出版社O&#39;Reilly Media出版时间2024年5月适合人群入门到中级目前最全面的提示工程资源，涵盖文本和图像生成技术。介绍了&#34;提示五原则&#34;（Direction方向、Format格式、Examples示例、Quality Evaluation质量评估、Division of Labor任务分解），从基础技术逐步深入到Chain-of-Thought和Meta Prompting等高级方法。包含大量LangChain集成以及使用FAISS和Pinecone的RAG实现。推荐理由：少见地同时覆盖跨多个模型（GPT-4、Claude、Gemini、Llama）的文本和图像提示，附带可投入生产的Python示例。Hands-On Large Language Models《大语言模型实战》项目内容作者Jay Alammar &amp; Maarten Grootendorst出版社O&#39;Reilly Media出版时间2024年10月适合人群入门到中级本书以可视化、直觉优先的方法著称，在教你构建应用之前先解释LLM的实际工作原理。涵盖分词、嵌入、Transformer架构、语义搜索和稠密检索。Alammar著名的AI/ML可视化图解（被NumPy和pandas文档采用）让复杂概念变得易于理解。推荐理由：两位作者创建了BERTopic，并与DeepLearning.ai合作开设课程。非常适合希望在掌握实践技能的同时深入理解原理的开发者。三、RAG与检索系统类RAG-Driven Generative AI《RAG驱动的生成式AI》项目内容作者Denis Rothman出版社Packt Publishing出版时间2024年9月适合人群中级RAG架构的权威深度指南，涵盖向量存储、分块策略、索引和排序算法。深入探讨多模态RAG（图像、视频）、知识图谱集成和企业级扩展。真实案例研究包括无人机技术、银行应用和视频制作系统。推荐理由：没有其他书籍能以如此深度覆盖RAG。涉及前沿话题，如带人工反馈的自适应RAG，以及平衡RAG与微调方法的策略。Building Data-Driven Applications with LlamaIndex《使用LlamaIndex构建数据驱动应用》项目内容作者Andrei Gheorghiu出版社Packt Publishing出版时间2024年5月适合人群中级到高级LlamaIndex专项RAG应用开发，覆盖完整工作流：数据摄取、索引策略、向量嵌入、查询和响应合成。使用渐进式&#34;PITS&#34;项目逐步增加复杂度。包含用于高级文档解析的LlamaParse和本地LLM部署选项。推荐理由：获LlamaIndex CEO Jerry Liu推荐。适合将LlamaIndex作为RAG基础设施标准的团队。四、LLMOps与生产部署类LLM Engineer&#39;s Handbook《LLM工程师手册》项目内容作者Paul Iusztin &amp; Maxime Labonne出版社Packt Publishing出版时间2024年10月适合人群中级到高级本书覆盖完整的LLMOps生命周期。包括数据管道设计、监督微调、偏好对齐（DPO）和端到端AWS部署。&#34;LLM Twin&#34;项目贯穿全书，带领读者从Jupyter notebook走向生产级系统。推荐理由：Hugging Face的Julien Chaumond作序推荐。Labonne是Google AI/ML开发专家。目前最全面的实战LLMOps资源，GitHub代码持续维护。LLMs in Production: From Language Models to Successful Products《LLM生产实战：从语言模型到成功产品》项目内容作者Christopher Brousseau &amp; Matt Sharp出版社Manning Publications出版时间2025年适合人群中级聚焦于其他书籍轻描淡写的实际部署挑战：成本优化、安全考虑、边缘部署和Kubernetes编排。包含三个实战项目——构建自定义LLM、创建VSCode AI编程扩展、部署到树莓派。推荐理由：两位作者领导过多个大规模LLM部署项目。可与Sebastian Raschka的《Build a Large Language Model (From Scratch)》配合，前者侧重生产端。五、LLM框架与应用开发类Generative AI with LangChain (2nd Edition)《LangChain生成式AI》（第2版）项目内容作者Ben Auffarth出版社Packt Publishing出版时间2024年适合人群入门到中级完整覆盖LangChain生态系统，包括用于智能体工作流的LangGraph。讲解链、智能体、记忆和工具，同时支持商业模型（GPT-4、Gemini）和开源替代方案（Llama、Falcon）。项目包括客服机器人、研究助手和文档分析系统。推荐理由：2024年第二版反映了LangChain重大API变更。基于LangChain构建的团队的最佳单一资源。Building LLM Powered Applications《构建LLM驱动应用》项目内容作者Valentina Alto出版社Packt Publishing出版时间2024年适合人群入门到中级作者是微软AI应用技术架构师，提供实用的Azure集成以及框架对比（LangChain、Haystack、Semantic Kernel）。覆盖超越文本的多模态应用，包括视觉和音频。项目包括发票分析和DALL-E集成。推荐理由：适合微软/Azure生态系统的团队。六、AI智能体类AI Agents in Action《AI智能体实战》项目内容作者Micheal Lanham出版社Manning Publications出版时间2025年2月适合人群中级首部全面介绍生产级AI智能体的书籍，涵盖OpenAI Assistants API、多智能体系统（AutoGen、CrewAI）、行为树和高级记忆系统（对话记忆、语义记忆、情景记忆、程序记忆）。关注自主决策能力，而非仅仅是聊天机器人开发。推荐理由：作者拥有20多年行业经验。覆盖应用AI领域最热门的新兴方向，配有三个GitHub代码仓。七、入门快速指南类Quick Start Guide to Large Language Models (2nd Edition)《大语言模型快速入门指南》（第2版）项目内容作者Sinan Ozdemir出版社Addison-Wesley出版时间2024年适合人群入门到中级极其友好的入门书籍，同时兼顾生产关注点。从LLM基础逐步深入到语义搜索、提示工程、微调，以及闭源和开源模型的部署。2024年版新增了Llama 3和Claude 3的多模态AI内容。推荐理由：前约翰霍普金斯大学数据科学讲师将复杂概念分解为易消化的解释。适合没有直接LLM经验的从业者的最佳第一本书。如果大家对某一本书特别感兴趣，请留言评论，我也可以在后续的文章中，为大家详细介绍这些书籍的内容。",
+        "content_url": "https://www.zhihu.com/question/13137834509/answer/1996602577983406520",
+        "question_id": "13137834509",
+        "title": "有没有值得推荐的大模型方面的书籍？",
+        "desc": "有没有值得推荐的大模型方面的书籍？",
+        "created_time": 1768807149,
+        "updated_time": 1768807149,
+        "voteup_count": 130,
+        "comment_count": 2,
+        "source_keyword": "大语言模型",
+        "user_id": "a9f84f36a68eab72b198f2c7709f1622",
+        "user_link": "https://www.zhihu.com/people/gangtao",
+        "user_nickname": "陶刚",
+        "user_avatar": "https://picx.zhimg.com/50/v2-741a8d9495d92b6e5076ba5c4f851452_l.jpg?source=4e949a73",
+        "user_url_token": "gangtao",
+        "last_modify_ts": 1776038127288
+    }
+]

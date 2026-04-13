@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1969172213153367053",
+        "content_type": "answer",
+        "content_text": "第一感觉是 ms-swift 官方提问题吸引大家关注哈哈，但作为其深度用户还是自觉为摇旗呐喊哈。多模态方面强列建议使用 ms-swift ,具体见链接https://http://github.com/modelscope/ms-swift/blob/main/README_CN.md相关介绍 。该社区官方比较活跃，支持各类主流架构的 VLM模型预训练、后训练，后训练中各种强化学习方法，详细可以见官方文档了哈，由于社区比较活跃，由此 版本迭代升级也是比较快的，有些问题需要自己主动关注 githup 上面的一些动态信息哈。同时ms-swift 也集成了 megatron官方文档相关介绍 最近一直从事多模态相关的后训练，也期望大家遇到问题可以多交流沟通哈",
+        "content_url": "https://www.zhihu.com/question/1968236075429401351/answer/1969172213153367053",
+        "question_id": "1968236075429401351",
+        "title": "多模态理解模型 VLM 有哪些好的开源训练框架（Pretrain/SFT/RLHF）？",
+        "desc": "当前有不少多模态理解模型 Qwen 3 VL 系列、GLM 4.5V 系列、Intern VL3/3.5 系列等模型开源了，效果都非常不错。因业务需求，需要对开源的多模态理解模型进行下游行业增训。目前发现只有 llamafactory 和 huggingface 可以支持 sft 和 lora 训练，对于参数量 40B以下的模型（例如：Intern VL 38B、Qwen 3 VL-32B），训练速度还可以。但是对于 GLM 4.5V 106B 这种大参数模型，发现训练速度很慢，因为 llamafactory 只能使用 Zero 数据并行，不支持 TP/PP/CP/SP，导致需要开启 zero3 来分摊模型权重参数，带来大量通信开销。而 megatron 支持 LLM 训练的多种不同并行方式（TP/PP/CP/SP）， 同时训练效率很好，但 megatron 当前对多模态模型的支持不好。有没有其他的开源训练框架，可用于 VLM 模型的预训练、SFT、LoRA、强化学习训练？",
+        "created_time": 1762267241,
+        "updated_time": 1762267241,
+        "voteup_count": 9,
+        "comment_count": 6,
+        "source_keyword": "多模态",
+        "user_id": "c63fb231af7ca6883a6cf88d453aa6fd",
+        "user_link": "https://www.zhihu.com/people/yslizhong",
+        "user_nickname": "李先生",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-2c5421fff986bd4e5d084c0aeb4aabb7_l.jpg?source=4e949a73",
+        "user_url_token": "yslizhong",
+        "last_modify_ts": 1776038999046
+    }
+]

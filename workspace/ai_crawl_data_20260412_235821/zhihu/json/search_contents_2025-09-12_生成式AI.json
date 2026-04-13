@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1949981507520296834",
+        "content_type": "article",
+        "content_text": "【生成式AI终极指南｜从核心概念到高阶技巧一网打尽！】 大家都在谈论生成式AI，但大多数人只看到表面❗️这份指南覆盖从核心概念到高级技术的完整路径✨每一步都让AI更智能、更灵活、更面向未来  四大板块带你系统掌握生成式AI 1️⃣【GenAI核心术语】 ▫Transformer：驱动现代LLM和生成模型的核心神经网络架构▫Diffusion Model：通过逆转噪声过程生成数据的模型▫大语言模型（LLMs）：基于海量文本训练的超拟人文本生成模型▫多模态模型：同时处理文本/图像/音频的跨模态AI✨自监督学习/人类反馈强化学习（RLHF）/知识注入…2️⃣【模型API实战】 ▫OpenAI API：GPT系列模型调用利器▫Hugging Face：开源模型与数据集宝库▫Vertex AI：谷歌全托管ML平台▫Cohere/Anthropic/Mistral/Replicate…✨附API最佳实践指南，高效安全调用不求人！3️⃣【模型定制化秘籍】 ️▫微调（Fine-Tuning）：用特定数据重构模型▫LoRA低秩适配：参数高效轻量化调优▫知识注入：将领域知识嵌入模型权重▫合成数据生成：自定义数据集提升训练效果✨适配层/前缀调优/领域专项训练…4️⃣【高阶GenAI技术】⚡▫模型蒸馏：大模型压缩而不失精度▫提示链（Prompt Chaining）：多步推理链路构建▫AutoML：自动化模型训练部署▫工具调用：让模型联动外部API与工具✨自迭代优化/多智能体系统/检索增强生成（RAG）… 这不是理论！这是AI学习、适应与创造的底层逻辑！ 关注",
+        "content_url": "https://zhuanlan.zhihu.com/p/1949981507520296834",
+        "question_id": "",
+        "title": "生成式AI终极指南｜从核心概念到高阶技巧一网打尽！",
+        "desc": "【生成式AI终极指南｜从核心概念到高阶技巧一网打尽！】 大家都在谈论生成式AI，但大多数人只看到表面 ️ 这份指南覆盖从核心概念到高级技术的完整路径 每一步都让AI更智能、更灵活、更面向未来 四大板块带你系统掌握生成式AI 1️⃣【GenAI核心术语】 Transformer",
+        "created_time": 1757691820,
+        "updated_time": 1757691820,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "生成式AI",
+        "user_id": "2125cc7833ac8076cecad986e0280b01",
+        "user_link": "https://www.zhihu.com/people/cea_csa_cto",
+        "user_nickname": "智能时刻",
+        "user_avatar": "https://picx.zhimg.com/50/v2-a4843b8f87eab2f4397dfd77dfcc43b2_l.jpg?source=4e949a73",
+        "user_url_token": "cea_csa_cto",
+        "last_modify_ts": 1776035952966
+    }
+]

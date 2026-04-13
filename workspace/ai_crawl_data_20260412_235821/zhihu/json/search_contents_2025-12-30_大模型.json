@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1989633329910289132",
+        "content_type": "answer",
+        "content_text": "提示词约束，rag，mcp查找，训练诚实回答，大概这种吧。原理上，本质就是在前有token上的概率选择。训练的时候sft，dpo，rlhf等惩罚。上面成本都太高了，直接提示词约束死比较好。然后加上cot，加上自己检查，这里用推理模型看思考过程时候有时候会看到。温度的话，虽然有效果，但不大建议0，毕竟不是做llm-judge，0.1吧。其实还得是rag，虽然一直被诟病，但确实是好办法",
+        "content_url": "https://www.zhihu.com/question/1989361944994526060/answer/1989633329910289132",
+        "question_id": "1989361944994526060",
+        "title": "如何让大模型减少幻觉？",
+        "desc": "本质就是在前有token上的概率选择。训练的时候sft，dpo，rlhf等惩罚。上面成本都太高了，直接提示词约束死比较好。然后加上cot，加上自己检查，这里用推理模型看思考过程时候有时候会看到。温度的话，虽然有效果，但不大建议0，毕竟不是做llm-judge，0.1吧。其实还得是rag，虽然一直被诟病",
+        "created_time": 1767145551,
+        "updated_time": 1767145551,
+        "voteup_count": 2,
+        "comment_count": 1,
+        "source_keyword": "大模型",
+        "user_id": "1755be8bc5ba2b727ba7880f47976a6a",
+        "user_link": "https://www.zhihu.com/people/fan-jing-wen-56-46",
+        "user_nickname": "二元函数",
+        "user_avatar": "https://picx.zhimg.com/50/v2-d5b84660088b01db2882ab371bd7c2b4_l.jpg?source=4e949a73",
+        "user_url_token": "fan-jing-wen-56-46",
+        "last_modify_ts": 1775926384015
+    }
+]

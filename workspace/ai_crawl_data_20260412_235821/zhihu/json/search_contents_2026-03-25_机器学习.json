@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2020505998171875122",
+        "content_type": "answer",
+        "content_text": "谢邀。目前的机器学习并未产生人类意义上的“理解”。其本质仍是在高维参数空间中，通过随机梯度下降等算法寻找最优解以逼近数据分布，也就是纯粹的经验风险最小化。人类学习则截然不同，我们擅长构建“因果世界模型”，能基于极少样本进行反事实推理；而机器极度依赖海量同分布数据，一旦面临分布外情况往往无所适从。至于“意识”，单纯扩大模型规模无法让人工智能产生主观体验。未来的破局点，或许在于突破纯粹的统计拟合，引入具身智能，让机器在真实的物理交互中建立真正的因果认知。",
+        "content_url": "https://www.zhihu.com/question/2020097149719824256/answer/2020505998171875122",
+        "question_id": "2020097149719824256",
+        "title": "机器学习与人类智能的本质区别在哪里，未来会达到怎样的融合程度？",
+        "desc": "我一直在思考，机器学习虽然很强大，但它真的能像人类一样「理解」世界吗？它的学习方式和我们人类有什么根本不同？未来我们是否会看到更深层次的融合，甚至机器产生「意识」？",
+        "created_time": 1774506169,
+        "updated_time": 1774506169,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "c977d0b5e3673db3c79c30ed66428ef8",
+        "user_link": "https://www.zhihu.com/people/tai-yang-shi-tian-de-11",
+        "user_nickname": "不懂论文的大洋芋",
+        "user_avatar": "https://picx.zhimg.com/50/v2-9b9f2a378d3dd1a25c3de98a0a12de76_l.jpg?source=4e949a73",
+        "user_url_token": "tai-yang-shi-tian-de-11",
+        "last_modify_ts": 1776004710891
+    }
+]

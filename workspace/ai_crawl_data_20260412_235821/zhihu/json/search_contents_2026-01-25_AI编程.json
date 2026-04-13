@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1999046017186830102",
+        "content_type": "answer",
+        "content_text": "昨天试用vs+千问，写一个通用成员函数的callback,因为不想用裸函数指针，它不停地反复改反复写，等不住了，我把问题给了deepseek,ds很快给出了结果，再迭代了两三次，基本达到了我的意图。这时千问还在后台搞，整理完ds代码后，千问给出了结果，但和我想的相去甚远。尽管如此，我并不认为ds比千问高明，个例而己，在这个千模争雄的时代，我不会死嗑“好”的工具。",
+        "content_url": "https://www.zhihu.com/question/1998443447007342808/answer/1999046017186830102",
+        "question_id": "1998443447007342808",
+        "title": "AI编程有哪些好用的工具？",
+        "desc": "如今大模型发展速度很快，AI辅助编程有哪些好用工具？",
+        "created_time": 1769389710,
+        "updated_time": 1769389710,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI编程",
+        "user_id": "89437b8b352cc8d5f53eaa0e6a3c6aeb",
+        "user_link": "https://www.zhihu.com/people/shan-cheng-shan-53",
+        "user_nickname": "山城山",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "shan-cheng-shan-53",
+        "last_modify_ts": 1776001755846
+    },
+    {
+        "content_id": "1998788701153678491",
+        "content_type": "answer",
+        "content_text": "好问题。不邀自来。“ AI 它不会像人一样去犯很多类型的错误。” 实际体验并非如此。甚至恰恰相反 — AI的上下文有限，生成代码的时候不像人类在IDE里有类型提示，导致很多时候写出来的代码一堆类型问题。所以我觉得TypeScript是最适合AI去写的编程语言：有最强大的类型系统，开启strict模式后能及早在静态检查阶段避免很多bug；开发生态也是顶级活跃的，还啥都能干，轻松全栈。p.s. 若你觉得AI不会犯类型错误，那就把strict模式关了试试…",
+        "content_url": "https://www.zhihu.com/question/1998749915443123731/answer/1998788701153678491",
+        "question_id": "1998749915443123731",
+        "title": "未来最适合 AI 去写的编程语言是什么呢？",
+        "desc": "现在 AI 时代，未来肯定很少会有人去繁荣各种各样编程语言的生态了。编程语言本身变得不是很重要，因为 AI 整体来讲，同样的代码犯错误次数比较少。于是呢，会不会设计一种新的，更适合 AI 去写的编程语言呢？如果是的话，你认为是未来会新出一个，还是现在就会有一个现成的，或者说再加以改造？",
+        "created_time": 1769328362,
+        "updated_time": 1769328362,
+        "voteup_count": 3,
+        "comment_count": 1,
+        "source_keyword": "AI编程",
+        "user_id": "d963e9e5fb0561b26cda0420d34bd07c",
+        "user_link": "https://www.zhihu.com/people/fel-peter",
+        "user_nickname": "牧毅",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-691df5812d19351096d93f235314c8fe_l.jpg?source=4e949a73",
+        "user_url_token": "fel-peter",
+        "last_modify_ts": 1776001755847
+    }
+]

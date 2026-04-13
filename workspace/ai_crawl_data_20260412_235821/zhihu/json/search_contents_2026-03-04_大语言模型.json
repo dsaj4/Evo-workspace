@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2012826362667364599",
+        "content_type": "article",
+        "content_text": "导读能够本地运行大语言模型具备诸多优势：1. 数据隐私性佳，所有数据全程不会离开你的本地设备2. 可先在本地完成各类测试，再迁移至云端部署本文为你介绍四种本地运行大语言模型的方法。AI大模型完整学习资料包：AI大模型学习路线+大模型面试真题+大模型PDF笔记等，从入门到实战精通！！Ollama通过 Ollama 运行模型的操作十分简单，只需执行下述命令即可：​\nollama run deepseek-r1\n快速上手的第一步，通过一条命令完成 Ollama 的安装：​\ncurl -fssL https://ollama.com/install.sh | sh​现在，你可以通过以下命令下载任意一款官方支持的模型，你可以在这个链接里查看Ollama支持的模型列表：https://ollama.com/search​\n# 立即下载并在终端中运行模型\nollama run deepseek-r1\n# 仅下载模型（不运行）\nollama pull deepseek-r1​如果需要通过编程方式调用，你还可以安装 Ollama 的 Python 包，或是其与 Llama Index、CrewAI 等Agent编排框架的集成插件：​\npip install ollama\npip install llama-index-llms-ollama​ LMStudioLMStudio可作为应用程序安装在电脑上，该应用不会收集任何数据，也不会监控操作，所有数据均保存在本地设备中，且个人使用完全免费。它提供了类ChatGPT的操作界面，可以在对话过程中灵活加载和卸载模型，下方视频演示了该工具的使用方法。和 Ollama 一样，LMStudio 也支持多款大语言模型。这里可以查看LMStudio支持的模型列表：https://lmstudio.ai/modelsvLLMvLLM 是一款轻量易用的大语言模型推理与部署库，拥有高吞吐性能。 仅需几行代码，你就能以兼容 OpenAI 的格式在本地运行大语言模型（如 DeepSeek模型），可以到它的官方文档中查找支持的模型列表：https://docs.vllm.ai/en/latest/models/supported_models/​​\n# 安装vLLM\npip install vllm\n# 启动服务\nvllm serve deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B --enable-reasoning --reasoning-parser deepseek_r1创建简单客户端代码调用服务API：​\n\nfrom openai import OpenAI\n# OpenAI的API密钥和接口地址\nopenai_api_key = &#34;&#34;\nopenai_api_base = &#34;http://localhost:8000/v1&#34;\n# 初始化客户端\nclient = OpenAI(\n    api_key=openai_api_key,\n    base_url=openai_api_base\n)\n# 查看可用模型\nmodels = client.models.list()\nmodel = models.data[0].id\n# 第一轮对话请求\nmessages = [{&#34;role&#34;: &#34;user&#34;, &#34;content&#34;: &#34;9.11和9.8哪个更大？&#34;}]\nresponse = client.chat.completions.create(model=model, messages=messages)\n# 提取推理过程和回答内容\nreasoning_content = response.choices[0].message.reasoning_content\ncontent = response.choices[0].message.content\n# 打印结果\nprint(&#34;推理过程：&#34;, reasoning_content)\nprint(&#34;回答内容：&#34;, content)\n\n​ Llama.cppLlama.cpp 支持以极简的配置实现大语言模型推理，且具有领先的性能表现。可以到github查找支持的模型：https://github.com/ggml-org/llama.cpp​\n# 安装Llama.cpp\nbrew install llama.cpp\n# 提高显存限制\nsudo sysctl iogpu.wired_limit_mb=180000\n# 启动服务（模型约150GB，需约180GB显存支持）\nllama-server -c 8192 -ub 64 \\\n--model-url https://huggingface.co/unsoth/DeepSeek-R1-GGUF/resolve/main/DeepSeek-R1-UD-IQ1_S/DeepSeek-R1-UD-IQ1_S-00001-of-00003.gguf\n# 访问本地地址：http://127.0.0.1:8080\n# 客户端代码和vLLM中的类似 学习资源推荐如果你想更深入地学习大模型，以下是一些非常有价值的学习资源，这些资源将帮助你从不同角度学习大模型，提升你的实践能力。一、全套AGI大模型学习路线AI大模型时代的学习之旅：从基础到前沿，掌握人工智能的核心技能！​​因篇幅有限，仅展示部分资料，需要点击文章最下方名片即可前往获取二、640套AI大模型报告合集这套包含640份报告的合集，涵盖了AI大模型的理论研究、技术实现、行业应用等多个方面。无论您是科研人员、工程师，还是对AI大模型感兴趣的爱好者，这套报告合集都将为您提供宝贵的信息和启示​因篇幅有限，仅展示部分资料，需要点击文章最下方名片即可前往获取三、AI大模型经典PDF籍随着人工智能技术的飞速发展，AI大模型已经成为了当今科技领域的一大热点。这些大型预训练模型，如GPT-3、BERT、XLNet等，以其强大的语言理解和生成能力，正在改变我们对人工智能的认识。 那以下这些PDF籍就是非常不错的学习资源。​因篇幅有限，仅展示部分资料，需要点击文章最下方名片即可前往获取四、AI大模型商业化落地方案​作为普通人，入局大模型时代需要持续学习和实践，不断提高自己的技能和认知水平，同时也需要有责任感和伦理意识，为人工智能的健康发展贡献力量。​AI大模型完整学习资料包：AI大模型学习路线+大模型面试真题+大模型PDF笔记等，从入门到实战精通！！",
+        "content_url": "https://zhuanlan.zhihu.com/p/2012826362667364599",
+        "question_id": "",
+        "title": "本地运行大语言模型的四种方法",
+        "desc": "导读能够本地运行大语言模型具备诸多优势： 1. 数据隐私性佳，所有数据全程不会离开你的本地设备 2. 可先在本地完成各类测试，再迁移至云端部署 本文为你介绍四种本地运行大语言模型的方法。 [文章: AI大模型完整学习资料包：AI大模型学习路线+大模型面试真题+大模型PDF笔记等",
+        "created_time": 1772675479,
+        "updated_time": 1772675479,
+        "voteup_count": 2,
+        "comment_count": 0,
+        "source_keyword": "大语言模型",
+        "user_id": "bf693f433ba3c76903bcd97728ba74a2",
+        "user_link": "https://www.zhihu.com/people/wo-shi-mvp-37",
+        "user_nickname": "我是mvp",
+        "user_avatar": "https://picx.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "wo-shi-mvp-37",
+        "last_modify_ts": 1776037948860
+    }
+]

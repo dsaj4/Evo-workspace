@@ -1,0 +1,95 @@
+{
+  "canonical_facts": {
+    "total_comments": 139221,
+    "insecurity_comments": 1628,
+    "platforms": [
+      "bili",
+      "weibo",
+      "zhihu"
+    ],
+    "unique_dates": 375,
+    "date_min": "2024-10-12 00:00:00",
+    "date_max": "2026-04-13 00:00:00",
+    "panel_rows": 600,
+    "total_events": 33,
+    "events_by_type": {
+      "tech_positive": 26,
+      "job_negative": 4,
+      "policy": 2,
+      "report": 1
+    }
+  },
+  "H1": {
+    "beta": -0.4218601232245458,
+    "se": 0.20799205081044694,
+    "irr": 0.6558257677716129,
+    "ci_low": 0.43625665838295585,
+    "ci_high": 0.9859045802704235,
+    "p_value": 0.04253461845715534,
+    "supported": false,
+    "interpretation": "-34.4% (decrease, IRR < 1)",
+    "window_days": 7,
+    "n_events": 30
+  },
+  "H3": {
+    "baseline_mean": 1.1057382317475486,
+    "day0_value": 0.8333333333333334,
+    "half_life_days": 0,
+    "recovery_day": 2,
+    "daily_means": {
+      "0": 0.8333333333333334,
+      "1": 0.875,
+      "2": 1.12,
+      "3": 1.0384615384615385,
+      "4": 0.7916666666666666,
+      "5": 1.0416666666666667,
+      "6": 0.92,
+      "7": 1.08,
+      "8": 2.48,
+      "9": 1.24,
+      "10": 0.96,
+      "11": 1.3478260869565217,
+      "12": 0.7857142857142857,
+      "13": 0.68,
+      "14": 1.12
+    }
+  },
+  "H4": {
+    "platforms": {
+      "bili": {
+        "n_days": 361,
+        "total_comments": 101538,
+        "insecurity_comments": 870,
+        "ratio": 0.008568220764639839,
+        "ratio_pct": 0.8568220764639839
+      },
+      "weibo": {
+        "n_days": 4,
+        "total_comments": 3735,
+        "insecurity_comments": 20,
+        "ratio": 0.00535475234270415,
+        "ratio_pct": 0.535475234270415
+      },
+      "zhihu": {
+        "n_days": 235,
+        "total_comments": 33948,
+        "insecurity_comments": 738,
+        "ratio": 0.021739130434782608,
+        "ratio_pct": 2.1739130434782608
+      },
+      "overall": {
+        "total_comments": 139221,
+        "insecurity_comments": 1628,
+        "ratio": 0.011693638172402153
+      }
+    },
+    "supported": true
+  },
+  "H6": {
+    "beta": 0.023524976526749942,
+    "se": 0.0011803266157509578,
+    "irr": 1.0238038714920767,
+    "p_value": 2.195600284772839e-88,
+    "supported": true
+  }
+}

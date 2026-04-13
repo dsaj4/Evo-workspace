@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1959659033125421867",
+        "content_type": "answer",
+        "content_text": "Revisiting Model Interpolation for Efficient Reasoning Paper:https://http://arxiv.org/abs/2510.10977Code: https://http://github.com/wutaiqiang/MI模型合并一个重要的用处是 efficient reasoning也就是把对应的 LLM LRM 合并起来。我自己测出来，最简单的线性插值：其实效果就蛮好明显地呈现 3 阶段的范式。这里的 think ratio 用的是含不含&lt;/think&gt;来代表模型是否学会了使用 LRM 常用的思考模板。第一阶段是 pass@k 快速变大，mean@k 也变大第二阶段是 输出格式向 LRM 靠齐，但是涨幅没有第一阶段大第三阶段是 长度继续变长，但是指标开始摇摆，甚至微微降低（over-thinking）IFEval 长度比较异常，是因为有些题目要求特定字数内回答，因此，模型‘懂事’以后（λ在0.5 以后），length 会减小，来符合题目要求此外，一个有趣的发现是：跳过 FFN 层，也就是 FFN 保持 LLM 的参数，其他层变成混合参数，这种情况下，think ratio 基本是没有的。跳过 Attention 不 merge 就不会出现这种情况。结论：思考格式存在 FFN 中。另外一个有趣的发现就是对层数的消融，只对部分层 merge：可以发现，同样都是 2/3 的层，后 2/3 就比前 2/3 作用更大。同样都是 1/3 的层，越往后 think ratio 越大。结论：越靠近输出的layer，对 think 格式的作用越大。",
+        "content_url": "https://www.zhihu.com/question/651682990/answer/1959659033125421867",
+        "question_id": "651682990",
+        "title": "大语言模型合并有哪些主要的方法？",
+        "desc": "大语言模型合并有哪些主要的方法？",
+        "created_time": 1759999122,
+        "updated_time": 1760407709,
+        "voteup_count": 55,
+        "comment_count": 14,
+        "source_keyword": "大语言模型",
+        "user_id": "e08e6e8addfe6427438632327e7066a4",
+        "user_link": "https://www.zhihu.com/people/wu-tai-qiang",
+        "user_nickname": "Taki",
+        "user_avatar": "https://pica.zhimg.com/50/v2-94fa447f0584ec1328f847c9ef9c5ba1_l.jpg?source=4e949a73",
+        "user_url_token": "wu-tai-qiang",
+        "last_modify_ts": 1776038431811
+    }
+]

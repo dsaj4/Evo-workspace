@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2010013305448720227",
+        "content_type": "answer",
+        "content_text": "现在我用的是因图AI网站：https://www.http://amberinfo.cn/这个网站是一个集成网站，里面有Nano Banana Pro、Veo3.1和AI产品视频生成，官网直连，不用翻墙魔法，也不用谷歌账号目前还在测试阶段，可以找客服拿测试ma图片示例：AI产品宣传视频：https://www.zhihu.com/video/2010013219872322662传送门：因图 AI",
+        "content_url": "https://www.zhihu.com/question/12120851234/answer/2010013305448720227",
+        "question_id": "12120851234",
+        "title": "有什么免费的用ai做视频的软件吗？",
+        "desc": "现在我用的是因图AI网站： 这个网站是一个集成网站，里面有Nano Banana Pro、Veo3.1和AI产品视频生成，官网直连，不用翻墙魔法，也不用谷歌账号&lt;",
+        "created_time": 1772004516,
+        "updated_time": 1772004516,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI视频",
+        "user_id": "609b50d34006b59fe89724171ecaf550",
+        "user_link": "https://www.zhihu.com/people/ai-95-95-86",
+        "user_nickname": "ai猫次元",
+        "user_avatar": "https://picx.zhimg.com/50/v2-d0f434e541f7e583d3255b64da1a5a77_l.jpg?source=4e949a73",
+        "user_url_token": "ai-95-95-86",
+        "last_modify_ts": 1776056731261
+    },
+    {
+        "content_id": "2009969371913687280",
+        "content_type": "article",
+        "content_text": "做 AI 视频最崩溃的不是“不会写提示词”，而是：- 选错工具：生成半天都不稳定- 工具不好用：打不开/排队/价格吓人- 出片不能复用：同一个角色下一次就变脸我把 2026 年讨论度最高的 5 款工具（Kling 可灵、Vidu、Pika、Runway、Sora）用一张图做了速查对比（价格、生成时长、画质、是否国内可用）。先看图再选型，会省很多冤枉时间。## 选工具只看 4 件事（比“样张好看”更重要）1) **可用性**：账号/网络顺不顺，是否经常抽风2) **稳定性**：同一提示词多次生成，构图和动作是否乱飘3) **一致性**：人物/产品能不能“像同一个”，适合做系列内容4) **工作流能力**：是偏“纯生成”还是带“修补/扩展/后期”## 5 款工具一句话点评（实用向）- **Kling 可灵**：更像主力生产工具，中文友好、镜头相对稳，适合广告质感与产品短片；缺点是高峰期可能排队。- **Vidu**：综合能力不错，适合做创意分镜和风格稿；建议“短提示词先出粗稿，再加约束”。- **Pika**：上手最快，模板/玩法多，适合自媒体日更做动效片段；复杂长镜头别硬刚。- **Runway**：更像后期工具箱（修补/扩展/抠像这类），适合把素材做成可交付成片；整体成本通常偏高。- **Sora**：上限很高但开放与可用性波动大，更适合做概念验证，不建议当唯一生产线。## 按场景直接抄作业- **电商/产品展示**：Kling 做主镜头 + Runway 做修补/扩展- **自媒体日更**：Pika 快速出“动起来的素材” + 少量 Kling 撑质感- **剧情/短片分镜**：Vidu 先跑分镜 → 关键镜头再用 Kling/Runway 打磨- **团队交付/效率优先**：优先选“稳定 + 可复用”的组合，而不是追最强样张## 提示词小公式（新手够用）主体 + 场景 + 镜头语言（推/拉/移）+ 动作 + 风格（写实/广告/电影）+ 光线 + 负面（抖动、闪烁、畸形）。最后提醒一句：工具更新很快，但你只要固定一套“选型标准 + 工作流”，就能长期稳定出片。如果你更想要“一站式从灵感到成片”的流程，可以去百度搜索 **Creaa** 了解一下。你现在最想做哪类视频？（电商、剧情、口播、还是自媒体日更）评论区说下，我按你的目标给你推荐更省钱的组合。「工具入口放评论区了，需要的自取」",
+        "content_url": "https://zhuanlan.zhihu.com/p/2009969371913687280",
+        "question_id": "",
+        "title": "2026最新：5款AI视频生成工具横评（Kling/Vidu/Pika/Runway/Sora）",
+        "desc": "[图片] 做 AI 视频最崩溃的不是“不会写提示词”，而是： - 选错工具：生成半天都不稳定 - 工具不好用：打不开/排队/价格吓人 - 出片不能复用：同一个角色下一次就变脸 我把 2026 年讨论度最高的 5 款工具（Kling 可灵、Vidu、Pika、Runway、Sora）用一张图做了速查对比（价格、生成时长、画质、是否国内可用）",
+        "created_time": 1771994353,
+        "updated_time": 1771994353,
+        "voteup_count": 5,
+        "comment_count": 1,
+        "source_keyword": "AI视频",
+        "user_id": "082121ac0bfd4eb9c1b84165cf302fe5",
+        "user_link": "https://www.zhihu.com/people/on-the-way-65-67",
+        "user_nickname": "On the way",
+        "user_avatar": "https://pica.zhimg.com/50/v2-0bad6312dd62515bf862ecc7258b838a_l.jpg?source=4e949a73",
+        "user_url_token": "on-the-way-65-67",
+        "last_modify_ts": 1776056731262
+    }
+]

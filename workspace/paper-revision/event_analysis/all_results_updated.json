@@ -1,0 +1,16 @@
+{
+  "H1": {
+    "supported": true,
+    "note": "Previously tested (IRR=1.45, p<0.001)"
+  },
+  "H2": {
+    "supported": false,
+    "tech_events_n": 9,
+    "tech_effect_mean": 0.5354938271604938,
+    "job_events_n": 2,
+    "job_effect_mean": -0.6029040404040404,
+    "t_statistic": -0.7924996241256472,
+    "p_value": 0.4484545191315078
+  },
+  "H3": {
+    "supported": 

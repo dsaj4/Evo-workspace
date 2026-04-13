@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2005992829177057338",
+        "content_type": "article",
+        "content_text": "先谈coding。未来几年AI必将达到“一键生成GTA6”的程度。AI自动生成所有代码和素材，渲染出粗糙画面，再neural渲染成优质画面。甚至只需开源模型+家用电脑，就能慢慢给你整一个。这没有技术障碍，目前AI方法就够，目前的LLM / CoT / RL / agent / memory组合。补充：精确说，是生成类似“独立游戏版GTA6”的玩意，精致度仍然难和人比。就像“由代码驱动和生成界面的seedance2.0”。现在这听上去仿佛厉害，届时这会平平无奇，司空见惯。我认为，适合先用其它方法生成“草稿”，而非纯AI直接端到端生成。因为我们必将屡次发现，纯AI生文/AI生图/AI视频/AI音乐/AI游戏......的新奇期短，容易腻。因为目前的纯AI方法，作为统计模型，肚子里的货太少。正如最近AI生成的各种大乱斗视频，可以预言，只能新奇一阵，然后就无法满足观众的需求。内容领域，需要持续整活，需要持续创新，需要持续范式变革，目前的纯AI做不到。二，未来软件都必然是自动适应每个用户的流动的形式。这有许多人说过了。那么谈agent。有人说过的也不说了，例如，人&lt;=&gt;agent&lt;=&gt;agent&lt;=&gt;人。谈用户的核心需求。我一直认为，普遍用户的核心需求，不是生产力，而是赚钱（还有个普遍的核心需求是情感）。所以未来最重要的agent，是帮用户赚钱的agent。现在OpenClaw也有打这个点。在充分竞争后，类似挖矿。还好，这里挖矿的产出有点价值。宇宙的尽头是带货。对于不带货的人，是挖矿，很可能是买AI矿机挖矿。转某知乎评论，现在一切都是带货：假期，亲朋会问，小孩学什么，学编程吗？我会说，学用AI。普通人没必要学编程，正如开车不用深究车的原理。其实关键是学习表达力，表达需求的能力。我注意到许多人和AI说话是稀里糊涂废话连篇。",
+        "content_url": "https://zhuanlan.zhihu.com/p/2005992829177057338",
+        "question_id": "",
+        "title": "谈谈未来几年的AI应用，以及小孩学什么",
+        "desc": "先谈coding。未来几年AI必将达到“一键生成GTA6”的程度。 AI自动生成所有代码和素材，渲染出粗糙画面，再neural渲染成优质画面。 甚至只需开源模型+家用电脑，就能慢慢给你整一个。 这没有技术障碍，目前AI方法就够，目前的LLM / CoT / RL",
+        "created_time": 1771812997,
+        "updated_time": 1771821884,
+        "voteup_count": 126,
+        "comment_count": 23,
+        "source_keyword": "AI应用",
+        "user_id": "64d972cc5bae62489442e35b32dc0fce",
+        "user_link": "https://www.zhihu.com/people/bopengbopeng",
+        "user_nickname": "PENG Bo",
+        "user_avatar": "https://picx.zhimg.com/50/v2-c0e93926aa1716772a26677284a6bbec_l.jpg?source=4e949a73",
+        "user_url_token": "bopengbopeng",
+        "last_modify_ts": 1775927278240
+    }
+]

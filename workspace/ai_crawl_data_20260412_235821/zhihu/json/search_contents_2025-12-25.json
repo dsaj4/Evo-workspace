@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1987585082899333489",
+        "question_id": "",
+        "title": "什么是多模态大模型",
+        "desc": "让AI长出“眼睛”和“耳朵”的黑科技——多模态大模型。",
+        "created_time": 1766720831,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "大模型",
+        "user_id": "2e59e836a3b9af4668cc0409527f2219",
+        "user_link": "https://www.zhihu.com/people/xin-dun-shi-dai-3",
+        "user_nickname": "芯盾时代",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-b15fc59adf6849dbed957f466854fd1d_l.jpg?source=4e949a73",
+        "user_url_token": "xin-dun-shi-dai-3",
+        "last_modify_ts": 1775900391621
+    },
+    {
+        "content_id": "1987728077204260069",
+        "content_type": "answer",
+        "content_text": "DeepSeek刚出来的时候，某个企业的粉丝搁那又唱又跳的，什么帮DeepSeek打赢科技上甘岭啊，帮DeepSeek抵挡国外黑客攻击啊，几百程序员入住微信，方舟编译器助力支付宝什么的，好不热闹。结果他家的山海经大模型被爆出来抄袭千问，然后这个赛道就特别安静了。",
+        "content_url": "https://www.zhihu.com/question/1985497799979181220/answer/1987728077204260069",
+        "question_id": "1985497799979181220",
+        "title": "为什么国内AI大模型赛道特别安静？没有爆发节奏？",
+        "desc": "这个安静，意思是和谐，没有吵闹。[捂脸]",
+        "created_time": 1766691303,
+        "updated_time": 1766791721,
+        "voteup_count": 641,
+        "comment_count": 28,
+        "source_keyword": "大模型",
+        "user_id": "0fc836a9a7c234a897ce151c4b6d4328",
+        "user_link": "https://www.zhihu.com/people/chensiting",
+        "user_nickname": "双桥镇张羡光",
+        "user_avatar": "https://picx.zhimg.com/50/v2-69b3dc5680ac2e73950cb94715ee7069_l.jpg?source=4e949a73",
+        "user_url_token": "chensiting",
+        "last_modify_ts": 1775900391622
+    }
+]

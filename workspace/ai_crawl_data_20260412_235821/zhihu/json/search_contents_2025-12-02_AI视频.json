@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1979223495641694786",
+        "content_type": "answer",
+        "content_text": "可以试下这个，专门做视频的网站，有文本生视频，图生视频，然后视频分析，视频分析还是用Gemini 3来实现的Image to Video Generator | imtovid：Gemini 3 Video Analysis | imtovid",
+        "content_url": "https://www.zhihu.com/question/10011300609/answer/1979223495641694786",
+        "question_id": "10011300609",
+        "title": "有没有那种能够分析音视频的ai？",
+        "desc": "不仅仅是总结音视频中的内容，更重要的是ai能够评判视频画面美不美啊，构图合不合理啊等等。",
+        "created_time": 1764663653,
+        "updated_time": 1764663653,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI视频",
+        "user_id": "ddd3fcfbfcf9538c4eb9452402cf9e26",
+        "user_link": "https://www.zhihu.com/people/zhang-zi-fan-87",
+        "user_nickname": "七重人格",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "zhang-zi-fan-87",
+        "last_modify_ts": 1776057160136
+    },
+    {
+        "content_id": "1979222995638706728",
+        "content_type": "answer",
+        "content_text": "可以试下这个，专门做视频的网站，有文本生视频，图生视频，然后视频分析，视频分析还是用Gemini 3来实现的Image to Video Generator | imtovid：https://www.http://imtovid.com/video-analysis",
+        "content_url": "https://www.zhihu.com/question/12236067357/answer/1979222995638706728",
+        "question_id": "12236067357",
+        "title": "有什么 AI 技术可以分析视频？",
+        "desc": "可以试下这个，专门做视频的网站，有文本生视频，图生视频，然后视频分析，视频分析还是用Gemini 3来实现的Image to Video Generator | imtovid：",
+        "created_time": 1764663534,
+        "updated_time": 1764663534,
+        "voteup_count": 1,
+        "comment_count": 1,
+        "source_keyword": "AI视频",
+        "user_id": "ddd3fcfbfcf9538c4eb9452402cf9e26",
+        "user_link": "https://www.zhihu.com/people/zhang-zi-fan-87",
+        "user_nickname": "七重人格",
+        "user_avatar": "https://picx.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "zhang-zi-fan-87",
+        "last_modify_ts": 1776057160137
+    }
+]

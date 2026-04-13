@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11414030538",
+        "parent_comment_id": "0",
+        "content": "给的context不够明确，需要细化文档结构和规范.如果在文档工程依然不足以让ai正常工作，那就让他显示输出具体功能的需求理解和设计文档供我审查，让他按照审查和变更后的设计文档执行。通过模块划分和测试来规避。数据产生的模块和数据处理的模块不应该混在一起。ai没有脑子，只是按照你的输入拟合输出。起码目前此类提示词没有任何意义。",
+        "publish_time": 1770734776,
+        "ip_location": "新加坡",
+        "sub_comment_count": 0,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "2004631605738767406",
+        "content_type": "answer",
+        "user_id": "1c532ad9cc36be8fad96811887ab2a61",
+        "user_link": "https://www.zhihu.com/people/42-67-75-21",
+        "user_nickname": "回魂之人",
+        "user_avatar": "https://pic1.zhimg.com/v2-af24a52c64ad5552254ae6d3a20cd1e7_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776001643175
+    },
+    {
+        "comment_id": "11414523289",
+        "parent_comment_id": "0",
+        "content": "如果和候选人聊的不错，我还会问一个非正式的问题，你觉得AI Coding的智商是个什么水平？ 和你比哪个聪明？",
+        "publish_time": 1770721570,
+        "ip_location": "北京",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2004631605738767406",
+        "content_type": "answer",
+        "user_id": "ca82e82e9349ba70f5f99b48a8d6da00",
+        "user_link": "https://www.zhihu.com/people/yinian_work",
+        "user_nickname": "一念(工作中)",
+        "user_avatar": "https://picx.zhimg.com/v2-2b9898f59d03c7186151f845f2ce7ab9_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776001643182
+    }
+]

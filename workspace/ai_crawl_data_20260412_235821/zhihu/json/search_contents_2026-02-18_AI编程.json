@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2007728876894303557",
+        "content_type": "answer",
+        "content_text": "AI会替代大部分程序员，今年这个现象已经非常明显了。AI Agent 今年会迎来大爆发，这对大部分程序员会产生巨大冲击。AI的发展已经度过了2023-2025的早期发展阶段，进入了第二发展阶段，下一步的拐点会是MAG7何时削减AI开支。",
+        "content_url": "https://www.zhihu.com/question/1960623371101398549/answer/2007728876894303557",
+        "question_id": "1960623371101398549",
+        "title": "AI编程会替代程序员吗?",
+        "desc": "AI会替代大部分程序员，今年这个现象已经非常明显了。AI Agent 今年会迎来大爆发，这对大部分程序员会产生巨大冲击。AI的发展已经度过了2023-2025的早期发展阶段，进入了第二发展阶段，下一步的拐点会是MAG7何时削减AI开支。",
+        "created_time": 1771459866,
+        "updated_time": 1771459866,
+        "voteup_count": 13,
+        "comment_count": 2,
+        "source_keyword": "AI编程",
+        "user_id": "5ca9fa89b49e1f0b31445bb3b6d161a1",
+        "user_link": "https://www.zhihu.com/people/98-70-28-93",
+        "user_nickname": "五个小目标的胖虎",
+        "user_avatar": "https://picx.zhimg.com/50/v2-5ab55568a349760d954081e5a2825879_l.jpg?source=4e949a73",
+        "user_url_token": "98-70-28-93",
+        "last_modify_ts": 1776001470542
+    },
+    {
+        "content_id": "2007834808399700028",
+        "content_type": "answer",
+        "content_text": "现在的AI编程工具已经从“尝鲜”变成了“刚需”。简单盘点一下目前国内外主流的IDE、插件和模型。一、 主流 AI IDE（集成开发环境）这一类是“开箱即用”的典型，AI能力原生集成在编辑器里。Cursor特点： 独立IDE，基于VS Code魔改。目前口碑最好，支持Composer模式（多文件协同编辑），能直接通过自然语言生成并修改整个项目代码。优势： 上下文理解能力极强，体验最丝滑。GitHub Copilot Workspace特点： 微软官方出品，从单纯的“行内补全”进化到了“工作空间”级别，能理解Issue并自动规划代码修改。Trae（字节跳动）特点： 国内首款AI原生IDE，对标Cursor，对中文支持友好，集成了豆包等国产大模型，适合国内开发者。VS Code + 插件（传统模式）特点： 依然是大多数人的选择，通过安装插件来获得AI能力，灵活性高。二、 常用 AI 编程插件如果你不想换IDE，只想在现有的VS Code或JetBrains全家桶里“加点料”，这些插件是首选。GitHub Copilot地位： 行业标准。代码补全准确率高，支持聊天，生态最完善。Codeium特点： Copilot的最强平替。个人版免费且无限制，支持多种IDE，速度快，对个人开发者非常友好。通义灵码特点： 阿里出品。在国内企业级市场占有率很高，支持行间注释生成代码、单元测试生成，对中文语境理解很好。CodeGeeX特点： 清华团队出品，国产老牌插件，支持跨语言代码翻译，完全免费。Continue.dev特点： 开源界的宠儿。最大的特点是灵活，允许你接入任何API（OpenAI、Ollama本地模型等），适合喜欢折腾的开发者。三、 相关 Code 模型插件和IDE只是壳，模型才是核心。Claude系列评价： 目前公认的写代码最强模型。逻辑推理能力强，幻觉少，是Cursor等工具的首选模型，很多开发者为了它专门订阅Cursor Pro。GPT系列评价： 综合能力均衡，依然是Copilot背后的主力模型之一，响应速度快。DeepSeek系列评价： 国产之光。在编程榜单上长期霸榜，支持几百种编程语言，性价比极高，是很多国产插件（如Trae、问言）的底层支撑。Qwen-Coder系列评价： 通义灵码的基石，开源界表现优异，尺寸丰富，适合本地部署或企业私有化可以参考通过AI Coding原生开发的项目实录：用AI开发一个项目要多久：「朕已阅」开发实录",
+        "content_url": "https://www.zhihu.com/question/2004049939563581588/answer/2007834808399700028",
+        "question_id": "2004049939563581588",
+        "title": "你在用什么AI编程工具？",
+        "desc": "调研贴，你在用什么AI编程工具？每个月大概花多少钱在AI Coding上？",
+        "created_time": 1771485122,
+        "updated_time": 1771485122,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI编程",
+        "user_id": "bfa5721081ca2e46c7c40af6ec2c274c",
+        "user_link": "https://www.zhihu.com/people/vzixi",
+        "user_nickname": "企数智",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-c305b737e300856dee7e4c50b9efe14e_l.jpg?source=4e949a73",
+        "user_url_token": "vzixi",
+        "last_modify_ts": 1776001755804
+    }
+]

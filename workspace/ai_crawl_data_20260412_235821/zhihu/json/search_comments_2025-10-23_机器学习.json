@@ -1,0 +1,19 @@
+[
+    {
+        "comment_id": "11324724199",
+        "parent_comment_id": "0",
+        "content": "ml和dl还是有很多不一样的，可以先学学ml的insight，dl学完基础mlp，bp直接看发展历程的里程碑之作以及代码会很快。本质上来说更好的拟合这个目的是靠bp，label，和loss共同实现的，你问ai得到的基本上是幻觉，他说的那些东西是在面对不同任务，更难的任务或在发展中遇到问题所提出来的新的trick而不是insight。但本质上的架构没有变（当然你可以说架构什么的都变了，我指的是范式没有变。）",
+        "publish_time": 1761402071,
+        "ip_location": "浙江",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1964857241699070915",
+        "content_type": "article",
+        "user_id": "76aa49a45a6f4512a0bf14ac51ba55f4",
+        "user_link": "https://www.zhihu.com/people/wei-lian-shu-11",
+        "user_nickname": "知乎用户12654",
+        "user_avatar": "https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776005322784
+    }
+]

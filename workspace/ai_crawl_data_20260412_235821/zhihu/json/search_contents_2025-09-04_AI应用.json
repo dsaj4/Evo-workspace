@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1947014760169215240",
+        "content_type": "answer",
+        "content_text": "感谢邀请！答案是显然的： Yes！AI应用层公司们瑟瑟发抖。为什么呢？模型即应用，这基本可以认为是一个事实。一个AI应用，80%都和模型本身的能力有关。其他都相对次要。就像我们人和猩猩，都有手和脚，但人的价值是猩猩的无数倍，因为人的脑子远胜于猩猩的脑子。明白了这一点，你就会发现这次的AI革命和互联网革命，移动互联网革命的差别了。以移动互联网为例，苹果打造出iPhone作为平台，大家可以在上面开发app。但最牛的app不是苹果自己开发的。而大模型时代，不好意思，最牛的应用就是模型公司自己做的。因为它可以训模型，可以在需要的应用场景里通过RL使得效果变得更好！我们已经看到了例子：Cursor曾经非常火，但anthropic下场做了claude code后，大家用一下就纷纷转投claude code了，而cursor还得看anthropic脸色，新模型不给你用就不给你用。这就是纯应用层公司的尴尬之处。模型层公司下场做应用是简单的，因为手和脚做起来是容易的。但应用层也来训模型却要困难很多，几个问题：有模型层公司的算力吗？有模型层公司的infra吗？有模型层公司的算法人才吗？这些都没有怎么搞？这意味着在主航道，应用层公司是不可能和模型层公司竞争的。一定要避开模型层公司做的应用。在偏门的领域，应用层公司依然会有生存空间，也可能做点小的RL（受限于资源）能够超过不训练的frontier model的效果。毕竟市场无限大，就算是偏门，也是一场革命！",
+        "content_url": "https://www.zhihu.com/question/1946869173075539063/answer/1947014760169215240",
+        "question_id": "1946869173075539063",
+        "title": "OpenAI 开始组建应用团队，AI 大模型公司直接下场做 AI 应用，是不是降维打击？",
+        "desc": "OpenAI 宣布，在新任应用程序首席执行官 Fidji Simo 的带领下，正在积极组建其应用程序团队。Fidji Simo 于 8 月 18 日辞去 Instacart 的首席执行官职务，加入 OpenAI 担任高管。此举标志着 OpenAI 在增强其产品开发和用户体验方面的决心。在这一重组过程中，OpenAI 还确认了高管职位的调整，任命新的应用程序首席技术官，并宣布以 11 亿美元收购产品分析公司 Statsig。Statsig 专注于为希望改进产品的公司提供 A/B 测试和其他分析功能，以帮助企业在产品迭代中做出更为明智的决策。此次收购预计将进一步增强 OpenAI 在产品开发中的数据驱动能力。在收购完成后，Statsig 的创始人兼首席执行官 Vijaye Raji 将加入 OpenAI，担任应用程序首席技术官，负责 ChatGPT 和 Codex 等产品的工程开发。Raji 的职责将涵盖 OpenAI 的核心系统和产品线，包括基础设施和系统完整性，并直接向 Simo 汇报工作。OpenAI 在博客中表示，Statsig 的员工将在交易完成后成为 OpenAI 的正式员工，并将继续在西雅图办事处独立运营，以保持客户服务的连续性。此外，OpenAI 还对其他高管职位进行了调整。通过这些变动，OpenAI 展现了对提升产品开发、加强用户体验以及推动技术进步的战略决策，期待在未来的市场中取得更大的成功。（来源：aibase）OpenAI开始组建其应用团队",
+        "created_time": 1756984492,
+        "updated_time": 1756984492,
+        "voteup_count": 55,
+        "comment_count": 9,
+        "source_keyword": "AI应用",
+        "user_id": "23deec836a24f295500a6d740011359c",
+        "user_link": "https://www.zhihu.com/people/flood-sung",
+        "user_nickname": "Flood Sung",
+        "user_avatar": "https://picx.zhimg.com/50/v2-4e16a9f54de3b0dc09d0c0d5a7188df4_l.jpg?source=4e949a73",
+        "user_url_token": "flood-sung",
+        "last_modify_ts": 1775928113299
+    }
+]

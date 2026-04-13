@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2008124487808345830",
+        "content_type": "article",
+        "content_text": "举个在豆包生成视频的例子，提示词扩写公式：请基于【XXX】的创意，生成一份适用于【XX】秒短视频的结构化提示词。内容按以下结构输出：影片风格+主体+场景+情节+氛围+补充细节。 分镜形式的提示词扩写公式请基于[XXX】的创意，生成一份适用于【XX】秒短视频的结构化提示词。内容按以下结构输出：画面质感与风格&gt;角色与场景设定&gt;时间轴分镜(逐秒描述)补充要求与风格标签。这些方法在大佬总结的一个很厉害的仓库，对于Seedaabce2.0 、Nano banana Pro 、SunoV5、Kling，Wan，Sora2，Veo3.1，Z-image, Seedream, Gpt-image-1.5等内部集成AI软件大模型国内就表现出非常好的创意玩法，有Prompts页面，全网最全提示词，感觉要颠覆很多行业，例如AI音乐、AI漫剧以及AI出神图，可以自行去看看：https://www.bananapro.site?ref=gd",
+        "content_url": "https://zhuanlan.zhihu.com/p/2008124487808345830",
+        "question_id": "",
+        "title": "出AI视频例子",
+        "desc": "举个在豆包生成视频的例子，提示词扩写公式：请基于【XXX】的创意，生成一份适用于【XX】秒短视频的结构化提示词。内容按以下结构输出：影片风格+主体+场景+情节+氛围+补充细节。 分镜形式的提示词扩写公式请基于[XXX】的创意，生成一份适用于【XX】秒短视频的结构化提示词",
+        "created_time": 1771554263,
+        "updated_time": 1771554263,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI视频",
+        "user_id": "4a23927768b65c9d61e7a126b9bcb420",
+        "user_link": "https://www.zhihu.com/people/guo-yun-long-79-30",
+        "user_nickname": "AI的四驱八大缸",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-d4e9c77b9448f95f87a2f2e1ce64cbb0_l.jpg?source=4e949a73",
+        "user_url_token": "guo-yun-long-79-30",
+        "last_modify_ts": 1776056795186
+    }
+]

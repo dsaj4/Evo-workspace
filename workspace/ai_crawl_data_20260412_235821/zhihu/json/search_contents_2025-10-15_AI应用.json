@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1961846891017900804",
+        "question_id": "",
+        "title": "AI应用案例合集和学习资源大全！",
+        "desc": "亮点：案例超全、整合主流大模型、附赠开发指南+项目模板，小白也能DIY智能助手",
+        "created_time": 1760523021,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI应用",
+        "user_id": "e86a81bdc3499e97c911fb7b55a33922",
+        "user_link": "https://www.zhihu.com/people/geshouxin",
+        "user_nickname": "码蜂AI",
+        "user_avatar": "https://picx.zhimg.com/50/v2-72db9c8284b47589c1365d8a66b37f73_l.jpg?source=4e949a73",
+        "user_url_token": "geshouxin",
+        "last_modify_ts": 1775927964899
+    },
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1961853438301287726",
+        "question_id": "",
+        "title": "内容博主的一个AI+RPA应用案例",
+        "desc": "AI承担创意部分，生产内容；RPA承担机械发布部分，精确执行。这个案例同样可以移植到其他场景。",
+        "created_time": 1760522682,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI应用",
+        "user_id": "6c0e72a411b80a85dab8d6d50533d007",
+        "user_link": "https://www.zhihu.com/people/ronchin-zheng",
+        "user_nickname": "企业流程自动化",
+        "user_avatar": "https://picx.zhimg.com/50/v2-3e72cbef30605be7b9ee592eb5706e4a_l.jpg?source=4e949a73",
+        "user_url_token": "ronchin-zheng",
+        "last_modify_ts": 1775927964900
+    }
+]

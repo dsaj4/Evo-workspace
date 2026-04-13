@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2020993015397843250",
+        "content_type": "answer",
+        "content_text": "理论上没有限制，主要受限于资源，随着上下文长度增加，默认的模型结构对显存的消耗呈现n^2的增长。",
+        "content_url": "https://www.zhihu.com/question/6218271295/answer/2020993015397843250",
+        "question_id": "6218271295",
+        "title": "为什么大语言模型都有上下文长度限制？",
+        "desc": "上文可不可以用一种更加高效的方法存储，而不需要重新作为tokens输入？",
+        "created_time": 1774622283,
+        "updated_time": 1774622283,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "大语言模型",
+        "user_id": "b90935b74830e21f47e745d50ff7f21e",
+        "user_link": "https://www.zhihu.com/people/zhu-zhi-wen-9-90",
+        "user_nickname": "烛之文",
+        "user_avatar": "https://picx.zhimg.com/50/v2-63e1a01c90bdb8436acd9842d0e894b6_l.jpg?source=4e949a73",
+        "user_url_token": "zhu-zhi-wen-9-90",
+        "last_modify_ts": 1776037835469
+    },
+    {
+        "content_id": "2020987814301443242",
+        "content_type": "answer",
+        "content_text": "首推self-attention这篇paper，开启transformer一统江湖的序幕；其次苏神的RoPE这篇paper，以一种更优雅方式弥补transformer对位置信息不敏感的问题",
+        "content_url": "https://www.zhihu.com/question/1983561746586310631/answer/2020987814301443242",
+        "question_id": "1983561746586310631",
+        "title": "LLM大语言模型领域，你心中idea最惊艳的论文是哪篇？",
+        "desc": "近年来大语言模型得到了飞速的发展，在这个过程中从Transformer、GPT、RLHF、DPO 、Scaling law到当前各种顶会的论文，为推动大语言模型进步做出了巨大贡献，请写出这个过程中，你认为idea最惊艳的论文是哪篇？",
+        "created_time": 1774621043,
+        "updated_time": 1774621043,
+        "voteup_count": 5,
+        "comment_count": 0,
+        "source_keyword": "大语言模型",
+        "user_id": "b90935b74830e21f47e745d50ff7f21e",
+        "user_link": "https://www.zhihu.com/people/zhu-zhi-wen-9-90",
+        "user_nickname": "烛之文",
+        "user_avatar": "https://picx.zhimg.com/50/v2-63e1a01c90bdb8436acd9842d0e894b6_l.jpg?source=4e949a73",
+        "user_url_token": "zhu-zhi-wen-9-90",
+        "last_modify_ts": 1776038074397
+    }
+]

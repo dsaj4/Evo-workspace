@@ -1,0 +1,20 @@
+{
+  "total_comments": 139221,
+  "insecurity_comments": 1628,
+  "platforms": [
+    "bili",
+    "weibo",
+    "zhihu"
+  ],
+  "unique_dates": 375,
+  "date_min": "2024-10-12 00:00:00",
+  "date_max": "2026-04-13 00:00:00",
+  "panel_rows": 600,
+  "total_events": 33,
+  "events_by_type": {
+    "tech_positive": 26,
+    "job_negative": 4,
+    "policy": 2,
+    "report": 1
+  }
+}

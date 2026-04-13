@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2010491582013532002",
+        "content_type": "answer",
+        "content_text": "我个人理解应该会高度分化，甚至可能出现漏斗形的生态Coze 类平台（低代码/无代码）会成为绝对的“数量主流”，比如说大部分的的日常工具型 Agent、C端娱乐型 Agent、以及中小企业的轻量级工作流，都会跑在 Coze、Dify、FastGPT 这样的平台上。因为简单，没有代码的要求，直接拖拉拽就可以实现简单的功能，而简单的功能又是用的最多的。基于 LangChain、LlamaIndex 或从零手搓大模型 API 的原生开发，有着极致的灵活性、深度的系统集成能力、数据隐私的绝对安全、以及不受平台限制的定制化算法调度，会成为高价值商业场景的“质量主流”。 或者说这部分的是完全的定制并且能产生最大价值的。而且像 Coze 或 Dify 这类平台，底层逻辑大多是有向无环图（DAG）它们非常擅长处理“流水线工作”而多个Agent，比如说“圆桌会议”这种的需要角色分工、轮流发言、有主持逻辑、可能还要有异见和收敛机制，比如有状态的、动态的多角色编排。这种低代码平台根本没法描述清楚，也没法对流程进行设计，目前看这种 Multi-Agent 系统只能靠懂代码的开发者去原生搭建。所以这个赛道最后可能就是两个稳定的生态并行：平台那边用户量大、场景标准、商业化靠走量；原生开发这边用户少但需求复杂、单价高、壁垒也高。",
+        "content_url": "https://www.zhihu.com/question/1992162999306298530/answer/2010491582013532002",
+        "question_id": "1992162999306298530",
+        "title": "AI Agent赛道下是Coze这类平台会成为主流，还是基于LangChain的原生开发更具生命力？",
+        "desc": "低代码平台让普通人也能搓Agent，但灵活性受限；原生开发灵活但门槛高。未来Agent的分发和商业化，究竟会往哪个方向发展？",
+        "created_time": 1772118546,
+        "updated_time": 1772118546,
+        "voteup_count": 5,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "f7e39864b396951a9ea654a88af161cb",
+        "user_link": "https://www.zhihu.com/people/deephub",
+        "user_nickname": "deephub",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-396b58e3975da77d5ec6b46b5b513b7a_l.jpg?source=4e949a73",
+        "user_url_token": "deephub",
+        "last_modify_ts": 1776003850304
+    },
+    {
+        "content_id": "2010431633594008915",
+        "content_type": "answer",
+        "content_text": "ai面太广了，题主问到了Agent面试，之前总结过一些，就把大纲分享一下吧，需要全部内容的可以关注我关注私聊获取全部资料内容，无广、无推，就想在ai时代能一起与时俱进",
+        "content_url": "https://www.zhihu.com/question/2010307705408091202/answer/2010431633594008915",
+        "question_id": "2010307705408091202",
+        "title": "你目前主要靠什么方式来准备AI Agent面试？效果怎么样？",
+        "desc": "Agent架构、Agent开发、Agent运维",
+        "created_time": 1772104253,
+        "updated_time": 1772420239,
+        "voteup_count": 46,
+        "comment_count": 5,
+        "source_keyword": "AI agent",
+        "user_id": "83db13327ff1f05384c4a99391ddb76f",
+        "user_link": "https://www.zhihu.com/people/wu-yan-37-77",
+        "user_nickname": "无言",
+        "user_avatar": "https://pica.zhimg.com/50/v2-e662f494971672968fa13b1ddc99faba_l.jpg?source=4e949a73",
+        "user_url_token": "wu-yan-37-77",
+        "last_modify_ts": 1776003850304
+    }
+]

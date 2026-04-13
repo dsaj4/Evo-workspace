@@ -1,0 +1,95 @@
+{
+  "daily_parquet": {
+    "shape": [
+      800,
+      14
+    ],
+    "columns": [
+      "date",
+      "platform",
+      "total_comments",
+      "insecurity_count",
+      "insecurity_ratio",
+      "negative_count",
+      "negative_ratio",
+      "\u5931\u4e1a\u62c5\u5fe7_count",
+      "\u66ff\u4ee3\u7126\u8651_count",
+      "\u6280\u80fd\u8fc7\u65f6_count",
+      "\u804c\u4e1a\u7126\u8651_count",
+      "\u672a\u6765\u62c5\u5fe7_count",
+      "avg_likes",
+      "unique_users"
+    ],
+    "platforms": [
+      "all",
+      "bili",
+      "xhs",
+      "zhihu"
+    ],
+    "unique_dates": 361,
+    "date_min": "2024-10-12 00:00:00",
+    "date_max": "2026-03-30 00:00:00",
+    "total_comments": 229830,
+    "insecurity_count": 2484,
+    "insecurity_ratio_mean": 0.0055706407135797786
+  },
+  "all_csv": {
+    "shape": [
+      114915,
+      35
+    ],
+    "columns": [
+      "comment_id",
+      "parent_comment_id",
+      "create_time",
+      "video_id",
+      "content",
+      "user_id",
+      "nickname",
+      "sex",
+      "sign",
+      "avatar",
+      "sub_comment_count",
+      "like_count",
+      "last_modify_ts",
+      "source_date",
+      "platform",
+      "ip_location",
+      "note_id",
+      "pictures",
+      "publish_time",
+      "dislike_count",
+      "content_id",
+      "content_type",
+      "user_link",
+      "user_nickname",
+      "user_avatar",
+      "timestamp",
+      "date",
+      "datetime",
+      "source_date_parsed",
+      "has_insecurity",
+      "insecurity_category",
+      "insecurity_keywords",
+      "insecurity_count",
+      "has_negative_emotion",
+      "month"
+    ],
+    "platforms": [
+      "bili",
+      "xhs",
+      "zhihu"
+    ]
+  },
+  "events": {
+    "total_events": 33,
+    "event_types": {
+      "tech_positive": 26,
+      "job_negative": 4,
+      "policy": 2,
+      "report": 1
+    },
+    "date_min": "2024-11-01 00:00:00",
+    "date_max": "2026-03-10 00:00:00"
+  }
+}

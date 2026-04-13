@@ -1,0 +1,50 @@
+[
+    {
+        "user_id": "3706943839406380",
+        "nickname": "我不是原件",
+        "sex": "保密",
+        "sign": "",
+        "avatar": "https://i1.hdslb.com/bfs/face/037b98fdfebf2d4c2b043765ab8f45eb41407069.jpg",
+        "last_modify_ts": 1774588468776,
+        "total_fans": 328,
+        "total_liked": 505,
+        "user_rank": 2,
+        "is_official": -1
+    },
+    {
+        "user_id": "11445002",
+        "nickname": "狂想吉米",
+        "sex": "保密",
+        "sign": "一个专门做脑洞ai视频的up\n",
+        "avatar": "https://i2.hdslb.com/bfs/face/fa05c13f86842170200991574a21439a56397a02.jpg",
+        "last_modify_ts": 1774588468789,
+        "total_fans": 1205,
+        "total_liked": 33682,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "1263732318",
+        "nickname": "黑纹白斑马",
+        "sex": "女",
+        "sign": "赛博普罗米修斯",
+        "avatar": "https://i0.hdslb.com/bfs/face/2b14d2ad8fb6e1c70d927dcc713a8f047e3da8f8.jpg",
+        "last_modify_ts": 1774588468845,
+        "total_fans": 736251,
+        "total_liked": 8639407,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "1133458613",
+        "nickname": "十二禾泽",
+        "sex": "保密",
+        "sign": "飘风不终朝，骤雨不终日",
+        "avatar": "https://i2.hdslb.com/bfs/face/0fe8671b1f7f2ad519d3c88a89760b602904eb6c.jpg",
+        "last_modify_ts": 1774588468824,
+        "total_fans": 19195,
+        "total_liked": 118430,
+        "user_rank": 6,
+        "is_official": -1
+    }
+]

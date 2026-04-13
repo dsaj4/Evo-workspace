@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1966040096995271883",
+        "content_type": "answer",
+        "content_text": "把问题限定在北美读PhD的中国学生，我想来说说对于System方向CS PhD有没有必要读的看法。我的观点是：一切都应该从你的edge（通俗来说就是expertee）和你的兴趣出发。如果你在systems方向有很好的edge，而且你对这个方向感兴趣，那么恭喜，你应该去读Systems PhD，因为你大概率会再这个方向取得一些成果如果你在systems方向是个小白，但是你非常有passion，那么我觉得你可以一试，但是去试之前我建议你看看我写的另一个回答：计算机(分布式)系统/网络方向的phD是一种怎样的体验？如果你即是个小白也对这个方向没有太大passion，那我们建议你不要读system方向的PhD，因为这个方向的准入门槛要远远高于ML方向，community的开放程度也远远不如ML方向。读着读着你就会产生为啥不读ML PhD的念头。至于System方向CS PhD在北美的出路，我看到的case大概有这几种：在北美老牌大厂（google, meta, aws, etc）做software engineer，起始工资可能大概20-40w美刀一年在北美做教职（systems方向教职数量也少，所以竞争会有点激烈），起始工资大概10-20w美刀一年在北美AI startup做AI infra（这个是最新两年才兴起的，需要你做的是ML System，并且有iconic project做背书），起始工资1M美刀起一年（当然包含很多stock-based纸钱），最高上不封顶，比如这个11M四年的anthropic的offer：https://www.http://1point3acres.com/bbs/thread-1151446-1-1.html。在这个方向，似乎Systems PhD和ML PhD能拿到的起始包也没有差多少。",
+        "content_url": "https://www.zhihu.com/question/307580157/answer/1966040096995271883",
+        "question_id": "307580157",
+        "title": "非机器学习方向的 CS PhD 有必要读么？",
+        "desc": "在想，非机器学习方向的计算机 PhD，是否有必要读？（当然在有 offer 的情况下）背景：对计算机科学（如分布式系统、网络、数据库等方向）有兴趣（但不能算狂热），自觉，智商中等（肯定做不到 outstanding），自认为比较勤奋，家中无矿但不至于饿死（意思是不能不考虑收入）的中国本科生。原因：（很多是自己的揣测，求大佬批判）1. 找教职似乎很难。比如我所在的学校 CS 都是做机器学习的方向了，可以料想非机器学习的坑少，经费也难申请（貌似能不能 tenure 和你经费很相关？）2. 找工作（我是指写代码，非算法岗位的工作）似乎没有必要读 PhD，或者说非机器学习的 PhD 所用的技能在工作中也用不上。（我是指 normal 水平的 PhD，Jeff Dean、Sage Weil 这种神 PhD 不算）3. 很难出成果，更不好发文章（基友在的交大某实验室，做 system 方向，已经是国内最牛的了，但一年全组才能出一篇顶会，有的时候也不一定有），所以料想毕业很困难。PS: 1. 第一次提问，有点语无伦次23333，请见谅2. 没有机器学习真香的原因是① 没论文，然后看了一下周围同学的 CV，感觉申请 ML 的 PhD（master 估计也是）会被按在地上摩擦。② 相比看数学公式确实更喜欢 coding 一些（数学不好的本质暴露）",
+        "created_time": 1761520486,
+        "updated_time": 1761533153,
+        "voteup_count": 115,
+        "comment_count": 9,
+        "source_keyword": "机器学习",
+        "user_id": "c11aa122a82c395ef2d80fd8c803a2de",
+        "user_link": "https://www.zhihu.com/people/yang-ge-5-57",
+        "user_nickname": "洋哥",
+        "user_avatar": "https://pica.zhimg.com/50/v2-b473d6c4cab0d6590a6943f9b435cc9b_l.jpg?source=4e949a73",
+        "user_url_token": "yang-ge-5-57",
+        "last_modify_ts": 1776005192907
+    },
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1965111213445842014",
+        "question_id": "",
+        "title": "Python机器学习高阶实战：空间模拟与时间预测（一）",
+        "desc": "",
+        "created_time": 1761478215,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "e722d5b59bfb7e03b8790f7c72e439cf",
+        "user_link": "https://www.zhihu.com/people/yong-bu-fang-qi-86-72",
+        "user_nickname": "Ai尚研修",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-1a6667d0daf30a008f0df2a3637a1db3_l.jpg?source=4e949a73",
+        "user_url_token": "yong-bu-fang-qi-86-72",
+        "last_modify_ts": 1776005192909
+    }
+]

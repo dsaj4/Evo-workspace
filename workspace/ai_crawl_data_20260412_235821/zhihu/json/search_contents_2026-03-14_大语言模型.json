@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2016352940269518893",
+        "content_type": "answer",
+        "content_text": "Speculated Decoding告诉我们LLM等pretrain Decoding only transformer模型既不是想出来的也不是背出来的，而是猜出来的。工程角度上来说，只要猜测的足够准确，那么数学上你就可以提出模型的输出符合训练集和测试机的规律或representation。但是至于这个规律或表征是什么，目前我认为学界是放弃对其研究了。最近的一次大公司公开做科技实现是OpenAI让模型固定一个token的输出概率提升：Weight-sparse transformers have interpretable circuits。从工程角度来说，这个份工作屁用没有，既不是学界认知范围内的可解释性也没有提出新的拆黑箱的方法，也难怪挂preprint后没啥声音了。我认为不要思考模型本身，模型本身就是工具，有能工巧匠就有五体不勤。主要是还是工具的作用。至少Anthropic就用一个Claude Code和高度工程化的Skills和MCP成为了现在大模型领域绕不开的霸主之一。",
+        "content_url": "https://www.zhihu.com/question/2016292130935555869/answer/2016352940269518893",
+        "question_id": "2016292130935555869",
+        "title": "以GPT为代表的大语言模型究竟是什么。他们的回答是自己想的，还是背的？",
+        "desc": "大语言模型真实的竞争是什么。为什么这个领域进入到白热化的竞争状态。",
+        "created_time": 1773516003,
+        "updated_time": 1773517018,
+        "voteup_count": 4,
+        "comment_count": 0,
+        "source_keyword": "大语言模型",
+        "user_id": "5fc58c3d85f7cfc049add7aa10cf6a85",
+        "user_link": "https://www.zhihu.com/people/gygyk2000",
+        "user_nickname": "GYK",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-4bf2d979d3163ebcbe7afa0f31a05ff0_l.jpg?source=4e949a73",
+        "user_url_token": "gygyk2000",
+        "last_modify_ts": 1776037835495
+    }
+]

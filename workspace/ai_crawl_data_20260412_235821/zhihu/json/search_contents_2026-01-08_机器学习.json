@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1992911747871418152",
+        "content_type": "answer",
+        "content_text": "作为未来AI发展的重要方向之一，因果机器学习的研究前景非常广阔。它在任何需要回答“为什么”和“如果…那么…”（干预性）问题的领域都适用，尤其医学领域。因此，因果机器学习近年来热度持续攀升，主流AI顶会（比如AAAI）以及领域顶刊（比如Nature系列）都在持续接收相关的研究成果，对于论文er来说，是个机会很多的发文方向。不过，尽管发论文的机会不少，但竞争也挺激烈，简单“套用”因果概念到一个现有模型上这类法子已经行不通了，推荐各位关注顶会顶刊最新工作，往理论深入优化、应用领域痛点、经典方法解决新问题、交叉融合等角度思考。本文整理了15篇因果机器学习最新论文，基本都是顶会顶刊成果，方便大家了解前沿获取灵感，代码也附上了，大家可复现找思路。论文原文+开源代码需要的同学关注“学姐带你玩AI”公号（不懂的看我主页签名），那边回复“111”获取。Causal machine learning for single-cell genomics方法：论文介绍了因果机器学习在单细胞基因组学中的应用，重点讨论了其基本模型（默认细胞结构因果模型）及其局限性，并探讨了如何使模型更好地泛化、提高可解释性以及捕捉动态生物机制等开放性问题。创新点：提出默认细胞结构因果模型（cellSCM）来描述基因表达的因果关系。指出cellSCM忽略了未观测变量、时间因素和基因间的循环相互作用。探讨了因果模型在泛化、可解释性和动态机制学习方面的挑战和研究方向。Smart Green Nudging: Reducing Product Returns Through Digital Footprints and Causal Machine Learning方法：论文通过大规模随机现场实验研究了“绿色轻推”（告知消费者产品退货的环境影响）对减少产品退货的效果，并利用因果机器学习模型来识别不同消费者对这种干预的不同反应，以实现个性化的绿色轻推策略。创新点：开展大规模随机现场实验，验证“绿色轻推”可降低2.6%的产品退货率，且不影响销售额。运用因果机器学习模型，识别消费者对绿色轻推的不同反应，发现60%的消费者响应良好，40%的消费者反应不佳。基于模型预测，实施个性化绿色轻推策略，可使干预效果翻倍。Inferring Heterogeneous Treatment Effects of Crashes on Highway Traffic: A Doubly Robust Causal Machine Learning Approach方法：论文提出了一种因果机器学习框架，利用Neyman-Rubin因果模型构建问题框架，通过条件Shapley值指数进行变量选择以过滤不良变量，并借助结构因果模型定义因果效应的统计估计量，最终采用Doubly Robust Learning方法结合分类和回归机器学习模型来估计处理效应。创新点：提出新框架：结合因果模型和机器学习，研究交通事故对高速路速度的影响。引入条件Shapley值指数进行变量选择，过滤不良变量，提升因果效应估计的准确性。实验证明：不同类型事故对交通拥堵的影响不同，为交通管理提供科学依据。Causal machine learning for predicting treatment outcomes方法：论文探讨了因果机器学习在医学中预测治疗结果的应用，强调其在估计个体化治疗效果和预测不同治疗下患者结果方面的优势，有助于实现个性化医疗决策。论文还讨论了如何结合临床试验数据和现实世界数据使用因果机器学习，并提出了相关建议。创新点：提出因果机器学习在医学中预测治疗结果的新应用，强调其在估计个体化治疗效果方面的优势。讨论了如何将因果机器学习与临床试验数据及现实世界数据（如电子健康记录）结合使用。提供医学领域使用因果机器学习的建议，确保结果的可靠性和有效性。论文原文+开源代码需要的同学关注“学姐带你玩AI”公号（不懂的看我主页签名），那边回复“111”获取。",
+        "content_url": "https://www.zhihu.com/question/26976414/answer/1992911747871418152",
+        "question_id": "26976414",
+        "title": "除了深度学习，机器学习领域近年来还有什么热点吗？",
+        "desc": "想要自学下机器学习并将其付之于应用，近几年听到的一直都是Deep Learning，可能正好符合了大数据潮流吧。但我需要处理的问题的数据量很小，应该是个典型的小样本问题（样本数远小于特征维数）。我想问一下，除了深度学习外，机器学习领域近年来还有什么热点吗？对于典型的小样本问题效果比较好。谢谢诸位~",
+        "created_time": 1767927187,
+        "updated_time": 1767927187,
+        "voteup_count": 3,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "0a847893b1933d895cfc0ccfb45da30c",
+        "user_link": "https://www.zhihu.com/people/yu-zi-jiang-20-98",
+        "user_nickname": "鱼子酱",
+        "user_avatar": "https://picx.zhimg.com/50/v2-9c9e254429a7ad92ed3d8343146c1ef0_l.jpg?source=4e949a73",
+        "user_url_token": "yu-zi-jiang-20-98",
+        "last_modify_ts": 1776004869947
+    },
+    {
+        "content_id": "1992884506311553967",
+        "content_type": "answer",
+        "content_text": "完全可以，买两本书学学，再看看网上的视频，跑几个例程就差不多了。看有的答复说不要学机器学习了，要学深度学习，其实深度学习是机器学习的一个分支，一个子集。了解下机器学习早期的算法对理解机器学习是有帮助的，周志华的《机器学习》一书通俗易懂，对入门很有帮助。",
+        "content_url": "https://www.zhihu.com/question/7859966761/answer/1992884506311553967",
+        "question_id": "7859966761",
+        "title": "机器学习可以自学吗？",
+        "desc": "非cs专业，想了解下机器学习，该怎么学习和实践呢？",
+        "created_time": 1767920692,
+        "updated_time": 1767920692,
+        "voteup_count": 3,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "b39f7af82e26f570317aaa0ee70215b3",
+        "user_link": "https://www.zhihu.com/people/tu-xiang-chu-li-14",
+        "user_nickname": "图像处理",
+        "user_avatar": "https://picx.zhimg.com/50/v2-47a9352526d95dfdbad30719699f94f0_l.jpg?source=4e949a73",
+        "user_url_token": "tu-xiang-chu-li-14",
+        "last_modify_ts": 1776004869949
+    }
+]

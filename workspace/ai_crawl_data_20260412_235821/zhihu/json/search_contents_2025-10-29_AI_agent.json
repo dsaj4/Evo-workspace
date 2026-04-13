@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1967187876983842065",
+        "question_id": "",
+        "title": "让 AI 从会说到会做——Data Agent 数据智能体全面解析",
+        "desc": "在很多企业眼中，AI 似乎无所不能，但现实是——它会聊天，却难以真正“干活”。\n要让 AI 理解业务、处理数据、自动执行任务，需要一个真正懂企业业务的“AI 员工”——数据智能体（Data Agent）。\n它不是简单的对话接口，而是爱数决策智能平台的核心执行单元。\n通过业务知识网络理解语义，借助 Vega 虚拟化引擎连接多源异构数据，协同 Dataflow 处理任务，甚至能动态规划、多智能体协作，实现端到端的智能化执行。\n\n在本期《许鹏说AI》中，我们将全面解析数据智能体如何让 AI 从“会说”迈向“会做”，助力企业实现智能化升级。",
+        "created_time": 1761794290,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "13e4d7cecc2e016fea6cd5ebbbaaee7e",
+        "user_link": "https://www.zhihu.com/people/ai-shu-ruan-jian-eisoo",
+        "user_nickname": "爱数AISHU",
+        "user_avatar": "https://picx.zhimg.com/50/v2-5ad13a41fac55b76016a2c7edc89693f_l.jpg?source=4e949a73",
+        "user_url_token": "ai-shu-ruan-jian-eisoo",
+        "last_modify_ts": 1776004235713
+    },
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1967175826496784307",
+        "question_id": "",
+        "title": "0 基础必看！10 分钟搞懂 Agent 和 “扣子”，别再被 AI 术语绕晕了",
+        "desc": "这个视频原来是字节的内部培训材料，先学习过，现在公开出来，也是我的第一学习视频，对初学习非常友好，值得一看。“扣子” 是字节跳动推出的AI 对话产品，更偏向 “即用型工具”；Agent 不是某一个具体产品，而是AI 的一种 “高级形态”，核心在于 “能自主完成任务”;",
+        "created_time": 1761791739,
+        "updated_time": 0,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "9e1d08adfcff4770e7d554c65e9acd02",
+        "user_link": "https://www.zhihu.com/people/zw2002-42",
+        "user_nickname": "专注 Coze的阿伟",
+        "user_avatar": "https://pica.zhimg.com/50/v2-c64f0fe2609e0ebca4594693b43ad09a_l.jpg?source=4e949a73",
+        "user_url_token": "zw2002-42",
+        "last_modify_ts": 1776004339119
+    }
+]

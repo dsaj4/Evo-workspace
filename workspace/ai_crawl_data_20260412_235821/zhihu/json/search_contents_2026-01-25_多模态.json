@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1999076625690666566",
+        "content_type": "article",
+        "content_text": "📝 LLM (大语言模型)Do explanations generalize across large reasoning models关键词: reasoning, RL, Generalization简介: 东北大学等探究了大型推理模型 (LRM) CoT解释是否可以在不同的模型之间泛化。一个 LRM 生成的解释在应用于其他 LRM 时是否会产生相同的行为。论文发现：CoT 解释通常表现出这种形式的泛化性（即，它们提高了 LRM 之间的一致性），并且这种泛化性的提高与人类偏好排序以及强化学习后的训练结果相关. 链接: https://arxiv.org/pdf/2601.11517v1本文介绍了引出并评估逻辑链解释的方法。我们通过四种不同的方式，利用逻辑链向逻辑学习模型（LLM）提问，以评估解释的生成情况。空CoT。模型的思维标签之间不提供任何推理文本 默认CoT。使用模型自身的推理。(2.1) 使用贪婪解码，而 (2.2) 使用核心采样 迁移CoT。将一个模型的推理直接迁移到另一个模型，替换其自身的推理 集成CoT。生成器-评估器循环。生成器模型生成n = 3 个候选token（每个句子≤15个token），形成k个候选句子。  在引出这四种设置下的CoT之后,评估它们对新的LRM的泛化能力 MedCalc-Bench（上图）和指令归纳（下图）中不同思维设置下的平均成对一致性。对于表示集成认知能力（Ensemble CoT）的思维变体，斜杠（/）之前的模型作为生成器，而斜杠之后的模型作为评判者/评估者。结果同时报告了完整文本和移除最终答案后的文本。How Long Is a Piece of String? A Brief Empirical Analysis of Tokenizers关键词:Tokenization, Text Compression链接: https://arxiv.org/pdf/2601.11518v1 简介: 剑桥等系统性分析了不同LLM的tokenizer。分词方案差异显著。词元边界以阴影颜色表示，词元数量以紫色显示。“Antidisestablishmentarianism”一词的分词方式多种多样，使用的词元数量在 4 个（Fuyu）到 9 个（早期 Llama 模型）之间。对于包含较少唯一字母和较多元音的单词，例如夏威夷语单词 humuhumunukunukuapua’a ¯，分词方式的差异也显而易见。模型系列内分词器的微小变化会导致不同的分词结果，即使是相对简单的句子也是如此分词器-模型映射。分词器通常在不同模型之间共享。本文中的这些映射以及所有词元计数分析均基于所引用的代码库/SDK，通过经验推导得出。下文提及的分词器均指代相应的模型映射。Spurious Rewards Paradox: Mechanistically Understanding How RLVR Activates Memorization Shortcuts in LLMs关键词: RLVR, reward modeling链接: https://arxiv.org/pdf/2601.11061v1简介: 作者探究了RLVR中的perplexity paradox现象，即奖励中混入虚假奖励时模型的正确率反而能够提升。 🖼️ MLLM (多模态大模型)MHA2MLA-VLM: Enabling DeepSeek&#39;s Economical Multi-Head Latent Attention across Vision-Language Models关键词: MHA, MLA, attention, kv cache链接: https://arxiv.org/pdf/2601.11464v1简介: 提出了 MHA2MLA-VLM，一个参数高效且多模态感知的框架，用于将现成的 VLM 模型转换为 MLA 架构。 本文概述了使用 MHA2MLA-VLM 将 MHA/GQA 中的 VLM 转换为 MLA 的过程。我们的方法使注意力输入与 MLA 完全匹配，并且 KV 缓存的低秩压缩与 MLA 一致。模态解耦设计降低了截断损失，并最大限度地提高了预训练权重的参数复用率。包含两个核心技术：(1) 一种模态自适应的局部 RoPE 策略，通过选择性地屏蔽非关键维度来支持传统和多模态设置(2) 一种模态解耦的低秩近似方法，可以独立压缩视觉和文本 KV 空间。此外，我们引入了参数高效微调技术，以最大限度地降低适配成本，并证明最小化输出激活误差（而不是参数距离）可以显著减少性能损失。在三个代表性 VLM 模型上的大量实验表明，MHA2MLA-VLM 可以在使用最少监督数据的情况下恢复原始模型的性能，显著减少 KV 缓存占用空间，可以结合KV量化工作优化Think-Clip-Sample: Slow-Fast Frame Selection for Video Understanding关键词: frame selection, video understanding链接: https://arxiv.org/pdf/2601.11359v1简介: 人大等提出了TCS，一个无需训练用于长视频理解的frame selection框架。提出了一种无需训练的框架 Think-ClipSample (TCS) 通过两个关键组件增强长视频理解能力：（i）多查询推理，生成多个查询以捕捉问题和视频的互补信息（ii）片段级慢速-快速采样，自适应地平衡密集的局部细节和稀疏的全局上下文核心架构 Think-Clip-Sample (TCS) 架构i) 针对长视频中的问题，TCS 首先从不同角度思考查询语句，并利用 CLIP 模型检索具有高相关性和广泛覆盖范围的帧。(ii) TCS 不会简单地采样相似度得分最高的帧，而是识别出高相关性的视频片段(iii)应用慢速-快速采样策略，将更多帧分配到信息丰富的片段（黄色部分），并将剩余帧分配到非片段区域（灰色部分），从而同时保留局部细节和全局上下文信息。What Matters in Data Curation for Multimodal Reasoning? Insights from the DCVLR Challenge关键词: Data Curation, multimodal reasoning简介: 作者基于DCVLR挑战分析了Multimodal Reasoning data构造策略，发现基于难度的selection策略效果最好。链接: https://arxiv.org/pdf/2601.10922v1DCVLR 基线数据整理策略分为基于合成的方法和基于过滤的方法。Walton 多模态冷启动过滤基线提供了一个强大的初始语料库，并为我们基于难度的改进方法提供了启发。🎬 Generation (生成)PhysRVG: Physics-Aware Unified Reinforcement Learning for Video Generative Models关键词: video generation, RL, physics simulation链接: https://arxiv.org/pdf/2601.11087v1PhysRVG 的框架简介: 浙大等提出了一个基于物理的RL框架来提高视频生成模型遵循物理碰撞原则。 给定文本提示和上下文帧，该模型生成后续视频帧。对于真实帧和采样帧，我们通过向SAM2提供来自第一帧的物体坐标 来导出运动掩码，这些坐标在数据预处理期间已手动标注。计算物体轨迹 并执行碰撞检测。 计算采样轨迹和真实轨迹之间的轨迹偏移量， 根据碰撞信号 对其进行重新加权，得到加权轨迹偏移量 ，作为每个样本的得分。 所有 Transformer 模块均使用完整参数进行训练。 🤖 Agent (智能体)标题: BAPO: Boundary-Aware Policy Optimization for Reliable Agentic Search关键词: agent, search, RL项目: https://github.com/Liushiyu-0709/BAPO-Reliable-Search简介: 厦大等提出了BAPO，一个提高agentic search可靠性的RL框架，当前存在的问题：即使证据不足或推理达到极限。这种可靠性的缺失常常导致看似合理但不可靠的答案，在许多现实世界的场景中带来重大风险。 提出了边界感知策略优化（BAPO），这是一个新颖的强化学习框架，旨在培养可靠的边界感知能力，同时又不影响准确率。 BAPO引入了两个关键组件：(i) 基于群组的边界感知奖励机制：该机制仅在推理达到极限时才鼓励模型做出“不知道”的响应(ii) 自适应奖励调节器：该调节器在早期探索阶段策略性地暂停此奖励，防止模型将“不知道”作为捷径。在四个基准数据集上的大量实验表明，BAPO显著提高了智能体搜索的整体可靠性BAPO 的整体框架智能体推理阶段在此阶段，模型通过将思维过程与搜索环境交互交替进行，为每个问题生成一组轨迹。然后，这些轨迹被传递到奖励计算模块，该模块包含(b.1) 正确性奖励 （基于格式和结果的正确性计算得出）(b.2) 边界感知奖励（旨在当组中不存在正确轨迹时激励模型生成“不知道”的响应）(b.3) 自适应奖励调节器，该调节器根据探索阶段的“不知道”响应比例和稳定阶段的轨迹多样性自适应地禁用 。AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts关键词: agent, tool use, benchmark链接: https://arxiv.org/pdf/2601.11044v1简介: 上交等提出了AgencyBench，一个评估agent在long-horizon, real-world场景下的能力的benchmark。这是一个基于日常 AI 使用情况的综合基准测试，它评估了 32 个真实世界场景下的 6 项核心代理能力，这些场景包含 138 个任务，每个任务都有特定的查询、交付成果和评分标准。这些场景平均需要 90 次工具调用、100 万个token和数小时的执行时间才能解决 AGENCYBENCH 部署生成和评估流程。部署生成过程在工作空间内进行，代理在此接收任务查询和交付物，并通过与环境（例如工具执行结果和用户模拟代理的反馈）进行多轮交互来完成任务。任务完成后，交付物会同步到 Docker 沙箱中执行操作（例如 UI 操作），并将生成的工件传输到评估空间，由基于规则或基于大型语言模型的评估器根据任务评分标准进行评分（0-10 分）。",
+        "content_url": "https://zhuanlan.zhihu.com/p/1999076625690666566",
+        "question_id": "",
+        "title": "最近多模态工作整理",
+        "desc": "LLM (大语言模型)Do explanations generalize across large reasoning models 关键词: reasoning, RL, Generalization简介: 东北大学等探究了大型推理模型 (LRM) CoT解释是否可以在不同的模型之间泛化",
+        "created_time": 1769397057,
+        "updated_time": 1769397057,
+        "voteup_count": 9,
+        "comment_count": 0,
+        "source_keyword": "多模态",
+        "user_id": "feb2826dd6dfec58d17d55d628089693",
+        "user_link": "https://www.zhihu.com/people/ji-yi-zhong-mei-you-liu-zou-de-shi-guang",
+        "user_nickname": "欠阿贝尔两块钱",
+        "user_avatar": "https://pica.zhimg.com/50/v2-4aeb78d2d09478871b2aefba672b4aa2_l.jpg?source=4e949a73",
+        "user_url_token": "ji-yi-zhong-mei-you-liu-zou-de-shi-guang",
+        "last_modify_ts": 1776038740402
+    },
+    {
+        "content_id": "1999040791193068944",
+        "content_type": "answer",
+        "content_text": "最核心的技巧在于通过大规模高质量数据混合实现模态特征对齐后再使用精编的指令数据进行端到端监督微调从而高效统一视觉和语言理解能力",
+        "content_url": "https://www.zhihu.com/question/656307661/answer/1999040791193068944",
+        "question_id": "656307661",
+        "title": "训练多模态模型有哪些trick？",
+        "desc": "最核心的技巧在于通过大规模高质量数据混合实现模态特征对齐后再使用精编的指令数据进行端到端监督微调从而高效统一视觉和语言理解能力",
+        "created_time": 1769388465,
+        "updated_time": 1769388465,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "多模态",
+        "user_id": "c7cac96dc58ea9cc6a5b6d924f08d9e5",
+        "user_link": "https://www.zhihu.com/people/ge-ting-gen-shu-xue-xue-pai",
+        "user_nickname": "哥廷根数学学派",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-c25e2c1df36a103fa83e56b661d6b192_l.jpg?source=4e949a73",
+        "user_url_token": "ge-ting-gen-shu-xue-xue-pai",
+        "last_modify_ts": 1776038822372
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2014707762832109952",
+        "content_type": "article",
+        "content_text": "思维导图工具    ProcessOn-智能AI驱动的思维导图、流程图、Mermaid和公式编辑器",
+        "content_url": "https://zhuanlan.zhihu.com/p/2014707762832109952",
+        "question_id": "",
+        "title": "AI工具",
+        "desc": "思维导图工具 ProcessOn- 智能AI驱动的思维导图、流程图、Mermaid和公式编辑器",
+        "created_time": 1773123805,
+        "updated_time": 1773123875,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI工具",
+        "user_id": "5d5dd93f8b6d2c9c888c3234cf167d08",
+        "user_link": "https://www.zhihu.com/people/chen-chen-35-70-31",
+        "user_nickname": "陈辰",
+        "user_avatar": "https://picx.zhimg.com/50/v2-30b3299c793c3e753690c4d50b30b4dc_l.jpg?source=4e949a73",
+        "user_url_token": "chen-chen-35-70-31",
+        "last_modify_ts": 1776000515951
+    },
+    {
+        "content_id": "2014394991838004754",
+        "content_type": "answer",
+        "content_text": "作为2026年一直在用AI工具的人，我推荐这5个：1. OpenClaw AI助手 ⭐⭐⭐⭐⭐这是我最近发现的宝藏工具，完全免费。核心功能：智能对话搜索自动写文案文档总结浏览器自动化为什么推荐：中文友好24小时在线不限使用次数真实案例： 我写工作周报从30分钟缩短到5分钟。适用场景：写作学习工作效率2. ChatGPT老牌AI，依然强大。优势：逻辑推理强代码能力好知识面广缺点：需要付费国内访问麻烦3. Claude（或者开源的opencode）擅长长文本处理。优势：上下文超长输出质量高更像人类适用： 长文档总结4. 文心一言百度出品，中文理解好。优势：中文文化理解好国内访问快免费使用5. KimiMoonshot AI出的，免费好用。优势：支持长文本联网搜索完全免费总结建议如果是新手： 建议从OpenClaw开始，完全免费且功能全面。如果是程序员： 推荐ChatGPT，代码能力强。如果是内容创作者： 推荐Claude，写作质量高。如果预算有限： OpenClaw + Kimi，完全免费组合。",
+        "content_url": "https://www.zhihu.com/question/653751365/answer/2014394991838004754",
+        "question_id": "653751365",
+        "title": "目前，有哪些流行的AI工具？",
+        "desc": "AI工具除了可以用来写作，还有哪些主打其他功能的AI工具呢？",
+        "created_time": 1773049191,
+        "updated_time": 1773049191,
+        "voteup_count": 2,
+        "comment_count": 3,
+        "source_keyword": "AI工具",
+        "user_id": "3dca675297aa0a7588cd7f87d9ab382a",
+        "user_link": "https://www.zhihu.com/people/lao-luo-42-82",
+        "user_nickname": "老罗",
+        "user_avatar": "https://picx.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "lao-luo-42-82",
+        "last_modify_ts": 1776000515953
+    }
+]

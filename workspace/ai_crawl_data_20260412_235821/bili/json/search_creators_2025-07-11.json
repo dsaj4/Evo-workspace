@@ -1,0 +1,50 @@
+[
+    {
+        "user_id": "242124650",
+        "nickname": "KrillinAI小林",
+        "sex": "男",
+        "sign": "",
+        "avatar": "https://i2.hdslb.com/bfs/face/cf84d85aa7d11d08cb50278e3a4a600170114be4.jpg",
+        "last_modify_ts": 1774804219332,
+        "total_fans": 121677,
+        "total_liked": 178106,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "17966",
+        "nickname": "BillyHerrington",
+        "sex": "男",
+        "sign": "歪みねぇな！",
+        "avatar": "https://i2.hdslb.com/bfs/face/abd47aaaf42f7fc9156c1e2769ff00fffb6f7777.png",
+        "last_modify_ts": 1774804219314,
+        "total_fans": 2624,
+        "total_liked": 102648,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "26079128",
+        "nickname": "一席精选",
+        "sex": "保密",
+        "sign": "微信：yixiclub   \n微博@一席YiXi  \nApp已上线，请在各应用市场搜索“一席”，免费！下载\n主页：yixi.tv",
+        "avatar": "http://i2.hdslb.com/bfs/face/82ab6a4f595511095261b005a098576a6d2ac111.jpg",
+        "last_modify_ts": 1774804219344,
+        "total_fans": 978848,
+        "total_liked": 1715488,
+        "user_rank": 6,
+        "is_official": 1
+    },
+    {
+        "user_id": "447410245",
+        "nickname": "水栖亚人",
+        "sex": "保密",
+        "sign": "音符，蓝p，红皮书都是同个名字。技术力不够的地方就用整活来补足，再不行上点ai。不喜欢ai的好聚好散拉黑就好了，没必要私信骂我",
+        "avatar": "https://i1.hdslb.com/bfs/face/488c2f1b1fc7859758320a36bdc78c95de6ce56b.jpg",
+        "last_modify_ts": 1774804219355,
+        "total_fans": 17794,
+        "total_liked": 225333,
+        "user_rank": 6,
+        "is_official": -1
+    }
+]

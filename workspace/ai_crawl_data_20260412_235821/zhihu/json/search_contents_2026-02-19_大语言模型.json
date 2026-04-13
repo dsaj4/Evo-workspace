@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2008066303483732406",
+        "content_type": "answer",
+        "content_text": "因为语言建模任务具有天然的全监督性质扩大模型规模可以直接提升对海量文本中复杂依赖关系的建模能力视觉任务属于反问题求解单纯扩大规模难以突破病态性带来的性能瓶颈因此视觉领域更注重设计架构先验而不是盲目扩展尺寸",
+        "content_url": "https://www.zhihu.com/question/585025594/answer/2008066303483732406",
+        "question_id": "585025594",
+        "title": "为什么经常听到大规模语言模型，没听说大规模视觉模型？",
+        "desc": "因为语言建模任务具有天然的全监督性质扩大模型规模可以直接提升对海量文本中复杂依赖关系的建模能力视觉任务属于反问题求解单纯扩大规模难以突破病态性带来的性能瓶颈因此视觉领域更注重设计架构先验而不是盲目扩展尺寸",
+        "created_time": 1771540314,
+        "updated_time": 1771540314,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "大语言模型",
+        "user_id": "c7cac96dc58ea9cc6a5b6d924f08d9e5",
+        "user_link": "https://www.zhihu.com/people/ge-ting-gen-shu-xue-xue-pai",
+        "user_nickname": "哥廷根数学学派",
+        "user_avatar": "https://picx.zhimg.com/50/v2-c25e2c1df36a103fa83e56b661d6b192_l.jpg?source=4e949a73",
+        "user_url_token": "ge-ting-gen-shu-xue-xue-pai",
+        "last_modify_ts": 1776037948872
+    },
+    {
+        "content_id": "2007958211832066104",
+        "content_type": "answer",
+        "content_text": "追求所谓的AGI是着相了。若以模型结构见AGI，以数学范式求AGI，是人行邪道，不得见如来。你看计算机领域的宗门老祖图灵，人家就直接看本质，你管我什么技术什么方案，隔着一道帘子，5分钟内你分辨不出来是人是电脑，那就说明电脑有智能。ChatGPT参加图灵测试好几次了。每次成绩都不错。人类还有聪明和愚笨的呢，LLM总比笨的人类强吧？人类最终难题测试，99%的美国人去了要交白卷，gemini能达到30多分（百分制）。你说谁更有智能，谁更像AGI？现在大语言模型能感知的维度有点太少，出于仿生学，大语言模型需要演化到更成熟的全模态（视觉，听觉，嗅觉，味觉，温度，痛觉，重力，非可见光电磁信号……这些数据理论上能对齐），那时候说成为一个AGI会更合适一点。但这个目前的技术方案是没啥大问题的。",
+        "content_url": "https://www.zhihu.com/question/1974938017459347772/answer/2007958211832066104",
+        "question_id": "1974938017459347772",
+        "title": "语言大模型已经火了两年了，你还觉得它是通往AGI之路吗？",
+        "desc": "此问题由知乎科技 2025 年终策划「AI 中场时刻」提出，欢迎知友参与更多玩法  「AI 中场时刻」活动主会场 在经历能力跃升、局限暴露与方向分化之后，LLM 是否仍是通向更高智能的主路径？你是否依旧认可「从语言走向智能」的 AGI 进化论？",
+        "created_time": 1771514543,
+        "updated_time": 1771580861,
+        "voteup_count": 6,
+        "comment_count": 0,
+        "source_keyword": "大语言模型",
+        "user_id": "de7d334044cb513d88dfb54c2ada9e4d",
+        "user_link": "https://www.zhihu.com/people/jin-wei-37",
+        "user_nickname": "靳伟",
+        "user_avatar": "https://picx.zhimg.com/50/v2-bae4a29df04e6234d4afd58bf123ab46_l.jpg?source=4e949a73",
+        "user_url_token": "jin-wei-37",
+        "last_modify_ts": 1776037948873
+    }
+]

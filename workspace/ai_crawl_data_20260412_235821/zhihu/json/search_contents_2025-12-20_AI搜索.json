@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1986027437834924196",
+        "content_type": "answer",
+        "content_text": "不要谈颠覆了，已经没有传统搜索了。所有AI First的问题，都已经匹配了“AI概览”，搜索框可自动分类你的问题属于AI型问题，还是网址搜索型问题。定义一下的话，AI搜索=基于搜索的AI综述问答。从大模型落地来看，AI搜索，是大模型的第一应用，断崖式领先。第二，应该是AI生图。AI Chat不知道排到第几去了。 你可以把ChatGPT叫做AnswerGPT或SearchGPT，把豆包叫做搜包。Google最大的AI产品是 “AI概览”和“AI模式”而不是Gemini APP和Nano banana。虽然有“被动技”加持，但Google AI搜索月活20亿的触达率是真实的。推特上有人做了统计分析，Google AI搜索，已经成功阻止ChatGPT对搜索的入侵。Google为AI搜索投入了巨大的资源，AI模式无论是反应速度，搜索准确性都比Gemini App好，甚至UI都更有科技感，配图时的bug也更少，现在用的模型也不错，文笔秒OpenAI全家（除GPT-4.5外）。Gemini App就是后妈养的产品。可以想象，如果Google没有利用AI模型进行防御，ChatGPT现在真的是如入无人之境了。像国内，很多白领已经形成了在豆包上搜索的习惯，而且还是豆包搜索像B-shit的时候，就养成了习惯。相比较，我自己用AI搜索，是非常晚的事了，应该是o3以后，AI搜索才迎来了一次全面的提升。之前鸡毛蒜皮的事，就要动用一次Deep Research，完全没有耐心用。现在豆包跑一次ReAct，速度非常快，准确率也达到了我的要求，大部分时候比我自己手动搜索结果要好得多。 不过豆包的智力，也只能支持到AI搜索，对于字节来说，豆包的封顶应用就是搜索，其他高阶能力，都是可以放弃的。——GPT-5基本款拉胯的原因，也是这个，用小模型低成本保搜索，其他放弃。搜索的商业想象力更大一点，一旦垄断产生，未来就会有新的付费排序。 Chat就是个赔钱玩意儿。现在我会用Bing搜索一下插图，偶尔手动确认一下新闻来源，其他基本很少用传统搜索了。等养成了AI搜索的习惯，你会发现，传统搜索的本质是二次搜索，机器帮你page-rank一遍，你自己还要再从上往下搜索一遍，还要看多篇综合，有些时候，还是同一篇文章换个标题，徒增怒气值，AI直接把七八篇综合在一起，去重后融合。",
+        "content_url": "https://www.zhihu.com/question/1985672452714549258/answer/1986027437834924196",
+        "question_id": "1985672452714549258",
+        "title": "AI 大模型会彻底颠覆传统搜索引擎的形态和使用方式吗？",
+        "desc": "随着 ChatGPT 这类 AI 工具的兴起，我们获取信息的方式似乎正在发生变化。我很好奇未来人们还会像现在这样使用百度、谷歌吗，或者说，搜索引擎的定义会被重写吗？",
+        "created_time": 1766285839,
+        "updated_time": 1766285958,
+        "voteup_count": 54,
+        "comment_count": 0,
+        "source_keyword": "AI搜索",
+        "user_id": "bea84fe95aee12a6939ee59dde16d1b3",
+        "user_link": "https://www.zhihu.com/people/yu-you-56-63",
+        "user_nickname": "Trisimo崔思莫",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-f85c56a14245993531a1c36c47721ee4_l.jpg?source=4e949a73",
+        "user_url_token": "yu-you-56-63",
+        "last_modify_ts": 1776043568065
+    }
+]

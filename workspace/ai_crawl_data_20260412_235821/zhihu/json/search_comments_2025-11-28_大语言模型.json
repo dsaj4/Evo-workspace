@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11354165372",
+        "parent_comment_id": "0",
+        "content": "mid train和cpt啥区别",
+        "publish_time": 1764377212,
+        "ip_location": "浙江",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1977919130368745847",
+        "content_type": "answer",
+        "user_id": "b2abe4e0190a362f9cdec191d758aef7",
+        "user_link": "https://www.zhihu.com/people/kobe-bryant-44-46",
+        "user_nickname": "亚洲牧二凤",
+        "user_avatar": "https://pic1.zhimg.com/v2-e60b00bdc93383cee10424af804ab804_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038305653
+    },
+    {
+        "comment_id": "11355629147",
+        "parent_comment_id": "11354165372",
+        "content": "差不多的概念，不同地方叫法不一样",
+        "publish_time": 1764509482,
+        "ip_location": "天津",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1977919130368745847",
+        "content_type": "answer",
+        "user_id": "b23562ebdc1661267d19980b8461bbdf",
+        "user_link": "https://www.zhihu.com/people/wu-zhu-10",
+        "user_nickname": "Solaris",
+        "user_avatar": "https://pic1.zhimg.com/5df056187058411c8496922463cfc8a7_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038305974
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1999537723212595302",
+        "content_type": "answer",
+        "content_text": "langchain的两种策略其实已经说明一切如果厂商有相应支持，就优先采用厂商内置策略；如果厂商没提供支持或者需要适配不同厂商，就用extract工具。只要工具调用成功，获取的结果必然符合预期格式；如果调用失败，就把错误信息直接返回给大模型，让它再重新试",
+        "content_url": "https://www.zhihu.com/question/656512469/answer/1999537723212595302",
+        "question_id": "656512469",
+        "title": "如何让大语言模型输出JSON格式？",
+        "desc": "最近使用大语言模型开发应用时，常常需要llm直接输出JSON格式的内容。但经常会出现输出的格式不符合要求。有什么比较好的方法吗？",
+        "created_time": 1769506942,
+        "updated_time": 1769506942,
+        "voteup_count": 4,
+        "comment_count": 0,
+        "source_keyword": "大语言模型",
+        "user_id": "3a4c21b9a72cb64e280e7983f036c50d",
+        "user_link": "https://www.zhihu.com/people/bi-zou-long-she-xiao-tan-shu",
+        "user_nickname": "欲止",
+        "user_avatar": "https://picx.zhimg.com/50/256acb734dd8bb0c29c4857d9fbe0a40_l.jpg?source=4e949a73",
+        "user_url_token": "bi-zou-long-she-xiao-tan-shu",
+        "last_modify_ts": 1776038074409
+    }
+]

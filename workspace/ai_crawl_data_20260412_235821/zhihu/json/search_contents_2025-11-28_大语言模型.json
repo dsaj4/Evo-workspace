@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1977919130368745847",
+        "content_type": "answer",
+        "content_text": "补充到mid train里就好了。在后训练之前，最后的mid train阶段，补充缺失的能力，这样可以比较高效地进行版本迭代。很多机构发模型，你会发现结构没变，只变了日期或者小版本，其实就是在mid train里补数据，然后再走后训练。更新一下:  GPT5据说就是用的4o的底模继续做mid train搞出来的。。。。",
+        "content_url": "https://www.zhihu.com/question/653850424/answer/1977919130368745847",
+        "question_id": "653850424",
+        "title": "预训练完成的大语言模型如何进行后续知识更新？",
+        "desc": "对于市面上的大语言模型，比如GPT4，会时隔数月进行一次更新，并更新知识截断的日期，进行知识的更新。这个知识的更新具体是怎么做的呢？是延续着上一个版本的预训练模型进行继续训练吗？继续训练的数据集要如何设计呢？还有后续的SFT、RLHF阶段的指令微调都需要再来一遍吗（感觉成本颇高）？",
+        "created_time": 1764352668,
+        "updated_time": 1764509528,
+        "voteup_count": 9,
+        "comment_count": 2,
+        "source_keyword": "大语言模型",
+        "user_id": "b23562ebdc1661267d19980b8461bbdf",
+        "user_link": "https://www.zhihu.com/people/wu-zhu-10",
+        "user_nickname": "Solaris",
+        "user_avatar": "https://picx.zhimg.com/50/5df056187058411c8496922463cfc8a7_l.jpg?source=4e949a73",
+        "user_url_token": "wu-zhu-10",
+        "last_modify_ts": 1776038287036
+    }
+]

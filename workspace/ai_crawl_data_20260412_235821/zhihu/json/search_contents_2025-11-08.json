@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1970863571689767888",
+        "content_type": "answer",
+        "content_text": "我其实不懂AI，但是照着B站教程去GitHub库找开源项目也能折腾到“虽然不知道原理但是能实现我想要的目标”的程度，大概就是让AI自动回复客户消息，AI agent定期自动发邮件提醒工作内容，自动填EXCEL表，按数据库检索内部信息查知识库那种。然后我前阵子找了一份当客服的临时工作，就那种每分钟打字50个按话术小本子回复客户的工作。我嫌话术太复杂背不下那么多，临时查也麻烦，直接本地部署了个DS 老师按话术文档自动回复了。然后老板巡查的时候看我没在打字，他以为我在摸鱼。我给他解释了一下什么是AI客服，这个东西是怎么实现的，怎么去把话术导入进知识库和维护文档，他下午学了半天自己也学会了，然后当天晚上告诉我不用再来上班了，边上工位的同事一脸“WTF”的看我教老板这个东西，也不知道他们的命运后来如何。",
+        "content_url": "https://www.zhihu.com/question/363804778/answer/1970863571689767888",
+        "question_id": "363804778",
+        "title": "人工智能（AI）真的会带来大规模失业吗？",
+        "desc": "人工智能技术突飞猛进，作为科技进步的结果，很多人担心会给人类社会带来大规模失业冲击，事实上真会如此吗？人们对AI带来失业潮的担心，会不会就如当年人们对工业自动化带来的担心一样，最后社会产业的结构性多元变化所消化呢？",
+        "created_time": 1762670492,
+        "updated_time": 1762670492,
+        "voteup_count": 63,
+        "comment_count": 41,
+        "source_keyword": "人工智能",
+        "user_id": "41e30ce5c5a4f260c095ca0df0a7b3f6",
+        "user_link": "https://www.zhihu.com/people/a-fu-le-er-zhi-hui-tai",
+        "user_nickname": "千叶真名",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-e82bf6de3e89e6510d675c302edef013_l.jpg?source=4e949a73",
+        "user_url_token": "a-fu-le-er-zhi-hui-tai",
+        "last_modify_ts": 1775894798843
+    }
+]

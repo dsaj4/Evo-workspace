@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1980767458999686287",
+        "content_type": "answer",
+        "content_text": "大语言模型架构的选择，是算力效率主导的必然结果，也是 Scaling 理论验证后的胜出路径。其实在 ChatGPT 出来以前，业界还算是比较百家齐放的，除了 Decoder only 也有 Encoder only/ Encoder-Decoder 架构。来源：https://github.com/Mooler0410/LLMsPracticalGuide但是 ChatGPT 的出现，证明了 Decoder only 架构可以 Sacle up 上去，是经过验证的道路，所以跟着做的人变多也是正常的。同时 ChatGPT 也提供了一种新的应用交互方式，“聊天”。人人都会聊天，这也是它出圈的原因之一。Encoder only 的架构偏向做理解/分类的任务，如 Bert，即使在某一传统 NLP 任务做到多好的效果，终究能理解的人也是少数。最后从 Inference 层面看，我觉得 Decoder 能够更极致地重用 KV Cache。如果带上 Encoder，没有位置掩码，每次都要重算整个序列的 K/V，也是极大的浪费。",
+        "content_url": "https://www.zhihu.com/question/647100371/answer/1980767458999686287",
+        "question_id": "647100371",
+        "title": "为何当前gpt等大语言模型采用decoder only架构，而不采用完整的transformer架构?",
+        "desc": "大语言模型架构的选择，是算力效率主导的必然结果，也是 Scaling 理论验证后的胜出路径。其实在 ChatGPT 出来以前，业界还算是比较百家齐放的，除了 Decoder only 也有 Encoder only/ Encoder-Decoder 架构。",
+        "created_time": 1765031763,
+        "updated_time": 1765031763,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "大语言模型",
+        "user_id": "912acfe4a7fba962163259dd4a296111",
+        "user_link": "https://www.zhihu.com/people/qing-ge-45",
+        "user_nickname": "清歌",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-28037f4366fc201a72e5ae761e6a5d7f_l.jpg?source=4e949a73",
+        "user_url_token": "qing-ge-45",
+        "last_modify_ts": 1776038287024
+    }
+]

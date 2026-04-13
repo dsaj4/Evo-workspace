@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1984760526547476811",
+        "content_type": "answer",
+        "content_text": "要搞深度学习，你需要一定的数学基础、Python编程基础，然后再去学深度学习的训练框架PyTorch。数学储备：数学知识就是大一大二学的工科数学三件套：高等数学（实际就是微积分），线性代数和概率论。这些数学知识在《深度学习》这本书有过汇总。除了这本理论书外，最近有一本新上市的中译本《理解深度学习》。这本书总结了深度学习领域的最新进展，并且给出了数学表示。编程储备：现在深度学习的前端语言用的是Python。底层算法的实现用的是C++。Python比C++更容易上手，而且能够让你快速复现一些深度学习网络结构。学习PyTorchPyTorch是主流的深度学习训练框架，在学术界和工业界应用最广泛。以下两本书可以任选一本，学习PyTorch的基本用法。然后广泛做项目刷经验。学完这些之后，基本的理论储备和代码储备都够了。接下来，就是实战了。多做项目，在项目中解决问题，积累实战经验",
+        "content_url": "https://www.zhihu.com/question/655561956/answer/1984760526547476811",
+        "question_id": "655561956",
+        "title": "如何尽快的入门深度学习?",
+        "desc": "大创想做出一份好的结果，基于时间序列诊断疾病",
+        "created_time": 1765983784,
+        "updated_time": 1765983784,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "深度学习",
+        "user_id": "85f877703f0b8e2cace4db2bb63566a1",
+        "user_link": "https://www.zhihu.com/people/tian-shi-89",
+        "user_nickname": "天使",
+        "user_avatar": "https://pica.zhimg.com/50/v2-8aa875fecd09f0bcc5ee613fa21da871_l.jpg?source=4e949a73",
+        "user_url_token": "tian-shi-89",
+        "last_modify_ts": 1776005888098
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2021918296815970223",
+        "content_type": "article",
+        "content_text": "近年来，多模态融合已成为推动人工智能性能跃升的重要路径，并在医学诊断、自动驾驶、内容理解与大模型推理等场景中展现出强大潜力。然而，随着融合机制日益复杂，模型“为什么这样判断”却变得愈发不透明：不同模态的贡献边界难以厘清，跨模态交互过程难以追踪，面对模态缺失、噪声扰动与分布变化时，模型的鲁棒性与可信性也面临挑战。近三年，NeurIPS、ICML、CVPR及 Nature 系列期刊围绕可解释多模态融合展开了密集探索，试图借助概念级表征、模态归因、交互建模与反事实解释等思路，让多模态系统不仅“融合得更强”，也“解释得更清”。本文精选 15 篇代表性工作，带你快速把握这一方向的关键脉络与最新趋势。1.Multi-modal AI for opportunistic screening, staging and progression risk stratification of steatotic liver disease【创新点】① 把 3D NCCT、常规影像 biomarkers、血清 biomarkers 融合进一个统一的多模态框架；② 引入 Missing-Aware Modality Alignment (MAMA)，让模型在模态缺失时仍能稳定对齐与推理；③ 不只做单任务预测，而是把筛查、分期、进展风险分层放进同一个端到端系统。【方法】研究采用了一种创新的学习策略，在包含1,783例经组织病理学确认的脂肪肝和放射学报告的脂肪肝病例的大规模数据集上训练模型。【实验】模型在内部和外部数据集（共913例）以及真实世界患者数据（18,504例）上进行了广泛的回顾性验证，能够准确检测轻度至重度脂肪肝（≥S1），AUC值在0.903到0.929之间。此外，在模拟的脂肪肝患者一级风险评估的临床路径优化中，MAOSS识别出31%更多处于 steatohepatitis 和肝脏纤维化进展风险的患者。2.Towards accurate and interpretable competency-based assessment: enhancing clinical competency assessment through multimodal AI and anomaly detection【创新点】① 融合 视频、音频、患者监护数据 做临床能力评估；② 用异常检测而不是传统黑盒打分，学习“理想操作模式”来衡量偏离程度；③ 用 SHAP 给出可操作解释，能指出如沟通行为、监护仪关注度等关键贡献因素。【方法】 提出了一种多模态AI框架，该框架整合视频、音频和患者监测数据，以提供客观且可解释的能力评估。【实验】 通过90名麻醉住院医生的实验，建立了“理想”表现基准，并训练了一个异常检测模型（MEMTO）来量化与这些基准的偏差。从这些偏差中得出的能力分数与专家评分高度一致（Spearman’s ρ = 0.78；ICC = 0.75），并展示了高排名精度（Relative L2-distance = 0.12）。SHAP分析揭示了与患者监测器的沟通和眼神交流是关键变量驱动因素。通过将AI辅助的异常检测与可解释的反馈相结合，该框架解决了基于模拟教育的公平性、可靠性和透明度等关键挑战。这项工作为将AI整合到医学培训和推进可扩展、公平的能力评估提供了可操作的证据3.Layer-Wise Modality Decomposition for Interpretable Multimodal Sensor Fusion【创新点】① 提出层级模态分解，可在融合网络内部追踪不同模态的贡献；② 方法是post-hoc 且 model-agnostic，不强依赖具体融合骨干；③ 在camera-radar、camera-LiDAR、camera-radar-LiDAR等自动驾驶感知场景上验证了解释质量。【方法】 提出了一种名为层状模态分解（LMD）的模型无关可解释方法，该方法在预训练的融合模型的所有层中解耦模态特定的信息。【实验】 在自动驾驶的相机-雷达、相机-LiDAR和相机-雷达-LiDAR设置下，对预训练的融合模型进行了评估，使用结构化扰动指标和模态视觉分解验证了LMD的有效性，证明了其在解释高容量多模态架构中的实际应用性。",
+        "content_url": "https://zhuanlan.zhihu.com/p/2021918296815970223",
+        "question_id": "",
+        "title": "别只卷性能了！多模态的下一个风口是 “可解释”",
+        "desc": "近年来，多模态融合已成为推动人工智能性能跃升的重要路径，并在医学诊断、自动驾驶、内容理解与大模型推理等场景中展现出强大潜力。然而，随着融合机制日益复杂，模型“为什么这样判断”却变得愈发不透明：不同模态的贡献边界难以厘清，跨模态交互过程难以追踪，面对模态缺失、噪声扰动与分布变化时",
+        "created_time": 1774842969,
+        "updated_time": 1774842969,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "多模态",
+        "user_id": "2164f71cdcbabd8452934bbb3003c284",
+        "user_link": "https://www.zhihu.com/people/56-16-58-19-32",
+        "user_nickname": "Deepspur",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-2421eddc5fceb624655c72e0628c1999_l.jpg?source=4e949a73",
+        "user_url_token": "56-16-58-19-32",
+        "last_modify_ts": 1776038679837
+    }
+]

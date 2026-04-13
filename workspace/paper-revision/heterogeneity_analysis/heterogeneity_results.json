@@ -1,0 +1,8 @@
+{
+  "event_type": [
+    {
+      "event_type": "job_negative",
+      "n_events": 4,
+      "irr": 0.47518525428546904,
+      "p_value": 0.00016254973510549956,
+      "supported": 

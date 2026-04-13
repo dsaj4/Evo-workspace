@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1997333469609628399",
+        "content_type": "article",
+        "content_text": "开发编程（终端 / IDE / 代码代理）Claude Code（终端代码代理） 使用：需要订阅/API说明：终端里跑任务、改仓库、执行命令。OpenAI CodeX（终端代码代理） 使用：需要订阅/API说明：终端里跑任务、改仓库、执行命令，功能与 Claude Code 类似Gemini CLI（Google 终端 AI 代理） 使用：可免费使用，有配额限制说明：Google 提供的终端 AI 工具，功能与 Claude Code 类似Warp（AI 终端） 使用：Build 计划需要订阅说明：现代化 AI 终端，Build 计划含每月 1,500 AI credits，支持 BYOK（自带密钥）GitHub Copilot（代码补全/对话助手/终端工具） 使用：通过 GitHub Education 免费领取 Pro说明：提供终端 Copilot 工具，可在命令行中使用 AI 辅助；同时支持 IDE 内实时代码补全和 AI 对话助手，支持多种编程语言Cursor（AI IDE） 使用：订阅 Cursor Pro说明：集成 AI 的现代化 IDEOpenCode（开源终端/TUI 代码代理） 使用：开源软件，可接入多种模型说明：通用开源代理工具，支持接入不同 AI 模型账号，灵活配置Replit（在线 IDE + Agent） 使用：可免费使用，高级功能需订阅说明：浏览器内完成编写、运行、部署，适合快速原型开发和协作v0 by Vercel（UI/全栈原型生成） 使用：订阅 v0 Premium说明：AI 驱动的 UI 和全栈应用生成工具，Premium 含每月 $20 credits研究与知识工作（检索 / 文档 / 知识库）Perplexity 使用：订阅 Perplexity Pro说明：AI 搜索引擎，提供带来源的检索式问答和研究能力，支持文件上传分析Notion AI 使用：订阅 Notion AI说明：在 Notion 内实现内容总结、改写、知识库抽取与生成，作为工作流增强功能ChatGPT（客户端） 使用：Team 会员说明：OpenAI 的对话式 AI 助手，Mac端支持访问本地的一些软件中的内容，比较方便。Gemini（网页版） 使用：Google One 学生会员说明：Google 的 期间模型，推荐深度研究、大香蕉🍌。编排与管理（账号/API/配置/额度监控、多 Agent 协作）CC-switch（软件） 使用：独立软件工具说明：统一管理 Claude Code / Codex / Gemini CLI 的账号、API、配置、MCP、Skills 等，简化多工具切换Quotio（软件） 使用：独立软件工具说明：监控 Claude Code / Codex / Cursor 等工具的用量和额度，支持 CLI Proxy APIConductor（软件） 使用：独立软件工具说明：多 Agent 协作平台，每个对话独立工作区，支持接入 Claude Code / Codex 等工具Z Code（软件） 使用：智谱提供的工具说明：智谱的 AI 编程平台，类似终端，偏多 Agent / 协作/集成的编程工作流",
+        "content_url": "https://zhuanlan.zhihu.com/p/1997333469609628399",
+        "question_id": "",
+        "title": "个人使用的AI工具汇总",
+        "desc": "Claude Code 类似 Gemini CLI（Google 终端 AI 代理） 使用：可免费使用，有配额限制说明：Google 提供的终端 AI 工具，功能与 Claude Code 类似 Warp（AI 终端） 使用：Build 计划需要订阅说明：现代化…",
+        "created_time": 1768981475,
+        "updated_time": 1768981475,
+        "voteup_count": 19,
+        "comment_count": 0,
+        "source_keyword": "AI工具",
+        "user_id": "3cf656ba23a1b458aad7899de48314aa",
+        "user_link": "https://www.zhihu.com/people/sylearn",
+        "user_nickname": "Sylearn",
+        "user_avatar": "https://picx.zhimg.com/50/v2-44f597cd4cfd4e2e8862ee28b5b1c471_l.jpg?source=4e949a73",
+        "user_url_token": "sylearn",
+        "last_modify_ts": 1776000698439
+    }
+]

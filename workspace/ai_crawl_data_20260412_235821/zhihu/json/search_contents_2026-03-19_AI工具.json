@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2018081906684642622",
+        "content_type": "answer",
+        "content_text": "真正值得使用的都是机密文件没有人舍得拿出来分享",
+        "content_url": "https://www.zhihu.com/question/5303372534/answer/2018081906684642622",
+        "question_id": "5303372534",
+        "title": "有什么ai工具值得使用的？",
+        "desc": "现在的ai真的是太多了",
+        "created_time": 1773928220,
+        "updated_time": 1773928220,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI工具",
+        "user_id": "fdd820a3197531a39d33676427fb27dc",
+        "user_link": "https://www.zhihu.com/people/69-9-65-20",
+        "user_nickname": "妙不可言",
+        "user_avatar": "https://picx.zhimg.com/50/v2-0759e22ddb2da43728079707e8896cbc_l.jpg?source=4e949a73",
+        "user_url_token": "69-9-65-20",
+        "last_modify_ts": 1776000476771
+    },
+    {
+        "content_id": "2018259556229231723",
+        "content_type": "answer",
+        "content_text": "目前在用的是claude code 搭配minimaxclaude code 主要是国内安装部署方便，minimax是国内价格优惠实际用下来的感觉说实话还不错，搭建服务，从0到1按照要求规格开发。最大的震撼大概是第一次用的时候，需要做一个新项目的调研，看整套技术框架能不能用领导让AI整理了一套技术框架发给我，我大概看了看各个功能，感觉能够实现，然后把这套技术方案给到claude，让它按照这个框架给我搭建项目，要求是win本地的，我本地下载了docker，众所周知，docker最近国内的源基本都挂了。然后claude就自己思考，自己去找办法，连我都没找到国内能用的源，但是它居然把东西给我下载下来了，而且还成功部署到了我的本地docker里，并且成功启动，并且自己写好了前后端，做出了基础的demo让我来查看效果，整个过程我全程没有参与，最终的结果已经可以面向领导进行汇报了。后续用claude开发已经完成的项目时，感知并不明显，但是这已经是我目前能够接受的水平了，从几年前我就笃定AI一定会改变程序员这个行业，现在更是越来越清晰。",
+        "content_url": "https://www.zhihu.com/question/2018200589612360917/answer/2018259556229231723",
+        "question_id": "2018200589612360917",
+        "title": "程序员是怎样使用AI工具的？",
+        "desc": "minimax是国内价格优惠实际用下来的感觉说实话还不错，搭建服务，从0到1按照要求规格开发。最大的震撼大概是第一次用的时候，需要做一个新项目的调研，看整套技术框架能不能用领导让AI整理了一套技术框架发给我，我大概看了看各个功能，感觉能够实现，然后把这套技术方案给到claude，让它按照这个框架给我搭建项目，要求是win本地的",
+        "created_time": 1773970575,
+        "updated_time": 1773970575,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI工具",
+        "user_id": "72c4bf232c46a66a3f44e2ac9815c31f",
+        "user_link": "https://www.zhihu.com/people/xiao-meng-yao-8",
+        "user_nickname": "左梦天空",
+        "user_avatar": "https://picx.zhimg.com/50/v2-40fdccd7356f8982d5a4c2e9a31febfd_l.jpg?source=4e949a73",
+        "user_url_token": "xiao-meng-yao-8",
+        "last_modify_ts": 1776000515914
+    }
+]

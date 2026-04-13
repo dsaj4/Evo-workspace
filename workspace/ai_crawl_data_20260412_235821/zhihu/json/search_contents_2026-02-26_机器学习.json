@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2010396789589701093",
+        "content_type": "answer",
+        "content_text": "是的，你这个研究思路是哪个大神想出来的，通过数值解数据去喂一个机器学习模型，意义是不大的，唯一的研究意义就是，这个机器学习模型算的快。机器学习模型体量比较小，预测一下比较快。而你求一个数值解，可能要花1个小时甚至一下午。",
+        "content_url": "https://www.zhihu.com/question/611349381/answer/2010396789589701093",
+        "question_id": "611349381",
+        "title": "机器学习和有限元是不是在一定程度上重复了？",
+        "desc": "比如我想求解一个结构的变形，通过有限元建模，模拟其变形情况。同样进行机器学习，需要提供大量数据，又因为现实试验在种种条件下不允许，只能是通过有限元模拟将数据结构给机器学习，让机器学习可以预测结构变形，但是这种情况下机器学习还有必要吗，相应情况不是已经通过有限元模拟得出了吗。",
+        "created_time": 1772095946,
+        "updated_time": 1772095946,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "b194f3fbc039565e80441cfdf9e9d191",
+        "user_link": "https://www.zhihu.com/people/mang-ge",
+        "user_nickname": "苏霍伊",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-42eb847ae346f46f1551491d59b5b8ee_l.jpg?source=4e949a73",
+        "user_url_token": "mang-ge",
+        "last_modify_ts": 1776004944480
+    }
+]

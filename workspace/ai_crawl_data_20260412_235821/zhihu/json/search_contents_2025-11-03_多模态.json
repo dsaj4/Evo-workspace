@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1968939992299599208",
+        "content_type": "answer",
+        "content_text": "相同点：本质都是利用transformer模型进行建模，计算token之间的关系，并输出一个或多个token，所以，基础模型结构是相似的。区别：大语言模型（LLM，Large Language Model）输入的是文本（所表示成的token id），只有文本一种媒体形式，输出也是文本（所表示成的token id），也只有文本一种媒体形式，例如，常见的qwen/llama/deepseek等都属于大语言模型。大型多模态语言模型（正确缩写是MLLM，Multi modal Large Language Model），一般输入的可以是多种媒体形式（所表示成的token），输出是一种或多种媒体形式（所表示成的token），例如，输入图片和文字（问题prompt），可以输出回答或图片。输入输出可以是图片/视频/文字/3D数据/action等，stable diffusion/sora等都属于多模态模型。多模态模型除了面临LLM的问题外（例如，幻觉），其训练要更加复杂（例如，语言进行多种模态间的特征对齐，语言cross attention，语言针对每种模态媒体形式单独finetune，语言更苛刻的训练样本，需要更多的计算资源等等）单纯大语言模型解决不了很多问题和应用，未来的人工智能或具身智能需要AI Agent和多模态（例如，机器人）。",
+        "content_url": "https://www.zhihu.com/question/643917465/answer/1968939992299599208",
+        "question_id": "643917465",
+        "title": "大模型语言模型（LLM）和大型多模态语言模型（LMM）有什么区别？",
+        "desc": "输出也是文本（所表示成的token id），也只有文本一种媒体形式，例如，常见的qwen/llama/deepseek等都属于大语言模型。大型多模态语言模型（正确缩写是MLLM，Multi modal Large Language Model），一般输入的可以是多种媒体形式（所表示成的token）",
+        "created_time": 1762211875,
+        "updated_time": 1762212420,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "多模态",
+        "user_id": "b5eaff5312d5d0d4ee9c3f9ab29e543f",
+        "user_link": "https://www.zhihu.com/people/gugujixiaobao",
+        "user_nickname": "thanky",
+        "user_avatar": "https://pica.zhimg.com/50/v2-64ecaa51753ed4b06cec52c311d8ca6d_l.jpg?source=4e949a73",
+        "user_url_token": "gugujixiaobao",
+        "last_modify_ts": 1776038999047
+    }
+]

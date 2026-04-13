@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2026700470849152492",
+        "content_type": "article",
+        "content_text": "语言模型 (Language Model, LM)是自然语言处理的核心，其根本任务是计算一个词序列（即一个句子）出现的概率。一个好的语言模型能够告诉我们什么样的句子是通顺的、自然的。1.N-gram马尔可夫假设 (Markov Assumption)。其核心思想是：我们不必回溯一个词的全部历史，可以近似地认为，一个词的出现概率只与它前面有限的  个词有关，如下图所示。基于这个假设建立的语言模型，我们称之为N-gram模型。这里的 &#34;N&#34; 代表我们考虑的上下文窗口大小。马尔可夫假设示意图2.神经网络语言模型与词嵌入Bengio 等人提出的前馈神经网络语言模型 (Feedforward Neural Network Language Model) 是这一领域的里程碑，其核心思想可以分为两步：（1）构建一个语义空间：创建一个高维的连续向量空间，然后将词汇表中的每个词都映射为该空间中的一个点。这个点（即向量）就被称为词嵌入 (Word Embedding) 或词向量。在这个空间里，语义上相近的词，它们对应的向量在空间中的位置也相近。例如，agent 和 robot 的向量会靠得很近，而 agent 和 apple 的向量会离得很远。（2）学习从上下文到下一个词的映射：利用神经网络的强大拟合能力，来学习一个函数。这个函数的输入是前 个词的词向量，输出是词汇表中每个词在当前上下文后出现的概率分布。神经网络语言模型架构示意图3.循环神经网络 (RNN) 与长短时记忆网络 (LSTM)RNN 的设计引入了一个隐藏状态 (hidden state)向量，我们可以将其理解为网络的短期记忆。RNN结构示意图来源：Hello-Agents",
+        "content_url": "https://zhuanlan.zhihu.com/p/2026700470849152492",
+        "question_id": "",
+        "title": "三、大语言模型基础",
+        "desc": "语言模型 (Language Model, LM)是自然语言处理的核心，其根本任务是计算一个词序列（即一个句子）出现的概率。一个好的语言模型能够告诉我们什么样的句子是通顺的、自然的。 1.N-gram 马尔可夫假设 (Markov Assumption)。其核心思想是",
+        "created_time": 1775983188,
+        "updated_time": 1775984045,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "大语言模型",
+        "user_id": "7b8773113b722e52bd0262738d6c9048",
+        "user_link": "https://www.zhihu.com/people/suninkingdom",
+        "user_nickname": "Sunin",
+        "user_avatar": "https://pica.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "suninkingdom",
+        "last_modify_ts": 1776037750579
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1992513023978542778",
+        "content_type": "answer",
+        "content_text": "可以参考我的这篇 论文解读：A Survey on the Memory Mechanism of LLM based Agents",
+        "content_url": "https://www.zhihu.com/question/14455995105/answer/1992513023978542778",
+        "question_id": "14455995105",
+        "title": "大语言模型可以在和用户的交流中学习和记忆新知识吗?",
+        "desc": "目前已知大模型训练完成后，在和用户交互过程中不会保存用户侧信息，对话的连续性也只能靠输入历史对话来实现，模型本身不会发生任何变化，每个用户和它的交互都是独立的那么如果不考虑保存用户信息带来的隐私问题，把大量用户的输入内容也作为训练数据对模型本身进行实时微调（可以不记录具体的输入内容），类似于一个每天都在学习新知识的人；比如语言老师教它一门新的语言，厨师教它学新的菜谱；它学会后，所有用户都会共享这些变化；那么假以时日，它会不会像一个逐渐长大的婴儿一样进化出更强的思考能力如果被海量用户的输入进行训练是危险的（比如被不怀好意的人教坏了）那么是不是可以私有化部署此类可以进化和保存记忆的模型，比如在我自己的电脑里部署一个，学习我教给它的对话内容并能长期保留记忆；这种方式理论上可行吗？再比如我把这样一个模型装在电脑里发送到太空，有朝一日被外星人捕获，外星人对它进行再教育，然后发回地球，是不是可以充当不同文明间的沟通工具。",
+        "created_time": 1767832124,
+        "updated_time": 1767832124,
+        "voteup_count": 3,
+        "comment_count": 0,
+        "source_keyword": "大语言模型",
+        "user_id": "a9f84f36a68eab72b198f2c7709f1622",
+        "user_link": "https://www.zhihu.com/people/gangtao",
+        "user_nickname": "陶刚",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-741a8d9495d92b6e5076ba5c4f851452_l.jpg?source=4e949a73",
+        "user_url_token": "gangtao",
+        "last_modify_ts": 1776038074422
+    }
+]

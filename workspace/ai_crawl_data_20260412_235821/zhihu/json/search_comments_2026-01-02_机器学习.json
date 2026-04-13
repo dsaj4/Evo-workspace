@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11385641835",
+        "parent_comment_id": "0",
+        "content": "遗传挖完因子之后再回头想解释，就是另一种形式的先射箭再画靶，和黑箱有区别，但不大",
+        "publish_time": 1767665331,
+        "ip_location": "上海",
+        "sub_comment_count": 1,
+        "like_count": 4,
+        "dislike_count": 0,
+        "content_id": "1990599206663106691",
+        "content_type": "answer",
+        "user_id": "7834eea56051f41030c2820ad7c60130",
+        "user_link": "https://www.zhihu.com/people/liu-jian-jiang-84",
+        "user_nickname": "波动的浪",
+        "user_avatar": "https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776005039588
+    },
+    {
+        "comment_id": "11387678505",
+        "parent_comment_id": "11385641835",
+        "content": "而且废弃率极高。[滑稽][滑稽][滑稽]",
+        "publish_time": 1767850127,
+        "ip_location": "上海",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1990599206663106691",
+        "content_type": "answer",
+        "user_id": "1b082dfd658592e3278717adc3dadc99",
+        "user_link": "https://www.zhihu.com/people/ye-chen-8",
+        "user_nickname": "天呐你真高",
+        "user_avatar": "https://pic1.zhimg.com/v2-fa27d8e81f1d636389b801bd72cff738_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776005040015
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2004631605738767406",
+        "content_type": "answer",
+        "content_text": "Q1- 首先tare是什么，字节的Trae吗？Answer - 这个问题在我面试的时候优先度不高，我不会主动问。如果候选人在自我介绍的时候特别强调了熟练使用，我可能会问几句，我大概会这么问：1、现在你雇佣了一个AI码农给你干活儿，要在一个设计好的架构下符合一些代码规范的新增一些业务功能代码，你告诉了他业务规则和架构设计，发现他的输出代码要么不完全符合规范，要么不完全符合架构的要求，这时候你怎么办？2、现在假设你教好他怎么做了，他开始按照你预期的内容开始工作，但是过了两个小时以后，你突然发现他最新的回答不再按照你最开始教的内容来，这是为什么？3、因为上一次你的一个同事直接向生产环境发布了100%AI Coding的代码导致出现生产事故，最后排查到是AI偷偷摸摸的写了一个 create_test_data()，然后在main流程里直接调用data=create_test_data()，你同事自测的时候只看关键日志导致没发现，你认为这是哪个环节出现了问题，你会怎么规避这个问题？4、请回答是否遇到过这些问题:“为什么不直接给我可运行的完整代码？”,“都和你说了参考我之前的代码但不要改我的代码，你为什么要改我的代码？”“我在promopt里明确说了不要A方法去实现，为什么你还是用了?”",
+        "content_url": "https://www.zhihu.com/question/1984200702852081456/answer/2004631605738767406",
+        "question_id": "1984200702852081456",
+        "title": "找互联网大厂工作能跟面试官说自己熟练使用ai进行编程吗cursor,windsurf,tare这些？",
+        "desc": "你突然发现他最新的回答不再按照你最开始教的内容来，这是为什么？3、因为上一次你的一个同事直接向生产环境发布了100%AI Coding的代码导致出现生产事故，最后排查到是AI偷偷摸摸的写了一个 create_test_data()，然后在main流程里直接调用data=cre",
+        "created_time": 1770721419,
+        "updated_time": 1770721419,
+        "voteup_count": 4,
+        "comment_count": 2,
+        "source_keyword": "AI编程",
+        "user_id": "ca82e82e9349ba70f5f99b48a8d6da00",
+        "user_link": "https://www.zhihu.com/people/yinian_work",
+        "user_nickname": "一念(工作中)",
+        "user_avatar": "https://picx.zhimg.com/50/v2-2b9898f59d03c7186151f845f2ce7ab9_l.jpg?source=4e949a73",
+        "user_url_token": "yinian_work",
+        "last_modify_ts": 1776001556644
+    }
+]

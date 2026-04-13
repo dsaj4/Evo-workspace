@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2021666948333740312",
+        "content_type": "answer",
+        "content_text": "本教程来自2026 AAAI教程《一个稀疏训练的时代，为什么我们仍在高强度训练？》本文总结自第二讲 高效可扩展且鲁棒性AI的稀疏性：从CNN到生成模型本教程面向致力于降低大规模神经网络训练计算与能耗成本、同时保持模型性能的机器学习研究人员、从业者及高阶学生。参与者将系统学习动态稀疏训练（DST）的理论基础、核心算法与系统级实现，涵盖监督学习、强化学习、生成式人工智能（AI）及全流程稀疏部署场景。教程将算法原理与实战演示相结合，基于开源代码与商用硬件设备，构建贯通前沿研究至可执行系统的创新端到端视角。完成学习后，学员不仅能深入理解DST在性能与效率间的权衡机制，获得 Hands-on 实践经验，还可加入专属 Slack 社区，持续参与技术研讨、成果共享与协作研究，共同推动DST向可持续的绿色人工智能发展。本文已收录至本号文章合集机器学习、深度学习、CUDA编程、凸优化笔记合集1 引言将稀疏性引入模型：方法一：完整训练、测试剪枝方法二：稀疏训练，这里面又包括静态稀疏和动态稀疏，如下图2 通过稀疏训练增强效率通常为了得到强模型，模型是过参数化的、数据是冗余的。使用高质量数据：从更多数据到更好数据。选择一个子集进行训练，提升训练速度。数据稀疏性：让模型逐步聚焦于具有信息量的样本[1] Xiao Q, Ma P, Fernandez-Lopez A, et al. Dynamic data pruning for automatic speech recognition[J]. Interspeech, 2024.[2] Fernandez-Lopez, A., Chen, H., Ma, P., Yin, L., Xiao, Q., Petridis, S., &amp; Pantic, M. MSRS: Training multimodal speech recognition models from scratch with sparse mask optimization. Interspeech, 2024.在音频、视频数据上的结果3 从稀疏训练到稀疏可扩展通常扩展模型的手段：增大卷积核尺寸、扩大特征图尺寸、增大输入特征维度、增大模型深度3.1 核扩展相较于视觉Transformer，CNN通常感受野较小，难以捕获长程依赖问题：如果使用大尺寸卷积核，那么问题是计算效率变低，性能也不好。解决方案：可分解的卷积核 与 动态稀疏模型以保持计算成本[1] Liu, S., Chen, T., Chen, X., Chen, X., Xiao, Q., Wu, B., Kärkkäinen, T., Pechenizkiy, M., Mocanu, D., Wang, Z. More convnets in the 2020s: Scaling up kernels beyond 51x51 using sparsity. ICLR 2023.SLaK 这种等效大卷积核，还能关注到细节特征3.2 动态稀疏训练让模型自主学习最优的卷积核尺寸通道缩放[1] Xiao, Q., Wu, B., Zhang, Y., Liu, S., Pechenizkiy, M., Mocanu, E., &amp; Mocanu, D. C. (2022). Dynamic sparse network for time series classification: Learning what to “see”. NeurIPS 2022.[2] Wu, B., Xiao, Q., Liu, S., Yin, L., Pechenizkiy, M., Mocanu, D. C., Keulen, M., Mocanu, E. (2024). E2enet: Dynamic sparse feature fusion for accurate and efficient 3d medical image segmentation. NeurIPS 2024.3.3 Transformer的扩展[1] Thangarasa V, Saxena S, Gupta A, et al. Sparse-IFT: sparse Iso-FLOP transformations for maximizing training efficiency[C] ICML 20244 用稀疏增强鲁棒性在使用AI进行自动驾驶、医学图像分析时，如果遇到离群样本，预测错误的话后果严重[1] Wu, B., Xiao, Q., Wang, S., Strisciuglio, N., Pechenizkiy, M., van Keulen, M., ... &amp; Mocanu, E. Dynamic sparse training versus dense training: The unexpected winner in image corruption robustness. ICLR 2025.不同训练方式塑造的学习轨迹Chen, T., Zhang, Z., Wang, P., Balachandra, S., Ma, H., Wang, Z., &amp; Wang, Z. Sparsity winning twice: Better robust generalization from more efficient training. ICLR 2022.在含有带噪样本的数据集上，使用动态稀疏训练性能更好：使用动态稀疏训练后，模型在同一样本、不同噪声条件下的注意力更加稳定从频域分析的视角：低频信息变弱，准确率下降很多高频信息变弱，准确率下降不多[1] Wu, B., Xiao, Q., Wang, S., Strisciuglio, N., Pechenizkiy, M., van Keulen, M., ... &amp; Mocanu, E. Dynamic sparse training versus dense training: The unexpected winner in image corruption robustness. ICLR 2025.LLM中的稀疏路径，稀疏训练Transformer和对不同任务寻找各自的路径，能够增强可解释性，也更加安全[1] Gao L, Rajaram A, Coxon J, et al. Weight-sparse transformers have interpretable circuits[J]. arXiv:2511.13653, 2025.[2] Zou A, Phan L, Wang J, et al. Improving alignment and robustness with circuit breakers[J]. NeurIPS 2024.总结：用稀疏性三赢，曰可持续、曰准、曰安全",
+        "content_url": "https://www.zhihu.com/question/40503595/answer/2021666948333740312",
+        "question_id": "40503595",
+        "title": "现在的深度学习的模型越来越大，有个结论是说，大脑的激活是非常稀疏的，对模型参数有什么好的办法压缩吗?",
+        "desc": "深度学习，模型压缩http://www.cs.toronto.edu/~ranzato/publications/denil_nips2013.pdf",
+        "created_time": 1774782961,
+        "updated_time": 1774782961,
+        "voteup_count": 14,
+        "comment_count": 0,
+        "source_keyword": "深度学习",
+        "user_id": "8c1fea28e474c2c80934b26fceea9680",
+        "user_link": "https://www.zhihu.com/people/hua-nian-ss",
+        "user_nickname": "华年ss",
+        "user_avatar": "https://picx.zhimg.com/50/v2-ad6fd7f04875e21d81e07f8cb942cc36_l.jpg?source=4e949a73",
+        "user_url_token": "hua-nian-ss",
+        "last_modify_ts": 1776005435961
+    }
+]

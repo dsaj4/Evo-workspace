@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2009381249756706792",
+        "content_type": "article",
+        "content_text": "全世界真正在使用AI编程的人，可能不到百分之0.5。刚跟我在深圳大厂的程序员弟弟聊天。聊到AI，我很震惊。他居然只是简单的用一下豆包，工作中用到AI的地方都很少。甚至都不知道 Claude Code是什么。那一瞬间我突然冷静了。原来很多让我焦虑到失眠的东西，在现实世界里，根本还没大规模发生。我在信息流里刷到的只是X 上那一小撮极客，给我的感觉却仿佛人人都在用 AI重构工作流，实际上真正的一线工程师，好像也没有这么追赶AI。是我们被算法推到了一个认知泡沫里。我们误以为前沿等于主流，误以为极客圈的狂欢等于社会结构已经改变。其实没有。浪潮还在早期。窗口也还没关。有时候，焦虑是因为你站在放大镜下面，看见了一小撮人奔跑，就以为全世界都在冲刺。全世界真正在使用AI编程的人，可能不到百分之0.5。你能看到这条信息，证明你对AI的追赶已经比较靠前了。",
+        "content_url": "https://zhuanlan.zhihu.com/p/2009381249756706792",
+        "question_id": "",
+        "title": "全世界真正在使用AI编程的人，可能不到百分之0.5。",
+        "desc": "全世界真正在使用AI编程的人，可能不到百分之0.5。刚跟我在深圳大厂的程序员弟弟聊天。 聊到AI，我很震惊。他居然只是简单的用一下豆包，工作中用到AI的地方都很少。 甚至都不知道 Claude Code是什么。 那一瞬间我突然冷静了。 原来很多让我焦虑到失眠的东西",
+        "created_time": 1771853869,
+        "updated_time": 1771853869,
+        "voteup_count": 4,
+        "comment_count": 11,
+        "source_keyword": "AI编程",
+        "user_id": "7b65e6a2ea5cdd3524d4be6e601c0397",
+        "user_link": "https://www.zhihu.com/people/123-49-5-50",
+        "user_nickname": "风小海",
+        "user_avatar": "https://pica.zhimg.com/50/v2-9e33f0d748dc9c0826a4df936b34909d_l.jpg?source=4e949a73",
+        "user_url_token": "123-49-5-50",
+        "last_modify_ts": 1776001470540
+    },
+    {
+        "content_id": "2009338919754409034",
+        "content_type": "answer",
+        "content_text": "简单来说吧，现在AI提效的办法有很大一块儿就是把原来你需要写的prompt直接融进模型里面，你辛辛苦苦写的 system prompt，在下一次模型迭代就会被吸星大法一样吸到模型内置，包括你写的什么 skill 啊啥的。",
+        "content_url": "https://www.zhihu.com/question/2008176730532234790/answer/2009338919754409034",
+        "question_id": "2008176730532234790",
+        "title": "ClaudeCode 之父称不再需要「planmode」，将对 AI 编程带来哪些变革？",
+        "desc": "claude code之父：一个月后将不再需要plan mode丨y combinator",
+        "created_time": 1771843730,
+        "updated_time": 1771843730,
+        "voteup_count": 16,
+        "comment_count": 2,
+        "source_keyword": "AI编程",
+        "user_id": "0b4052801ca61df86bae64d4f9bed6e6",
+        "user_link": "https://www.zhihu.com/people/tang-yang-31-92",
+        "user_nickname": "唐阳",
+        "user_avatar": "https://picx.zhimg.com/50/v2-d356ceff35bbe045396b8d7c9b313162_l.jpg?source=4e949a73",
+        "user_url_token": "tang-yang-31-92",
+        "last_modify_ts": 1776002093237
+    }
+]

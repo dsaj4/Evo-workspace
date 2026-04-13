@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1946280429389849559",
+        "question_id": "",
+        "title": "AI Agent 基础设施 | E2B：安全、高效的开源沙盒执行环境",
+        "desc": "E2B 是一个开源基础设施项目，为 AI 生成代码与 Agent 提供安全、隔离的云端 sandbox。支持 Python 与 JavaScript SDK，能快速启动沙盒 (~150ms)、执行代码、读写文件、安装依赖，还基于 Firecracker 提供强隔离。支持部署在 AWS、GCP、Azure 等云平台，适合用于构建 AI 数据分析、代码 Interpreter 及 Agent 自动化流程。Apache‑2.0 许可，企业级安全保障。",
+        "created_time": 1756879631,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "f483c29116b41e9e107a26ccb74ec9c3",
+        "user_link": "https://www.zhihu.com/people/chatgpt1953",
+        "user_nickname": "山楂学姐",
+        "user_avatar": "https://picx.zhimg.com/50/v2-b3007c9ce39105d57e789539ac3a0384_l.jpg?source=4e949a73",
+        "user_url_token": "chatgpt1953",
+        "last_modify_ts": 1776004446320
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2023773897309341387",
+        "content_type": "answer",
+        "content_text": "这个世界终究是发展太快，尤其是ai大模型的发展，18年注意力机制transform诞生后，人们逐渐发现，多塞点东西给模型，效果会产生突变，22年之前chatgpt先找到了一点东西，开始探明了道路，23年chatgpt3.0一发布，好多人用起来，直接比copilot强不少，24年gpt3.5诞生后，能干的活就更多了，25年开始，代码端的进一步突破，国内外各种模型的发展，mcp skill都炸出来了从23年底开始用gpt网页搜索东西，24年开始debug，25年进一步在cursor的使用中，总结出了用大模型做项目的流程，也就是下文如何用cursor写项目之后在26年初，经过大半年实践后，进一步总结了大模型使用的精髓，也就是下文大模型做项目应该怎么用（一）如今，又过去了俩个月，对大模型干活的流程又有了更深的理解，遂进行记录目前大模型干活，最主要的工作更是代码流程的建立先提出想法，做约束，提出大致的目标，和模型进一步探讨，生成目标md文档，每个文档不要太长，循循善诱这一步，很多人在做的时候，会发现，对一些细节的探讨，会导致与ai的对话变得很乱，这时候，应该提前制定若干个md文档，这若干个md文档，其实是一种类skill的东西，不同领域，这若干个md文档是不一样的这里其实解决了一个分步的问题，当看起来一件事情变得复杂的时候，这一定是不对的，一定要分步化简，任何东西，最后一定是很简单的执行步骤才对这些基础md文档遵循总分或者总分总的结构，这类似于语文学的文学结构之后，在这些基础框架md文档上，和ai探讨接下来要完成的事情，就是做产品经理的过程，把文档的总架构敲定，之后做架构师，核心技术工程师，把数据结构，关键函数，ui界面，测试环节，都分别作为单独md文档，这些重要的单独的文档，其实就是总文档构建过程中，与ai探讨出来的结果这时候，就需要再开一个ai大模型，让其去检查这些文档，看看有没有遗漏或者不清晰的点，之后把意见给了第一个大模型，让其去重新修改文档，来回反复这中间的一些核心函数，关键接口的验证，都是在文档中验证好，然后写入文档中再就是，总文档中探讨出来的一些关键点，比如具体算法，api接口的调用，这些感觉ai可能出错的地方，一定要人协同共一遍，也就是关键点核查最后，开一个大模型，也就是基础程序员，完成全部代码框架的生成，这里面，可以让ai进行细分任务自测试以及在完成后，多问几遍ai，确认修改好了吗，完成了吗，往往其会对一些细节再调整这其中，有一些关键的点，一个就是感觉到任务复杂的时候，一定要划分任务，拆分，再拆分，只要拆分下去，一定会解决问题，这个思想很重要，任何事情都是这样的ai在信息的广度和细节上很强，但是在规划和记忆上需要人的帮忙，这个点上需要人机共建，还有就是目标上这三个点很好理解，因为目标是人定的，好的模型只是理解prompt更准确，但不能代替人，ai在细节厉害，规划方面就差了，需要人来辅助规划，其实规划也是目标的进一步划分，目标的进一步小目标确认所以，知道ai的优势，知道如何用ai很重要，知道自己想要的目标很重要，不清楚的时候，可以划分步骤，先探讨明确任务，确认关键步骤，验收结果",
+        "content_url": "https://www.zhihu.com/question/9006768468/answer/2023773897309341387",
+        "question_id": "9006768468",
+        "title": "目前，大模型真正已经落地的应用有哪些？",
+        "desc": "这个世界终究是发展太快，尤其是ai大模型的发展，18年注意力机制transform诞生后，人们逐渐发现，多塞点东西给模型，效果会产生突变，22年之前chatgpt先找到了一点东西，开始探明了道路，23年chatgpt3.0一发布，好多人用起来，直接比copilot强不少",
+        "created_time": 1775285297,
+        "updated_time": 1775285297,
+        "voteup_count": 2,
+        "comment_count": 0,
+        "source_keyword": "大模型",
+        "user_id": "f9b60fd57894a18d90af6f76fee25ea6",
+        "user_link": "https://www.zhihu.com/people/ke-kou-ke-le-45-22-14",
+        "user_nickname": "而我在等你",
+        "user_avatar": "https://picx.zhimg.com/50/v2-f1a484cba80929ba344c11e8d7fab4ef_l.jpg?source=4e949a73",
+        "user_url_token": "ke-kou-ke-le-45-22-14",
+        "last_modify_ts": 1775926097906
+    },
+    {
+        "content_id": "2023418715316725241",
+        "content_type": "article",
+        "content_text": "什么是大模型大模型（Large Language Model，简称LLM），具有几十亿到数千万亿的参数，他是通过极其庞大的海量数据训练的深度学习模型，主要用于理解和生成人类语言。国外的GPT系列、Gemini、Claude，国内的文心一言、通义千问、DeepSeek等都属于大模型，他的常见功能是智能对话、文本生成、机器翻译、代码辅助、多模态分析等等。什么是工具工具是大模型的外部功能模块，大模型可以调用它们来执行自己无法完成的任务，从而补齐自身“只能想无法做”的能力的限制。常见的工具包含几类：信息获取类，比如查询最新新闻，查实时天气，私有数据库查询计算类，比如精确的数学计算。代码执行类，比如运行Python代码。操作类，比如：发送电子邮件、关闭智能灯光，订外卖等。大模型如何调用工具大模型的工具是它的“超强外挂”，让它从一个静态的“知识聊天机器人”，进化成一个能调用API、执行代码、获取实时信息并操作现实世界的“智能体”（Agent）。 工具定义代码：# 工具1：查询天气（模拟）\ndef get_weather(city: str) -&gt; str:\n    # 模拟从 API 获取天气\n    weather_data = {\n        &#34;北京&#34;: &#34;晴天，25°C&#34;,\n        &#34;上海&#34;: &#34;多云，28°C&#34;,\n        &#34;深圳&#34;: &#34;暴雨，30°C&#34;\n    }\n    return weather_data.get(city, f&#34;未找到{city}的天气数据&#34;)\n\n# 工具2：发送邮件（模拟）\ndef send_email(recipient: str, subject: str, body: str) -&gt; str:\n    # 模拟发送邮件\n    print(f&#34;\\n[模拟邮件发送]&#34;)\n    print(f&#34;收件人: {recipient}&#34;)\n    print(f&#34;主题: {subject}&#34;)\n    print(f&#34;正文: {body}&#34;)\n    return f&#34;邮件已成功发送给 {recipient}&#34;大模型调用代码：import openai\n\n# 定义工具描述（传给模型）\ntools = [\n    {\n        &#34;type&#34;: &#34;function&#34;,\n        &#34;function&#34;: {\n            &#34;name&#34;: &#34;get_weather&#34;,\n            &#34;description&#34;: &#34;获取指定城市的天气&#34;,\n            &#34;parameters&#34;: {\n                &#34;type&#34;: &#34;object&#34;,\n                &#34;properties&#34;: {\n                    &#34;city&#34;: {&#34;type&#34;: &#34;string&#34;, &#34;description&#34;: &#34;城市名&#34;}\n                },\n                &#34;required&#34;: [&#34;city&#34;]\n            }\n        }\n    }\n]\n\n# 用户问题\nmessages = [{&#34;role&#34;: &#34;user&#34;, &#34;content&#34;: &#34;北京天气怎么样？&#34;}]\n\n# 调用模型（模型会决定是否调用工具）\nresponse = openai.chat.completions.create(\n    model=&#34;gpt-4o&#34;,\n    messages=messages,\n    tools=tools,\n    tool_choice=&#34;auto&#34;  # 让模型自动选择\n)\n\n# 获取模型输出的 tool_calls\ntool_calls = response.choices[0].message.tool_calls\nif tool_calls:\n    # 解析并执行你的本地函数\n    for tool_call in tool_calls:\n        func_name = tool_call.function.name\n        args = json.loads(tool_call.function.arguments)\n        # 调用你的函数...为什么大模型的response中会包含tool_calls？关键点是什么？大模型本身只是一个文本生成模型，它怎么“知道”该在什么时候调用哪个函数？1.训练阶段：让模型学会“调用函数”的格式普通的语言模型只会续写文本。要让模型学会调用函数，需要在微调（fine-tuning）阶段给它大量“用户问题 → 应该调用的函数指令”的示例数据。用户：北京天气怎么样？\n助手：{&#34;name&#34;: &#34;get_weather&#34;, &#34;arguments&#34;: {&#34;city&#34;: &#34;北京&#34;}}模型通过海量的训练数据，指令强化，学会了回复。2.推理阶段：通过“系统提示”告知可用工具在实际调用时（比如 OpenAI API 的 function calling），开发者会提供一个工具列表（tools）作为输入的一部分。这个列表包含了每个函数的名称、描述、参数结构（JSON Schema）。tools = [\n    {\n        &#34;type&#34;: &#34;function&#34;,\n        &#34;function&#34;: {\n            &#34;name&#34;: &#34;get_weather&#34;,\n            &#34;description&#34;: &#34;获取指定城市的天气&#34;,\n            &#34;parameters&#34;: {\n                &#34;type&#34;: &#34;object&#34;,\n                &#34;properties&#34;: {\n                    &#34;city&#34;: {&#34;type&#34;: &#34;string&#34;, &#34;description&#34;: &#34;城市名&#34;}\n                }\n            }\n        }\n    }\n]这个列表会被转换成自然语言描述，作为系统提示（system prompt）的一部分“告诉”模型： “你可以使用以下工具：get_weather 函数，它需要一个 city 参数。当用户问天气时，你应该输&gt; 出 {“name”: “get_weather”, “arguments”: {“city”: …}}。”3.模型提取正确的参数参数值（如 city=“北京”）是从用户问题中抽取出来的。模型通过学习大量示例，学会了语义映射：“北京的天气” → city = “北京”“上海会不会下雨” → city = “上海”这本质上是命名实体识别 + 意图理解的组合，模型把“北京”这个实体填到了 city 参数槽位里。4.文本解析，格式化tool_calls对象tool_calls = response.choices[0].message.tool_calls 并不是模型主动“知道”的结果，而是：模型生成了一段特殊格式的文本（例如 {&#34;name&#34;:&#34;get_weather&#34;,&#34;arguments&#34;:{&#34;city&#34;:&#34;北京&#34;}}）。OpenAI 的 API 服务端解析了这段文本，把它转换成了结构化的 tool_calls 对象。你的代码拿到这个对象，再调用真实的 Python 函数。模型并不知道最终会有一个叫 get_weather 的 Python 函数被调用，它只知道要输出那个特定的字符串。",
+        "content_url": "https://zhuanlan.zhihu.com/p/2023418715316725241",
+        "question_id": "",
+        "title": "大模型如何调用工具的",
+        "desc": "国外的GPT系列、Gemini、Claude，国内的文心一言、通义千问、DeepSeek等都属于大模型，他的常见功能是智能对话、文本生成、机器翻译、代码辅助、多模态分析等等。 什么是工具工具是大模型的 外部功能模块，大模型可以调用它们来执行自己无法完成的任务，从而补齐…",
+        "created_time": 1775200802,
+        "updated_time": 1775200802,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "大模型",
+        "user_id": "10257771cb7f481ff489ffe9aab7fcf2",
+        "user_link": "https://www.zhihu.com/people/wang-penn",
+        "user_nickname": "penn",
+        "user_avatar": "https://pica.zhimg.com/50/f7acdbe216703db4f197447d74ab7e13_l.jpg?source=4e949a73",
+        "user_url_token": "wang-penn",
+        "last_modify_ts": 1775926252239
+    }
+]

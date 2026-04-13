@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11354197270",
+        "parent_comment_id": "0",
+        "content": "广播电视编导专业的现在还能去培训机构学aigc吗？[蹲]",
+        "publish_time": 1764389717,
+        "ip_location": "重庆",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1977419258171527418",
+        "content_type": "answer",
+        "user_id": "bf26542bc125059a4cb5470e36b785f9",
+        "user_link": "https://www.zhihu.com/people/chen-yi-59-92",
+        "user_nickname": "陈熠",
+        "user_avatar": "https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775888347777
+    },
+    {
+        "comment_id": "11356134005",
+        "parent_comment_id": "11354197270",
+        "content": "可以啊，为什么不行",
+        "publish_time": 1764552287,
+        "ip_location": "陕西",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1977419258171527418",
+        "content_type": "answer",
+        "user_id": "a2f3510e11563745584e78f1c1d1f2b4",
+        "user_link": "https://www.zhihu.com/people/17791594952",
+        "user_nickname": "天工灵境AIGC学苑",
+        "user_avatar": "https://picx.zhimg.com/v2-ade1fcf48174cdadcc1931bf80cb48dc_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775888348327
+    }
+]

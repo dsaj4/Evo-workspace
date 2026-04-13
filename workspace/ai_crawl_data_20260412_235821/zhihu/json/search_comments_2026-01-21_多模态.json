@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11434843818",
+        "parent_comment_id": "0",
+        "content": "感谢[赞同]",
+        "publish_time": 1773139910,
+        "ip_location": "北京",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1997369840911009008",
+        "content_type": "article",
+        "user_id": "0ea5f38dfacf81dec515a966d0d3f3e8",
+        "user_link": "https://www.zhihu.com/people/zhu-ji-8-94",
+        "user_nickname": "null",
+        "user_avatar": "https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038838426
+    },
+    {
+        "comment_id": "11455634215",
+        "parent_comment_id": "0",
+        "content": "一看就大模型写的哈哈哈哈，但现在跟AI对话去学，是最经济的",
+        "publish_time": 1775471373,
+        "ip_location": "北京",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1997369840911009008",
+        "content_type": "article",
+        "user_id": "a63503086c1fce59b053c11093ad926f",
+        "user_link": "https://www.zhihu.com/people/sui-bian-97-56-81",
+        "user_nickname": "随便",
+        "user_avatar": "https://pic1.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038838428
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2021492424430593345",
+        "content_type": "answer",
+        "content_text": "这个问题太广泛，要细分领域的，还要分开源和闭源，这个又涉及到了费用问题了。举个例子，比如图像生成类的，开源的有stable diffusion, comfyui,后者的生态最强，适合本地化部署。如果有资金投入，一些国外的大模型效果也非常不错的。国内其他领域各头部公司出的AI都不错，豆包，千问，元宝等",
+        "content_url": "https://www.zhihu.com/question/2021305604623405985/answer/2021492424430593345",
+        "question_id": "2021305604623405985",
+        "title": "目前最真实好用的AI软件有哪些？",
+        "desc": "如题",
+        "created_time": 1774741351,
+        "updated_time": 1774741351,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI应用",
+        "user_id": "797ac8a40adb169866d4c0e86977d56e",
+        "user_link": "https://www.zhihu.com/people/muyuesenlin",
+        "user_nickname": "沐月森林",
+        "user_avatar": "https://pica.zhimg.com/50/v2-85ac2ec3ea8736926604ba8e37156fe9_l.jpg?source=4e949a73",
+        "user_url_token": "muyuesenlin",
+        "last_modify_ts": 1775926604837
+    },
+    {
+        "content_id": "2021357719077037496",
+        "content_type": "answer",
+        "content_text": "国内的四大，豆包、千问、元宝和deepseek，国外的克劳德、Gemini，都很不错，可以上api去用国外的。https://http://napiai.com/",
+        "content_url": "https://www.zhihu.com/question/2014769032612561542/answer/2021357719077037496",
+        "question_id": "2014769032612561542",
+        "title": "目前比较火的 AI 工具有哪些？",
+        "desc": "免费且好用的AI工具具体有哪些呢？",
+        "created_time": 1774709235,
+        "updated_time": 1774709235,
+        "voteup_count": 2,
+        "comment_count": 0,
+        "source_keyword": "AI应用",
+        "user_id": "7711a8948c04378b41d0565041a8d5ba",
+        "user_link": "https://www.zhihu.com/people/1-59-28-35-47",
+        "user_nickname": "AI 新玩家",
+        "user_avatar": "https://pica.zhimg.com/50/v2-5a7f63f460926ec4ce7c16a4f5da7028_l.jpg?source=4e949a73",
+        "user_url_token": "1-59-28-35-47",
+        "last_modify_ts": 1775926604839
+    }
+]

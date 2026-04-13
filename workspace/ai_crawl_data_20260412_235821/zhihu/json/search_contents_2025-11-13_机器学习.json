@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1972544824470119730",
+        "content_type": "answer",
+        "content_text": "机器学习的本质是概率论与数理统计，将机器类比人类大脑，喂给机器数据，并利用一些分类或拟合算法（即，模型）让机器学会辨别数据间的差异（学习的过程就是训练，训练完后，机器记住了先验知识，这些先验知识可以用来推理）",
+        "content_url": "https://www.zhihu.com/question/483570668/answer/1972544824470119730",
+        "question_id": "483570668",
+        "title": "如何一句话表述机器学习的原理？",
+        "desc": "机器学习理论十分庞杂，但是核心一定万变不离其宗，可否一句话概括一下呢？",
+        "created_time": 1763071334,
+        "updated_time": 1763071367,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "b5eaff5312d5d0d4ee9c3f9ab29e543f",
+        "user_link": "https://www.zhihu.com/people/gugujixiaobao",
+        "user_nickname": "thanky",
+        "user_avatar": "https://picx.zhimg.com/50/v2-64ecaa51753ed4b06cec52c311d8ca6d_l.jpg?source=4e949a73",
+        "user_url_token": "gugujixiaobao",
+        "last_modify_ts": 1776005106500
+    },
+    {
+        "content_id": "1972382932015495125",
+        "content_type": "answer",
+        "content_text": "你可以把机器比做一个人的大脑，你把一些先验知识喂给大脑，并告诉它如何学习不同知识的差别（学习的过程就是训练模型的过程），这就是机器学习，一般来说，你教给它多少，它最多能知道多少，很难知道的比你教给它的多，有多少人工就有多少智能，这就是机器学习。",
+        "content_url": "https://www.zhihu.com/question/434249241/answer/1972382932015495125",
+        "question_id": "434249241",
+        "title": "如何最简单、通俗地理解什么是机器学习？",
+        "desc": "你可以把机器比做一个人的大脑，你把一些先验知识喂给大脑，并告诉它如何学习不同知识的差别（学习的过程就是训练模型的过程），这就是机器学习，一般来说，你教给它多少，它最多能知道多少，很难知道的比你教给它的多，有多少人工就有多少智能，这就是机器学习。",
+        "created_time": 1763032736,
+        "updated_time": 1763032736,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "b5eaff5312d5d0d4ee9c3f9ab29e543f",
+        "user_link": "https://www.zhihu.com/people/gugujixiaobao",
+        "user_nickname": "thanky",
+        "user_avatar": "https://pica.zhimg.com/50/v2-64ecaa51753ed4b06cec52c311d8ca6d_l.jpg?source=4e949a73",
+        "user_url_token": "gugujixiaobao",
+        "last_modify_ts": 1776005106501
+    }
+]

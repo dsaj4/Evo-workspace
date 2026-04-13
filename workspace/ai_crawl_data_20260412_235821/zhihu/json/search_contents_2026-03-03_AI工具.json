@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2012537098666779219",
+        "content_type": "answer",
+        "content_text": "我可以推荐一个我和团队一起研发的一个API网站：cqtai.com，这个网站的模型目前有Suno、Veo3.1、Nano Banana Pro和Sora2这四个网站已经稳定运行两年多零故障了，不用翻墙魔法，也不要谷歌账号，qq邮箱登录即可，支持文/图生图、文/图生视频、文生音乐等透明计费，按量计费清晰明了，没有任何隐藏费用，用多少充多少，失败即退费，计费倍率与官方同步，更新速度也与官方同步，支持企业开发票，24h客服在线，不管是充值还是答疑都能做到秒复图片示例：视频示例：https://www.zhihu.com/video/2012536966210663141https://www.zhihu.com/video/2012537026063389148传送门：cqtai.com",
+        "content_url": "https://www.zhihu.com/question/660993746/answer/2012537098666779219",
+        "question_id": "660993746",
+        "title": "有什么好用的AI工具推荐吗？",
+        "desc": "代码纠错，写论文，流程图类图绘制，ppt制作，网页翻译，文献总结，文生图等，国内外皆可，最好是免费的（有任一功能就行，不是指一个工具满足所有需求）",
+        "created_time": 1772606235,
+        "updated_time": 1772606235,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI工具",
+        "user_id": "b5af94e2fc729d425c9a2d16c2811f8f",
+        "user_link": "https://www.zhihu.com/people/ai-18-54-83",
+        "user_nickname": "ai小狗",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-f1be5ed24936a7311e75da3884b2bd6d_l.jpg?source=4e949a73",
+        "user_url_token": "ai-18-54-83",
+        "last_modify_ts": 1776000515970
+    },
+    {
+        "content_id": "2012493085192528374",
+        "content_type": "article",
+        "content_text": "AI 工具越来越多，真正值得开发者长期关注的，不再只是“单点能力强”的模型，而是能把 编排、知识库、自动化、Agent、生成式媒体 串起来的 工作流平台。如果你正在搭建 AI 应用、企业助手、自动化流程，下面这份 2026 年值得关注的工具清单，可以作为一个不错的起点。一、企业级 AI 应用与 Agent 平台这一类工具更适合做内部知识库问答、业务助手、流程协作系统。FastGPT：偏企业场景，强项是可视化 Workflow、知识库管理和 RAG 检索，适合快速搭建企业专属 AI 应用。Dify：开发者常用的 AI 工作流平台，兼顾可视化搭建、部署与管理，适合做生成式 AI 应用和智能 Agent。BetterYeah：面向企业的一站式 AI 智能体平台，适合团队级开发与落地。扣子：更偏生产力场景，覆盖内容创作、数据分析、设计开发等任务，适合快速验证业务流程。FastGPT二、自动化工作流平台（连接业务系统）如果你的重点是“把 AI 接进现有业务系统”，这一类工具会更实用。n8n：灵活度高，支持拖拽 + 代码，自托管友好，适合技术团队做深度定制。Make：可视化程度高、上手快，集成生态广，适合非纯技术团队也能参与搭建流程。Zapier：自动化老牌平台，连接应用数量多，适合快速打通 SaaS 工具链。Diaflow：AI 原生数据自动化方向，适合数据驱动型业务自动化场景。Diaflow三、生成式内容与节点编排工具如果你的项目涉及图像、视频、音频或多模态工作流，这一类值得重点关注。ComfyUI：开源、节点式、可扩展，适合做图像/视频/3D/音频生成工作流编排。BuildShip：AI 驱动的流程构建工具，支持提示词转流程，同时保留代码控制能力。Craft Agents：图形化桌面 Agent 工作台，可调用 API、本地文件和私有工具，并支持记录过程为可分享文档，适合知识型/流程型任务协作。Crun.ai:通过一个 API 接入 100+ 顶级 AI 模型——视频、图像和音频。快速集成、低成本、高性能，开发者友好。Craft AgentsCrun.ai四、预算有限时，开发者该怎么选？如果你不想一开始就投入太多，建议按“一主一辅”组合思路来选：主平台（必选其一）：Dify / FastGPT / n8n（看你偏应用、企业知识库还是自动化）辅工具（按需求补）：ComfyUI（多模态生成）、Zapier/Make（SaaS连接）、Craft Agents（桌面代理协作）这样做的好处是：先把核心流程跑通，再按场景扩展，避免重复采购、重复学习。2026 年值得开发者关注的 AI 工作流工具，不是“谁最火”，而是 谁能更快接入你的业务、谁更容易长期维护、谁更省试错成本。先选核心平台，再补能力模块，才是更稳的路线。",
+        "content_url": "https://zhuanlan.zhihu.com/p/2012493085192528374",
+        "question_id": "",
+        "title": "2026 最值得开发者关注的 AI 工作流工具（收藏版）",
+        "desc": "AI 工具越来越多，真正值得开发者长期关注的，不再只是“单点能力强”的模型，而是能把 编排、知识库、自动化、Agent、生成式媒体 串起来的 工作流平台。如果你正在搭建 AI 应用、企业助手、自动化流程，下面这份 2026 年值得关注的工具清单，可以作为一个不错的起点",
+        "created_time": 1772595935,
+        "updated_time": 1772595935,
+        "voteup_count": 3,
+        "comment_count": 1,
+        "source_keyword": "AI工具",
+        "user_id": "f1a45352c64a96bbcb85971341ca9321",
+        "user_link": "https://www.zhihu.com/people/xyy-62-76",
+        "user_nickname": "千寻",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-30ae288d351f4deb006e6b94058077f6_l.jpg?source=4e949a73",
+        "user_url_token": "xyy-62-76",
+        "last_modify_ts": 1776000558160
+    }
+]

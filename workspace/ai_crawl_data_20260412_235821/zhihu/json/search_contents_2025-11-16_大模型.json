@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1973495446468051171",
+        "content_type": "answer",
+        "content_text": "我个人更加倾向认为这次大模型本身就是一种即时电路编程，帮你处理很多可以通过编程实现的问题，电路图凸显和长文本稀疏，压缩应该是这次大模型的最终架构形态其最大价值，就是总算实现某种神经图灵机，催生了新的 ai os 产业，端了很多码农的饭碗但是，很多行业其实不是能够全靠编程解决的举个例子，例如法律定罪问题，很多不是电路可计算的，llm 容易简单的归纳成几个关键词的联想组合，而非真的模拟出这个法律的现场场景后者理论需要某种”世界模型“，也就是他能够从两个关键词的表面，建立出一个底层可行物理路径的关联但是，这种问题其实属于经验世界的学习问题，理论你给大模型 context 足够的话，llm 也能近似模拟出来，但是概率会有 bias（prompt 激发模拟弊端）大概来说，就是给你定罪，虽然一开始不能被编程实现，但是高频问题久了总是能找到某种抽象去编程实现的因此，很多讨论 AGI 的人的攻击点通常是，llm 学了一大坨 token，但是干的都是高频问题，高频问题人类社会都已经解决了，重新解决一遍，多少显得不够性感因此他们都喜欢喷大模型学得多，干得少但是，程序化处理不都是只能解决高频可复现问题吗？因此，这种AGI 定义争吵毫无必要，完全是两个维度的问题",
+        "content_url": "https://www.zhihu.com/question/1973450878821352773/answer/1973495446468051171",
+        "question_id": "1973450878821352773",
+        "title": "图灵奖得主 LeCun 警告 Meta 称「大模型是 AI 死路」，他持此观点的核心考量是什么？",
+        "desc": "Meta首席AI科学家、负责「基础AI研究」（FAIR）的Yann LeCun，预计将很快离职 ... 今年夏天，年仅28岁的Alexandr Wang成为Meta的首席AI官，让这位初出茅庐的大语言模型狂热者成了LeCun的上司 ... 如果你好奇为什么LeCun和Zhao都是首席科学家，那是因为Meta的AI部门组织架构相当奇特，分成了多个独立的团队。图灵奖得主LeCun最后警告Meta！我搞了40年AI，大模型是死路",
+        "created_time": 1763297980,
+        "updated_time": 1763298084,
+        "voteup_count": 85,
+        "comment_count": 4,
+        "source_keyword": "大模型",
+        "user_id": "2ce6f447cdcd6e9dfaf395b7e60729e7",
+        "user_link": "https://www.zhihu.com/people/lykquitphy",
+        "user_nickname": "纳米酱",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-9a53ccb6e2aab68205dd238a1a37f42c_l.jpg?source=4e949a73",
+        "user_url_token": "lykquitphy",
+        "last_modify_ts": 1775901019254
+    }
+]

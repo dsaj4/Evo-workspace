@@ -1,0 +1,62 @@
+[
+    {
+        "user_id": "351754674",
+        "nickname": "Web3天空之城",
+        "sex": "保密",
+        "sign": "美好的，有趣的，值得铭记的：科技AI | 心理·人文 欢迎各位评论区留言点播高质量的视频内容",
+        "avatar": "https://i0.hdslb.com/bfs/face/775e9bb55fe33857ee5b74f75eba904f305e1509.jpg",
+        "last_modify_ts": 1774803317066,
+        "total_fans": 461568,
+        "total_liked": 2333755,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "489667127",
+        "nickname": "Koala聊开源",
+        "sex": "女",
+        "sign": "家有程序猿初长成的退休妈妈与程序猿儿子的母子二人频道｜ 加微信 Koala-oss 进交流群｜官网https://koala-oss.app",
+        "avatar": "https://i2.hdslb.com/bfs/face/44882c2e4e40e370f328baa8583e33135eb36d07.jpg",
+        "last_modify_ts": 1774803317074,
+        "total_fans": 40783,
+        "total_liked": 119910,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "438750881",
+        "nickname": "AIGC_Alex",
+        "sex": "保密",
+        "sign": "专门制作泰拉瑞亚AIGC的视频",
+        "avatar": "https://i2.hdslb.com/bfs/face/4bcd89f94c64cb7bc205dfdc5b2d5fd36ce124b7.jpg",
+        "last_modify_ts": 1774803317087,
+        "total_fans": 1303,
+        "total_liked": 101431,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "327247876",
+        "nickname": "技术蛋老师",
+        "sex": "男",
+        "sign": "这人很懒，只留下了知识。",
+        "avatar": "https://i1.hdslb.com/bfs/face/80384b478798ada204ffd8058b3d156ff5e38bbb.jpg",
+        "last_modify_ts": 1774803317100,
+        "total_fans": 311776,
+        "total_liked": 640041,
+        "user_rank": 6,
+        "is_official": 0
+    },
+    {
+        "user_id": "3546661703911435",
+        "nickname": "AIJasonZ",
+        "sex": "男",
+        "sign": "油管博主， 热爱AI，专注于产品，分享自己在AI中的小试验; Superdesign Dev ",
+        "avatar": "https://i1.hdslb.com/bfs/face/38e3efa335e57cd02c248f8b36a5b1fc6ce8b81f.jpg",
+        "last_modify_ts": 1774803317111,
+        "total_fans": 4800,
+        "total_liked": 6241,
+        "user_rank": 3,
+        "is_official": -1
+    }
+]

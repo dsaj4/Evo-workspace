@@ -1,0 +1,88 @@
+{
+  "supported": false,
+  "tech_events_n": 9,
+  "tech_events_mean": 0.5354938271604938,
+  "job_events_n": 2,
+  "job_events_mean": -0.6029040404040404,
+  "t_statistic": -0.7924996241256472,
+  "p_value": 0.4484545191315078,
+  "effect_sizes": [
+    {
+      "event_id": "E010",
+      "event_type": "tech_positive",
+      "pre_mean": 0.3333333333333333,
+      "post_mean": 0.75,
+      "effect_size": 1.2500000000000002
+    },
+    {
+      "event_id": "E011",
+      "event_type": "job_negative",
+      "pre_mean": 0.2857142857142857,
+      "post_mean": 0.0,
+      "effect_size": -1.0
+    },
+    {
+      "event_id": "E018",
+      "event_type": "tech_positive",
+      "pre_mean": 0.14285714285714285,
+      "post_mean": 0.0,
+      "effect_size": -1.0
+    },
+    {
+      "event_id": "E017",
+      "event_type": "tech_positive",
+      "pre_mean": 0.14285714285714285,
+      "post_mean": 0.0,
+      "effect_size": -1.0
+    },
+    {
+      "event_id": "E016",
+      "event_type": "tech_positive",
+      "pre_mean": 0.14285714285714285,
+      "post_mean": 0.0,
+      "effect_size": -1.0
+    },
+    {
+      "event_id": "E020",
+      "event_type": "tech_positive",
+      "pre_mean": 0.14285714285714285,
+      "post_mean": 0.0,
+      "effect_size": -1.0
+    },
+    {
+      "event_id": "E021",
+      "event_type": "tech_positive",
+      "pre_mean": 0.14285714285714285,
+      "post_mean": 0.0,
+      "effect_size": -1.0
+    },
+    {
+      "event_id": "E029",
+      "event_type": "tech_positive",
+      "pre_mean": 0.7142857142857143,
+      "post_mean": 3.125,
+      "effect_size": 3.3749999999999996
+    },
+    {
+      "event_id": "E030",
+      "event_type": "tech_positive",
+      "pre_mean": 0.7142857142857143,
+      "post_mean": 3.125,
+      "effect_size": 3.3749999999999996
+    },
+    {
+      "event_id": "E031",
+      "event_type": "tech_positive",
+      "pre_mean": 1.2857142857142858,
+      "post_mean": 3.625,
+      "effect_size": 1.8194444444444444
+    },
+    {
+      "event_id": "E032",
+      "event_type": "job_negative",
+      "pre_mean": 4.235294117647059,
+      "post_mean": 3.3636363636363638,
+      "effect_size": -0.2058080808080808
+    }
+  ]
+}

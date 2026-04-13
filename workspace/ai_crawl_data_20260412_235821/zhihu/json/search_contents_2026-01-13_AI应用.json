@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1994786317050062054",
+        "content_type": "answer",
+        "content_text": "我现在最喜欢用的是豆包和deepseek。这两个对于我日常来说已经足够了。平时上课老师的问题，可以用豆包来帮忙提供建议。然后课后一些实践报告可以通过deepseek来提出大纲。还有PPT之类的也能让其帮忙提炼大纲。",
+        "content_url": "https://www.zhihu.com/question/1994705104322987314/answer/1994786317050062054",
+        "question_id": "1994705104322987314",
+        "title": "现在最热门使用人数最多的AI工具是哪几个？",
+        "desc": "我现在最喜欢用的是豆包和deepseek。这两个对于我日常来说已经足够了。平时上课老师的问题，可以用豆包来帮忙提供建议。然后课后一些实践报告可以通过deepseek来提出大纲。还有PPT之类的也能让其帮忙提炼大纲。",
+        "created_time": 1768374119,
+        "updated_time": 1768374119,
+        "voteup_count": 7,
+        "comment_count": 3,
+        "source_keyword": "AI应用",
+        "user_id": "c8356188e3509b8d35e3a52c9e343561",
+        "user_link": "https://www.zhihu.com/people/haha-22-11-12",
+        "user_nickname": "朵朵",
+        "user_avatar": "https://picx.zhimg.com/50/v2-7ad561dfcfa552cc32286aba53254eaa_l.jpg?source=4e949a73",
+        "user_url_token": "haha-22-11-12",
+        "last_modify_ts": 1775927407248
+    },
+    {
+        "content_id": "1994472775646209523",
+        "content_type": "answer",
+        "content_text": "背景在电脑端使用 vibe coding 进行前端页面开发时，通常很难用语言准确描述页面的具体布局。当细化到某个功能模块时，如何在美观和易用之间取得平衡，也很难用文字表达清楚。一种常见的解决方式是先在纸上画出页面草图，再将图片上传给大模型进行理解。今天介绍另一种方法：使用 Chrome 的 MCP 工具。它可以理解为一个”前端的眼镜”，帮助我们直接查看和分析前端页面的性能问题。使用MCP 安装claude mcp add chrome-devtools npx chrome-devtools-mcp@latest验证登录 Claude，在对话框中输入：/mcpSkill 安装npm install -g uipro-cli\nuipro init –ai claude验证在 Claude 中输入：/skills使用例子场景一：优化个人博客访问速度需求个人博客页面访问速度较慢，希望找出性能问题并进行优化。提示词示例本地服务运行在 http://localhost:1313/，请帮忙查看有哪些性能问题，以及可以优化的地方。场景二：前端页面配色和设计优化需求当前前端页面配色不理想，希望重新设计页面样式。提示词示例使用 ui-ux-pro 技能重新设计一下项目的前端页面，当前服务运行在 http://localhost:8000，你可以使用 chrome mcp 工具进行调试。",
+        "content_url": "https://www.zhihu.com/question/3732644156/answer/1994472775646209523",
+        "question_id": "3732644156",
+        "title": "AI都有哪些应用？",
+        "desc": "背景在电脑端使用 vibe coding 进行前端页面开发时，通常很难用语言准确描述页面的具体布局。当细化到某个功能模块时，如何在美观和易用之间取得平衡，也很难用文字表达清楚。一种常见的解决方式是先在纸上画出页面草图，再将图片上传给大模型进行理解。今天介绍另一种方法",
+        "created_time": 1768299365,
+        "updated_time": 1768299365,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI应用",
+        "user_id": "c5e37f4de28022cd342addb47df824d1",
+        "user_link": "https://www.zhihu.com/people/dongshaoyang",
+        "user_nickname": "Dong Shaoyang",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-bdc4d01a8904dc9584d1f2f316aa7aaf_l.jpg?source=4e949a73",
+        "user_url_token": "dongshaoyang",
+        "last_modify_ts": 1775927407250
+    }
+]

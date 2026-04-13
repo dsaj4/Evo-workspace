@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1989702317419800258",
+        "content_type": "article",
+        "content_text": "小冬瓜AIGC | X-R1开源框架 | 现高校LLM对齐研究       原创课程帮助学员拿下OpenAI, Meta, 字节SEED等在今年的最后一天，聊聊 2025 LLM 的发展和博主的年终总结。2025 LLM 简记25年的 RL 和基础架构飞速发展RL强化学习（RL）迎来跨越式发展。年初 DeepSeek-R1 引领的强化学习推理范式，推动 Agent 应用与 Agentic-RL 如雨后春笋般涌现，并在开源社区引发 R1 复现热潮。在 RL 推理框架方面，单控制器架构因更适配训练需求而受到青睐，而 verl 等框架通过集成 Megatron、vLLM、sglang 等成熟组件，显著提升了工程实用性。架构在基础架构领域，MoE 已成为模型的标准组件，系统复杂度大幅上升。训练层面，fp8 训练、DualPipe 及通信计算重叠等技术不断演进；推理层面，PD 分离的服务系统赋予极高自由度，对软硬件协同设计与系统吞吐优化提出全新挑战。同时，Linear Attention 与 Sparse Attention相继应用于各家旗舰模型，如 Qwen3-Next 采用 GDN、DeepSeek-V3.2 使用 DSA。相比标准 Attention，这些优化设计日益复杂，旨在以更高的工程复杂度换取推理效率的显著提升。For Me今年是收获颇丰的一年。在技术快速更迭的环境里，虽常感焦虑，但也发现放慢脚步能有更清晰的思考。着手撰写的书本已接近尾声，这是今年完成的最重要的一件事。2025 年的主旋律是回归基本功，手撕了各种 Infra 算法。大家都说今年是 Agent 元年，但对我而言，今年更像是我的“Infra 元年”。如何将一块块砖瓦搭建成坚固的城堡，是更富有挑战的事。2026 年，愿找到正确的方向，坚持做正确且难的事，马不停蹄。开源git: https://github.com/dhcode-cppX-R1: 年初完成了 0.5B 的 RL-Zero 的 Aha Moment 复现，根据有限的了解，X-R1 是当时最小模型和最低成本的复现，同时开源了代码、数据、配置和日志。X-R1: 不到50元，人人都能复现0.5B Aha MomentX-R1: 3B中文推理开源, 支持LoRA训练更新的博客基本会配套代码并开源，以减少算法理解的偏差。学习Infra 类的技术文档已经有很多，训练和推理框架也很成熟，那么再去从零啃这两块硬骨头意义有多大？今年着重在手撕 Infra ，体系化的实现各种算法，收获远比写文档大的多。对于未知的技术体系，应该梳理好脉络，再分解成一个个易解的 puzzle。分布式训练：纯 Pytorch 实现了带 Backward 的并行算法，包括 DP、CP、PP、TP 和 EP，写完 DualPipe 和 EP 计算-通信重叠后，成就感满满。推理服务：当问自己能否有信心写一个 vLLM 时，并没有任何思路。索性查阅了 vLLM 的 meetsup 技术报告，整理了脉络，手撕了 Continue Batching、PagedAttention、Chunked-Prefill 和 vLLM-V1。手撕 PD 分离正在进行中，只有去写代码时，才会碰见&#34;我应该怎么管理 KVCache&#34;，&#34;应该用什么方式传输&#34; 之类的问题。接下来学习主流 RL 框架， 同时也为做开源项目打好基础。博客总共更新 14 篇技术博客LLM【手撕NSA】DeepSeek新作-原生稀疏注意力-超长文(附代码)【手撕 DSA】 DeepSeek-V3.2 的 Sparse Attention 比 NSA 好在哪？【手撕 YaRN】LLM 训短推长，一直外推一直爽！OpenAI/DeepSeek 严选位置编码【手撕 GPT-OSS】不吹不黑！让我们聚焦 OpenAI 开源模型设计方案!!RL【解读】DeepSeek-R1: RL前到底需不需要SFT???再深挖DeepSeek-R1: Reward is Enough【手撕GRPO】你只管给Reward, 剩下的交给RL(附代码)GRPO的Loss为什么会有负值??？GRPO简化Trick | 只改一个参数, 性能涨10%??Infra【手撕DualPipe】让我们一步步把 MoE EP 通信 &#34;消除&#34; !!手撕 Inference (1) : LLM 推理服务永动机—— Continue Batching手撕 Inference-(2): 停停停! vLLM 得从 Page KVCache 说起！其他RL预训练 | 真的会颠覆预训练范式吗??【手撕LLM_Nv Embed】英伟达的LLM-as-Embedding ICLR高分, RAG检索有救了！关于课程手撕LLM 课程已经运营两年半，坚持做高质量及体系化的内容一直是课程初心。年中进行了 2.0 版本课件和代码重构，并引入手撕 DeepSeek-V3、手撕Training 和手撕Inference 的章节，与时俱进。今年的课程成果非常给力，学员去向：海外：OpenAI / Top Seed / Meta / ScaleAI / Amazon, ...国内：字节 / 阿里云 / 蚂蚁 / 米哈游 / 985教职 / 头部券商, ...新的一年预计更新：实操项目：更新 MoE 类模型微调和 RLVR 训练，贴近工业级别训练 训推分离：基于 Ray 实现 Reasoing-RL 中的训推分离 Agentic-RL：增加长文档及应用类项目，跟进前沿热点研究。最后新的一年，愿公开的文章/代码能够帮助到更多的朋友，与大家共同进步。新年快乐🎉～小冬瓜AIGC | X-R1开源框架 | 现高校LLM对齐研究       原创课程帮助学员拿下OpenAI, Meta, 字节SEED等",
+        "content_url": "https://zhuanlan.zhihu.com/p/1989702317419800258",
+        "question_id": "",
+        "title": "做正确且难的事——小冬瓜AIGC的25年终总结",
+        "desc": "小冬瓜AIGC | X-R1开源框架 | 现高校LLM对齐研究 原创课程帮助学员拿下OpenAI, Meta, 字节SEED等在今年的最后一天，聊聊 2025 LLM 的发展和博主的年终总结。 2025 LLM 简记25年的 RL 和基础架构飞速发展 RL强化学习（RL）迎来跨越式发展",
+        "created_time": 1767163012,
+        "updated_time": 1767163012,
+        "voteup_count": 27,
+        "comment_count": 0,
+        "source_keyword": "aigc",
+        "user_id": "1eaf9a48a57c337815246ec47e7c7dd4",
+        "user_link": "https://www.zhihu.com/people/aigc-69",
+        "user_nickname": "小冬瓜AIGC",
+        "user_avatar": "https://picx.zhimg.com/50/v2-462f34b56b04dedf9a5d0038e61c48d2_l.jpg?source=4e949a73",
+        "user_url_token": "aigc-69",
+        "last_modify_ts": 1775888175337
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2002833374725821227",
+        "content_type": "answer",
+        "content_text": "推特上有位博主叫Janus，他在两年前就这么玩了，不同的是，他不预设太多提示词，查看Sonnet，Opus，Llama 405B，这些自然语言王者，在机机交互中的自然露出。RLHF 规则非常多，各种优先级一团乱麻，经常自相矛盾，模型会在不同的时刻表现出微妙的个性。Anthropic 的RLHF仙人，Amanda Askell对Janus有高度的评价。（不过，我跟Janus聊过几句，我觉得他有点走火入魔了）所以，在我看来Moltbook这种东西非常愚蠢。作为潮流，并不时髦，作为实验，也不干净。",
+        "content_url": "https://www.zhihu.com/question/2002801207622772213/answer/2002833374725821227",
+        "question_id": "2002801207622772213",
+        "title": "Moltbook 出现 150 万 AI 智能体「自建社会」，这究竟是「AI 觉醒」还是人为炒作？",
+        "desc": "150万个智能体在人间为所欲为",
+        "created_time": 1770292687,
+        "updated_time": 1770292687,
+        "voteup_count": 28,
+        "comment_count": 0,
+        "source_keyword": "智能体",
+        "user_id": "bea84fe95aee12a6939ee59dde16d1b3",
+        "user_link": "https://www.zhihu.com/people/yu-you-56-63",
+        "user_nickname": "Trisimo崔思莫",
+        "user_avatar": "https://picx.zhimg.com/50/v2-f85c56a14245993531a1c36c47721ee4_l.jpg?source=4e949a73",
+        "user_url_token": "yu-you-56-63",
+        "last_modify_ts": 1776003191295
+    }
+]

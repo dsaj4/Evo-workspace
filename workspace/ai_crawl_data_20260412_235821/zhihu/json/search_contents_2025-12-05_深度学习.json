@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1979920537082954268",
+        "question_id": "",
+        "title": "深度学习模型优化CDKN2AB状态评估",
+        "desc": "",
+        "created_time": 1765000809,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "深度学习",
+        "user_id": "06af329f9ca18d793dbff553c5ba5aa3",
+        "user_link": "https://www.zhihu.com/people/24-94-25-35",
+        "user_nickname": "医学影像组学",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-b8386445f31a79b0131ee9c5b55ac1d1_l.jpg?source=4e949a73",
+        "user_url_token": "24-94-25-35",
+        "last_modify_ts": 1776006004455
+    },
+    {
+        "content_id": "1980649773636801078",
+        "content_type": "answer",
+        "content_text": "这就聊到了我的心头好了。作为在厂里摸爬滚打这些年的老兵，也就是大家口中的炼丹师，我见过了太多的SOTA（State Of The Art）模型，今天在这个数据集上霸榜，明天在那个比赛里刷屏。但说实话，真到了业务落地，你会发现那些花里胡哨的模型结构改动，往往不如几个扎实的Trick来得实在。很多刚入行的同学看顶会论文，觉得提升点都在全新的架构设计上，什么Transformer变体满天飞，CNN又整出了新花样。其实不然，很多时候论文里的提升，有一半得归功于作者在训练策略上堆的一堆Trick。我们内部开玩笑说，这叫Trick is all you need。今天我就结合这两年大模型（LLM）爆发后的新趋势，跟大家好好唠唠。这篇文章会很长，因为我想讲透。建议大家先点赞收藏，回头在跑代码或者调参卡壳的时候，拿出来翻一翻，说不定就有灵感了。一、 数据层面的Trick：这才是真正的基本功很多人一上来就问我用什么优化器，用什么Loss，其实这都还在第二层。第一层永远是数据。在深度学习里，数据决定了模型效果的上限，Trick和模型结构只是在逼近这个上限。1. 数据清洗与质量控制（Data Curation）这是最不性感，但最重要的Trick。现在大模型时代，大家都讲Data-Centric AI。OpenAI的报告里也说了，GPT-4的强大很大程度上归功于数据清洗。在实际业务中，不管是CV还是NLP，脏数据是绝对的毒药。去重：训练集中千万不能有重复数据，特别是不能和测试集有Overlab。这一点对于生成式模型尤为重要，不然模型会倾向于死记硬背。异常值过滤：对于分类任务，用一个简单的ResNet或者BERT先跑一轮，把那些Loss特别大的样本拿出来人工看一眼，90%的情况是标注错了。把这些错标数据剔除或者修正，带来的提升比你换个大模型都要明显。2. 高阶数据增强（Advanced Augmentation）CV领域的同学对数据增强肯定不陌生，翻转、裁剪都是基操了。但现在仅仅做这些是不够的。Mixup 和 CutMix：这两个是神技。Mixup是把两张图按比例混合，标签也按比例混合；CutMix是把一张图切一块贴到另一张图上。这俩看似不符合人类直觉，毕竟现实中没有猫狗重叠的生物，但它们能极大地平滑决策边界，防止过拟合，提升模型的鲁棒性。尤其是在小样本或者类别不平衡的数据集上，效果奇佳。Mosaic：这是YOLOv4引入的，把4张图拼成一张图进行训练。这相当于变相增加了Batch Size，让模型能学到更多的小目标特征，同时也丰富了背景信息。做目标检测的同学，这个基本是必选项。如果你懒得自己写这些增强逻辑，Albumentations 这个库必须装一个。它是目前最快、最全的CV数据增强库，上面说的这些策略里头都有现成的接口，而且速度经过了高度优化。3. NLP里的动态掩码与对抗训练在NLP里，除了常规的回译（Back Translation）和EDA（Easy Data Augmentation），现在更流行的是在Embedding层做文章。FGM (Fast Gradient Method)：在Embedding层加上微小的扰动，让模型去适应这种噪声。这其实就是对抗训练的一种。在很多NLP比赛和落地场景中，加上FGM往往能稳稳提升0.5到1个点，而且能显著提高模型的泛化能力。动态Padding：这算是个工程Trick。以前我们训练BERT，把所有句子都Pad到512长度，这其实浪费了大量计算资源在处理Padding Token上。现在的做法是，在一个Batch内，把句子按长度排序，然后Pad到这个Batch里最长句子的长度即可。这能极大地加速训练，训练快了，你就能多跑几组实验，变相提升了模型效果。二、 训练策略与优化器：让模型跑得更稳模型结构定好了，数据准备好了，怎么让模型收敛到一个好的局部最优解，这里面的学问大了去了。1. 学习率预热（Warmup）与余弦退火（Cosine Decay）早年间大家喜欢用Step Decay，就是每过多少个Epoch学习率减半。现在基本没人这么干了。Warmup：在训练刚开始的时候，模型参数是随机初始化的，这时候梯度非常不稳定。如果一开始就用较大的学习率，模型很容易跑飞，或者陷入一个很差的局部最优。Warmup就是在前几个Epoch里，让学习率从0慢慢爬升到预设的最大值。这就好比开车，刚起步得挂一档慢慢走，等车稳了再加速。Cosine Decay：Warmup结束后，学习率按照余弦函数的曲线慢慢下降到0。相比于阶梯式下降，余弦退火更加平滑，能让模型在后期更细腻地逼近最优点。2. 优化器的选择：AdamW 是永远的神？以前学术界有个争论，说Adam收敛快但泛化差，SGD收敛慢但泛化好。所以大家喜欢前期用Adam，后期切SGD。但自从 AdamW 出来之后，这个争论基本可以歇歇了。AdamW 修正了 Adam 在权重衰减（Weight Decay）上的实现错误，使得它既保留了 Adam 的快速收敛，又有不错的泛化能力。现在无论是训练BERT、ViT还是大模型LLaMA，AdamW 几乎是默认选择。当然，对于一些特定的CNN网络，有时候SGD加Momentum依然能跑出SOTA，但调参难度大很多。对于工业界来说，时间就是金钱，AdamW 往往能让你更快地拿到一个可用的结果。3. 梯度累积（Gradient Accumulation）这也是个穷人必备的Trick。现在的模型越来越大，显存很容易爆。比如你想跑Batch Size 64，但显卡只能塞下16个。这时候就可以用梯度累积。逻辑很简单：前向传播4次，每次Batch Size 16，把梯度存起来不更新参数，等4次跑完，把梯度加起来求个平均，再更新一次参数。这样就在数学上等价于跑了一个Batch Size 64。这在微调大模型的时候特别有用。你显存不够，又想用大Batch Size来稳定梯度，这招是必用的。4. 指数移动平均（EMA, Exponential Moving Average）这个Trick很多人会忽略，但在打比赛和追求极致精度时非常有用。它的原理是：在训练过程中，维护一份模型参数的影子副本（Shadow Weights）。这个副本是过去所有步骤参数的加权平均。在推理（Inference）的时候，不管是测试集跑分还是上线，使用EMA的参数通常比最后一次迭代的参数效果要好。因为EMA平滑了训练过程中的抖动，得到的模型更鲁棒。很多YOLO版本的代码库里，默认都是开启EMA的。三、 大模型时代的特定Trick：微调与推理时代变了，现在不说点LLM（大语言模型）相关的，出门都不好意思跟人打招呼。大模型的Trick更多集中在如何高效微调和高效推理上。1. LoRA (Low-Rank Adaptation)如果说有一个Trick彻底改变了LLM的玩法，那绝对是LoRA。以前微调大模型，要把所有参数都更新一遍（Full Fine-tuning），这需要极大的显存。LoRA的思路是，冻结住主干网络的参数，只在每一层旁边加两个低秩矩阵来学习增量。这就好比你要装修房子，全参数微调是把墙拆了重砌，LoRA是直接在墙上贴墙纸。效果差不多，但成本天差地别。现在还有 QLoRA，结合了4bit量化，让你在一张24G显存的4090上就能微调几百亿参数的模型。这对于个人开发者和中小企业来说，简直是福音。强烈推荐大家去读一下LoRA的论文，或者直接上手 PEFT（HuggingFace出的参数高效微调库），里面集成了LoRA、P-Tuning、Prefix Tuning等一堆方法，开箱即用。2. Flash Attention这属于底层算子级别的优化，但对上层应用影响巨大。Transformer计算量最大的地方就是Attention机制，它是序列长度的平方级复杂度。Flash Attention 通过对GPU显存读写操作的极致优化（Tiling技术），把Attention的速度提升了数倍，显存占用还大幅降低。现在的长文本模型，动不动支持100k context window，背后全是靠Flash Attention在撑着。在训练或微调时，务必确认你的环境开启了 Flash Attention 2。这不仅仅是加速，它能让你塞进更长的Context，这对RAG（检索增强生成）等任务至关重要。3. 提示工程（Prompt Engineering）中的Trick现在做应用，Prompt写得好坏，直接决定模型智商。这里也有几个经典的Trick：CoT (Chain of Thought)：让模型“一步步思考”。在Prompt里加上“Let&#39;s think step by step”，模型的逻辑推理能力会瞬间暴涨。原理是让模型在生成最终答案前，先生成推理步骤，这给了模型更多的计算时间（Time to Compute）。Few-Shot Learning：不要只给指令，给几个示例（Example）。人类是类比学习的动物，模型也是。给两三个高质量的输入输出对作为Context，比你写一大段解释性文字都管用。System Prompt 角色扮演：明确告诉模型“你是一个资深的Python程序员”或者“你是一个严谨的法律顾问”。这能帮助模型快速切换到对应的潜在空间（Latent Space），输出的风格和专业度会更匹配。四、 损失函数（Loss Function）的魔改Loss函数指引着模型优化的方向。标准的Cross Entropy Loss（交叉熵）有时候并不够用。1. Label Smoothing（标签平滑）这是个防止过拟合的老牌Trick。标准的One-hot标签是[0, 0, 1, 0]，这意味着我们要求模型对正确类别的预测概率必须是100%。这太绝对了，容易导致模型过度自信（Over-confident）。Label Smoothing把标签改成[0.025, 0.025, 0.925, 0.025]，告诉模型：你只要大概率是对的就行，别太死磕。这能让得到的特征分布更加紧凑，泛化能力更好。2. Focal Loss这是解决类别不平衡的神器，最早是用在目标检测里的（RetinaNet）。在实际业务中，负样本（背景）往往远多于正样本（目标），或者简单样本远多于困难样本。Focal Loss 的核心思想是：降低简单样本的权重，增加困难样本的权重。让模型把精力集中在那些它老是预测错的样本上。如果你的数据极度不平衡，或者发现模型对某些尾部类别死活学不会，试一把Focal Loss，大概率有惊喜。五、 落地部署时的Trick：速度与精度的权衡模型训练好了，怎么上线？这里面坑也很多。1. 混合精度训练与推理（AMP / FP16 / BF16）现在基本上没人用纯FP32（单精度浮点数）跑模型了。FP16（半精度）能让显存占用减半，速度翻倍，而且在Tensor Core加持下快得飞起。唯一的风险是FP16数值范围小，容易溢出（NaN）。所以训练时要用 AMP (Automatic Mixed Precision)，它会自动处理Loss Scaling，防止溢出。如果你用的是较新的显卡（A100, H100, 甚至40系），推荐使用 BF16 (Bfloat16)。它的数值范围和FP32一样大，只是精度低一点，训练起来比FP16稳得多，不用担心Loss溢出的问题。2. 算子融合与模型转换千万别直接拿PyTorch模型去上线（除非是实验性质）。ONNX：这是个通用标准。把PyTorch模型导出成ONNX，就能脱离Python环境，在C++、C#里跑，而且跨平台。TensorRT：这是NVIDIA的大杀器。把ONNX转成TensorRT Engine，它会自动对你的网络层进行融合（比如把Conv和BN层融合成一层），并针对你的显卡选择最优的算子内核。在GPU上，TensorRT通常能带来2-5倍的加速。OpenVINO：如果你是在Intel CPU上跑模型，用这个。六、 那些不可言说的“偏门”Trick有些Trick看起来很不讲道理，但在特定场景下就是好用。Test Time Augmentation (TTA)：这是打比赛必备，业务偶尔用。就是在预测的时候，把图片多搞几个版本（原图、翻转、缩放），分别预测，然后把结果取平均。这能稳稳提升精度，但代价是推理时间翻倍。BN层冻结：在做Transfer Learning（迁移学习）时，如果你的新数据集比较小，记得把Backbone里的BatchNorm层的统计量（Running Mean/Var）冻结住，只训练权重，甚至连权重都别更新。因为小Batch下BN的统计量非常不稳定，容易把预训练好的特征搞崩。Dropout的使用时机：现在的趋势是，在卷积层后面少用Dropout，在全连接层或者Attention后面用。而且，对于大模型，DropPath（Stochastic Depth）往往比标准的Dropout更好用。洋洋洒洒写了这么多，其实核心就想传达一个观点：Trick是服务于场景的。没有万能的Trick，只有适合的Trick。遇到瓶颈先看数据：数据清洗、标签修正、数据增强，这些带来的收益远大于换个模型。基线要稳：先用最朴素的ResNet/BERT/Llama + AdamW + Cosine Decay 跑通一个Baseline。不要一上来就堆Trick，否则你都不知道是哪个起作用，或者是哪个把模型搞崩了。控制变量：加Trick要一个一个加，做A/B Test。深度学习就像烹饪，盐多了加水，水多了加面，最后面目全非。你要清楚每一步调料下去是为了解决什么问题（过拟合？欠拟合？收敛慢？）。关注开源社区：Paper往往有滞后性，GitHub上的Issues和Discussion，还有Kaggle的Code分享，往往藏着最新的实战Trick。最后，不要为了用Trick而用Trick。有时候，把业务逻辑理顺，把输入数据的特征工程做好，比你在模型内部折腾半天要有效得多。深度学习这行，Simple is better, Stable is best。希望这些经验能帮大家少走点弯路。如果觉得有用，别忘了点个赞，咱评论区继续交流。这里面每一个点展开讲其实都能写一篇文章，大家对哪部分感兴趣，我回头再细聊。",
+        "content_url": "https://www.zhihu.com/question/540433389/answer/1980649773636801078",
+        "question_id": "540433389",
+        "title": "深度学习刷SOTA有哪些trick？",
+        "desc": "对深度学习而言，不论是学术研究还是落地应用都需要尽可能提升模型效果，这往往需要trick进行支撑。这些trick有的是广泛适用的（如循环学习率、BN等等），有的是任务特定的（比如cv里的数据增强，nlp里的mask，推荐里的降采样）这些trick有的能够提升网络精度，有的能够加速收敛，有的甚至比模型提升更加显著。在同学们各自的领域中，有哪些常遇到的、易实践的、易推广的trick呢？",
+        "created_time": 1765003704,
+        "updated_time": 1765003704,
+        "voteup_count": 354,
+        "comment_count": 13,
+        "source_keyword": "深度学习",
+        "user_id": "fae26c31a6c41d7a1c8a2d20bbb59367",
+        "user_link": "https://www.zhihu.com/people/lan-lan-wan",
+        "user_nickname": "CodeCrafter",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-6d4a21f9ecc355ba182a68916acdd3c7_l.jpg?source=4e949a73",
+        "user_url_token": "lan-lan-wan",
+        "last_modify_ts": 1776006171464
+    }
+]

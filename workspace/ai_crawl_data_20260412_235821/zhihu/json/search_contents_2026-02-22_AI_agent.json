@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2009043346685984836",
+        "content_type": "answer",
+        "content_text": "截至2026年2月22日（正月初六），我对其21日发布的0.1.17更新版评价：依托答辩。好不容易成功跑通了本地Deepseek和Gemma，其实模型名称、ID都填模型名称就行，然而网易官方对此没有详细指导。最要命的是，该版本依然没解决跟Ollama的适配问题。春节，休假就好好休假，如果真是热爱AI，加班就认真加班，也是为技术进步做贡献。别弄个半成品，敷衍了事，两头都没顾着。最搞笑的是还雇了一堆大V发枪文，简直浪费钱，给程序员加工资不香？",
+        "content_url": "https://www.zhihu.com/question/2007864460774238076/answer/2009043346685984836",
+        "question_id": "2007864460774238076",
+        "title": "如何评价网易新推出的AI Agent —— 有道龙虾（LobsterAI）?",
+        "desc": "其实模型名称、ID都填模型名称就行，然而网易官方对此没有详细指导。最要命的是，该版本依然没解决跟Ollama的适配问题。春节，休假就好好休假，如果真是热爱AI，加班就认真加班，也是为技术进步做贡献。别弄个半成品，敷衍了事，两头都没顾着。最搞笑的是还雇了一堆大V发枪文，简直浪费钱，给程序员加工资不香",
+        "created_time": 1771773260,
+        "updated_time": 1771773365,
+        "voteup_count": 7,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "b24cc9c1364addacf8e477a03b130441",
+        "user_link": "https://www.zhihu.com/people/jianghang",
+        "user_nickname": "江航",
+        "user_avatar": "https://pica.zhimg.com/50/7f345c63b_l.jpg?source=4e949a73",
+        "user_url_token": "jianghang",
+        "last_modify_ts": 1776003850313
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11450371447",
+        "parent_comment_id": "0",
+        "content": "挺像黄仁勋GTC2026演讲的AI五分层。这个图画的很好，是用的某个skill吗[打招呼]",
+        "publish_time": 1774897520,
+        "ip_location": "辽宁",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2021899256496145325",
+        "content_type": "article",
+        "user_id": "029b826b1296b65b91a11b504e678974",
+        "user_link": "https://www.zhihu.com/people/imel",
+        "user_nickname": "不拟合",
+        "user_avatar": "https://pic1.zhimg.com/v2-c70f734233282ffba99029ec63cce499_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775926125436
+    },
+    {
+        "comment_id": "11450833595",
+        "parent_comment_id": "11450371447",
+        "content": "不是的，是我自己写了下面的框架，然后让chatgpt生成英文版提示词（风格参考的其他图片），然后Gemini生成的[大笑]",
+        "publish_time": 1774920789,
+        "ip_location": "山东",
+        "sub_comment_count": 0,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "2021899256496145325",
+        "content_type": "article",
+        "user_id": "20c51bda99744d5d907acc7115ca33ff",
+        "user_link": "https://www.zhihu.com/people/elvoos",
+        "user_nickname": "小孩",
+        "user_avatar": "https://pic1.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775926127019
+    }
+]

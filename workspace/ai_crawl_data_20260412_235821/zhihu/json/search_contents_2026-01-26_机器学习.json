@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1999470256939360674",
+        "content_type": "answer",
+        "content_text": "相信你肯定用过豆包、Qwen、元宝这些通用大模型，相信在2026年国内肯定有不少用户会使用基于Transformer的特斯拉FSD垂直领域大模型。作为技术人，你有没有想过要训练一个自己的模型？在写代码前，我们先拆解下需求，回顾训练Transformer大模型的流程。加载训练数据集→Tokenization(词元化) →Embedding（Token向量化）-&gt;位置编码 → Forward Propagation(前向传播) → 计算 Loss （损失函数值）→ 反向传播（计算梯度） → 梯度裁剪 / 正则化 → 梯度更新下面我们会使用PyTorch来实现神经网络部分，使用面向对象来封装Transformer训练过程中的各个阶段。定义两个Python文件：model.py,train.pymodel.py中存放实现Transformer架构中的类、组件。train.py中把整个训练过程串起来。第一步加载用于训练的数据集，并将训练数据集Tokenization(词元化) ，为训练做准备PyTorch DataLoader使用PyTorch的DataLoader完成训练数据集和验收数据集的加载。完整的代码会贴在文末。文件中直接写代码，会看起来乱，不方便阅读。第二步：Transformer架构基于Transformer架构来生成下一个Token的权重logits，用来生成预测结果Transformerl架构来训练这个model方法干了什么？logits = model(xb)输入是训练数据集的一条数据，输出是下一个Token的分数logits。是不是有点感觉了？model(xb)封装了基于Transformer架构训练的全过程：Tokenization(词元化) →Embedding（Token向量化）-&gt;位置编码 → Forward Propagation(前向传播) 下面来看下具体的代码：封装Transformer的类Transfromer架构的训练过程Transformer架构中自注意力机制中的点积运算至此，Transformer架构中的创新已经跑完了。下面是开始通过的大模型的通用部分了：反向传播（计算梯度） → 梯度裁剪 / 正则化 → 梯度更新（更新模型参数）第三步这一步在Transformer架构出现就一直在用，是训练模型的经典实践。训练大模型的通用操作，Transformer架构之前的经典实践计算 Loss （损失函数值）→ 反向传播（计算梯度） → 梯度裁剪 / 正则化 → 梯度更新至此，一次训练就结束了。是不是很简单？是的就是这么简单。只要你愿意动手炼起来，门槛真的是低了很多！代码：https://http://github.com/helloworldtang/GPT_teacher-3.37M-cn相关文章：从0到1手搓484行代码，用普通CPU训练一个3.37M中文GPT模型，耗时不到20分钟，回答的效果很不错，欢迎各位老师检查作业从0到1手搓代码，用普通电脑训练3.37M中文GPT模型Transformer的这些知识点 Is All You Need！",
+        "content_url": "https://www.zhihu.com/question/502742936/answer/1999470256939360674",
+        "question_id": "502742936",
+        "title": "非CS背景，如何快速上手机器学习？",
+        "desc": "随着人工智能的迅速发展，机器学习、5G、物联网等技术日益成熟，AI相关的就业岗位成为了很多应届生的首选。对于非CS相关专业的应届生与求职者，如果希望进入AI相关岗位的话，有哪些可以快速上手机器学习的途径呢？",
+        "created_time": 1769490857,
+        "updated_time": 1769490857,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "76a459b0b506908a773a29e0520cee3d",
+        "user_link": "https://www.zhihu.com/people/1gepingguo",
+        "user_nickname": "人生还要往前走",
+        "user_avatar": "https://pica.zhimg.com/50/v2-7dc007f64ff74ef04ee803c7b38f4e3f_l.jpg?source=4e949a73",
+        "user_url_token": "1gepingguo",
+        "last_modify_ts": 1776004944501
+    },
+    {
+        "content_id": "1999230475378631269",
+        "content_type": "article",
+        "content_text": "机器学习 1 - 概论本文内容是这个视频的学习笔记。Part 1. 什么是机器学习机器学习其实是找到一个函数。比如语音识别，就是输入一个语音输出对应的文字比如图像识别，就是输入一个图像输出识别的内容那么，可想而知，这些函数是非常非常复杂的，是人类非常难写出来的于是我们的想法就是，让机器去帮我们找到这函数本课特别注重的是深度学习当我们在说深度学习的时候，我们是说这个函数是一个神经网络我们给这个神经网络各式各样的输入，我们希望他们能给我们各式各样的输出那我们怎么教机器去学习呢？Supervised Learning：用很多很多的训练数据，然后我们给数据打上标签，丢给机器去识别Self-supervised Learning：直接 Supervised Learning 的问题就在于，打标签非常麻烦。那 Self-supervised Learning 是说，我们先去 Pre-train 让机器掌握基本的常识，练好基本功。那怎么练呢？直接把大量没有标注的资料丢给机器学习，具体怎么学习我们后面再说。学好之后，他就可以在我们真正关心的 Downstream Tasks 下游任务中做得更好Pre-trained Model （也叫做 Foundation Model）和 Downstream Tasks 的关系就像是操作系统和应用的关系在 Foundation Model 中比较常用的一个模型叫做 BERT —— 他有 340Million 个参数，看起来很多但其实不多特别需要提到的一个技术是 Generative Adversarial Network。我们只需要拥有很多的输入和很多的输出，这个技术可以让机器可以自动把他们配对弄在一起 —— 对的甚至你不需要手动配对。可以考虑这篇文章 和这篇文章还会讲到的是 Reinforcement Learning，这个技术用于解决“我不知道怎么给数据打标签”的时候怎么打标签。你不知道怎么打标签但你知道什么是好什么是坏的时候，就可以用这个技术另外我们还会关注 Anomaly Detection 异常检测 —— 也就是说机器能够具备回答“我不知道”的能力以及 Explainable AI —— 机器不仅能够知道答案是什么，而且还能解释“为什么是这个”还需要提到的是 Model Attack —— 我们如何攻击一个模型。有的时候模型会因为小小的噪声导致巨大的崩塌，比如请看这个例子我们会特别提到如何攻击一个模型，并且，更重要的是，如何防御我们也会提到的是 Domain Adaptation。当训练的数据和给出的测试数据比较不一致（比如，训练是黑白图片，结果测试的是彩色图片），如何解决这个问题？用到的是 Domain Adaptation以及，如何压缩模型，也就是 Network Compression，让他们能跑在更小的设备上还有 Life-long Learning，这其实是很科幻的一个东西，我们能不能让机器学习一个新的技术？为什么能 / 不能？还有 Meta Learning 让机器学会怎么学习，让机器从过去的学习经验里发现新的方法，让自己变得更厉害。他跟 Few-shot Learning 这个技术关联很大 —— 甚至很多人会把他们划上等号。",
+        "content_url": "https://zhuanlan.zhihu.com/p/1999230475378631269",
+        "question_id": "",
+        "title": "【机器学习】1. 概论",
+        "desc": "机器学习 1 - 概论本文内容是 这个视频的 学习笔记。Part 1. 什么是机器学习机器学习其实是找到一个函数。 比如语音识别，就是输入一个语音输出对应的文字比如图像识别，就是输入一个图像输出识别的内容那么，可想而知，这些函数是非常非常复杂的，是人类非常难写出来的于是我们的想法就是",
+        "created_time": 1769433891,
+        "updated_time": 1769433891,
+        "voteup_count": 4,
+        "comment_count": 2,
+        "source_keyword": "机器学习",
+        "user_id": "adae4739e2c0ae0b394755e8965eaef0",
+        "user_link": "https://www.zhihu.com/people/83-89-30-43-11",
+        "user_nickname": "你们都是风姿吧",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-1e1cad20c686541436ae775c32735bc0_l.jpg?source=4e949a73",
+        "user_url_token": "83-89-30-43-11",
+        "last_modify_ts": 1776004944501
+    }
+]

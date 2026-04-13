@@ -1,0 +1,38 @@
+Total unique citations: 36
+
+[01_introduction.md] Arntz et al., 2017
+[01_introduction.md] Bollen et al., 2011
+[01_introduction.md] Bommasani et al., 2021
+[01_introduction.md] Brough & Rudd, 2022
+[01_introduction.md] De Witte, 2005
+[01_introduction.md] Dwivedi et al., 2021
+[01_introduction.md] Frey & Osborne, 2017
+[01_introduction.md] Greenhalgh & Rosenblatt, 1984
+[01_introduction.md] Manyika et al., 2023
+[01_introduction.md] Nam, 2019
+[01_introduction.md] Tung, 2022; Mostafa, 2021
+[01_introduction.md] World Economic Forum, 2023
+[02_literature_review.md] Arntz 2017
+[02_literature_review.md] Ashford et al., 1989
+[02_literature_review.md] Bessen, 2019
+[02_literature_review.md] Box et al., 2015
+[02_literature_review.md] Cheng & Chan, 2008; Jiang & Lavaysse, 2018
+[02_literature_review.md] Devlin et al., 2019
+[02_literature_review.md] Ginsberg et al., 2009
+[02_literature_review.md] Manyika et al., 2017
+[02_literature_review.md] Mostafa 2021
+[02_literature_review.md] Nam 2019
+[02_literature_review.md] Osborne 2017
+[02_literature_review.md] Probst et al., 2017
+[02_literature_review.md] Restrepo 2019
+[02_literature_review.md] Rosenblatt 1984
+[02_literature_review.md] Rudd 2022
+[02_literature_review.md] Runge et al., 2019
+[02_literature_review.md] Sloan et al., 2015
+[02_literature_review.md] Sverke et al., 2002
+[02_literature_review.md] Tetlock, 2007
+[02_literature_review.md] Theodossiou, 1998
+[02_literature_review.md] Tung 2022
+[02_literature_review.md] Williams et al., 2017
+[02_literature_review.md] Zhang 2021
+[05_discussion.md] Liu 2023

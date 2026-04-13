@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11330783926",
+        "parent_comment_id": "0",
+        "content": "因为都提倡使用ai，不然跟不上潮流。[感谢][感谢][感谢]",
+        "publish_time": 1762010639,
+        "ip_location": "广东",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1968093065542600459",
+        "content_type": "answer",
+        "user_id": "8f8e981fb92d7d7fe8df823f1916e619",
+        "user_link": "https://www.zhihu.com/people/xyzxcq",
+        "user_nickname": "呆呆的盐子",
+        "user_avatar": "https://picx.zhimg.com/v2-70b54070dfead2ec869b6cb26556019f_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776061700984
+    },
+    {
+        "comment_id": "11330754791",
+        "parent_comment_id": "11330783926",
+        "content": "对的",
+        "publish_time": 1762011496,
+        "ip_location": "河北",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1968093065542600459",
+        "content_type": "answer",
+        "user_id": "f8ea369c0ea8bc3894ac018d97f6087e",
+        "user_link": "https://www.zhihu.com/people/xin-xi-26-9-23",
+        "user_nickname": "劲松",
+        "user_avatar": "https://pic1.zhimg.com/v2-1375ea27f10ee0a15a77e5dfd245e723_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776061701643
+    }
+]

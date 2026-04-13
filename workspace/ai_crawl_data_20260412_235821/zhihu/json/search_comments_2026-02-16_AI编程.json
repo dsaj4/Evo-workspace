@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11422579445",
+        "parent_comment_id": "0",
+        "content": "[大笑]如果公司业务尚好，估计过1年以后又要招程序员来重构AI屎山",
+        "publish_time": 1771839905,
+        "ip_location": "中国香港",
+        "sub_comment_count": 1,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "2007007354223339258",
+        "content_type": "answer",
+        "user_id": "574e756e39d94e56059aa735ffcbfd3b",
+        "user_link": "https://www.zhihu.com/people/redball-25",
+        "user_nickname": "redball",
+        "user_avatar": "https://pica.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776001797266
+    },
+    {
+        "comment_id": "11422922639",
+        "parent_comment_id": "11422579445",
+        "content": "[酷]业务未必能撑过一年",
+        "publish_time": 1771841857,
+        "ip_location": "重庆",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2007007354223339258",
+        "content_type": "answer",
+        "user_id": "b75e94a23ad393a161e9e03c0d7f11b9",
+        "user_link": "https://www.zhihu.com/people/xia-si-ge-bi-lao-wang-liao",
+        "user_nickname": "吓死隔壁老王了",
+        "user_avatar": "https://picx.zhimg.com/v2-8c249a154157898669408b0918bc4ae6_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776001798039
+    }
+]

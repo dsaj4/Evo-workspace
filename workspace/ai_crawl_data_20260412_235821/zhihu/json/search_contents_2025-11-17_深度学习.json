@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1974068840225854260",
+        "content_type": "answer",
+        "content_text": "假设你已经学会了一些基础知识，我这里就不说了，之说如何找项目和学习先说最直接的：Kaggle是绕不开的，这个平台最大的好处是把数据、任务、评估标准都给你准备好了，你只需要专注于模型本身。而且还有大量的大佬们的分享，所以这里是入门的首选因为是自学且刚入门，所以建议先从那些&#34;Getting Started&#34;标签的竞赛开始，比如经典的泰坦尼克号生存预测、房价预测这种。别小看这些简单任务，真正动手做你会发现数据预处理、特征工程这些事情比想象中麻烦得多。做完初级的可以试试参加个比赛，你的目标不是要取得名次，而是学习别人的思路，因为比赛会有大量的讨论和Notebook可以参考。Kaggle最好的的地方就是能看到别人的完整解决方案，从数据探索到模型调优的整个流程都能学到。如果你的时间富裕甚至可以一次参加几个比赛，学习不同方向的内容，但是这个还要看你的时间分配了。然后就是Papers with Code：它把论文和开源代码绑在一起，你可以按任务类型（比如图像分割、目标检测）或者数据集（ImageNet、COCO）来筛选。你学习深度学习是肯定要看论文的，所以它的好处就是选一篇感兴趣的论文，对照着代码实现去理解原理，这种学习方式效率很高，而且很多经典论文的复现代码都写得挺规范的，能学到不少工程实践的东西。如果你不看论文，这里也可以当作找解决方案的地方，比如你现在要做目标检测怎么办， 在这里直接搜索相关论文，找到代码，下载下来跑一遍就能知道好坏，还能看看别人的思路。如果你要学习算法没有数据集，可以用google 的dataset searchhttps://http://datasetsearch.research.google.com/可以搜到各种领域的公开数据，反正是学习，直接拿来用就行也不用担心版权问题。另外的建议就是每个项目一定要做完整。很多人都是调模型训练后、看看准确率就完了，但真正的项目需要考虑数据清洗、异常处理、模型部署、接口封装这些工程化的东西。所以你可以试着把训练好的模型用Flask或者FastAPI做成Web服务，或者用Streamlit做个简单的Demo界面，这些经验在找工作或者做实际项目时没准可以加分。还有一个补充是要养成记录的习惯，把踩过的坑、调参经验、代码片段都整理下来，慢慢就能建立起自己的知识库。比如说kaggle比赛的时候会把所有调参都记下来，这些都是历史的资料，回头看的时候都是有意义的。以上供参考",
+        "content_url": "https://www.zhihu.com/question/1973852218634568741/answer/1974068840225854260",
+        "question_id": "1973852218634568741",
+        "title": "自学深度学习怎么找一些落地的项目或训练?",
+        "desc": "现在理解了怎么搭建网络和一些基础知识，但是不知道怎么练习一下，从哪里找些资源",
+        "created_time": 1763434687,
+        "updated_time": 1763434687,
+        "voteup_count": 13,
+        "comment_count": 5,
+        "source_keyword": "深度学习",
+        "user_id": "f7e39864b396951a9ea654a88af161cb",
+        "user_link": "https://www.zhihu.com/people/deephub",
+        "user_nickname": "deephub",
+        "user_avatar": "https://picx.zhimg.com/50/v2-396b58e3975da77d5ec6b46b5b513b7a_l.jpg?source=4e949a73",
+        "user_url_token": "deephub",
+        "last_modify_ts": 1776006171514
+    },
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1973686683938612698",
+        "question_id": "",
+        "title": "病理图像应用深度学习预测淋巴瘤患者预后",
+        "desc": "",
+        "created_time": 1763424051,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "深度学习",
+        "user_id": "fee90dd3b206a04fdda40b23799cde84",
+        "user_link": "https://www.zhihu.com/people/xing-yun-de-dan-dan-9",
+        "user_nickname": "影像组学工作站",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-26cf3ddf6ab0b9a83f22e9b2a216b291_l.jpg?source=4e949a73",
+        "user_url_token": "xing-yun-de-dan-dan-9",
+        "last_modify_ts": 1776006171515
+    }
+]

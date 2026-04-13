@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1989155373836416026",
+        "content_type": "article",
+        "content_text": "最近在学习AI Agent，在这个帖子里，整理一下我觉得有用的资源。这个帖子会持续更新。也欢迎读者在评论区提意见，我补充在正文中。如果对您有帮助，请帮忙点个赞，谢谢！Dawn Song-UCB这是她组织的Agentic AI的Mooc：Agentic AI MOOC以下是这门Mooc的讲师和嘉宾：下面是这门课的Syllabus内容，大部分都是提供Slides的：Shunyu Yao普林斯顿博士，前OpenAI，现腾讯首席AI科学家，他的PhD一直沿着Lanuage Agent方向做了很多工作，在GPT3之前就开始研究Agent。可以顺着他的thesis slides脉络看看他是如何去梳理和研究Agent领域的问题的。About以下是他博士期间的研究工作，slides来自于他的个人主页：https://ysymyth.github.io/papers/fpo.pdfBojie Li李博杰老师的个人网站非常好，一直在持续更新Agent相关的优质内容，也提供了很多PPT：https://01.me/Yu Su-OSUYu Su老师写了一些关于Agent的blog和tutorial（虽然有一点点久远了）：https://yusu.substack.com/p/language-agentshttps://language-agent-tutorial.github.io/https://language-agent-tutorial.github.io/slides/I-Introduction.pdfOSU NLP组维护了一个Awesome GUI Agent Paper List，并持续更新中。这个List个人认为做得非常好，并且按照Key Words和Group进行分类，便于追踪哪些Group在做这个领域。Jiaxuan You-UIUChttps://cs.stanford.edu/~jiaxuan/可以看到You老师的研究兴趣都是和Agent，并且是细分领域的Agent有关。个人主页上也有很好的论文分类，方便查找：Again，这个帖子会持续更新。也欢迎读者在评论区提意见，我补充在正文中。Again，如果对您有帮助，请帮忙点个赞，谢谢！",
+        "content_url": "https://zhuanlan.zhihu.com/p/1989155373836416026",
+        "question_id": "",
+        "title": "AI Agent领域，有哪些值得关注的人？",
+        "desc": "最近在学习AI Agent，在这个帖子里，整理一下我觉得有用的资源。 这个帖子会持续更新。也欢迎读者在评论区提意见，我补充在正文中。 如果对您有帮助，请帮忙点个赞，谢谢！ Dawn Song-UCB这是她组织的Agentic AI的Mooc： Agentic AI",
+        "created_time": 1767033547,
+        "updated_time": 1767134943,
+        "voteup_count": 288,
+        "comment_count": 5,
+        "source_keyword": "AI agent",
+        "user_id": "d2a653dd42ce5354ae388154616c9e0a",
+        "user_link": "https://www.zhihu.com/people/30-76-66-6",
+        "user_nickname": "Jenny Tang",
+        "user_avatar": "https://pica.zhimg.com/50/v2-6a18a15a9229843eb953756e53b4027e_l.jpg?source=4e949a73",
+        "user_url_token": "30-76-66-6",
+        "last_modify_ts": 1776004235679
+    },
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1989014714441811652",
+        "question_id": "",
+        "title": "04」AI 的 “剧本” 骗局，它根本没在跟你聊天｜AI人工智能｜ChatGPT｜AI agent",
+        "desc": "如果你对AI感到好奇！\n如果你对DeepSeek为什么能崛起感兴趣？\n如果你好奇DeepSeek的技术创新细节，但不知道如何入手？\n如果你不是想浮光掠影看些表面内容，而是真正了解些东西？\n那么本系列视频应该能帮到你，AI行业产品经理，分享详细AI技术细节。\n\n不用担心浪费了时间，却最终一无所获！\n不用担心基础不好，学不会！\n\n· 小白视角，高中生水平就能看懂。\n所有复杂数学内容，都会转为高中学过的知识\n\n· 系统化和结构化真正了解 AI 技术 \n从DeepSeek官方论文，追溯技术创新演变过程",
+        "created_time": 1767006060,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "7d7031986198adc5d48927319c5dceee",
+        "user_link": "https://www.zhihu.com/people/lang-ji-89",
+        "user_nickname": "野生AI产品",
+        "user_avatar": "https://picx.zhimg.com/50/v2-229728282b35e96b8941fccbb83a0b0c_l.jpg?source=4e949a73",
+        "user_url_token": "lang-ji-89",
+        "last_modify_ts": 1776004235680
+    }
+]

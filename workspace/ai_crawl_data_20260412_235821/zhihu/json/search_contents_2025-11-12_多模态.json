@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1971721071448299117",
+        "content_type": "article",
+        "content_text": "来自：A Multimodal LLM Pipeline for Video Understanding完整代码：Google ColabAI 在独立处理文本、图像和语音等模态方面已取得了重大进展。然而，人类并非从孤立的数据中学习，而是同时进行观察、聆听和解释的。这篇文章构建了一个简单的视频理解 pipeline，它可以接收一段视频，并基于所见和所闻生成一段类似人类总结的摘要。目标构建一个智能系统，其目标是：接收一段短视频片段作为输入。理解视觉场景和口述内容。使用大语言模型生成自然语言摘要。多模态 AI：为何重要？多模态 AI 旨在将图像、音频和文本等多个信息流整合为一个统一的理解。它反映了人类感知和推理的方式，并成为以下应用的核心：视频摘要AI 助手人机交互医疗保健和手术自动化在这个项目中，视觉、音频和语言被整合到一个智能 pipeline 中，其中 LLMs 不仅作为文本生成器，更作为集成各种模态的推理引擎。Pipeline overview.流水线输入：一段短视频片段。# 使用 moviepy.editor 加载视频\nimport moviepy.editor as mp\nclip = mp.VideoFileClip(video_path)帧提取：提取关键帧以捕捉视觉亮点。# 每隔 2 秒提取一帧。\nfrom PIL import Image\nskip = 2\nextracted_frames = []\nfor t in range(0, int(clip.duration), skip):\n    frame = clip.get_frame(t)\n    img = Image.fromarray(frame)\n    extracted_frames.append(img)音频提取：分离音轨用于后续的转录。import ffmpeg, torchaudio\n\n# 使用 ffmpeg 直接将音频提取为内存中的字节流\ndef extract_audio_from_video(video_path, sr=16000):\n    out, _ = (\n        ffmpeg\n        .input(video_path)\n        .output(「pipe:」, format=「wav」, ac=1, ar=sr)\n        .run(capture_stdout=True, capture_stderr=True)\n    )\n    audio_tensor, sample_rate = torchaudio.load(io.BytesIO(out))\n    return audio_tensor.squeeze(0), sample_rate",
+        "content_url": "https://zhuanlan.zhihu.com/p/1971721071448299117",
+        "question_id": "",
+        "title": "如何用多模态模型做视频理解？",
+        "desc": "来自：A Multimodal LLM Pipeline for Video Understanding 完整代码：Google Colab AI 在独立处理文本、图像和语音等模态方面已取得了重大进展。然而，人类并非从孤立的数据中学习，而是同时进行观察、聆听和解释的",
+        "created_time": 1762994322,
+        "updated_time": 1766300347,
+        "voteup_count": 6,
+        "comment_count": 0,
+        "source_keyword": "多模态",
+        "user_id": "147fc19c3801b056e6437864322c8836",
+        "user_link": "https://www.zhihu.com/people/pengshuang92",
+        "user_nickname": "简枫",
+        "user_avatar": "https://picx.zhimg.com/50/v2-fdee0b2e844f44553600e3e72514116b_l.jpg?source=4e949a73",
+        "user_url_token": "pengshuang92",
+        "last_modify_ts": 1776038926796
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1970276831291745512",
+        "content_type": "answer",
+        "content_text": "Rich Sutton是个智者，兼具了洞若观火+脑洞大开。他对智能本质的理解，你要听。他对未来AI的实现计划，你听听就好。未来至少10-15年都是GPT模型的天下。 Generative pre-trained transformer ，GPT中的T可能会变（可能是Transformer，也可能是混合线性注意力，也可能是Diffusion），但生成式预训练（Generative pre-trained）是不会变的。这东西效率太高，无论是训练效率，推理效率，还是对齐效率。 你用强化学习训练出一个Gemini 2.5 Pro级别的模型，先不说行不行，你要堆进去多少算力，多少时间？ 1000万个GPU+10年够不够？我觉得不够。GPT模型，就是有弱泛化能力的专家模型，听着虽然有点僵化、死板，听着不够高科技，但对于日常生产、生活已经足够用了。 它的性能取决于“什么专家花多少时间”去微调模型，最终让普通人通过“模型”享受专家的知识和经验，抬高整个社会的知识底座。 这已经很了不起了。",
+        "content_url": "https://www.zhihu.com/question/1970129911919378681/answer/1970276831291745512",
+        "question_id": "1970129911919378681",
+        "title": "强化学习教父再临，如何看待生成式 AI 时代可能迎来转折？",
+        "desc": "[&#39;\\xa0\\xa0&#39;, &#39;新智元报道 \\xa0&#39;, &#39;11月初，ExperienceFlow.AI的CEO Giri ATG在X上发出了这样一条消息。&#39;, &#39;没有精致海报，没有宣传视频，&#39;, &#39;但在短短几小时内，这条看似平静的公告，被AI研究员、投资人疯狂转发。强化学习教父重出江湖， 生成式AI的时代要结束了？",
+        "created_time": 1762530602,
+        "updated_time": 1762530602,
+        "voteup_count": 62,
+        "comment_count": 0,
+        "source_keyword": "生成式AI",
+        "user_id": "bea84fe95aee12a6939ee59dde16d1b3",
+        "user_link": "https://www.zhihu.com/people/yu-you-56-63",
+        "user_nickname": "Trisimo崔思莫",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-f85c56a14245993531a1c36c47721ee4_l.jpg?source=4e949a73",
+        "user_url_token": "yu-you-56-63",
+        "last_modify_ts": 1776035747816
+    }
+]

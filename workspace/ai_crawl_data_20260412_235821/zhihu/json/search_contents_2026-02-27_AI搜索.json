@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2010851283897188560",
+        "content_type": "answer",
+        "content_text": "你的网页SEO做得很好，Google排名第一页。但现在越来越多的用户不再点进你的网站了——他们直接问ChatGPT，ChatGPT给了答案，引用的却是别人的网页这不是假设，这是正在发生的事。数据显示，AI搜索引用的流量在2025年前5个月增长了527%，而传统搜索的点击率因为AI Overview的存在下降了最高58%。换句话说，如果你的内容不能被AI引用，你正在失去一个爆发式增长的流量入口于是，新瓶装旧酒，新的玩法出来了：GEO。以海外市场为例，GEO到底怎么搞？先搞懂底层逻辑：AI怎么决定引用谁所有AI搜索引擎的工作流程本质上都一样：用户提问 → AI拆解问题去搜索 → 从搜索结果中筛选最优段落 → 组织成回答并标注引用来源。你能干预的环节有四个：让它搜到你（被索引）、让它选中你的段落（结构清晰）、让它准确转述你（表述精确）、让它敢引用你（有权威背书）。下面所有的操作都围绕这四件事展开第一步：技术基建（30分钟搞定）这是投入产出比最高的一步，很多人忽略了1. 放行AI爬虫在你网站的robots.txt里，确保以下爬虫不被屏蔽：OAI-SearchBot（ChatGPT搜索，最重要）ChatGPT-User（ChatGPT浏览模式）PerplexityBot（Perplexity）Claude-User（Claude用户请求时抓取）Google-Extended（Gemini / AI Overview）Bingbot（Copilot）一个实用技巧：你可以屏蔽ClaudeBot（仅用于训练数据采集），但保留Claude-User（用户实际使用时的抓取）。这样你拒绝了被拿去训练，但保留了被引用的机会2. 部署llms.txt这是2024年末推出的新标准，相当于给AI一份你网站的”VIP菜单”。放在网站根目录，用Markdown格式：# 你的品牌名\n&gt; 一句话描述你是谁、做什么。\n\n## 核心产品\n- [产品A](URL): 简要描述\n- [产品B](URL): 简要描述\n\n## 文档\n- [技术文档](URL): 描述\n- [API参考](URL): 描述如果你有完整的技术文档，还可以做一个llms-full.txt，把所有文档合并成一个Markdown文件。Claude这类模型偏好对统一数据集推理，而不是碎片化的HTML页面3. 添加Schema标记（JSON-LD）AI连接的是实体（人、组织、概念），不是关键词。Schema是你和AI的握手协议。有Schema标记的内容，AI可见度提高30-40%优先添加这几种：Article（文章）、FAQPage（FAQ，Perplexity特别偏好）、HowTo（教程）、Person + sameAs（作者身份关联到LinkedIn/GitHub）4. 确保SSR渲染关键内容必须在初始HTML中直接交付。AI爬虫不擅长处理复杂的客户端JavaScript渲染。页面加载目标控制在2秒以内（Copilot有明确阈值）第二步：内容结构改造这是最核心的部分。Princeton的GEO研究（KDD 2024）量化测试了9种优化方法，结论很清晰：引用权威来源（+40%）、加入统计数据（+37%）、专家引言（+30%）的提升最大，而关键词堆砌反而降低引用率10%写作的四条铁律：第一，结论前置。研究发现44.2%的引用来自文章前1/3。每个重要页面顶部放50-100字的TL;DR直接给结论，每个章节的第一句话就是答案。AI提取的最优段落长度是40-60词，一个段落只讲一个观点第二，用问题做标题。78.4%与问题相关的引用来自标题本身。把H2/H3写成用户会问的问题：”X是什么？”“X怎么用？”“X和Y有什么区别？”这直接匹配AI拆解用户问题的方式第三，段落要自包含。每个段落脱离上下文也能被AI直接引用。不要写”如上所述”这种依赖上下文的表达。AI抽取的是段落级别的内容块，不是整篇文章第四，用确定性语言。被引用的文本使用”X是”“X指的是”这类确定性表述的概率是模糊表述的2倍。同时保持”专业分析师风格”——事实和解读混合，而不是纯推销或纯学术最有效的内容类型排名：对比文章（X vs Y）占引用的约33%，是最容易被引用的格式。其次是权威指南（15%）、原创研究/数据（12%）、榜单（10%）。不会引用的内容包括：无结构的通用博文、营销空话、付费墙内容、没有日期和作者的内容。第三步：平台差异化策略各平台的搜索后端和偏好完全不同，盲目优化等于白费力气。ChatGPT用的是Bing索引。最重要的发现是：你的内容结构越像ChatGPT的回答风格，越可能被引用（占权重55%），这远超域名权重（12%）。所以去观察ChatGPT怎么回答问题，然后模仿那个结构写你的内容。30天内更新的内容被引用概率高3.2倍，竞争性内容至少月更一次Perplexity有自己的索引加Google索引，最大的差异化杠杆是FAQPage Schema（JSON-LD格式）和公开PDF。如果你有白皮书或研究报告，做成公开可下载的PDF，Perplexity会优先引用。它还偏好高频发布和”原子化”的自包含段落Claude用的是Brave Search，不是Google也不是Bing——这意味着你要先去http://http://search.brave.com确认你的内容能被搜到。Claude极度选择性，处理大量内容但引用率极低，只选最准确的来源。优化方向是最大化事实密度：具体数字、具名来源、带日期的统计Gemini / AI Overview依赖Google索引和Knowledge Graph。独特机制是”扇出查询”——它会自动把用户问题拆成多个子问题分别搜索。所以你需要围绕一个主题建设内容集群，用FAQ覆盖各种子问题。Schema标记在这里是最大杠杆（+30-40%）Copilot完全依赖Bing索引，额外给LinkedIn和GitHub上的内容加权。确保在Bing Webmaster Tools提交站点，使用IndexNow协议加快索引Grok的独特之处在于它处理X（Twitter）的全量数据流。回复的质量和深度占帖子总分的75%以上，回复的权重是点赞的50倍。注意：主帖放外链会让分数降低约50%，外链应该只放在回复中第四步：建设第三方共识层一个被忽视的关键数据：品牌通过第三方来源被AI引用的概率是自有网站的6.5倍这意味着只优化自己的网站远远不够。你需要在这些地方建立存在感：Wikipedia（ChatGPT引用7.8%，确保你的词条准确且最新）、Reddit（33%的AI引用来自这里，OpenAI与Reddit有直接数据合作）、行业评测站如G2和Capterra（Perplexity高度依赖）、YouTube（Google AI Overview高频引用，提供字幕文件）对于Reddit，关键不是去发广告，而是在相关社区真实参与讨论，让你的品牌自然出现在高karma线程中。OpenAI直接使用Reddit数据，社区共识是ChatGPT引用的主要信号之一第五步：监控和迭代最小可行的监控循环是每周做一次：准备30-80个固定prompt（覆盖品牌定义、竞品对比、使用场景等），在ChatGPT、Perplexity、Google里跑一遍，记录是否被提及、是否被引用带链接、引用的是哪个URL、描述是否准确验证用的prompt模板举几个例子：”What is [你的品牌] and who is it best for? Include sources.“、”[你的品牌] vs [竞品] — when should I choose each? Cite sources.“在Google Analytics里监控utm_source=http://http://chatgpt.com的流量（OpenAI会自动附加这个参数），以及来自Perplexity等AI域名的referral流量执行优先级如果你只有一个周末的时间，按这个顺序做：第一天做技术基建：配置robots.txt放行AI爬虫、部署llms.txt、给核心页面添加Schema标记。这些是一次性投入，30分钟到2小时搞定，但没有它们后面的内容优化全部打折第二天改造核心内容：挑你最重要的3-5个页面，加TL;DR块、改成问题式标题、确保段落自包含、补充统计数据和权威引用之后持续做的事：每月更新竞争性内容、建设第三方存在感、每周跑一次监控promptGEO和SEO一样是马拉松。但好消息是，现在大多数人还没开始跑，你每早一天起步，复利就多积累一天。不管你吃不吃吧，反正我饼先画在这了",
+        "content_url": "https://www.zhihu.com/question/1938927819049640531/answer/2010851283897188560",
+        "question_id": "1938927819049640531",
+        "title": "GEO是怎么抢占AI搜索流量的？",
+        "desc": "最近很火的GEO取代seo是什么？为什么要？如何做？",
+        "created_time": 1772204305,
+        "updated_time": 1772204305,
+        "voteup_count": 37,
+        "comment_count": 3,
+        "source_keyword": "AI搜索",
+        "user_id": "01362b346556f328f37bc4a0095ed972",
+        "user_link": "https://www.zhihu.com/people/jieruimi",
+        "user_nickname": "戴fufu",
+        "user_avatar": "https://picx.zhimg.com/50/v2-b857f2e3a7f3ae7f607f630ec62fb774_l.jpg?source=4e949a73",
+        "user_url_token": "jieruimi",
+        "last_modify_ts": 1776043509382
+    }
+]

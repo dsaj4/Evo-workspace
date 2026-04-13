@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1987336446605035102",
+        "content_type": "answer",
+        "content_text": "1. 深度学习革命（The Deep Learning Revolution）1.2 教程示例（A Tutorial Example)“对于机器学习领域的新手，许多基本概念和大量术语可以通过一个简单的示例来介绍，该示例涉及将多项式拟合到一个小的合成数据集（Bishop, 2006）。这是监督学习问题的一种形式，我们希望在此情况下，根据输入变量的值来预测目标变量…..”机器学习的底层算法对于数学专业而言简直“不屑一顾”…….. 因此，AI 的进步很大程度是由物理学家来推动，这究竟是因为它终究会沦为“大力出奇迹”的“实验学科”,还是为了捕捉量子的不确定才引发“矩阵”对神经网络的流行呢…..",
+        "content_url": "https://www.zhihu.com/question/306447620/answer/1987336446605035102",
+        "question_id": "306447620",
+        "title": "先学机器学习还是深度学习？",
+        "desc": "本人大二，有过一些python的语法基础以及一些工程数学的基础。这年正在研究机器人，在考虑能不能把机器学习的算法用到上面来。我打算通过机器人的传感器采集数据返回到电脑上进行进一步的处理，处理完得到结果再返回到机器人上进行下一步操作。又或者采集数据也可以用到实时图像的识别。但是本人并没有接触过有关机器学习或者深度学习的算法。假如说想学到可以处理这些数据的程度，应该先学机器学习还是深度学习呢？",
+        "created_time": 1766597931,
+        "updated_time": 1766597931,
+        "voteup_count": 5,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "3bccfe5ebb4bf260fabf4fcb8dc6c05e",
+        "user_link": "https://www.zhihu.com/people/apple-51-30",
+        "user_nickname": "MineAIgent米几",
+        "user_avatar": "https://picx.zhimg.com/50/v2-d1f0d812d35a6eff9f1ad01feb19a225_l.jpg?source=4e949a73",
+        "user_url_token": "apple-51-30",
+        "last_modify_ts": 1776005032711
+    }
+]

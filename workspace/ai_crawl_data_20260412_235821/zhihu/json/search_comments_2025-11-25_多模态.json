@@ -1,0 +1,53 @@
+[
+    {
+        "comment_id": "11363420410",
+        "parent_comment_id": "0",
+        "content": "我仔细读过了这篇论文，这篇能解决缺失问题，具体的解决思路在哪里呢，就是一个加权处理吗？还有文章为什么没有验证提出模态间利用交叉注意力和模态内利用交叉注意力的有效性呀，这么简单的操作就既能解决非对齐问题了，怎么说的过去。还有论文的无缘无故就出现一些参数，也不说明来源情况。还有做这个模态间利用交叉注意力是只用了第一层的吗吗，论文里面只写了z0还是每一层都做了。",
+        "publish_time": 1765351986,
+        "ip_location": "安徽",
+        "sub_comment_count": 2,
+        "like_count": 3,
+        "dislike_count": 0,
+        "content_id": "1977031316542342909",
+        "content_type": "article",
+        "user_id": "cc05fdba110cdf79f43c369eeecb850b",
+        "user_link": "https://www.zhihu.com/people/chu-zu-che-7-92",
+        "user_nickname": "出租车",
+        "user_avatar": "https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038963513
+    },
+    {
+        "comment_id": "11408333981",
+        "parent_comment_id": "11363420410",
+        "content": "看代码仓库空空如也",
+        "publish_time": 1770033561,
+        "ip_location": "新加坡",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1977031316542342909",
+        "content_type": "article",
+        "user_id": "dafc785ad3f55fcdb41cd981d57cd24f",
+        "user_link": "https://www.zhihu.com/people/forqiwei-yang",
+        "user_nickname": "LG.ANIHC",
+        "user_avatar": "https://pic1.zhimg.com/v2-91e16d40b75ac4735c6a6b699ab5851f_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038964228
+    },
+    {
+        "comment_id": "11439331856",
+        "parent_comment_id": "11408333981",
+        "content": "他项目主页都变成其他的了",
+        "publish_time": 1773657799,
+        "ip_location": "新加坡",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1977031316542342909",
+        "content_type": "article",
+        "user_id": "cabcc271d0d3f2fa69a306012916e051",
+        "user_link": "https://www.zhihu.com/people/wjyzhw",
+        "user_nickname": "wjyzhw",
+        "user_avatar": "https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038964240
+    }
+]

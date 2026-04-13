@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2012854576735355340",
+        "content_type": "answer",
+        "content_text": "肯定是先学编程。首先学会python，python的使用再去学pytorch和深度学习接着找个基础模型transformer，VAE等跑通整个流程，包括数据，模型搭建，模型训练，模型推理等。到这时候你就入门了，再去做积累。",
+        "content_url": "https://www.zhihu.com/question/2009226356785947031/answer/2012854576735355340",
+        "question_id": "2009226356785947031",
+        "title": "零基础学习机器学习，最推荐的学习路线是什么？",
+        "desc": "我是零基础小白，对机器学习很感兴趣，想系统学习，不知道从何入手。应该先学编程还是数学？有没有推荐的免费课程或书籍？",
+        "created_time": 1772681928,
+        "updated_time": 1772681928,
+        "voteup_count": 2,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "a35c4ad6986ee2be9a74b8c7ea9bb00b",
+        "user_link": "https://www.zhihu.com/people/ye-ting-yu-sheng-jing-dai-hua-kai",
+        "user_nickname": "艳鹏AI笔记",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-a29c609b740c60e06db244ace19d12f2_l.jpg?source=4e949a73",
+        "user_url_token": "ye-ting-yu-sheng-jing-dai-hua-kai",
+        "last_modify_ts": 1776004656582
+    }
+]

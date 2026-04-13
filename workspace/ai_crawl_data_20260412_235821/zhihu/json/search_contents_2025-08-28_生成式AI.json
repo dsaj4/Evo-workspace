@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1944727762511303321",
+        "content_type": "answer",
+        "content_text": "SuperDesign这个开源的，可以内嵌在IDE里的AI设计工具效果还是比较不错的。简介：SuperDesign是一个面向开发者的开源AI设计助手，最大的特点就是可直接嵌入到 IDE 中，它让开发者 在写代码的地方就能用自然语言生成 UI 设计，无需再打开 Figma 或 Sketch。支持Cursor、Windsurf、Claude Code、VS Code 等IDE。GitHub开源关键字：superdesigndev/superdesign[1]，目前已经有2.5k个star⭐️。也可以到他们的官网[2]查看更多信息。主要功能和特点：1. 一句话生成完整 UI：比如输入“深色登录页”，就可以得到界面 + 对应代码，支持 React/Vue/Angular 等主流前端框架。2. 自动创建可复用组件：生成的组件可直接粘贴到项目，保持样式统一，减少重复劳动。3. 一键线框图 &amp; 原型：快速产出低保真线框图，用于早期需求验证；也可生成高保真原型供评审。4. 并行多方案：同一提示可同时生成 3-10 个设计变体，方便对比并快速迭代。5. 设计分叉与迭代：可随时复制现有设计进行“分叉”，再输入新提示微调，形成版本树。6. 深度 IDE 集成：支持 VS Code、Cursor、Windsurf、Claude Code 等主流 AI 编辑器，设计文件本地保存在 .superdesign/ 目录，无需切换窗口。主要界面：",
+        "content_url": "https://www.zhihu.com/question/1907473833293742931/answer/1944727762511303321",
+        "question_id": "1907473833293742931",
+        "title": "Ai生成ui的工具，哪个效果最好?",
+        "desc": "SuperDesign这个开源的，可以内嵌在IDE里的AI设计工具效果还是比较不错的。",
+        "created_time": 1756439229,
+        "updated_time": 1756439229,
+        "voteup_count": 20,
+        "comment_count": 1,
+        "source_keyword": "生成式AI",
+        "user_id": "7a95e0833b72978bb2f56c61fb133581",
+        "user_link": "https://www.zhihu.com/people/qianyugang",
+        "user_nickname": "钱嘟嘟左卫门",
+        "user_avatar": "https://pica.zhimg.com/50/v2-70daa71f58c6551f6b1daec627901a9f_l.jpg?source=4e949a73",
+        "user_url_token": "qianyugang",
+        "last_modify_ts": 1776035952983
+    }
+]

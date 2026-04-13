@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11458314512",
+        "parent_comment_id": "0",
+        "content": "选工具别只看功能列表，关键看你的工作流：Cursor 适合重构和大规模代码理解，上下文处理强Codeium/Copilot 日常补全够用，但复杂逻辑容易瞎猜本地方案（如果你在意数据）可以看 Continue + 本地模型实际体验差异主要在：多文件关联能力（改A文件时能不能联动B）2. 上下文窗口大小（决定能\"看懂\"多少代码）3. 模型切换灵活度建议先用免费版试一周真实项目，别光看 demo。很多工具演示很炫，实际干活时各种卡。",
+        "publish_time": 1775784279,
+        "ip_location": "河北",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2015723097009956652",
+        "content_type": "article",
+        "user_id": "a47b214520ca3a2d5e5921465ef99823",
+        "user_link": "https://www.zhihu.com/people/79uxnit",
+        "user_nickname": "小看山火",
+        "user_avatar": "https://pic1.zhimg.com/v2-25ac7c0d6225fc37e7f4419d75895b22_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775928471945
+    },
+    {
+        "comment_id": "11440677247",
+        "parent_comment_id": "0",
+        "content": "创业的MVP阶段别纠结技术选型。",
+        "publish_time": 1773802889,
+        "ip_location": "四川",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2015723097009956652",
+        "content_type": "article",
+        "user_id": "e5a007af7f67946db1ee89b3d7c9fc59",
+        "user_link": "https://www.zhihu.com/people/chris-40-61-38",
+        "user_nickname": "Chris",
+        "user_avatar": "https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775928471947
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1983214234457360100",
+        "content_type": "answer",
+        "content_text": "昨天发了LLaDA2.0的技术报告，https://http://github.com/inclusionAI/LLaDA2.0/blob/main/tech_report.pdf瞎写两笔，TL;DR：相比AR：几个榜单平均速度2.3x，效果基本拉平/部分略超。Coding上有些独特的优势，在没有强制先验的情况下，模型在代码上的推理更容易呈现并行解码高tpf（token-per-forward）。关于趋势啥的，我也不想讨论太多，我只能说反正我们是赌上了这条路了，论迹不论心或言。AR系列的模型，从chatgpt开始（2022.11月）走过了三年多时间了，集全世界最聪明的一帮人一起努力的结果，遍及算法、数据飞轮、Infra等LLaDA这个系列还有路要走，因为我们这段时间all-in这个方向之后，最难搞的其实是infra。再牛逼的算法没有infra去实验也是白搭，不能低估工程的复杂程度。所以我们有了dFactory（https://http://github.com/inclusionAI/dFactory）和dInfer（https://http://github.com/inclusionAI/dInfer/）再具体的，我抛几个点吧：1. 目前这种masked的离散diffusion的训练范式有比较大的提升空间，本质上是训推不一致。拿到我们模型的同学（huggingface）可以跑下sglang的inference看看，会不会时常看到最后一些step的token很难被解出来，整体tpf趋于1，也就是与位置无关的AR解码。简单来说，这是训推不一致导致的，训练的时候很难命中这种状态下的解码（跟mask-ratio也有关系），这个问题非常本质，怎么解我们还在努力；2. RL。直接了当，logp怎么估？目前所有的方法（以spg为代表），基本上都要跑蒙特卡洛+ELBO。那么问题就是这个elbo是不是够紧，以及蒙特卡洛上了之后，如果我用4次估计，那么一个16k的rollout就变成了64k，压力陡增。这里需要infra的迭代适配，以及算法的突破创新。3. 编辑：AR给了一种对p(x)的拆解方式， 目前的LLaDA给了另外一种（mask-to-token），那么能否token-to-token。当然这个训起来，它的复杂度就不在同一个量级了。但是如果这种能训出来的话，它会是一种新的p(x)的估算方式，在实际解码中，我们如果跑CoT可能不需要那么多token，因为它可以修改；一般性的解码也大概率会有新的范式来完成。4. 其他的各类拉升tpf的方式：轨迹蒸馏、CAP、credit decode、dParallel等等。或者说，在AR上，我们一定程度上已经可以形成评测-数据-模型的回流闭环（如Shunyu Yao写的the Second Half）。Despite so, 在LLaDA这条线上，暂时还没到这里，所以还有很大的research空间；并且从分析上需要引入生成轨迹；不为别的，看LLaDA原生选择的解码轨迹是一件很好玩的事儿^所以说，是不是趋势，我也不知道，但如Ilya所说：we are back to the age of research.欢迎社区的大家跟我们一起来玩，一起当吃螃蟹的技术团队。",
+        "content_url": "https://www.zhihu.com/question/1911755226576323963/answer/1983214234457360100",
+        "question_id": "1911755226576323963",
+        "title": "如何看待扩散大语言模型，是否会是大语言模型未来的趋势？",
+        "desc": "昨天发了LLaDA2.0的技术报告， 瞎写两笔，TL;DR：相比AR：几个榜单平均速度2.3x，效果基本拉平/部分略超。&lt;/",
+        "created_time": 1765615119,
+        "updated_time": 1765615119,
+        "voteup_count": 246,
+        "comment_count": 11,
+        "source_keyword": "大模型",
+        "user_id": "ef9d34b9741c9db13dd7cf315bd2b5f0",
+        "user_link": "https://www.zhihu.com/people/jakezhao1992",
+        "user_nickname": "赵俊博 Jake",
+        "user_avatar": "https://picx.zhimg.com/50/v2-24018ec5575722de05b6198f75a8cea2_l.jpg?source=4e949a73",
+        "user_url_token": "jakezhao1992",
+        "last_modify_ts": 1775900696084
+    }
+]

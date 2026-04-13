@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1975574864199962938",
+        "content_type": "article",
+        "content_text": "一， 团队简介拍立淘，是阿里核心算法团队，致力于构建超大规模 “多模态搜索问答” 系统。拥有国内头部视觉AI场景：图搜同款/相似、AIGC创意问评买。紧随技术创新潮流，不断扩大影响力，期待优秀的同学加入，一起构建未来生活新范式。二，聚焦方向：多模态大模型VLM1. 预训练对齐（VLM2Vec表征学习、生成式多模态对齐、高效SFT与推理）2. 多模态后训练（CoT、RAG工具调用、Reasoning、强化学习、ICL）3. 智能体系统（端到端搜索一体化，多agent规划协同、自进化数据引擎）4. 下一代VLM（稀疏MoE、理解生成统一范式、原生分辨率、VLM2RAG）当然，不限于上述方向，如果您觉得其他方向非常有趣/有价值，也欢迎交流讨论。三，合作指导团队有多位”阿里星”/谷歌学术千引的同学，技术创新氛围浓。您会在mentor手把手指导下成长（想法-&gt;实验-&gt;消融-&gt;改进-&gt;迭代），一起学习/讨论/分析/debug。完成的工作可投稿顶会论文，也可在海量业务数据中验证落地。25年，团队已发表5篇CCF-A类顶会，成功利用多模态大模型改造拍立淘全链路，多次取得显著收益，且有更多创新工作在路上。四，环境氛围计算资源充足，三千张H100/A100，且持续扩张中；充分尊重个人意见，平等无Push/PUA，产研结合，自由度高，既可投递顶会也可参与业务；五，候选期望计算机、数学、自动化、人工智能等相关专业的全日制在读硕士/博士CV、NLP、ML等基本功底，有相关经验或论文发表优先线下实习（6个月及以上），能长期实习优先（特殊情况也可短期远程）工作地点：杭州实习表现出色可优先转正（SSP+ offer），HC相当充裕，欢迎投递简历 juchen.ju@taobao.com 或者 cju.void@gmail.com",
+        "content_url": "https://zhuanlan.zhihu.com/p/1975574864199962938",
+        "question_id": "",
+        "title": "阿里 多模态大模型 实习生招聘",
+        "desc": "不断扩大影响力，期待优秀的同学加入，一起构建未来生活新范式。 二，聚焦方向：多模态大模型VLM 1. 预训练对齐（VLM2Vec表征学习、生成式多模态对齐、高效SFT与推理） 2. 多模态后训练（CoT、RAG工具调用、Reasoning、强化学习、ICL） 3",
+        "created_time": 1763794125,
+        "updated_time": 1763794125,
+        "voteup_count": 17,
+        "comment_count": 11,
+        "source_keyword": "多模态",
+        "user_id": "db29ad9dfb596cb949d7e7c67c6c29b1",
+        "user_link": "https://www.zhihu.com/people/voide-38",
+        "user_nickname": "voide",
+        "user_avatar": "https://pica.zhimg.com/50/v2-96bc523a2019a3bddd156e54c78d635f_l.jpg?source=4e949a73",
+        "user_url_token": "voide-38",
+        "last_modify_ts": 1776038926795
+    }
+]

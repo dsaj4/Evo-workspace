@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2010474136527466816",
+        "content_type": "answer",
+        "content_text": "我们经常遇到一种尴尬：别人问“现在 AI 工具这么多，你到底推荐哪个？”  能给方向，但很难一句话拍板，因为大家的需求差太多——写代码、做图、搜资料、写歌、做代理自动化，每条赛道的“好用”都不是一个标准。更麻烦的是信息散：  你今天收藏一个评测，明天刷到一个对比，后天又看到某个更新……过两周再回头，链接在哪都忘了。所以我把收集到的评测文章（Markdown）统一导入飞书知识库，做成一个 可检索、可持续更新 的“AI 工具评测库”飞书知识库链接：21个主流AI工具深度评测这个知识库里有什么？目前先放了 21 篇评测，覆盖这些类别：AI 编程工具（Claude Code / Cursor / Copilot / Windsurf / v0.dev…）AI 对话助手（ChatGPT / Claude / Gemini / DeepSeek / Kimi / 豆包 / Grok…）AI 图像生成（Midjourney / DALL·E 3 / Ideogram）AI 搜索（Perplexity）AI 音乐创作（Suno）AI 代理平台（Manus）AI 生产力工具（Notion AI / 扣子 Coze / …）  我不想把它包装成什么“终极答案”。它更像一个桌面抽屉：需要的时候拉开，拿走你要用的那一份信息。 如果你也在折腾 AI 工具，欢迎把你想看的工具/类别留言给我，我后面会按需求继续补齐和更新：21个主流AI工具深度评测",
+        "content_url": "https://www.zhihu.com/question/590449168/answer/2010474136527466816",
+        "question_id": "590449168",
+        "title": "有哪些日常实用的 AI 工具、AI 插件、AI 软件或应用推荐？",
+        "desc": "从 ChatGPT 的爆火到 GPT-4 的发布，AI 越来愈多的走进我们的日常生活，那我们日常生活和工作中，有哪些基于 GPT 技术或者其他 AI 技术实现的 AI 工具、AI 插件、AI 软件或应用可以推荐呢？",
+        "created_time": 1772114386,
+        "updated_time": 1772114386,
+        "voteup_count": 2,
+        "comment_count": 0,
+        "source_keyword": "AI工具",
+        "user_id": "c53ff79e6a3ec498ef6de3d6b82c2077",
+        "user_link": "https://www.zhihu.com/people/xiao-lan-ren-13",
+        "user_nickname": "懒人找资源",
+        "user_avatar": "https://pica.zhimg.com/50/v2-19c1b6b23a6a08b33c6caa21a4efae03_l.jpg?source=4e949a73",
+        "user_url_token": "xiao-lan-ren-13",
+        "last_modify_ts": 1776000558201
+    }
+]
