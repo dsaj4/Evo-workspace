@@ -1,0 +1,53 @@
+[
+    {
+        "comment_id": "11363790271",
+        "parent_comment_id": "0",
+        "content": "Deep Learning Architectures和Math and Architectures of Deep Learning，截至目前(2025.12)国内未出中文版，你的中文版是机翻的吗？具体用的什么AI？",
+        "publish_time": 1765342689,
+        "ip_location": "江苏",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1982036037896254322",
+        "content_type": "answer",
+        "user_id": "fa00a7b1bd737119c99d27698ab9060d",
+        "user_link": "https://www.zhihu.com/people/heyuanfei",
+        "user_nickname": "cnhk",
+        "user_avatar": "https://picx.zhimg.com/v2-22523fa881322bcb98f5a06cf9f2cf03_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776005082132
+    },
+    {
+        "comment_id": "11363707219",
+        "parent_comment_id": "0",
+        "content": "大模型。都可以。",
+        "publish_time": 1765346105,
+        "ip_location": "北京",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1982036037896254322",
+        "content_type": "answer",
+        "user_id": "26590e33922a656b0ad6ce27f05c44b2",
+        "user_link": "https://www.zhihu.com/people/rapidai",
+        "user_nickname": "RapidAI",
+        "user_avatar": "https://picx.zhimg.com/v2-5612bce798586392c32d1d571eef4e8e_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776005082145
+    },
+    {
+        "comment_id": "11371907148",
+        "parent_comment_id": "11363790271",
+        "content": "查了下，math &amp; arch 有中译版：深度学习黑箱。不过。。翻译得还不如大模型版本。",
+        "publish_time": 1766221165,
+        "ip_location": "美国",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1982036037896254322",
+        "content_type": "answer",
+        "user_id": "26590e33922a656b0ad6ce27f05c44b2",
+        "user_link": "https://www.zhihu.com/people/rapidai",
+        "user_nickname": "RapidAI",
+        "user_avatar": "https://pic1.zhimg.com/v2-5612bce798586392c32d1d571eef4e8e_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776005082510
+    }
+]

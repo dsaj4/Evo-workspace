@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1982036037896254322",
+        "content_type": "answer",
+        "content_text": "B友们，俺们把七大名著集齐了：Deep_Learning_Architectures_cn.pdf   深度学习架构DL_Found_Concepts.pdf   深度学习基石与概念 （Bishop父子联合出品）Math_and_architectores_of_DL.pdf   深度学习的数学与架构PRML-cn.pdf      Bishop 经典巨著 模式识别与机器学习intro-Proba-models.pdf  概率模型导论UnderstandingDL.pdf   理解深度学习Optimization-By-Vector-Space-Methods.pdf  向量空间方法优化RapidAI 推荐四大深度学习经典书籍 - 知乎而且，全是中文版。",
+        "content_url": "https://www.zhihu.com/question/1981685405326795276/answer/1982036037896254322",
+        "question_id": "1981685405326795276",
+        "title": "如何评价2025 年出版的机器学习 「圣经」PRML 的中文版？",
+        "desc": "原书出版于 2006 年，今天是否过时？应该如何学习？",
+        "created_time": 1765334215,
+        "updated_time": 1765419374,
+        "voteup_count": 72,
+        "comment_count": 3,
+        "source_keyword": "机器学习",
+        "user_id": "26590e33922a656b0ad6ce27f05c44b2",
+        "user_link": "https://www.zhihu.com/people/rapidai",
+        "user_nickname": "RapidAI",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-5612bce798586392c32d1d571eef4e8e_l.jpg?source=4e949a73",
+        "user_url_token": "rapidai",
+        "last_modify_ts": 1776005032734
+    },
+    {
+        "content_id": "1981766976704619692",
+        "content_type": "answer",
+        "content_text": "第一部分AI与MOF计算基础及环境搭建 1.关键理论：1.1.AI 在计算化学中的范式革新：从计算化学到深度学习1.2. MOF结构-功能关系解析：从金属节点、有机配体的化学特性到宏观吸附、分离性能1.3.科学计算与AI工作流整合：数据获取(DB)→结构清洗(Code)→特征计算(Tool)→模型训练(AI)的标准流程1.4.量子化学基础：DFT在MOF结构优化、电子结构与吸附位点分析中的应用案例实践1：Case 1：使用MOSAEC算法处理CoRE-MOF、QMOF数据库，进行结构合理性校验与数据清洗，确保所有结构满足化学合理性Case 2：使用Zeo++计算 MOF 孔结构特征（比表面积、孔隙率等）Case 3：拓扑分析与化学描述符（开放金属位点、有机配体结构式）批量提取Case 4：使用CP2K完成MOF的晶体结构优化，并计算CH4的结合能，为机器学习筛选出来的潜在候选物进行机理解释。第二部分分子模拟和高通量计算在MOFs中的应用 2.关键理论：2.1.分子模拟核心：力场与电荷分配的物理意义与选择策略2.2.分子模拟在揭示MOF吸附与分离机制（吸附位点、扩散路径）中的作用2.3.高通量计算：作为AI模型“数据工厂” 的搭建流程与MOF 设计中的应用案例实践2：Case 1：使用 RASPA2 计算气体吸附/分离性质Case 2：使用 RASPA2计算等温吸附曲线和气体吸附概率密度图Case 3： 使用GPU加速的gRASPA实现高通量GCMC模拟，体验“计算产生数据”的规模与效率，并构建后续所需数据集Case4：高通量GCMC计算结果的分析与可视化，提取结构-性能对应关系。文献复现：复现经典文献的高通量筛选流程，讨论如何将结果作为AI模型的输入Large-scale screening of hypothetical metal–organic frameworks. Nature Chem 2012, 4, 83–89 DOI: 10.1038/nchem.1192第三部分传统机器学习与可解释AI在MOF中的应用 3.理论部分3.1.机器学习在MOF中的QSAR/QSPR模型：结构-性质定量关系3.2.特征工程核心：化学描述符（比表面积、孔径等）的物理意义3.3.算法深度解析：随机森林（RF）、XGBoost、SVM在吸附预测中的优劣3.4.可解释AI前沿：SHAP、SISSO 在挖掘物理机制与发现设计规则中的应用案例实践3：Case 1：Python实现XGBoost、SVM、RF模型预测MOF气体吸附分离性质Case 2：使用贝叶斯优化算法进行参数调优与特征选择Case 3：基于独立筛选和稀疏算子 (SISSO) 算法从高维特征空间中学习简洁且可解释的物理公式Case 4：可视化结果：AUC曲线、误差散点图、蜜蜂群图Case 5：预测未知MOF的吸附性质，验证模型泛化能力文献复现：Robust Machine Learning Models for Predicting High CO2 Working Capacity and CO2/H2 Selectivity of Gas Adsorption in Metal Organic Frameworks for Precombustion Carbon Capture J. Phys. Chem. C 2019, 123, 7, 4133–4139 DOI: 10.1021/acs.jpcc.8b10644第四部分图神经网络（GNN）与MOF结构-性能建模 4.理论部分4.1.GNN基础：如何将晶体结构表示为图—节点、边与全局状态的化学信息编码4.2.主流GNN模型：CGCNN、MEGNet消息传递机制及在MOF建模中的优势4.3.节点/边特征构建：化学键、配位环境、拓扑连通性的编码策略4.4.GNN的可解释性：如何理解GNN“看到”的化学信息案例实践4：Case 1：使用Pymatgen将MOF晶体结构转换为图神经网络所需的张量数据Case 2：训练CGCNN或MEGNet模型，预测MOF的吸附性能，并与传统ML对比Case 3：GNN可视化：使用t-SNE或主成分分析模型学习到的结构表征Case 4：利用训练好的GNN模型，对虚拟MOF数据库（如hMOF）进行快速性能筛选与候选材料推荐文献复现：Hydrogen storage metal-organic framework classification models based on crystal graph convolutional neural networks, Chemical Engineering Science 2022, 259, 117813. DOI: 10.1016/j.ces.2022.117813",
+        "content_url": "https://www.zhihu.com/question/450152382/answer/1981766976704619692",
+        "question_id": "450152382",
+        "title": "国内有哪些计算化学和机器学习结合的课题组？",
+        "desc": "如题，最好是985的学校。从官网上找到的介绍里做这方向的导师很少。",
+        "created_time": 1765270066,
+        "updated_time": 1765270066,
+        "voteup_count": 5,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "8b8534cfcd67dbf70a45ea59d4e2c3ae",
+        "user_link": "https://www.zhihu.com/people/fu-sheng-wei-xie-2-1",
+        "user_nickname": "浮生未歇2",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-8f03ee420b36c74df784a89bd51c16ac_l.jpg?source=4e949a73",
+        "user_url_token": "fu-sheng-wei-xie-2-1",
+        "last_modify_ts": 1776005286992
+    }
+]

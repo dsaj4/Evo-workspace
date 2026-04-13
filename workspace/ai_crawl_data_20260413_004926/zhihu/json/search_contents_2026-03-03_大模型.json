@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2012536524407850797",
+        "content_type": "article",
+        "content_text": "如果你想深入了解大模型的工作原理，甚至自己动手训练一个模型，这三个GitHub项目绝对不容错过。它们分别从&#34;手写实现&#34;、&#34;系统教程&#34;、&#34;全栈实战&#34;三个维度，带你真正理解大模型从训练到推理的每一个细节。一、LLMs-from-scratch：手把手教你写GPT🔗 GitHub: http://github.com/rasbt/LLMs-from-scratch ⭐ 47,359 stars 📚 对应书籍: 《Build a Large Language Model (From Scratch)》这是目前最火的从零实现大模型项目，由Sebastian Raschka（Lightning AI首席AI教育者）编写。不同于调用现成的框架，这个项目用纯Python + PyTorch，从头手写Transformer架构的每一个组件。核心亮点：• 彻底底层：不依赖Hugging Face Transformers库，手写注意力机制、位置编码、Tokenization • 循序渐进：7个章节，从数据处理→注意力机制→GPT实现→预训练→微调 • 配套书籍：有完整的 Manning 出版书籍，讲解深入浅出 • 实践导向：跟着代码敲一遍，你就能完全理解GPT是怎么工作的章节安排：Ch1: 理解大语言模型Ch2: 处理文本数据Ch3: 编码注意力机制Ch4: 从零实现GPT模型Ch5: 预训练Ch6: 微调用于文本分类Ch7: 微调用于指令跟随附录: PyTorch入门、LoRA微调等适合：想深入理解LLM底层原理、具备一定Python/PyTorch基础的开发者。二、so-large-lm：系统化的大模型理论教程🔗 GitHub: http://github.com/datawhalechina/so-large-lm ⭐ Datawhale团队出品这是一个系统、深入的大规模预训练语言模型教程，以斯坦福CS324和李宏毅生成式AI课程为理论基石，涵盖从数据准备到模型评估的全链路知识。核心亮点：• 理论 + 实践结合：不仅讲原理，还配合作者self-llm的部署指南 • 中文友好：文档全中文，非常适合国内开发者 • 覆盖全面：14个章节，涵盖大模型的方方面面 • 配套视频：有B站视频教程，学习更高效章节安排：基础篇：Ch01: 引言 - 项目背景、GPT-3崛起、LLM发展简史Ch02: 大模型的能力 - 迁移学习、In-context LearningCh03: 模型架构 - Transformer深度解析、位置编码Ch04: 新的架构方向 - MoE混合专家模型、RAG基础进阶篇：Ch05: 数据工程 - The Pile数据集、数据清洗、分词策略Ch06: 模型训练 - 目标函数设计、优化算法Ch07: 适配与微调 - PEFT高效微调、ProbingCh08: 分布式训练 - 数据并行、模型并行、流水线并行、混合策略扩展篇：Ch09/10: 有害性分析 - 社会偏见、幻觉检测Ch11: 法律与伦理 - 版权法挑战Ch12: 环境影响 - 碳排放估算Ch13: 智能体AgentCh14: Llama家族进化史适合：想系统学习LLM理论、构建完整知识体系的开发者。三、code-your-own-llm：全栈式端到端实战🔗 GitHub: http://github.com/datawhalechina/code-your-own-llm 📚 基于nanochat深度扩展这是一份全栈式参考指南，用最简洁的代码帮助你端到端定义大语言模型的每一个细节。从原理解读到工程实现，从算法到部署，覆盖完整流程。核心亮点：• 极简依赖：没有复杂封装、层层继承，用最扁平的代码实现 • 端到端：从数据采集→分词→模型架构→预训练→微调→推理→评估 • 中文文档：Datawhale团队维护，全中文讲解 • 持续更新：目前是Alpha版本，正在完善中章节安排（部分）：第1章: 引言第2章: 环境配置第3章: 数据（采集、清洗、质量评估）第4章: 分词（算法原理与词表构建）第5章: 模型架构（从零实现核心架构）第6章: 预训练（大规模预训练目标与优化策略）第7章: 中期训练（领域适应与持续学习）第8章: 有监督微调第9章: 强化学习（RLHF、对齐）第10章: 模型推理（高效推理与量化加速）第11章: 模型评估第12章: 模型安全与红队测试适合：想自己动手训练完整LLM、关注工程落地的开发者。三个项目的定位对比项目定位难度特点LLMs-from-scratch手写实现中等4.7万星，跟书籍学习Transformer底层so-large-lm系统理论中等偏高14章全覆盖，分布式训练讲得很细code-your-own-llm全栈实战较高端到端流程，从数据到推理部署如何选择？如果你只想理解原理 → 先看 LLMs-from-scratch，配合书籍效果最佳如果你想系统学习 → 看 so-large-lm，构建完整知识体系如果你想自己训练 → 看 code-your-own-llm + self-llm（部署微调）这三个项目共同构成了一个从浅入深的学习路径：先动手写一个MiniGPT理解原理，再系统学习理论，最后自己动手训练一个完整的模型。🚀 立即前往GitHub，开始你的大模型之旅吧！",
+        "content_url": "https://zhuanlan.zhihu.com/p/2012536524407850797",
+        "question_id": "",
+        "title": "三大GitHub项目带你深入大模型",
+        "desc": "如果你想深入了解大模型的工作原理，甚至自己动手训练一个模型，这三个GitHub项目绝对不容错过。它们分别从&#34;手写实现&#34;、&#34;系统教程&#34;、&#34;全栈实战&#34;三个维度，带你真正理解大模型从训练到推理的每一个细节。 一、LLMs-from-scratch：手把手教你写GPT",
+        "created_time": 1772606186,
+        "updated_time": 1772606186,
+        "voteup_count": 11,
+        "comment_count": 0,
+        "source_keyword": "大模型",
+        "user_id": "579523fe0ceabad6df9f82441f55b371",
+        "user_link": "https://www.zhihu.com/people/wo-ge-zhu",
+        "user_nickname": "holdzywoo",
+        "user_avatar": "https://picx.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "wo-ge-zhu",
+        "last_modify_ts": 1775926290334
+    }
+]

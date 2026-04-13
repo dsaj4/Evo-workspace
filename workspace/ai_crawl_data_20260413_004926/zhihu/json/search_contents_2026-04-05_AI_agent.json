@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2024242767136605958",
+        "content_type": "answer",
+        "content_text": "AI Agent 本质上是让 AI 从&#34;回答问题&#34;变成&#34;完成任务&#34;Agent vs 普通 LLM 核心区别在于循环普通 LLM ：是一问一答，输入 → 输出，结束Agent 是一个循环：目标 → 思考 → 行动 → 观察结果 → 再思考 → 再行动 → … → 完成三个关键要素工具调用：Agent 能操作外部世界（搜索、写文件、调 API、执行代码），不只是生成文字状态维护：它记得自己做过什么，知道现在走到哪一步自主决策：下一步做什么，由模型自己判断，不是用户每步都指定一个直觉性的类比 普通 Claude = 顾问，你问他，他答你 Agent Claude = 实习生，你给他一个目标，他自己去查资料、写文档、发邮件、遇到问题自己想办法，最后交给你结现在的瓶颈在哪可靠性：循环越长，出错概率越高，错误会累积边界感：Agent 有时不知道什么时候该停下来问人成本：每一步都在消耗 token，长任务很贵所以现在比较实用的 Agent 往往是窄域的、步骤可预期的——比如&#34;读邮件 → 分类 → 起草回复&#34;，而不是&#34;帮我经营一家公司&#34;",
+        "content_url": "https://www.zhihu.com/question/1892199279994581098/answer/2024242767136605958",
+        "question_id": "1892199279994581098",
+        "title": "AI agent 到底是什么？",
+        "desc": "现在万物都是 agent，那么 agent 和对话 和工作流 和套壳应用，他们之间到底是什么关系呢？",
+        "created_time": 1775397084,
+        "updated_time": 1775397084,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "3e1b2ae9f39c5ac3bb17740148e71614",
+        "user_link": "https://www.zhihu.com/people/wu-yu-qing-96-34",
+        "user_nickname": "Gally",
+        "user_avatar": "https://pica.zhimg.com/50/v2-9eff562905baa887e8846944b84b976e_l.jpg?source=4e949a73",
+        "user_url_token": "wu-yu-qing-96-34",
+        "last_modify_ts": 1776003533627
+    },
+    {
+        "content_id": "2024208729722103768",
+        "content_type": "article",
+        "content_text": "AI Agent 实现原理（一）：工具与执行——Agent 的心跳 系列文章：AI Agent 实现原理深度解析本篇主题：Tools &amp; Execution（工具与执行）🧠 先想一个问题你让 ChatGPT 帮你写一段 Python 代码，它写出来了——但能运行吗？它能自己去执行、看报错、再修改吗？不能。普通 LLM（大语言模型）只能”说话”，不能”做事”。它被锁在一个玻璃箱里，能看到世界、能分析问题，却无法伸手去触碰任何东西。AI Agent 要打破这个玻璃箱。一、Agent 的最小内核：一个 while 循环让 Agent 能”做事”的核心机制，出乎意料地简单：一个 while 循环 + 一个工具（bash）= 一个能干活的 Agent🔄 Agent Loop 的工作流程📖 用人话解释这个流程用户发问 → 问题进入消息列表LLM 思考 → 决定要不要用工具如果要用工具 → 执行工具，把结果塞回消息列表，再回到步骤 2如果不用工具 → 说明任务完成了，返回答案整个过程的关键就一个判断：stop_reason == &#34;tool_use&#34; 吗？是的话继续转，不是就停。💻 核心代码（30行以内）def agent_loop(query):\n    messages = [{&#34;role&#34;: &#34;user&#34;, &#34;content&#34;: query}]\n    \n    while True:\n        # 1. 调用大模型\n        response = client.messages.create(\n            model=MODEL,\n            messages=messages,\n            tools=TOOLS,\n        )\n        messages.append({&#34;role&#34;: &#34;assistant&#34;, &#34;content&#34;: response.content})\n        \n        # 2. 检查是否需要用工具\n        if response.stop_reason != &#34;tool_use&#34;:\n            return  # 任务完成，退出循环\n        \n        # 3. 执行工具，收集结果\n        results = []\n        for block in response.content:\n            if block.type == &#34;tool_use&#34;:\n                output = run_bash(block.input[&#34;command&#34;])\n                results.append({\n                    &#34;type&#34;: &#34;tool_result&#34;,\n                    &#34;tool_use_id&#34;: block.id,\n                    &#34;content&#34;: output,\n                })\n        \n        # 4. 把结果放回消息列表，继续循环\n        messages.append({&#34;role&#34;: &#34;user&#34;, &#34;content&#34;: results}) 💡 关键洞见：这 30 行代码就是 AI Agent 的”心脏”。之后所有复杂的功能，都是在这个心脏上叠加的，循环本身永远不变。二、工具扩展：派发表模式有了循环，下一步是扩展工具。引入了一个优雅的设计：工具派发表（Dispatch Map）。🗺️ 派发表的思想问题：每加一个工具，就要改一堆 if/elif？太丑了。\n\n解决：用字典来注册工具。\n\nTOOL_HANDLERS = {\n    &#34;bash&#34;:       run_bash,\n    &#34;read_file&#34;:  run_read,\n    &#34;write_file&#34;: run_write,\n    &#34;edit_file&#34;:  run_edit,\n}\n\n# 调用时只需一行：\nhandler = TOOL_HANDLERS.get(tool_name)\noutput = handler(**tool_input)🏗️ 四大工具的分工🔒 路径沙箱：不能让 Agent 乱跑def safe_path(p: str) -&gt; Path:\n    path = (WORKDIR / p).resolve()\n    if not path.is_relative_to(WORKDIR):\n        raise ValueError(f&#34;路径越界: {p}&#34;)  # 防止 ../../etc/passwd 这种攻击\n    return path这个小函数解决了一个大问题：Agent 只能在指定的工作目录里活动，绝对不能访问工作目录以外的文件。✅ 添加新工具有多简单？添加一个工具 = 写一个 handler 函数 + 在字典里注册一行\n循环代码：一个字都不用改这就是好的系统设计：开放扩展，封闭修改。三、架构演进全景图四、一个直观的类比把 Agent 想象成一个打工人：Agent 组件类比while 循环工作日不停地工作LLM打工人的大脑，负责思考tool_use“我需要用电脑查一下”tool_result查完了，结果出来了stop_reason != tool_use今天的任务完成了，下班！打工人每天的流程：上班 → 思考 → 用工具 → 看结果 → 再思考 → 用工具 → … → 任务完成 → 下班。Agent Loop 的逻辑完全一样。五、核心要点总结下一篇预告工具有了，循环有了，但 Agent 还有个大问题：它容易”忘事”和”乱跑”。做到第 5 步，忘了第 1 步说要干什么。这不行。下一篇我们来聊聊如何给 Agent 加上”计划能力”：Planning &amp; Coordination（计划与协调）。",
+        "content_url": "https://zhuanlan.zhihu.com/p/2024208729722103768",
+        "question_id": "",
+        "title": "AI Agent 实现原理（一）：工具与执行——Agent 的心跳",
+        "desc": "AI Agent 实现原理（一）：工具与执行——Agent 的心跳 系列文章：AI Agent 实现原理深度解析 本篇主题：Tools &amp; Execution（工具与执行） 先想一个问题你让 ChatGPT 帮你写一段 Python 代码，它写出来了——但能运行吗",
+        "created_time": 1775389820,
+        "updated_time": 1775394484,
+        "voteup_count": 2,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "6be00f81b22aba8a1fefdb658516d7ef",
+        "user_link": "https://www.zhihu.com/people/yang-wen-jie-73",
+        "user_nickname": "笑傲码湖",
+        "user_avatar": "https://pica.zhimg.com/50/v2-7a043af44010e79f38135b0f53ddd0a7_l.jpg?source=4e949a73",
+        "user_url_token": "yang-wen-jie-73",
+        "last_modify_ts": 1776004446276
+    }
+]

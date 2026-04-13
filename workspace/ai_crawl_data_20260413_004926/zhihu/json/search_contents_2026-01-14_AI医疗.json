@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1995101507339700093",
+        "content_type": "article",
+        "content_text": "1月8日，《生命时报》发布了一项有全国超500位三甲医院医生参与的调研。调研结果显示，超七成受访医生表示愿意推荐大众使用AI医生，用以解决日常基础的健康疑问，62%的受访医生已经在使用AI医生辅助自己工作，90%的受访医生表示看好AI医生的未来发展。受访医生们认为，AI医生可以解答常见的健康问题，健康问答、报告解读、饮食运动指导以及用药咨询，是最适合使用AI医生的四大场景。在众多AI工具中，受访医生推荐的前两位分别是蚂蚁阿福、小荷AI医生，其中蚂蚁阿福位列第一。参与问卷的医生们认为，AI医生有三大优势，分别是随时随地可咨询、学科知识覆盖全、能承接海量咨询。此外，AI有耐心、能缓解焦虑，也获得多数医生的认可。调研结果显示，目前，62%的受访医生已经主动使用AI医生辅助工作，超九成医生看好AI医生的未来发展。在国内，真人医生开设“AI分身”扩大服务范围的趋势也在兴起。公开信息显示，在健康AI蚂蚁阿福平台上，已有500多位三甲医院医生开设了自己的“AI分身”，7*24小时在线解答用户咨询。转发自：AI小医",
+        "content_url": "https://zhuanlan.zhihu.com/p/1995101507339700093",
+        "question_id": "",
+        "title": "超七成三甲医生推荐使用AI医生，62%的医生已在使用AI辅助工作",
+        "desc": "超七成受访医生表示愿意推荐大众使用AI医生，用以解决日常基础的健康疑问，62%的受访医生已经在使用AI医生辅助自己工作，90%的受访医生表示看好AI医生的未来发展。受访医生们认为，AI医生可以解答常见的健康问题， 健康问答、报告解读、饮食运动指导以及用药咨询，是最适合使用AI医生的四大场景",
+        "created_time": 1768449761,
+        "updated_time": 1768449762,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI医疗",
+        "user_id": "d9ec085ab6077a0b829e84cb5e640715",
+        "user_link": "https://www.zhihu.com/people/tai-yi-rui-jing",
+        "user_nickname": "太翼睿景",
+        "user_avatar": "https://picx.zhimg.com/50/v2-1e34c5b2691f3468f5b6a77ef5bcbaff_l.jpg?source=4e949a73",
+        "user_url_token": "tai-yi-rui-jing",
+        "last_modify_ts": 1776065053991
+    },
+    {
+        "content_id": "1995084946692392360",
+        "content_type": "answer",
+        "content_text": "先给三甲医院的医生配一台正常的流畅的电脑再谈其他的吧。我上次去医院拍片子，医生在给我看片子（腰椎和膝盖mri）的时候，连续三次电脑卡着不动，他急眼了，骂骂咧咧一拳锤到桌子上，手骨折了。",
+        "content_url": "https://www.zhihu.com/question/1994352106249873378/answer/1995084946692392360",
+        "question_id": "1994352106249873378",
+        "title": "张文宏不支持把 AI 引入病历系统，恐造成医生诊断能力缺失，这种担忧是否合理？在其他专业领域也类似么？",
+        "desc": "张文宏：拒绝把AI引入医院病历系统 担忧医生诊断能力缺失1月10日，在香港举行的高山书院十周年论坛上，国家传染病医学中心(上海)主任张文宏教授分享了他对AI在医疗领域应用的看法。他明确表示不支持将AI系统性地引入医院的日常诊疗流程。张文宏解释说，他自己使用AI的方式是让其先对病例进行初步分析，然后凭借自己的专业经验判断AI的准确性。他认为，如果医生从实习阶段就依赖AI直接得出结论，而没有经过完整的诊断思维训练，那么他们将无法辨别AI诊断的正误。这种能力的缺失，隐藏着技术便利背后的深层隐患。",
+        "created_time": 1768445318,
+        "updated_time": 1768803593,
+        "voteup_count": 1761,
+        "comment_count": 63,
+        "source_keyword": "AI医疗",
+        "user_id": "ec7b66af7cd513fd3659d3c3ee347a77",
+        "user_link": "https://www.zhihu.com/people/banfoxianren",
+        "user_nickname": "半佛仙人",
+        "user_avatar": "https://picx.zhimg.com/50/v2-0bba785e2b3b4038aa4cceb646b2d571_l.jpg?source=4e949a73",
+        "user_url_token": "banfoxianren",
+        "last_modify_ts": 1776065053993
+    }
+]

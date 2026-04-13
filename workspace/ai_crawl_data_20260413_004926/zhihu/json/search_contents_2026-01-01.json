@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1990294430524129416",
+        "content_type": "answer",
+        "content_text": "training on test data is all your need.外面已经开喷了。刷榜就刷榜，qwen也会稍微刷一点。但是这是第一个刷的这么明目张胆的。更新，已锤死，我得收回前面那句话，情况更严重。跑分作弊接着更122/500个题目受影响。因为有些issue可能必须查询git，所以实际会小一些。接着更新，github上写道歉信了。然后说自己swe 76.2???说自己是专家模型，不是通用模型。怕是benchmark专家模型吧。76.2的水平的相近水平模型有哪些，minimax2.1 glm4.7 sonnet4.5，它能比上哪个?https://http://github.com/IQuestLab/IQuest-Coder-V1/issues/14#issuecomment-3705756919最后建议改名IQtest吧，智商测试。",
+        "content_url": "https://www.zhihu.com/question/1989992510131548346/answer/1990294430524129416",
+        "question_id": "1989992510131548346",
+        "title": "九坤投资至知研究院发布开源大语言模型，将给国内大模型开源生态带来哪些改变？",
+        "desc": "【至知研究院发布开源代发大语言模型】1月1日，九坤投资发布公告称，至知研究院团队正式发布全新一代开源代码大模型IQuest-Coder系列。Blog：IQuest Coder 技术报告：GitHub - IQuestLab/IQuest-Coder-V1 HF model：https://huggingface.co/collections/IQuestLab/iquest-coder",
+        "created_time": 1767303170,
+        "updated_time": 1767377556,
+        "voteup_count": 242,
+        "comment_count": 22,
+        "source_keyword": "大模型",
+        "user_id": "1232d19b1cdafacdcddec87437149ddd",
+        "user_link": "https://www.zhihu.com/people/Chenxin_Zhong",
+        "user_nickname": "MathsLover",
+        "user_avatar": "https://picx.zhimg.com/50/v2-eb02bd69f162365f14ab5f1061b3b8cd_l.jpg?source=4e949a73",
+        "user_url_token": "Chenxin_Zhong",
+        "last_modify_ts": 1775900391602
+    }
+]

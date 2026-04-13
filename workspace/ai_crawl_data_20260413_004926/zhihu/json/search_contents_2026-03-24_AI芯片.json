@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2019883313641305181",
+        "content_type": "answer",
+        "content_text": "越了解全球人工智能模型的动态，就越觉得有三种人很可悲。第一种，觉得中国模型已经全面赶超、甚至稳稳压过美国的人；第二种，觉得美国模型绝对碾压中国，甚至建立起难以逾越鸿沟的人；第三种，中美之外，总对自己国家人工智能抱有幻想的人。美国的算力模型及智能体执行框架OpenAI：GPT-5系列、o3系列、Codex（代码生成）Anthropic：Claude 4.6系列（Opus/Sonnet）、Claude Code（代码智能体）Google DeepMind：Gemini 3.1系列（Pro/Flash-Lite）xAI：Grok 4.2OpenClaw（小龙虾）：智能体执行框架Meta：Llama 4系列（开源）Mistral AI：Mistral Large、Le Chat（美法合作）OpenCode：开源多模型编程智能体框架（终端 / IDE / 桌面，支持 75 + 模型，离线可用）中国的算力模型及智能体执行框架字节跳动：豆包2.0、Seedream、Seednace2.0智谱AI：GLM-5、GLM智能体框架深度求索（DeepSeek）：DeepSeek R1、DeepSeek Coder月之暗面：Kimi K2.5、Kimi Claw（龙虾智能体）Minimax（海螺）：Minimax M2.7、海螺智能体阿里达摩院：通义千问Qwen 3.5、Mobile-Agent-v3.5百度：文心一言4.0、文心智能体腾讯：混元3.0、元宝AI助手阶跃星辰：Step 3.5 Flash百川智能：Baichuan 4系列可以看出来，英文环境下，美国模型几乎是统治地位的。Claude Code更是在代码智能体垂类，处于绝对碾压地位的。当然，智能体执行框架还有OpenClaw这种席卷全球的现象级存在。中国是唯一可以和美国一较高下的，中文环境下的chat有deepseek，底层架构创新方向有kimi，对OpenClaw的运用表现不错的有kimi和minimax，可以和美国GPT系列一较高下。但，唯一在全语言环境下超越美国的只有seedance2.0。至于未加粗的模型，暂时处于成长期、落后期，或许未来的某一个时刻就会迸发。而中美之外的世界，围绕AI大模型的角逐只有一名选手——Le Chat Mistral，这是美国芯片企业和法国模型公司在24年发布的对话模型。2025年2月，当他们公测并准备推出企业收费版本时，deepseek开源了。所以，当前（2026年3月）全球人工智能的格局是美国占据60%、中国占据35%、其他一共占据5%。并且，这里对美国的估算略有保守、对其他的估算略有乐观。",
+        "content_url": "https://www.zhihu.com/question/661907575/answer/2019883313641305181",
+        "question_id": "661907575",
+        "title": "为什么现在的 AI 大模型好像只有中美在做，世界上其他国家都好像完全消失了？",
+        "desc": "美国的ChatGPT，Gemini，中国的通义千问，星火大模型，文心一言。为什么其他国家比如日本韩国，还有欧洲那些国家好像完全消失了一样？",
+        "created_time": 1774357709,
+        "updated_time": 1774357773,
+        "voteup_count": 28,
+        "comment_count": 13,
+        "source_keyword": "AI芯片",
+        "user_id": "6aabc0643a8e7f10ce7641d1f1c70c85",
+        "user_link": "https://www.zhihu.com/people/li-wei-ya-8",
+        "user_nickname": "有魔气历史",
+        "user_avatar": "https://picx.zhimg.com/50/v2-18bffc403f81ab56567fc9224c28b26a_l.jpg?source=4e949a73",
+        "user_url_token": "li-wei-ya-8",
+        "last_modify_ts": 1776065599262
+    },
+    {
+        "content_id": "2020145737388802644",
+        "content_type": "article",
+        "content_text": "1、Tenstorrent芯片中文介绍https://mp.weixin.qq.com/s/LkV1wLzkrEnXbZqMaAAIxw英文介绍Programming Tenstorrent processorsgithub 介绍https://github.com/tenstorrent/tt-metal/blob/7c26a4706be6ba8b5faf2c3ccb0e127a784883f8/METALIUM_GUIDE.mdtensix 介绍Tensix Neo™2、coralnpuhttps://github.com/google-coral/coralnpu?tab=readme-ov-file",
+        "content_url": "https://zhuanlan.zhihu.com/p/2020145737388802644",
+        "question_id": "",
+        "title": "AI芯片介绍",
+        "desc": "1、Tenstorrent芯片 中文介绍 英文介绍 Programming Tenstorrent processors github 介绍 tensix 介绍 Tensix Neo 2、coralnpu",
+        "created_time": 1774420732,
+        "updated_time": 1774451052,
+        "voteup_count": 3,
+        "comment_count": 0,
+        "source_keyword": "AI芯片",
+        "user_id": "eb282e82af463fca8e3e727683372fa0",
+        "user_link": "https://www.zhihu.com/people/waiting-64-15-73",
+        "user_nickname": "AI之新",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-09a3a7646d5848e87dd0dd71ff675573_l.jpg?source=4e949a73",
+        "user_url_token": "waiting-64-15-73",
+        "last_modify_ts": 1776065810333
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1984935927521486745",
+        "content_type": "answer",
+        "content_text": "全模态（以视觉为主，配合LLM和音频）肯定是未来的发展趋势了。特别是，最近随着音频视频联合合成在生成领域的爆红，音视频统一理解，作为音视频联合生成的必要技术支撑，已经成为了学术圈和工业界中最炙手可热的研究方向，具体研究进展见下面：https://github.com/Qinying-Liu/Awesome-visual-audio-understandinggithub.com/Qinying-Liu/Awesome-visual-audio-understanding另外在多模态领域，一个也很异常火爆的研究方向--多模态语义分割，感兴趣的同学也可以随时关注一下最近的进展。  https://github.com/Qinying-Liu/Awesome-Open-Vocabulary-Semantic-Segmentationgithub.com/Qinying-Liu/Awesome-Open-Vocabulary-Semantic-Segmentation",
+        "content_url": "https://www.zhihu.com/question/1903236244240070638/answer/1984935927521486745",
+        "question_id": "1903236244240070638",
+        "title": "多模态大模型还有什么可以发展的方向？",
+        "desc": "全模态（以视觉为主，配合LLM和音频）肯定是未来的发展趋势了。特别是，最近随着音频视频联合合成在生成领域的爆红，音视频统一理解，作为音视频联合生成的必要技术支撑，已经成为了学术圈和工业界中最炙手可热的研究方向，具体研究进展见下面：",
+        "created_time": 1766025603,
+        "updated_time": 1766455547,
+        "voteup_count": 9,
+        "comment_count": 1,
+        "source_keyword": "多模态",
+        "user_id": "d0e16f43429ca6cb203cdb4c76e39926",
+        "user_link": "https://www.zhihu.com/people/lqy-69",
+        "user_nickname": "hcjloveslqy",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-0896e823d3ee418c7c0f85c5faa0c930_l.jpg?source=4e949a73",
+        "user_url_token": "lqy-69",
+        "last_modify_ts": 1776038887776
+    }
+]

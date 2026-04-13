@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2020229805249934114",
+        "content_type": "answer",
+        "content_text": "1、写技术分享报告、转正答辩报告。2、看AI新闻、美伊局势新闻。3、提取一本经典书的核心观点。4、根据描述生成图片。5、根据bug描述，给解决方案。6、学习安卓系统开发知识。7、优化简历。8、根据需求描述，写代码。",
+        "content_url": "https://www.zhihu.com/question/1991065489661771791/answer/2020229805249934114",
+        "question_id": "1991065489661771791",
+        "title": "你们都在用AI做什么呢？",
+        "desc": "AI的应用已经是大趋势了，你们都在用它落地哪些事情呢？说说的的想法。",
+        "created_time": 1774440319,
+        "updated_time": 1774440319,
+        "voteup_count": 3,
+        "comment_count": 0,
+        "source_keyword": "AI应用",
+        "user_id": "53d8c959a509e19bb49fbdff8c26eef4",
+        "user_link": "https://www.zhihu.com/people/zhiqne42",
+        "user_nickname": "刘千予",
+        "user_avatar": "https://picx.zhimg.com/50/v2-76b625098333d2f780b1bc83ca904478_l.jpg?source=4e949a73",
+        "user_url_token": "zhiqne42",
+        "last_modify_ts": 1775926604847
+    },
+    {
+        "content_id": "2020173396323906250",
+        "content_type": "answer",
+        "content_text": "作为常年混迹在AI工具圈的老鸟，看到这个问题必须来唠两句。首先，“完全免费”且“好用”的AI视频生成软件，目前市面上几乎不存在。Sora、Veo这些顶级模型，要么是内测邀请制（普通人拿不到），要么是API调用（按秒计费，贵得离谱）。国内大厂如通义、即梦等，免费额度通常只够你体验一两次，想正经出片，要么排队等很久，要么就得氪金。但如果你只是想低成本、高效率地体验一下顶级AI视频模型，或者急需给电商产品做个换装/换背景的视频，确实有个“平替”方案，是我最近在用的一个聚合工具站。为什么推荐它？ 这网站（DoodleAI）本质上是个AI模型聚合器。它最大的优势是“新用户送200积分”，而且积分消耗极低。算笔账：以生成Sora视频为例，生成一条大概扣15积分。这200积分相当于白送你13条顶级AI视频的体验机会。这比你去官方排队等内测，或者去其他平台花几十块买几秒钟的体验卡要划算得多。 线路全：它把市面上你能想到的热门模型都集成进来了。Sora、Google Veo 3.1、Grok Video、通义万象、即梦2.0...你不需要挨个去注册账号，在这里切换一下线路就能用。对于想横向对比不同模型效果的人来说，非常方便。 功能杂：除了视频生成，它还有几个对电商/自媒体人特别实用的“骚操作”： 海报局部编辑：比如你拿到一张海报，想改个字或者换个背景色，不用重做，直接涂抹就能改。 一键仿制海报：上传一张你喜欢的海报风格图，输入你的产品名，AI直接给你生成一张构图、色调都差不多的新海报。 模特手持产品/换装：这个对做电商的简直是神器。你拍个白底产品图，上传模特图，AI能把产品P到模特手上，或者直接给模特换上一件新衣服，省去了找真人模特拍图的成本。 使用体验与避坑 速度：因为是调用API，生成速度取决于模型本身和网络。Sora线路最近受官方影响不太稳，建议优先用Veo或Grok，出图快且质量高。 注意：积分生成的内容默认只保存30天，记得及时下载到本地。如果只是体验，这200积分完全够用；如果是重度用户，建议关注一下他们的会员活动，比单独购买点数要划算。 总结：如果你问的是“免费软件”，那答案是没有。但如果你问的是“怎么花最少的钱（甚至不花钱）用上最好的AI视频工具”，这个站是目前门槛最低的入口之一。网站地址：https://http://ai.doodleai.cn/pic_magic（新注册送200积分，够你玩一阵子了）卡密：DXBX-R2MP-EGZ8-DR17",
+        "content_url": "https://www.zhihu.com/question/2014975319887610206/answer/2020173396323906250",
+        "question_id": "2014975319887610206",
+        "title": "有什么免费而又好用的 ai 视频生成软件吗？",
+        "desc": "好难找啊",
+        "created_time": 1774426870,
+        "updated_time": 1774426870,
+        "voteup_count": 3,
+        "comment_count": 0,
+        "source_keyword": "AI应用",
+        "user_id": "77378d34c5bcf73ae66084220b2dcf88",
+        "user_link": "https://www.zhihu.com/people/www.witsarrival.com",
+        "user_nickname": "哈哈哈",
+        "user_avatar": "https://picx.zhimg.com/50/v2-7f9fe982ecb6a77e71fae92f2b97067e_l.jpg?source=4e949a73",
+        "user_url_token": "www.witsarrival.com",
+        "last_modify_ts": 1775928050970
+    }
+]

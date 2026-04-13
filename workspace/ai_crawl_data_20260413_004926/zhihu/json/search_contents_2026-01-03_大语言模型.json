@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1991147471796192534",
+        "content_type": "answer",
+        "content_text": "事实型。幻觉，通过增加外挂，譬如知识库rag和graph rag意图型幻觉，通过意图识别+SOP解决。PE中，明确约定，不知道就直接回答不知道。最后加上Human-in-the-loop。大模型是副脑。不是全部为什么大模型会「说胡话」？如何解决大模型的「幻觉」问题？",
+        "content_url": "https://www.zhihu.com/question/613263212/answer/1991147471796192534",
+        "question_id": "613263212",
+        "title": "如何解决LLM大语言模型的幻觉问题？",
+        "desc": "事实型。幻觉，通过增加外挂，譬如知识库rag和graph rag意图型幻觉，通过意图识别+SOP解决。PE中，明确约定，不知道就直接回答不知道。最后加上Human-in-the-loop。大模型是副脑。不是全部",
+        "created_time": 1767506551,
+        "updated_time": 1767506551,
+        "voteup_count": 3,
+        "comment_count": 0,
+        "source_keyword": "大语言模型",
+        "user_id": "76a459b0b506908a773a29e0520cee3d",
+        "user_link": "https://www.zhihu.com/people/1gepingguo",
+        "user_nickname": "人生还要往前走",
+        "user_avatar": "https://pica.zhimg.com/50/v2-7dc007f64ff74ef04ee803c7b38f4e3f_l.jpg?source=4e949a73",
+        "user_url_token": "1gepingguo",
+        "last_modify_ts": 1776038074432
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2016171799835092796",
+        "content_type": "answer",
+        "content_text": "不是，你不能只看性能，不看价格呀？4090什么价格？咸鱼上，二手24G的4090，19800左右。为了让这个 4090 跑起来，你还得加主板，加内存，加机箱，加硬盘，这算下来又得 1 万。现如今，内存和硬盘的价格，一万说不定都不够。3 万块。在苹果这边能买到什么呢？96+1TB的M3 Ultra的Mac Studio。或者你喜欢苹果笔记本，最新的M5 Max 的48+2T也才三万出头。比如现在有1个70B的模型。24G的显存，注定了在大模型这块有太多的局限了。先不说快不快了，哪个能跑，这才是关键。",
+        "content_url": "https://www.zhihu.com/question/14641164431/answer/2016171799835092796",
+        "question_id": "14641164431",
+        "title": "听说以前mac自信的去碰瓷4090，现在跑跑大模型有哪个mac能秀一下秒杀4090的速度吗？",
+        "desc": "或者，实在不行接近也行？",
+        "created_time": 1773472815,
+        "updated_time": 1773472815,
+        "voteup_count": 83,
+        "comment_count": 63,
+        "source_keyword": "大模型",
+        "user_id": "4502e19662989d2584c5a14a7386a03f",
+        "user_link": "https://www.zhihu.com/people/lihuawei",
+        "user_nickname": "李明殊",
+        "user_avatar": "https://picx.zhimg.com/50/v2-97e92f7ff7354ae4287d8a0734af1133_l.jpg?source=4e949a73",
+        "user_url_token": "lihuawei",
+        "last_modify_ts": 1775926173869
+    },
+    {
+        "content_id": "2016302938335749874",
+        "content_type": "answer",
+        "content_text": "主流大模型全部都试过。得出最佳创作工作流：先用Gemini进行头脑风暴，然后搭故事框架。然后问deepseek写作风格。最后用Gemini开写。完了把不满意的细节交给deepseek打磨。总之就是，Gemini负责“点火”和“控场”，DeepSeek负责“拔高”和“打磨”，整体输出质量经常能超过单一模型的天花板。不信的可以去试一试，不要用chatgpt写网文，最近感觉在开倒车。Claude被吹的神乎其神，整体用下来就那样，达不到我想要的效果。最后提一嘴豆包，你让它正儿八经写，那是一塌糊涂，你让它帮你找你的文哪里不足，它头头是道，可以作为你文章总体完成后的第一位读者，让它给建议。反正当前所有ai大模型只是工具，能大大帮助你，但还不能彻底代替你，多试，多读，多写。提高鉴赏能力是重中之重。",
+        "content_url": "https://www.zhihu.com/question/1976280227295557608/answer/2016302938335749874",
+        "question_id": "1976280227295557608",
+        "title": "中文写作领域，目前哪一个大模型比较好用（Gemini3出来后）?",
+        "desc": "如题，目前国内外大模型中，大家觉得目前哪一个有比较好的中文写作能力呢。之前一直用的Gemini 2.5pro，但是3出来后感觉这一块倒退严重。",
+        "created_time": 1773504081,
+        "updated_time": 1774040613,
+        "voteup_count": 20,
+        "comment_count": 3,
+        "source_keyword": "大模型",
+        "user_id": "2434711f0b04e2864ab4f35aefb94bc2",
+        "user_link": "https://www.zhihu.com/people/xing-zhi-you-xin-99-7",
+        "user_nickname": "小安",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-ddbf798f29866515ff74920948f5ec2a_l.jpg?source=4e949a73",
+        "user_url_token": "xing-zhi-you-xin-99-7",
+        "last_modify_ts": 1775926290318
+    }
+]

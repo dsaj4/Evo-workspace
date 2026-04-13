@@ -1,0 +1,53 @@
+[
+    {
+        "comment_id": "11351542610",
+        "parent_comment_id": "0",
+        "content": "MoE是如何能发挥作用的？有监督信号吗？",
+        "publish_time": 1764080816,
+        "ip_location": "美国",
+        "sub_comment_count": 2,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1976294093337412059",
+        "content_type": "article",
+        "user_id": "684e11349ae7fcd136bdfc1264d39bca",
+        "user_link": "https://www.zhihu.com/people/lindgew",
+        "user_nickname": "LindgeWAI",
+        "user_avatar": "https://picx.zhimg.com/v2-3d716d67b9d43f47bd2b91b77fba724c_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038971018
+    },
+    {
+        "comment_id": "11351940643",
+        "parent_comment_id": "11351542610",
+        "content": "这篇文章里的 MoE 其实不是“模型架构上的大规模稀疏 LLM”，而是一个按模态组织的小型专家混合模块，放在“缺失模态补全之后、跨模态融合之前”，用来同时学 单模态特征 + 跨模态联合特征，并且和补全模块（AGMG）互相补强。有而且不止一种监督，但没有显式的“哪条样本应该走哪个专家”的人工标签，全部是端到端梯度信号",
+        "publish_time": 1764146480,
+        "ip_location": "江苏",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1976294093337412059",
+        "content_type": "article",
+        "user_id": "1f8b9961f448294f7caee18383efe694",
+        "user_link": "https://www.zhihu.com/people/si-tu-er-ke-chloe",
+        "user_nickname": "智能CV",
+        "user_avatar": "https://picx.zhimg.com/v2-be8de742ef1adbe032be705ed12437d6_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038971724
+    },
+    {
+        "comment_id": "11356082158",
+        "parent_comment_id": "11351940643",
+        "content": "最近这种moe的思想在多模态缺失学习用的很普遍，但个人感觉只是套了个概念，本质上还是通过门控单元控制输出权重",
+        "publish_time": 1764560552,
+        "ip_location": "广东",
+        "sub_comment_count": 0,
+        "like_count": 2,
+        "dislike_count": 0,
+        "content_id": "1976294093337412059",
+        "content_type": "article",
+        "user_id": "2a68196589b072ca790112b2d180a70a",
+        "user_link": "https://www.zhihu.com/people/chen-liu-xiang-3",
+        "user_nickname": "三体问题无解",
+        "user_avatar": "https://pic1.zhimg.com/v2-892634d14ccbb5f8238b98c9c31efe60_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038971733
+    }
+]

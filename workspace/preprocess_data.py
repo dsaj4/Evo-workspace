@@ -10,7 +10,7 @@
 5. 数据质量检查
 6. 保存分析就绪数据集
 
-输入：ai_crawl_data/{bili,xhs,zhihu}/json/*.json
+输入：ai_crawl_data_20260413_004926/{bili,zhihu,weibo,xhs}/json/*.json
 输出：
 - daily_data.parquet (日度聚合数据)
 - event_database.csv (事件数据库)
@@ -19,6 +19,7 @@
 """
 
 import json
+import re
 import warnings
 from datetime import datetime
 from pathlib import Path
@@ -30,12 +31,16 @@ warnings.filterwarnings("ignore")
 # ==================== 配置部分 ====================
 
 # 数据路径
-DATA_ROOT = Path("E:/Project/论文/workspace/ai_crawl_data")
+DATA_ROOT = Path("E:/Project/论文/workspace/ai_crawl_data_20260413_004926")
 OUTPUT_DIR = Path("E:/Project/论文/workspace/paper-revision/processed_data")
 
 # 时间范围
 START_DATE = "2024-10-01"
-END_DATE = "2026-03-31"
+END_DATE = "2026-04-13"
+
+SOURCE_FILE_PATTERN = re.compile(
+    r"^search_(?:comments|contents)_(?P<date>\d{4}-\d{2}-\d{2})(?:_(?P<query>.+))?$"
+)
 
 # 职业不安全感词典（5 类 50+ 关键词）
 INSECURITY_LEXICON = {
@@ -162,12 +167,26 @@ NEGATIVE_EMOTION_WORDS = [
 # ==================== 数据加载函数 ====================
 
 
+def parse_source_metadata(file_stem: str) -> dict[str, str]:
+    """
+    从文件名中提取源日期和检索主题。
+    """
+    match = SOURCE_FILE_PATTERN.match(file_stem)
+    if not match:
+        return {"source_date": file_stem, "source_query": ""}
+
+    return {
+        "source_date": match.group("date"),
+        "source_query": match.group("query") or "",
+    }
+
+
 def load_platform_data(platform: str) -> pd.DataFrame:
     """
     加载单个平台的所有数据
 
     参数:
-        platform: 平台名称 ('bili', 'xhs', 'zhihu')
+        platform: 平台名称 ('bili', 'zhihu', 'weibo', 'xhs')
 
     返回:
         DataFrame: 包含所有评论的数据
@@ -183,15 +202,15 @@ def load_platform_data(platform: str) -> pd.DataFrame:
 
     for file_path in json_files:
         try:
-            # 从文件名提取日期
-            date_str = file_path.stem.replace("search_comments_", "")
+            source_metadata = parse_source_metadata(file_path.stem)
 
             with open(file_path, encoding="utf-8") as f:
                 data = json.load(f)
 
             if isinstance(data, list):
                 for comment in data:
-                    comment["source_date"] = date_str
+                    comment["source_date"] = source_metadata["source_date"]
+                    comment["source_query"] = source_metadata["source_query"]
                     comment["platform"] = platform
                 all_comments.extend(data)
 
@@ -211,7 +230,7 @@ def load_all_data() -> pd.DataFrame:
     返回:
         DataFrame: 合并后的数据
     """
-    platforms = ["bili", "xhs", "zhihu"]
+    platforms = ["bili", "zhihu", "weibo", "xhs"]
     all_dfs = []
 
     for platform in platforms:
@@ -240,37 +259,46 @@ def convert_timestamps(df: pd.DataFrame) -> pd.DataFrame:
     """
     print("正在转换时间戳...")
 
-    # 转换 create_time (Unix 时间戳)
+    def _convert_unix_series(series: pd.Series) -> pd.Series:
+        valid = series.notna() & series.between(1577836800, 1924991999)
+        result = pd.Series(pd.NaT, index=series.index, dtype="datetime64[ns]")
+
+        if valid.any():
+            converted = (
+                pd.to_datetime(series.loc[valid], unit="s", utc=True, errors="coerce")
+                .dt.tz_convert("Asia/Shanghai")
+                .dt.tz_localize(None)
+            )
+            result.loc[valid] = converted
+
+        return result
+
+    timestamp = pd.Series(pd.NaT, index=df.index, dtype="datetime64[ns]")
+
     if "create_time" in df.columns:
-        # 检查时间戳是否异常（正常应该在 2020-2030 年之间）
-        # Unix 时间戳范围：2020-01-01 = 1577836800, 2030-12-31 = 1924991999
-        valid_range = (df["create_time"] >= 1577836800) & (
-            df["create_time"] <= 1924991999
+        timestamp = timestamp.fillna(_convert_unix_series(df["create_time"]))
+
+    if "publish_time" in df.columns:
+        timestamp = timestamp.fillna(_convert_unix_series(df["publish_time"]))
+
+    if "create_date_time" in df.columns:
+        parsed_strings = pd.to_datetime(
+            df["create_date_time"], utc=True, errors="coerce"
         )
-        invalid_count = (~valid_range).sum()
-
-        if invalid_count > 0:
-            print(
-                f"  警告：{invalid_count} 条评论时间戳超出正常范围，将使用 source_date"
-            )
-
-        # 只转换有效时间戳
-        df["timestamp"] = pd.to_datetime(
-            df.loc[valid_range, "create_time"], unit="s", errors="coerce"
+        parsed_strings = parsed_strings.dt.tz_convert("Asia/Shanghai").dt.tz_localize(
+            None
         )
+        timestamp = timestamp.fillna(parsed_strings)
 
-        # 对于无效时间戳，尝试从 source_date 解析
-        if "source_date" in df.columns:
-            df.loc[~valid_range, "timestamp"] = pd.to_datetime(
-                df.loc[~valid_range, "source_date"], errors="coerce"
-            )
-
-        df["date"] = df["timestamp"].dt.date
-        df["datetime"] = df["timestamp"]
-
-    # 转换 source_date (文件名片中的日期)
     if "source_date" in df.columns:
         df["source_date_parsed"] = pd.to_datetime(df["source_date"], errors="coerce")
+        timestamp = timestamp.fillna(df["source_date_parsed"])
+    else:
+        df["source_date_parsed"] = pd.NaT
+
+    df["timestamp"] = timestamp
+    df["date"] = df["timestamp"].dt.date
+    df["datetime"] = df["timestamp"]
 
     # 清理无效时间戳
     invalid_final = df["timestamp"].isna().sum()
@@ -556,9 +584,11 @@ def generate_quality_report(df: pd.DataFrame, daily_df: pd.DataFrame) -> str:
     # 7. 建议
     report.append("## 7. 质量评估与建议\n\n")
     report.append("### 7.1 优势\n\n")
-    report.append("1. 数据量大（50 万 + 评论），统计效力充足\n")
-    report.append("2. 时间跨度长（17 个月），适合时间序列分析\n")
-    report.append("3. 多平台数据，支持群体差异分析\n\n")
+    report.append(f"1. 数据量达到 {len(df):,} 条评论，具备基础统计分析条件\n")
+    report.append(
+        f"2. 覆盖 {df['date'].nunique()} 个观测日期，可用于描述动态变化\n"
+    )
+    report.append(f"3. 覆盖 {df['platform'].nunique()} 个平台，支持群体差异分析\n\n")
 
     report.append("### 7.2 注意事项\n\n")
     report.append("1. 各平台数据量不均衡，分析时需考虑权重\n")
@@ -574,6 +604,21 @@ def generate_quality_report(df: pd.DataFrame, daily_df: pd.DataFrame) -> str:
 
 
 # ==================== 主函数 ====================
+
+
+def save_daily_data(daily_df: pd.DataFrame, output_dir: Path) -> Path:
+    """
+    优先保存为 parquet；若本地缺少 parquet 引擎，则退回 CSV。
+    """
+    parquet_path = output_dir / "daily_data.parquet"
+    try:
+        daily_df.to_parquet(parquet_path, index=False)
+        return parquet_path
+    except ImportError:
+        csv_path = output_dir / "daily_data.csv"
+        daily_df.to_csv(csv_path, index=False, encoding="utf-8-sig")
+        print("  警告：缺少 parquet 引擎，已退回保存为 CSV")
+        return csv_path
 
 
 def main():
@@ -626,8 +671,7 @@ def main():
     print("-" * 60)
 
     # 保存日度数据
-    daily_path = OUTPUT_DIR / "daily_data.parquet"
-    daily_df.to_parquet(daily_path, index=False)
+    daily_path = save_daily_data(daily_df, OUTPUT_DIR)
     print(f"  [OK] 日度数据：{daily_path}")
 
     # 保存不安全感评论子集

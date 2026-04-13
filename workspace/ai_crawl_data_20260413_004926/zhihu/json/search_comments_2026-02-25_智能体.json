@@ -1,0 +1,53 @@
+[
+    {
+        "comment_id": "11444286253",
+        "parent_comment_id": "0",
+        "content": "请教大佬一个问题，Deep Research场景下的并行调用搜索sub-agent 相比 单agent规划后并行调用搜索tool 有哪些优势呢？以研究”半导体行业的供给侧和需求侧的市场趋势”为例，感觉单agent做好全局规划，是可以直接编排出”半导体行业的供给侧分析“以及”半导体需求侧的市场趋势”相关的query拆解和并行搜索的，并且某一步并行搜索完之后可能需要继续搜索“需求侧与供给侧之间的相互影响”等（不完全是独立的）。独立出sub-agent的好处主要是压缩context吗？",
+        "publish_time": 1774150134,
+        "ip_location": "浙江",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2010163501814010621",
+        "content_type": "article",
+        "user_id": "3f5e23bfdab26bacbb7a36f68d7cb56d",
+        "user_link": "https://www.zhihu.com/people/liu-ye-cheng-94",
+        "user_nickname": "Albert",
+        "user_avatar": "https://picx.zhimg.com/v2-136dd5a824e856d8e9ea139622ad2216_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776003170807
+    },
+    {
+        "comment_id": "11424981351",
+        "parent_comment_id": "0",
+        "content": "读完感觉之前的RAG连接的数据库到创建的RULES和一大堆的.md ，以及最近的SKILL.md都是在上下文做操作？",
+        "publish_time": 1772115493,
+        "ip_location": "河南",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2010163501814010621",
+        "content_type": "article",
+        "user_id": "e83dbf900e7eb876c4af84f33049ab38",
+        "user_link": "https://www.zhihu.com/people/holo-72-34",
+        "user_nickname": "苏追",
+        "user_avatar": "https://picx.zhimg.com/v2-0a8b12880580ea37d422108c1e30044e_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776003170818
+    },
+    {
+        "comment_id": "11425479524",
+        "parent_comment_id": "11424981351",
+        "content": "是的 通常情况下作为“普通开发者” 基本上做的都是 Context Engineering。[图片]",
+        "publish_time": 1772117995,
+        "ip_location": "湖南",
+        "sub_comment_count": 0,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "2010163501814010621",
+        "content_type": "article",
+        "user_id": "4b88b64b016a9b29fc69ba86e1c51e1d",
+        "user_link": "https://www.zhihu.com/people/lastwhisper123",
+        "user_nickname": "LastWhisper",
+        "user_avatar": "https://picx.zhimg.com/v2-4a4d1fe8c641c0114a1899b414c409df_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776003171270
+    }
+]

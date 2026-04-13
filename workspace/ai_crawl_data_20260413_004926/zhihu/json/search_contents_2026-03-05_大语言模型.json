@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2013274728060691584",
+        "content_type": "answer",
+        "content_text": "显然我知道这个问题下肯定有一大堆 AI 生成的内容或者单纯是卖课内容的回答。这个问题本来可以很简单的，LLM 这种东西几乎就是暴力出奇迹。Next-token Prediction 作为一个（基本）模型架构无关的特殊下游任务类型一般来说并不依赖于 Transformer 这一个架构，因为我们知道也有很多的线性注意力架构都可以用来实现 Next-token Prediction，只是因为 Transformer 的 SDPA 是最直观的，很多课程先入为主的认为 LLM=Transformer 了。至于为什么 Transformer 作为 LLM 的典型架构，我猜这可能是一种路径依赖，不过也不一定。由于对于最早的 GPT 类模型就是使用的经典的 Transformer 结构，后续的模型为了降低试错成本，除了研究者之外一般不会试图设计新的架构。因此，对于 LLM 而言，你应该先确定好你到底是想学 Transformer 这个架构，还是只想知道 LLM 有哪些实现方式。对于 Decoder-only Transformer 而言，它的结构是这样的：对于一个层来说，堆叠一个 SDPA-&gt;FFN 顺序结构。然后反复堆叠一个 Block（层），就完成了 Decoder-only 的 Transformer。由于带 Encoder 的任务在 Next-token Prediction 任务上不怎么常用，这里就不细说了。一般而言，我们会使用交叉熵作为损失函数。换句话说，一个 LLM 本质上就是根据上下文建模分类下一个 token 具体选择什么内容，对于细节而言，我们可以说它是在建模一个上下文有关的条件分布。为了简单起见，去除掉 Attention 之后的 MLP-only 的模型它就是一个 Bi-gram。Attention 的本质是在最后一个 token 的 D 维里做和所有的历史 tokens 有关的线性变换。对于细节讲解而言，可以看我曾今写过的 这两个内容。对于教师学习而言，我们可能会用 KL 散度损失让模型的输出尽可能和教师模型给出的 logits 分布更接近。这本质上就是 LLM 了。对于其余的的 LLM 变体，主流模型有 RWKV，基于线性注意力的架构（比如 Qwen3-Next 和 Qwen3.5 所使用的 Gated DeltaNet）等等。",
+        "content_url": "https://www.zhihu.com/question/2012997405889549359/answer/2013274728060691584",
+        "question_id": "2012997405889549359",
+        "title": "大语言模型（LLM）的知识体系是什么样的，能不能简单介绍一下？",
+        "desc": "语言大模型当今盛行，但市面上缺乏关于完整的、全面的知识体系的专著或者综述性论文，有没有这方面的信息可以了解。",
+        "created_time": 1772782100,
+        "updated_time": 1772782100,
+        "voteup_count": 4,
+        "comment_count": 1,
+        "source_keyword": "大语言模型",
+        "user_id": "7b59584258b7ea8ca7219f194a66681c",
+        "user_link": "https://www.zhihu.com/people/KrisTHL181",
+        "user_nickname": "Kris谭",
+        "user_avatar": "https://pica.zhimg.com/50/v2-128ef0651fd164a4a3391cd8230b2a8f_l.jpg?source=4e949a73",
+        "user_url_token": "KrisTHL181",
+        "last_modify_ts": 1776037948852
+    },
+    {
+        "content_id": "2012925994621740078",
+        "content_type": "answer",
+        "content_text": "2者可能统一吧。也许LLM的多头注意力和moe，再往前一步，会将LLM解耦为多个可插拔的模块，类似于slm，又不同于slm似乎也有着方面的研究",
+        "content_url": "https://www.zhihu.com/question/1964330440199483921/answer/2012925994621740078",
+        "question_id": "1964330440199483921",
+        "title": "最终淘汰大语言模型的，会不会是小语言模型？",
+        "desc": "根据“天下之至柔，驰骋天下之至坚”的原理，能淘汰众多大语言模型的，会不会最终是小语言模型？",
+        "created_time": 1772698955,
+        "updated_time": 1772698955,
+        "voteup_count": 1,
+        "comment_count": 1,
+        "source_keyword": "大语言模型",
+        "user_id": "5644c2a0d6adf3ac11dc94ffdd80d3ed",
+        "user_link": "https://www.zhihu.com/people/zhao-jia-qi-80-48",
+        "user_nickname": "荔园后沙河旁",
+        "user_avatar": "https://picx.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "zhao-jia-qi-80-48",
+        "last_modify_ts": 1776037948853
+    }
+]

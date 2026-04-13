@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1976331206397280842",
+        "content_type": "answer",
+        "content_text": "首先从AI基础开始，学习transformer、神经网络等内容，然后从提示词工程开始，好的prompt 才能让大模型发挥更好的效果。接着学习 rag 就是搭建一个私有知识库，把自己的数据喂给大模型。Agent是大模型应用的大风口，能够自主感知环境并执行任务。在工具上学习 Langchain 这样的开发库，像 Llamaindex 这样的数据索引和检索工具。最后学习模型训练和微调。这阶段学习各种常见的与训练模型，模型结构学习、function call、多模态微调等等.内容太多了，为了让大家更直观的看到这个路线，我自己整理的大模型入门到进阶学习教程已经打包好了，评论区留下学习，双手奉上。",
+        "content_url": "https://www.zhihu.com/question/1976330543995061795/answer/1976331206397280842",
+        "question_id": "1976330543995061795",
+        "title": "拿下大模型最正确的学习顺序是什么？",
+        "desc": "把自己的数据喂给大模型。Agent是大模型应用的大风口，能够自主感知环境并执行任务。在工具上学习 Langchain 这样的开发库，像 Llamaindex 这样的数据索引和检索工具。最后学习模型训练和微调。这阶段学习各种常见的与训练模型，模型结构学习、function",
+        "created_time": 1763974078,
+        "updated_time": 1763974078,
+        "voteup_count": 4,
+        "comment_count": 4,
+        "source_keyword": "大模型",
+        "user_id": "a101e1011c145be953f0139cb1397e10",
+        "user_link": "https://www.zhihu.com/people/hu-li-jing-17",
+        "user_nickname": "码帮主 AI",
+        "user_avatar": "https://picx.zhimg.com/50/v2-c5b00f507476f41ea1971d3a747febc6_l.jpg?source=4e949a73",
+        "user_url_token": "hu-li-jing-17",
+        "last_modify_ts": 1775901019251
+    }
+]

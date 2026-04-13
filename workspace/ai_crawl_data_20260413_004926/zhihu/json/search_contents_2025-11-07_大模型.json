@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1970163033641845503",
+        "content_type": "answer",
+        "content_text": "以前大模型的大就指的是参数大，像以前的t5、gpt3，彼时参数量大的bert也可以叫大模型。cahtgpt以后大模型概念发生了变化，泛指类似gpt的decoder-only架构模型，根本原因还是其涌现能力是由参数量提升带来的。此时一些14b、7b、乃至1b的都来蹭“大模型“的名号，虽然bert参数量是够的，但因为上述原因脱去了大模型的衣服。",
+        "content_url": "https://www.zhihu.com/question/11388083692/answer/1970163033641845503",
+        "question_id": "11388083692",
+        "title": "bert为什么不叫大模型?",
+        "desc": "以前大模型的大就指的是参数大，像以前的t5、gpt3，彼时参数量大的bert也可以叫大模型。cahtgpt以后大模型概念发生了变化，泛指类似gpt的decoder-only架构模型，根本原因还是其涌现能力是由参数量提升带来的。此时一些14b、7b、乃至1b的都来蹭“大模型“的名号",
+        "created_time": 1762503471,
+        "updated_time": 1762503471,
+        "voteup_count": 4,
+        "comment_count": 0,
+        "source_keyword": "大模型",
+        "user_id": "ed73d1227ce81d436fad78780f9b4372",
+        "user_link": "https://www.zhihu.com/people/huan-bu-zou-42",
+        "user_nickname": "还不走",
+        "user_avatar": "https://picx.zhimg.com/50/v2-59f307e5af4600628314e63e296788c6_l.jpg?source=4e949a73",
+        "user_url_token": "huan-bu-zou-42",
+        "last_modify_ts": 1775926436112
+    }
+]

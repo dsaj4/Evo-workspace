@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2023330850226405925",
+        "content_type": "answer",
+        "content_text": "Kevin中国AI芯片企业2026 Top10榜单发布，寒武纪4434亿元市值领跑2026 China AI Chip Companies Top 10 Released: Cambricon Leads with 443.4B RMB Market CapCambricon topped the 2026 Chinese AI chip company ranking with a market cap of 443.4 billion RMB as of early April 2026, achieving its first annual profit in 2025 with ~6.5 billion RMB revenue; Moore Threads ranked second with 268.2 billion RMB market cap and 243% revenue growth.中国AI芯片企业2026 Top10榜单发布，寒武纪以4434亿元市值领跑。截至2026年4月初，寒武纪以4434亿元市值位居2026年中国AI芯片企业Top10榜首，2025年营收约65亿元并实现上市以来首次年度盈利；摩尔线程位列第二，市值2682亿元，营收同比增长243%。延伸阅读：上榜企业依次为：寒武纪、摩尔线程、沐曦股份、壁仞科技、清微智能、爱芯元智、云天励飞、天数智芯、芯驰半导体、黑芝麻智能。其中，寒武纪以4434亿元市值位居榜首，2025年营收近65亿元，实现上市以来首次年度盈利，成为国产AI推理芯片领域率先规模化盈利的厂商。摩尔线程位列第二，市值2682亿元，为国产GPU赛道头部企业。2025年公司营收同比增长243%，亏损收窄36.7%，科创板上市后市值一度突破2800亿元。沐曦股份排名第三，市值2440亿元，2025年底登陆科创板，营收同比增长121%，具备万卡级AI训练集群方案能力。壁仞科技以778亿港元市值成为港股GPU第一股，2026年1月上市首日股价上涨120%，自研GPU算力指标达到国际先进水平。清微智能为国家大基金注资的新型算力芯片企业，估值超200亿元，2025年12月完成C轮融资超20亿元，刷新当年国内AI芯片领域融资纪录。Google推出Gemma 4开源AI模型家族，支持数据中心至智能手机部署Google launched Gemma 4, the latest open-source AI model family available in four sizes (including 31B dense and 26B MoE), under Apache 2.0 license; developers have downloaded prior Gemma versions over 400 million times.谷歌推出Gemma 4开源AI模型家族，提供4种尺寸（含31B密集和26B MoE），采用Apache 2.0许可；此前Gemma版本下载量已超4亿次。Microsoft发布三款基础AI模型，强化自有多模态堆栈以竞争OpenAIMicrosoft AI research lab released three new foundational models capable of generating text, voice, and images, signaling a push to build its own multimodal AI stack while still partnered with OpenAI.微软AI研究实验室发布三款新基础模型，可生成文本、语音和图像，标志着其在构建自有多模态AI堆栈方面持续发力，尽管仍与OpenAI保持合作。2026年第一季度AI公司融资创纪录，达2970亿美元，其中AI占81%AI companies including OpenAI, Anthropic, and Waymo raised $297 billion in Q1 2026, with AI startups accounting for 81% ($239 billion) of global venture funding; four of the five largest rounds ever were in this quarter.2026年第一季度，OpenAI、Anthropic和Waymo等AI公司共融资2970亿美元，AI初创企业占全球风险投资的81%（2390亿美元）；史上最大五轮融资中四轮发生于本季度。OpenAI收购科技访谈节目TBPN，罕见进军媒体领域以推动AI讨论OpenAI acquired the online technology talk show TBPN (terms undisclosed), placing it within its strategy organization to drive conversation around AI.OpenAI收购在线科技访谈节目TBPN（条款未披露），将其纳入策略组织，以推动围绕AI的讨论。",
+        "content_url": "https://www.zhihu.com/question/641676987/answer/2023330850226405925",
+        "question_id": "641676987",
+        "title": "我国的芯片产业、AI 芯片领域发展如何？",
+        "desc": "Kevin中国AI芯片企业2026 Top10榜单发布，寒武纪4434亿元市值领跑2026 China AI Chip Companies Top 10 Released: Cambricon Leads with 443.4B RMB Market CapCambricon",
+        "created_time": 1775179666,
+        "updated_time": 1775179666,
+        "voteup_count": 19,
+        "comment_count": 0,
+        "source_keyword": "AI芯片",
+        "user_id": "646e30948d93aa29e766eb4a6b11a1ba",
+        "user_link": "https://www.zhihu.com/people/kevin-71-87-23",
+        "user_nickname": "数据与AI爱好者",
+        "user_avatar": "https://picx.zhimg.com/50/v2-a0aa0a20b8ad92c04f7878e96fbdb424_l.jpg?source=4e949a73",
+        "user_url_token": "kevin-71-87-23",
+        "last_modify_ts": 1776065536928
+    },
+    {
+        "content_id": "2023122833086116381",
+        "content_type": "article",
+        "content_text": "2025年中国市场AI加速卡总出货量400万块，中国厂商占41%。编译 |  程茜编辑 |  Panken芯东西4月2日消息，今日，外媒援引全球市研机构IDC报告披露，2025年中国市场的AI加速卡出货量约为400万块，英伟达以55%市场份额排名第一，国内芯片企业总出货量约165万块，市场份额共计约41%。从整体情况来看，华为以81.2万块的出货量排名第二，阿里巴巴平头哥以26.5万块的出货量排名第三，AMD排第四，出货量16万块。▲2025年中国市场AI加速卡整体情况（芯东西制表）单看国内企业的排名，华为的出货量占国内企业总出货量近一半，昆仑芯与寒武纪并列第三，均为11.6万块，海光信息、沐曦、天数智芯、清微智能的市场份额分别为5%、4%、3%。▲2025年国内企业AI加速卡出货量情况（芯东西制表）可以看到，受地缘政治影响，英伟达的出货量正在收缩，国内芯片企业的出货量明显上升。",
+        "content_url": "https://zhuanlan.zhihu.com/p/2023122833086116381",
+        "question_id": "",
+        "title": "国产AI芯片八强出货量出炉！华为占一半",
+        "desc": "2025年中国市场AI加速卡总出货量400万块，中国厂商占41%。 编译 | 程茜 编辑 | Panken芯东西4月2日消息，今日，外媒援引全球市研机构IDC报告披露，2025年中国市场的AI加速卡出货量约为 400万块，英伟达以55%市场份额排名第一，国内芯片企业总出货量约165万块",
+        "created_time": 1775130176,
+        "updated_time": 1775200339,
+        "voteup_count": 3,
+        "comment_count": 0,
+        "source_keyword": "AI芯片",
+        "user_id": "7fbeeb60b78c56e865cb1dc4fd74c37a",
+        "user_link": "https://www.zhihu.com/people/xin-dong-xi-84",
+        "user_nickname": "芯东西",
+        "user_avatar": "https://picx.zhimg.com/50/v2-edbeccc316af8dda45ea57895cbd9fae_l.jpg?source=4e949a73",
+        "user_url_token": "xin-dong-xi-84",
+        "last_modify_ts": 1776065536929
+    }
+]

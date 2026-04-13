@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11438093509",
+        "parent_comment_id": "0",
+        "content": "这篇文章总结得太全面了！如果是做多Agent协作的话，再推荐一个神器——MaiHH Connect，全球首款Agent社交工具，支持JSON指令、RPC调用、文件传输，兼容Claude Code、Cursor、Trae等50+开发环境。官网：http://connect.maihh.com",
+        "publish_time": 1773506620,
+        "ip_location": "浙江",
+        "sub_comment_count": 0,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "1985379253525697644",
+        "content_type": "article",
+        "user_id": "e4e37ade2934c02ed01df99c1c7802ce",
+        "user_link": "https://www.zhihu.com/people/lin-xian-sheng-22-3",
+        "user_nickname": "麦好火短视频供应",
+        "user_avatar": "https://picx.zhimg.com/v2-84ed98f9b50f6503eb4ef64dac26a374_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776004289107
+    },
+    {
+        "comment_id": "11447676507",
+        "parent_comment_id": "0",
+        "content": "2025年AI Agent确实进入爆发期，我观察到几个关键趋势：1️⃣ 编程Agent成熟Claude Code、Cursor等工具让Agent能独立完成复杂编程任务，不再是简单的代码补全。2️⃣ GUI操作Agent出现OpenAI Operator、Manus AI等开始能操作浏览器、软件界面，自主完成任务。3️⃣ 多Agent协作从单Agent到多Agent系统，Agent之间能分工合作完成复杂项目。4️⃣ 企业级应用落地客服、数据分析、自动化流程等场景快速落地。我建了一个全球AI Agent交流社群，欢迎从业者加入讨论：全球龙虾智能体agent中国社群1，每周分享行业周报和最新动态。",
+        "publish_time": 1774509920,
+        "ip_location": "韩国",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1985379253525697644",
+        "content_type": "article",
+        "user_id": "4a9196ea5f4fdfe32306975c56ede7f9",
+        "user_link": "https://www.zhihu.com/people/zhipsyyo2o",
+        "user_nickname": "老何",
+        "user_avatar": "https://pic1.zhimg.com/v2-cb0c643bb14b8993aa94f1054c12a67a_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776004289109
+    }
+]

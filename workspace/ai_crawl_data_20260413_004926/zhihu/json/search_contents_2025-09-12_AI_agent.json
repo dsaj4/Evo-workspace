@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1949883128010244697",
+        "content_type": "article",
+        "content_text": "各家公司都在做AI应用开发，开发了之后才会发现AI想做得好用，并没有那么容易，无论你用的是langchain还是autogen如果仅仅是预置几个prompt让AI返回，那么用户没有使用的意义，直接把prompt给用户，然后在Chat客户端上用就行了。AI agent是否真的有用，根源不在于你用了哪个模型，用了哪个框架，而是背后的设计。本人已经参与湾区知名AI公司开发了多个agent应用，基于我的经验来告诉大家一个成功的AI agent该如何设计和落地。很多AI agent就是这样的结构，没什么意义，直接用ChatGPT客户端就可以了这是一般改进后的方案，预置了一些Prompt，和用户输入组合后，输出给用户这就是大部分公司AI agent现状，本质上这类agent也没有存在的意义。你无法预测大模型返回结果你无法掌控对话流程你无法确保AI完成你希望完成的任务任务：设计一个Chatbot，它能够完成一个教学任务，例如小学三年级数学，用户是小学三年级学生，要引导学生完成概念理解，然后出题验证。新的设计图如下：用户输入后，根据预置Prompt，生成任务脚本根据任务脚本，生成具体任务步骤将任务步骤作为context输入下一个Prompt，这个Prompt会具体执行整个步骤Prompt决定出题、聊天，以及对答案进行判断",
+        "content_url": "https://zhuanlan.zhihu.com/p/1949883128010244697",
+        "question_id": "",
+        "title": "设计好用的AI agent",
+        "desc": "直接把prompt给用户，然后在Chat客户端上用就行了。AI agent是否真的有用，根源不在于你用了哪个模型，用了哪个框架，而是背后的设计。 本人已经参与湾区知名AI公司开发了多个agent应用，基于我的经验来告诉大家一个成功的AI agent该如何设计和落地。 [图片] …",
+        "created_time": 1757669441,
+        "updated_time": 1757669441,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "06a40074e2cd5401b49a81e4f8f1a117",
+        "user_link": "https://www.zhihu.com/people/loki-tang",
+        "user_nickname": "知心哥哥",
+        "user_avatar": "https://pic1.zhimg.com/50/f85cbedfc_l.jpg?source=4e949a73",
+        "user_url_token": "loki-tang",
+        "last_modify_ts": 1776004446315
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2007241826436923411",
+        "content_type": "answer",
+        "content_text": "达不到太高的极限，90%的工作 Claude一个模型就做了。AI最重要的能力是：以人之常情理解任务，并像人一样执行。 别过于魔性。Claude在代码，写作，聊天，Agent ，数据分析方面已经表现得十全九美。当然最重要的是Anthropic 有源源不断的新问题的定义和解决能力，告诉用户一个最重要的问题：你可以拿AI做什么。—— 这个问题，你不能让用户去想，你要帮用户想好，并实现好。 用户是懒的，电脑鼠标小咖啡，觉得什么都不改，就挺好了，你要在用户耳朵旁大声yell：man, 如果你现在就满足了，我们就没有未来了。来试一试Anthropic “全自动失业三件套” Claude ，Agent，CoWork … Stay hungry剩下的OpenAI给点高上限的科学推理，Google给个原生多模态识别和生成， DeepSeek给个逼近极限的AI infra 能力。这样就齐活了。大部分模厂，其实贡献不了什么，追都追的累死了。 你不太可能让平均分以下的人，拉高平均分。 真正改变，来自范式转移——比如权重解冻，在线学习，但现在大家都做不到，而且也不敢做。现在我们还处于 还想在Context window里搞点事的阶段，也许你可以把它称为预训练时代的中后期。",
+        "content_url": "https://www.zhihu.com/question/2007021865655366820/answer/2007241826436923411",
+        "question_id": "2007021865655366820",
+        "title": "若全球大语言模型的制造公司通力合作，模型的技术极限能达到什么程度？",
+        "desc": "对不起大家，只是开个脑洞（同时也是一个不太现实的憧憬qwq）……如果Gemini、OpenAI、Anthropic、xAI（Grok的那个），再加上国内的字节、阿里、月之暗面、幻方量化、智谱华章、百度等等公司（噢最后再加一个NVIDIA公司，然后全球各大出版社、图书馆也能主动提供高质量未被扫描训练语料的话），这些公司中有高质量训练资源的出资源，有卡的出卡，有技术的出技术……那么，在这些公司的通力合作下，目前最高能够训练出什么级别的大语言模型呢？",
+        "created_time": 1771343744,
+        "updated_time": 1771343744,
+        "voteup_count": 81,
+        "comment_count": 0,
+        "source_keyword": "大语言模型",
+        "user_id": "bea84fe95aee12a6939ee59dde16d1b3",
+        "user_link": "https://www.zhihu.com/people/yu-you-56-63",
+        "user_nickname": "Trisimo崔思莫",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-f85c56a14245993531a1c36c47721ee4_l.jpg?source=4e949a73",
+        "user_url_token": "yu-you-56-63",
+        "last_modify_ts": 1776037989341
+    }
+]

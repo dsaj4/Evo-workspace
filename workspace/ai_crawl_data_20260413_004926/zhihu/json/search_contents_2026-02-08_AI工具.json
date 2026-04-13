@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2003867465780851829",
+        "content_type": "answer",
+        "content_text": "如果使用Office办公，可以试试Sally加载项，作为Office Copilot的替代方案，表现还不错，可以说是把Agent集成进了Office。比如Word里，包含常用的功能，也针对学术写作做了优化，写公式，做三线表，文生图表，都可以，和Word集成很好，AI生成的内容可以直接插入Word不担心乱码，流程图，图表都可以转成图片插入Word。在Excel里，可以帮你批量编辑数据，写公式，也可以建透视表，图表分析数据，很方便在Outlook里，可以帮你总结历史邮件，生成回复邮件，创建日历和代办，总结附件这个插件也支持WPS，可以设置自己的模型，支持了大多数国产模型，用DeepSeek也可以在性价比最高。官网：https://www.sally.bot，可以免费试用，分享好友可以半价包月，可以试试",
+        "content_url": "https://www.zhihu.com/question/2003061434133795860/answer/2003867465780851829",
+        "question_id": "2003061434133795860",
+        "title": "你们用过哪些 AI 办公工具，哪些最值得推荐？",
+        "desc": "最近想尝试一些 AI 工具来提高效率，比如智能写作、数据分析助手，但市面上太多了，不知道从何下手。",
+        "created_time": 1770539233,
+        "updated_time": 1770539233,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI工具",
+        "user_id": "032797e9190b1c1a1194ff16cee19c87",
+        "user_link": "https://www.zhihu.com/people/refector",
+        "user_nickname": "Refector",
+        "user_avatar": "https://picx.zhimg.com/50/v2-d2971e27d0730cd14bb984dca629242b_l.jpg?source=4e949a73",
+        "user_url_token": "refector",
+        "last_modify_ts": 1776000614514
+    }
+]

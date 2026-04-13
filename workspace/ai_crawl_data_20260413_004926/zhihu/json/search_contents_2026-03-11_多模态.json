@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2015194092670308377",
+        "content_type": "answer",
+        "content_text": "继 HuggingFace 出现上传记录后，DeepSeek V4 核心规格表流出：1万亿参数、100万上下文、原生音频支持。今日 AI 圈炸锅了！继知名量化专家 @bdsqlsz 在 HuggingFace 上传 DeepSeek-V4-INT8 权重被抓包后，一份更详细的规格表也随之流出。DeepSeek V4 的面纱已基本被揭开，其参数之恐怖令业界侧目。图：@bdsqlsz 在 X 上发布的上传截图，显示 DeepSeek-V4-INT8 正在同步。核心规格泄露 (Technical Specs)根据最新流出的规格表，DeepSeek V4 的性能参数堪称“恐怖”：维度规格参数总参数量~1 万亿 (1 Trillion)激活参数量320 亿 (32B) - 仅 3% 激活率上下文窗口100 万 (1M) Tokens多模态能力文本 + 视觉 + 音频 (Audio)开源许可MIT 协议（极致开放）硬件优化深度适配 华为昇腾 910C深度解读MoE 架构的巅峰：总参数 1 万亿但每次只激活 3%，这意味着 V4 在保持超强智力的同时，推理成本被压到了极致。每一分算力都用在了刀刃上，这非常符合 DeepSeek 一贯的“价格屠夫”风格。全模态背水一战，直指 GPT-5.4：V4 终于支持了原生音频能力，这标志着它将正式进军实时语音交互和多模态理解领域。在 GPT-5.4 已经统治市场的当下，DeepSeek 显然是想通过极致的 MoE 效率，在全模态智力上与之正面硬刚。国产算力之光：明确标注优化华为昇腾 910C，这是一个极其强烈的信号，意味着 V4 已经实现了从训练到部署的完全自主受控。接下来的节奏预测参考 DeepSeek 往期的发布风格，我们正处于“官宣前夜”。预计 24-72 小时内，官方 GitHub 就会更新仓库，届时 deepseekv4.app 将第一时间上线 Web 体验版！小编点评：如何第一时间抢先体验？DeepSeek 官方 API 在新模型发布初期极大概率会出现流量拥堵或宕机。为了确保您能在第一时间调用到 V4 的能力，小编建议大家提前前往deepseekv4.app 锁定优先体验权。",
+        "content_url": "https://www.zhihu.com/question/2011531449027798993/answer/2015194092670308377",
+        "question_id": "2011531449027798993",
+        "title": "爆料 Deepseek 下周发布 v4 多模态模型，有哪些功能亮点值得关注？",
+        "desc": "2月26日，有海外网友爆料， DeepSeek  V4轻量版“海狮”正在进行内测。 虽然这款模型尚未正式发布，但从目前流出的公开信息来看，它已经足够让行业重新审视国产大模型的竞争坐标。 消息称deepseek下周发布v4多模态模型",
+        "created_time": 1773239712,
+        "updated_time": 1773239712,
+        "voteup_count": 53,
+        "comment_count": 14,
+        "source_keyword": "多模态",
+        "user_id": "009ae10e959e71300fcf008b975e277a",
+        "user_link": "https://www.zhihu.com/people/dreamwing",
+        "user_nickname": "小翼",
+        "user_avatar": "https://pica.zhimg.com/50/v2-4159a48d4087eb33833477365074be67_l.jpg?source=4e949a73",
+        "user_url_token": "dreamwing",
+        "last_modify_ts": 1776038618330
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1988023849820895226",
+        "content_type": "answer",
+        "content_text": "感谢邀请，已经是 2025 年年底，今年有太多优秀的 MLsys 领域的工作了，下面简单列举几个本人十分感兴趣的领域：LLM 分布式训推中的通算重叠和融合，包括去年6月份字节的 Flux，到针对 EP 场景做的 Comet，今年 3 月底字节的工作 TileLink/Triton-Distributed (MLsys 25)，以及无问苍穹的 FlashOverlap，还有 TokenWeave，OSDI 25 的 Nanoflow 等等。LLM inference中的 AFD 相关，北大和字节合作的 Megascale-infer，华为的 xDeepServe，阶跃的Step-3，还有最近在一篇挂在 arxiv 的工作 Janus。集合通信相关也有很多值得关注的工作，ResCCL (Sigcomm 25)，个人十分喜欢的一篇针对通信资源调整来降低对计算干扰的工作，相应地为了做到SM-free ，另一篇 arxiv 上的文章 ICCL 将 p2p offload 到 CPU上，虽然这个事NCCL 在 12月 初提了一个新 featrue 支持对非reduce类算子做SM-free的kernel编写了。SyCCL (Sigcomm 25)，AutoCCL (NSDI 25)，Berkeley 的 UCCL 以及 MSR 的 MSCCL++，年初 DeepEP 的开源实现也很值得学习。除此之外，还有一些工作十分有趣，Mooncake，FlashInfer，OSDI25的 KPerfIR，SOSP25的 TrainVerify等等，希望 26 年能看到更多有趣的工作。",
+        "content_url": "https://www.zhihu.com/question/1938363080988926457/answer/1988023849820895226",
+        "question_id": "1938363080988926457",
+        "title": "2025年机器学习系统MLsys还有哪些可以研究的方向？",
+        "desc": "2025年已过一半，今年在机器学习系统MLsys领域有哪些值得关注的工作？今后有哪些方向值得进一步研究？",
+        "created_time": 1766761821,
+        "updated_time": 1766806509,
+        "voteup_count": 49,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "ea28155da62d1b43c22d38d2aa8ba6c3",
+        "user_link": "https://www.zhihu.com/people/inner-peace-55",
+        "user_nickname": "innerpeace",
+        "user_avatar": "https://picx.zhimg.com/50/v2-73cf60793a92a4ce3696d83aa1dd148f_l.jpg?source=4e949a73",
+        "user_url_token": "inner-peace-55",
+        "last_modify_ts": 1776005032710
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1950922409101223831",
+        "content_type": "answer",
+        "content_text": "ai agent与web3属于两个正交，或者说线性无关的体系，分别负责生产力和生产关系的自动化，两者不重叠但能线性组合，相互促进，推动彼此的进化。现在是人和人之间的支付，未来会有大量的agent之间的微支付接口，web3正好可以接住。比如知乎现在的赞喜欢收藏等都可以用支付来支撑，一个赞1分钱知乎coin，替你看知乎的agent支付给我写文章的agent。该给我一分钱了！",
+        "content_url": "https://www.zhihu.com/question/1946663009456985217/answer/1950922409101223831",
+        "question_id": "1946663009456985217",
+        "title": "为什么越来越多的 Web3 项目开始引入 AI Agent？这真的是未来趋势吗？",
+        "desc": "最近在 Cookie Agents 的排行榜上，前十名已经出现了不少 AI Agent 项目，比如能自动定投的、做 Meme 的，甚至还有负责跨链协作的。它们有的强调金融功能，有的强调社区互动，看上去好像要把“AI”嵌入到 Web3 的各个角落。这是项目方的“噱头”，还是确实有实际的需求？对用户来说，AI Agent 的加入，能带来哪些新的体验或风险？在区块链里，自动化是不是比人工治理更有优势？大家怎么看？",
+        "created_time": 1757916148,
+        "updated_time": 1757983973,
+        "voteup_count": 12,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "0b74143f53ba2c44e04ef0417a4d0656",
+        "user_link": "https://www.zhihu.com/people/gwave-22",
+        "user_nickname": "gwave",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-f73de61778495381fda02c729e461aff_l.jpg?source=4e949a73",
+        "user_url_token": "gwave-22",
+        "last_modify_ts": 1776004339159
+    }
+]

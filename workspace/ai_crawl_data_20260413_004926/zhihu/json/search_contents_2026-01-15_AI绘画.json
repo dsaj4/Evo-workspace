@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1995507923091226989",
+        "content_type": "answer",
+        "content_text": "体验地址：https://http://ai.annyun.cn/canvas，需使用电脑浏览器打开，手机端暂未支持项目地址：https://http://github.com/vual/lobe-chat-pro支持私有化部署。咨询微信：822784588无限画布功能介绍：一. 主界面支持上传图片、选择模型、开启联网，目前支持的模型：画图：1. google:gemini-3-pro-image-preview(nano banana pro)、gemini-2.5-flash-image(nano banana)2. openai：gpt-image-1.5、gpt-image-13. kling:kling o1、kling-v2-14. volcengine:doubao-seedream-4-5-2511285. midjourney视频：1. openai：sora-2、sora-2-pro2. google:veo-3.1、veo-3.1-pro3. kling:kling o1、kling-v2-6、kling-v2-5-turbo聊天：1. 支持function call的模型都可以，默认gpt-5-mini。二、画图并生成视频在聊天框里输入提示词，模型默认是自动选择，也可以手动指定。并且支持播放视频三、图片高清放大选中图片点击HD按钮，即可针对图片进行高清放大结果：四、图片移除背景选中图片，点击移除背景按钮五、拆分图层选中图片，点击拆分图层按钮，即可提取图片里的关键元素，生成png，并可以作为其它素材，比如合成图片，生成视频等。六、图片局部重绘选中图片，点击局部重绘按钮，可以无痕重绘图片局部任意内容，可以改文字，改元素。选中需要修改的区域，输入修改的提示词。支持选则google或者openai进行重绘，google是选中区域，openai是需要涂抹选中区域。七、扩展图片可以选中一张或者多张图片进行扩展，多张图片可以调整层级顺序。支持调整扩展的最终图片分辨率，支持移动和调整原图在画布中的位置和大小，支持画草稿。八、使用首尾帧生成视频选中图片，点击添加到聊天，按顺序添加，输入提示词九、联网搜索开启联网，可以搜到最新消息。",
+        "content_url": "https://www.zhihu.com/question/604007232/answer/1995507923091226989",
+        "question_id": "604007232",
+        "title": "Ai绘画软件，midjourne对设计师到底有多大的影响？",
+        "desc": "体验地址： ，需使用电脑浏览器打开，手机端暂未支持项目地址：",
+        "created_time": 1768546163,
+        "updated_time": 1768546163,
+        "voteup_count": 2,
+        "comment_count": 0,
+        "source_keyword": "AI绘画",
+        "user_id": "584f7b837fc362757d0139ed3a088683",
+        "user_link": "https://www.zhihu.com/people/vual",
+        "user_nickname": "vual",
+        "user_avatar": "https://picx.zhimg.com/50/9b889588f_l.jpg?source=4e949a73",
+        "user_url_token": "vual",
+        "last_modify_ts": 1776057927717
+    },
+    {
+        "content_id": "1995380485640193313",
+        "content_type": "answer",
+        "content_text": "一群拿着手机拍照的普通人，觉得自己拍的图已经可以媲美摄影师了，并且觉得后续需要提升的只剩下像素不如单反高。看到这些最前沿的ai图和讨论他们的外行，大概就是以上这种感觉。甚至连这行是靠什么赚钱都不知道，而且三四年了还没想明白，得有多固执多缺乏学习能力啊。三年前我几乎零基础的学生现在都跟着我接还不错的活了，ai玩家还在那研究皮毛呢，有这几年时间哪怕去新东方学炒俩菜呢？说实在的，你们所谓最前沿的这些ai，都还不如以前那个lora呢，自打ai不开源不能自己炼了以后，就彻底走歪了，啥也不是。",
+        "content_url": "https://www.zhihu.com/question/9679181332/answer/1995380485640193313",
+        "question_id": "9679181332",
+        "title": "现在最前沿的AI绘画真实水平怎么样？",
+        "desc": "前几天看到mid里面会员分享的图，这几张图分辨率非常高，细节上基本没有错误，整体很不错，人也很像人，氛围感很强，只是还是有点AI特有的油腻感。可能是每个人见过的AI图不同，有的模型已经烂大街了，却还有人在用，有的模型可能没有很多错误，没见过几张这种图的人，可能一下子还分辨不出来，以为是画师的手癖，多看就行了。不过这几张图我是真的感觉很nb，还看过几张专门在AI绘画分享网站平台上看到的，感觉都是人画的，也难怪最近在p站上感觉看不到AI画师了，但其实很多画师都是靠AI改的图。求现在AI的真实水平。",
+        "created_time": 1768515780,
+        "updated_time": 1768515889,
+        "voteup_count": 128,
+        "comment_count": 29,
+        "source_keyword": "AI绘画",
+        "user_id": "848edc3cecfea488f01439ea276d7d47",
+        "user_link": "https://www.zhihu.com/people/hua-ye-cai-20-31",
+        "user_nickname": "画画的花噎菜",
+        "user_avatar": "https://pica.zhimg.com/50/v2-f3d98006cbf1aa1221a6944bf56339e7_l.jpg?source=4e949a73",
+        "user_url_token": "hua-ye-cai-20-31",
+        "last_modify_ts": 1776057927719
+    }
+]

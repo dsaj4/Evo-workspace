@@ -1,0 +1,53 @@
+[
+    {
+        "comment_id": "11446927953",
+        "parent_comment_id": "0",
+        "content": "写得很中肯，很受用，谢谢[拜托]",
+        "publish_time": 1774431280,
+        "ip_location": "北京",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2015108421112854374",
+        "content_type": "answer",
+        "user_id": "bc35d45b4f4c31a372e85b30b143597d",
+        "user_link": "https://www.zhihu.com/people/t80m3lu",
+        "user_nickname": "医工成长社",
+        "user_avatar": "https://picx.zhimg.com/v2-9dff833c68c141d7d69613c395f40134_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776064591940
+    },
+    {
+        "comment_id": "11436812719",
+        "parent_comment_id": "0",
+        "content": "统一回复几个高频问题：Q：AI 真能取代医生吗？ A：短期真不能。医疗是责任问题，AI 扛不了这个责任。Q：县医院适合上 AI 吗？ A：信息化基础好的可以上，网络差、数据乱的先别碰。Q：想了解这行的新人怎么入行？ A：先考个医疗信息化证书，从实施工程师做起。还有其他问题评论区见，看到都会回。",
+        "publish_time": 1773301253,
+        "ip_location": "陕西",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2015105237166348128",
+        "content_type": "article",
+        "user_id": "2eeae9471e4c669747835b6868254bef",
+        "user_link": "https://www.zhihu.com/people/zhiqm44x0a",
+        "user_nickname": "医疗AI落地派",
+        "user_avatar": "https://picx.zhimg.com/v2-8ad3d9f84724cb020a297138fcc89e82_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776064851121
+    },
+    {
+        "comment_id": "11436729454",
+        "parent_comment_id": "0",
+        "content": "整理了一份「医疗 AI 应用场景清单」，包含国家卫健委发布的 84 个场景和推荐优先级。需要的知友私信我「清单」领取～",
+        "publish_time": 1773301339,
+        "ip_location": "陕西",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2015105237166348128",
+        "content_type": "article",
+        "user_id": "2eeae9471e4c669747835b6868254bef",
+        "user_link": "https://www.zhihu.com/people/zhiqm44x0a",
+        "user_nickname": "医疗AI落地派",
+        "user_avatar": "https://picx.zhimg.com/v2-8ad3d9f84724cb020a297138fcc89e82_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776064851131
+    }
+]

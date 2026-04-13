@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1948891927605905160",
+        "content_type": "answer",
+        "content_text": "to c应用的痛点很多别的回答都说了，我这里给很多人看好的to b应用泼个冷水，除非你一开始就在某个垂类行业，有大量你自己拥有的垂类数据，不然做to b agent公司就是给别人做嫁衣。agent这个东西很难形成技术壁垒，等你把模式跑通了，你的客户很快就能抄一个出来自己用，客户的数据比你多，行业理解也比你深，需要你干嘛？仅有的漏网之鱼大概就是利润薄到客户懒得自己做的部分，那就和外包没什么本质区别了。",
+        "content_url": "https://www.zhihu.com/question/1923049104222721873/answer/1948891927605905160",
+        "question_id": "1923049104222721873",
+        "title": "为什么感觉现在AI Agent都是雷声大雨点小？",
+        "desc": "Agent各大厂商和使用人员都把功能描述的非常强大。并且放出各种惊艳的例子。但真到用的时候就会发现像是在开盲盒，尝试很多次都很难成功。而且很多都复现不了。实现了功能也是很基础，稍微有一点复杂逻辑就会跑蹦。可是，太简单了就失去使用Agent的价值了，还不如用工具实现。问题到底出在哪里？是打开方式不对还是功能被夸大了？",
+        "created_time": 1757432044,
+        "updated_time": 1757432044,
+        "voteup_count": 157,
+        "comment_count": 21,
+        "source_keyword": "AI agent",
+        "user_id": "b1c1a6658303c3f57d128645a329cab5",
+        "user_link": "https://www.zhihu.com/people/fei-xiang-tian-xing-zhe",
+        "user_nickname": "手动狗头",
+        "user_avatar": "https://picx.zhimg.com/50/v2-620fc25dec09de7bb9c27df2100358ac_l.jpg?source=4e949a73",
+        "user_url_token": "fei-xiang-tian-xing-zhe",
+        "last_modify_ts": 1776004339159
+    }
+]

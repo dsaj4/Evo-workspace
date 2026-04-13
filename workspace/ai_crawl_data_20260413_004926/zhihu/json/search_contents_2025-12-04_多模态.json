@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1980033004253504891",
+        "content_type": "answer",
+        "content_text": "一、主流多模态大模型及技术范式当前多模态大模型呈现跨模态深度融合与任务泛化能力的显著特征，2023-2025年代表性模型包括： 模型名称发布机构核心特点关键技术创新性能表现BLIP-3（XGen-MM）Salesforce AI支持多图像输入与高分辨率处理，开源生态完善用Perceiver Resampler替代Q-Former，简化视觉-语言对齐；统一自回归损失函数在MSCOCO检索任务上TR@1较BLIP-2提升5.3%，支持100亿+多模态tokens训练Qwen2-VL阿里巴巴动态分辨率处理，长视频理解（20分钟+），多语言支持动态分辨率机制（Naive Dynamic Resolution）；多模态旋转位置嵌入（M-ROPE）DocVQA基准超越GPT-4o（72B版本），视频问答准确率较Qwen-VL提升27%InternVL3上海AI实验室原生多模态预训练，混合偏好优化原生多模态预训练（文本与多模态数据1:3采样）；**混合偏好优化（MPO）**与测试时增强（TTS）MMMU基准72.2分，接近闭源模型Gemini-2.5-ProSAM 2Meta AI视频分割支持，实时交互能力流式记忆机制（Streaming Memory）；多尺度特征融合（Hiera编码器）视频分割交互次数减少67%，推理速度较SAM提升6倍，支持44帧/秒实时处理Llama 4Meta AI多模态统一架构，超长上下文（1000万token）专家混合架构（MoE）；动态视觉token采样零样本图像分割mIoU达58.9，超越SAM 0.8个点主流技术范式演进多模态大模型的范式从双编码器对齐向端到端统一建模发展，核心范式包括：视觉-语言预训练（VLP）：如CLIP的对比学习，通过图文对构建跨模态语义空间，缺点是缺乏生成能力。视觉编码器+语言模型：如BLIP-2的Q-Former机制，通过Learnable Query连接冻结的视觉编码器与LLM，后续演进为更高效的Perceiver Resampler（BLIP-3）或动态投影（Qwen2-VL）。原生多模态统一架构：如InternVL3和Emu3，预训练阶段同时学习文本与视觉特征，避免传统&#34;LLM+视觉适配器&#34;的对齐瓶颈，纯语言能力与多模态能力协同提升。 二、Learnable Query的作用及技术演进2.1 Learnable Query的核心作用在BLIP-2和Qwen-VL中，Learnable Query是视觉与语言模态对齐的关键组件，具体作用包括：模态桥接：作为可学习的&#34;中介&#34;向量，将视觉编码器输出的高维特征（如ViT的patch特征）压缩为固定长度序列，适配LLM的输入格式。语义对齐：通过预训练（如图像-文本对比损失ITC、图像-文本匹配损失ITM）学习视觉与语言特征的关联，例如Qwen-VL的256个Learnable Query通过交叉注意力与视觉特征交互，生成与文本语义空间对齐的向量。灵活性支持：无需修改预训练LLM结构，仅通过微调Query即可实现多模态能力，降低工程复杂度。 2.2 后续版本弃用的技术原因BLIP-3（XGen-MM）和Qwen2-VL等后续模型弃用Learnable Query，核心驱动因素包括：效率瓶颈：Learnable Query需固定长度（如BLIP-2的32个Query），难以处理高分辨率图像（如4K图像生成的16384个视觉token），Perceiver Resampler通过动态注意力机制可高效压缩任意分辨率特征。架构简化：Qwen2-VL采用动态分辨率机制，直接将视觉特征通过MLP压缩为可变长度token，并结合M-ROPE实现与文本位置信息的自然融合，无需额外Query层。性能优化：BLIP-3的消融实验显示，Perceiver Resampler在多图像输入任务上吞吐量提升3倍，同时保持图像-文本匹配准确率提升2.1%。多模态扩展：支持视频等动态模态时，Learnable Query难以建模时序信息，而SAM 2的记忆编码器通过帧间特征传递实现视频分割，无需Query中介。 三、KV Cache技术原理与优化 3.1 基本原理KV Cache（Key-Value Cache）是大模型推理优化的核心技术，通过存储注意力计算中的键（Key）和值（Value）矩阵，避免重复计算，具体流程：前向传播：在生成第t个token时，传统Transformer需计算所有输入token的注意力权重；启用KV Cache后，仅计算新token的Query与历史KV的交互，复用已缓存的KV对。存储机制：按层缓存KV矩阵，形状为(batch_size, num_heads, seq_len, head_dim)，显存占用随序列长度线性增长。 3.2 最新优化方向动态KV Cache：根据输入序列长度自适应调整缓存大小，如Llama 4引入&#34;流式缓存&#34;，仅保留最近N个token的KV，支持1000万token上下文。量化压缩：INT8/INT4量化KV矩阵，如GPTQ方法将缓存显存占用降低75%，精度损失小于1%。注意力稀疏化：仅缓存重要token的KV对，如LongLoRA通过低秩分解减少冗余存储，推理速度提升2倍。 四、大模型后训练与VLM的技术差异4.1 大模型后训练通用方法后训练旨在提升模型任务适配能力，核心技术包括：指令微调（SFT）：使用高质量指令数据（如ShareGPT）微调模型，增强指令跟随能力，典型学习率5e-5~2e-4。强化学习（RLHF）：基于人类反馈优化模型输出偏好，如GPT-4通过PPO算法提升回答安全性。领域适配：在专业数据集（如医疗、法律）上微调，如MedPaLM在PubMedQA上准确率达87.5%。 4.2 VLM后训练的特殊性视觉语言模型（VLM）后训练需额外处理跨模态对齐，关键差异技术：视觉指令微调：构造多模态指令数据（如图文问答、视觉定位），如Qwen2-VL使用158k多模态指令数据，涵盖GUI操作、建筑图纸理解等场景。混合偏好优化（MPO）：InternVL3通过正负样本对比修正模型响应分布，推理任务准确率提升4.3%。动态分辨率训练：Qwen2-VL在微调阶段引入不同分辨率图像，增强模型对细节信息的捕捉能力，DocVQA OCR准确率提升9%。多模态幻觉抑制：通过对比学习（如CAL方法）区分视觉相关与无关文本token，幻觉率降低12%。 五、SAM模型原理与Prompt编码机制 5.1 SAM 2核心架构SAM 2（Segment Anything Model 2）是支持图像与视频分割的基础模型，架构包括：图像编码器：采用Hiera分层ViT，输出多尺度特征图（如1024×1024图像生成64×64特征）。提示编码器：处理点、框、文本等提示，生成稀疏/密集嵌入。掩码解码器：结合图像特征与提示嵌入，生成3个候选掩码及置信度分数。记忆机制：视频分割时，通过记忆编码器存储历史帧特征，实现目标跟踪（如宇航员视频分割mIoU达89.3）。 5.2 不同Prompt的编码方式 Prompt类型编码机制应用场景点（Point）位置编码（Sinusoidal）+ 学习嵌入（前景/背景标签），如正点（x,y,1）、负点（x,y,0）交互式分割（点击物体中心）框（Box）左上/右下顶点位置编码+边界嵌入，如框坐标（x1,y1,x2,y2）映射为2个嵌入向量目标检测后分割（如COCO实例分割）文本（Text）采用CLIP文本编码器（ViT-L/14）生成语义嵌入，与图像特征交叉注意力融合参考分割（如&#34;分割红色汽车&#34;）掩码（Mask）3×3卷积+上采样，与图像特征逐元素相加，作为密集提示掩码细化（如医学影像标注） 总结多模态大模型正朝着动态模态适配（如Qwen2-VL的动态分辨率）、高效跨模态对齐（如BLIP-3的Perceiver Resampler）和实时交互能力（如SAM 2的流式记忆）方向发展。技术演进中，Learnable Query等中间组件因效率瓶颈被简化，而KV Cache优化、混合偏好后训练等技术持续提升模型性能与部署可行性。",
+        "content_url": "https://www.zhihu.com/question/637573230/answer/1980033004253504891",
+        "question_id": "637573230",
+        "title": "有什么常见的多模态模型？",
+        "desc": "一、主流多模态大模型及技术范式当前多模态大模型呈现跨模态深度融合与任务泛化能力的显著特征，2023-2025年代表性模型包括： 模型名称发布机构核心特点关键技术创新性能表现BLIP-3（XGen-MM）Salesforce AI支持多图像输入与高分辨率处理，开源生态完善用Perceiver",
+        "created_time": 1764856655,
+        "updated_time": 1764856655,
+        "voteup_count": 2,
+        "comment_count": 0,
+        "source_keyword": "多模态",
+        "user_id": "cb470a6ed2def441c7d2fd36458a2c96",
+        "user_link": "https://www.zhihu.com/people/robot-2-59",
+        "user_nickname": "爱吃牛油果的璐璐",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-37ad1fcab0465fe1803dac79658c7fe0_l.jpg?source=4e949a73",
+        "user_url_token": "robot-2-59",
+        "last_modify_ts": 1776038926776
+    }
+]

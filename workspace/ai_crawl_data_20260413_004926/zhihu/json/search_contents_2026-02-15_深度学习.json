@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2006481465278484933",
+        "content_type": "answer",
+        "content_text": "RL在生成式推荐领域，目前已经有不少论文了，以快手的onexxx系列为例。OneRec Technical ReportOneRec的RL主要目的是突破预训练数据的“信息茧房”，探索未曾覆盖的物品空间，并直接针对复杂的业务目标进行优化。OneRec 引入了一个复杂的奖励系统，并通过RL来对齐更真实的用户偏好。该系统包含三种奖励：用户偏好奖励 (User Preference Reward)：问题：定义“好的推荐”极其困难，简单的指标（如点击率）往往无法全面反映用户满意度。方案：训练一个专门的偏好分数模型 (P-Score Model)。该模型以多任务学习的方式，同时预测点击、长看、点赞等多个目标，并学习一个个性化的融合权重，最终输出一个单一的、代表综合满意度的 P-Score。这个 P-Score 就作为 RL 的核心奖励。生成格式规整化奖励 (Generation Format Regularization)：问题：由于语义 ID 的组合空间远大于实际存在的视频数量，模型在 RL 优化后可能会生成大量“非法”的 ID 序列（即无法映射回任何真实视频），这种现象被称为“挤压效应 (squeezing effect)”。方案：引入格式奖励。对模型生成的 ID 序列进行检查，如果序列是合法的（能找到对应视频），就给予一个正向奖励（如 +1），否则不给予奖励或直接丢弃。实验证明，这能有效将生成合法率从 低于 50% 提升至 95% 以上。工业场景对齐奖励 (Industrial Scenario Alignment)：问题：在工业界，推荐系统还需要考虑生态健康（如打压劣质内容）、商业化需求等。方案：将这些业务目标也融入奖励函数。例如，为了控制“爆款内容农场”的过度曝光，可以对这类视频的 P-Score 奖励进行动态降权。这种端到端的微调方式远比在传统级联系统的某个环节打补丁要优雅和有效。为了应用上述奖励，OneRec 采用了一种名为 ECPO 的 on-policy 强化学习算法。这是对 GRPO 的改进，通过对负向优势样本的策略比例进行提前裁剪 (early clipping)，来防止梯度爆炸，从而使 RL 训练过程更加稳定。OneRec-V2 Technical ReportOneRec V2 引入了一个直接利用真实世界用户反馈进行策略优化的后训练（Post-Training）框架。核心思想：绕过中间的奖励模型，直接将用户的真实互动行为（如观看时长）转化为优化信号，驱动模型更好地对齐真实的用户偏好。关键技术：时长感知奖励塑造 (Duration-Aware Reward Shaping)：通过对原始观看时长奖励进行归一化处理，消除因视频本身长短不一而产生的“时长偏见”，使奖励信号能更准确地反映内容质量。自适应比率裁剪 (Adaptive Ratio Clipping)：作为 PPO 算法的改进，该技术有效降低了利用高噪声真实用户反馈进行训练时的方差，保证了策略优化的稳定性与收敛性。OpenOneRec Technical Report本文的RL主要目的如下：本文蒸馏过程可能会使模型的输出变得“保守”或“模糊”，牺牲了推荐所需的“精准性”。RL 直接对齐离散的推荐指标（如 Recall、NDCG），缓解仅用监督学习时的曝光偏差。本文RL的方法如下：引入一个专门为推荐任务设计的奖励模型。这个模型学习判断生成的推荐物品是否“好”（例如，是否与用户历史相关、是否新颖、是否符合指令约束等）。然后，通过强化学习（PPO），鼓励主模型生成能够获得更高奖励的物品。这相当于一个“锐化”过程，提升了模型在推荐任务上的表现。通过在这两种优化（本文的蒸馏和本文的RL）目标之间来回切换，模型得以在保持通用性和提升专业性之间找到一个动态平衡点，避免了在单一目标上优化导致的“偏科”。OneVision: An End-to-End Generative Framework for Multi-view E-commerce Vision Search本文目标：在视觉相关性的基础上，融入用户个性化偏好，并直接优化排序列表。个性化输入如下：长期行为：用户近期点击/购买过的多个商品 SID 融合后的聚合 SID。短期行为：用户在视觉搜索场景下最近 5 次点击的商品 SID 序列。场景信息：显式加入搜索场景的标识（如“框选搜索”、“拍照搜索”）。本文优化方法：首先进行一轮带个性化输入的 SFT。接着，使用 List-wise DPO 损失 (Eq. 10) 进行优化。在一个 session 中，将“购买”的商品视为正样本，将“点击未购买”和“曝光未点击”的商品视为负样本，直接优化生成正样本的概率高于所有负样本的概率。OneSearch: A Preliminary Exploration of the Unified End-to-End Generative Framework for E-commerce Search本文中的 RL是以奖励建模 + DPO 式偏好对齐为核心的“离线强化学习/偏好学习”框架：先通过精心设计的层次行为奖励和 Reward Model 提供稳定的教师信号，再用 list-wise DPO 把这些偏好蒸馏进 OneSearch 的生成策略，并进一步用真实用户交互做持续自我强化。ONEREC-THINK: In-Text Reasoning for Generative Recommendation该论文RL部分主要是通过强化学习进一步提升推理质量，确保其与推荐准确性对齐。挑战：在推荐场景中，奖励信号（reward）极其稀疏。一个推理路径可能最终没有推荐中“唯一正确”的那个物品，导致奖励为零，这使得很多强化学习算法（如 GRPO）失效。解决方案：Beam Candidate Reward Maximization，作者提出了一个新颖的 Rollout-Beam reward 机制。在生成推理路径后，模型不直接生成一个最终物品，而是通过 Beam Search 生成一个包含 K 个候选物品的集合。只要真实的目标物品出现在这个 Beam 集合中，模型就能获得奖励（奖励大小可以根据命中情况设计，例如论文中使用的是 token 级别的匹配度）。OneSug: The Unified End-to-End Generative Framework for E-commerce Query Suggestion该论文RL部分核心点是基于奖励加权的排序策略（RWR）。通过引入用户行为感知的奖励权重（利用在线搜索系统的用户反馈，而不是训练复杂的奖励模型。），结合直接偏好优化（DPO）技术，让生成模型学习到更细粒度的用户偏好，从而提升生成查询的排序质量。OneMall: One Architecture, More Scenarios — End-to-End Generative Recommender Family at Kuaishou E-Commerce核心思想是让召回模型（Policy Model）能够直接根据排序模型（Reward Model）的反馈进行优化。主要流程如下表：Policy Model (  )：即正在训练的生成式召回模型。Reference Model (     )：一个周期性从 Policy Model 同步参数的“旧”模型，用于生成候选 Item（completions）。Reward Model：使用在线的排序大模型作为奖励模型。它可以利用用户、Item 和交叉特征，精准预估 CTR、CVR 等指标，并融合成一个最终的奖励分数 r。优化策略：论文尝试了 DPO (Direct Preference Optimization) 和 GRPO (Group Sequence Policy Optimization) 两种策略。DPO：将奖励分数最高的候选 Item 视为正样本 o_pos，其余视为负样本 o_neg，构建偏好对进行优化。GRPO：对所有采样出的候选 Item 计算其优势分数 A_i，并使用 PPO-like 的目标函数进行优化，能够更充分地利用所有候选 Item 的反馈信息。",
+        "content_url": "https://www.zhihu.com/question/63037952/answer/2006481465278484933",
+        "question_id": "63037952",
+        "title": "深度强化学习如何和推荐系统结合起来？",
+        "desc": "RT",
+        "created_time": 1771162459,
+        "updated_time": 1771162459,
+        "voteup_count": 29,
+        "comment_count": 0,
+        "source_keyword": "深度学习",
+        "user_id": "3cd0b033ca8125fe0d2dbdc0b6e67130",
+        "user_link": "https://www.zhihu.com/people/tongsanpang",
+        "user_nickname": "手抓饼熊",
+        "user_avatar": "https://picx.zhimg.com/50/v2-b5492c22926d93ed35bb69751bd40003_l.jpg?source=4e949a73",
+        "user_url_token": "tongsanpang",
+        "last_modify_ts": 1776024207898
+    }
+]

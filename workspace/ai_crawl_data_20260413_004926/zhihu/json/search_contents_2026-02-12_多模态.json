@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2005603829324989784",
+        "content_type": "article",
+        "content_text": "最近在抽空阅读多模态训推的文章，现在把一些论文的思想总结一下（持续更新）。一、Optimus: Accelerating Large-Scale Multi-Modal LLM Training by Bubble Exploitation这个文章来自哈佛和字节，发表在ATC25会议上。文章发现：多模态训练中有很多通信导致的气泡（下表）；文章的想法是把Encoder的计算插入到这些气泡中。但是有几个挑战：（1）有的GPU卡上没有同时存在Encoder和LLM Backbone；（2）算子之间有复杂的依赖关系，不能轻易的拆到气泡中；（3）有的气泡很小，不好拆；因此论文有三个设计来解决这三个挑战：（1）Encoder的并行策略和LLM Backbone的并行策略分离；（2）设计策略保障算子放到bubble中不破坏计算顺序依赖；（3）将Encoder的大算子拆成小的算子，方便放到TP的气泡中。最终效果如下图展示，Encoder尽量都并行到Bubble里面了。测试分了两种，小规模和大规模，大概有20；小规模模型与GPU数量小规模测试效果大规模测试效果二、DistTrain: Addressing Model and Data Heterogeneity with Disaggregated Training for Multimodal Large Language ModelsDistTrain发表在SIGCOMM25，来自北大。本文解决多模态训练的三个问题：（1）多模态模型包括Encoder、Backbone、Generator等多种异构结构，怎么做并行策略；（2）多模态训练数据batch之间的样本差异性较大（例如大小），数据增强开销有差距；（3）不同Batch、Microbatch之间因为样本大小不同，导致计算时间不同，DP组之间形成短板，在同一个流水线中造成较多气泡；该论文有几个如下的动机发现：（1）传统框架对于多模态模型的各个部分使用相同的并行策略，低效率。下图就是Megatron-LM框架的情况。说明需要针对不同结构用不同策略。（2）不同输入数据（图片数量，分辨率）前向传播中不同模块对应的时间。得出结论Backbone的时间变化不大，Encoder和generator变化较大。说明流水线并行的时候不同输入在不同结构处有不同的计算时间，造成气泡。（3）训练样本的分布极不均，如下图中a代表文本分布，b图代表图片的分别，c图代表每个训练样本中包含多少个图像子序列。（4）由于样本分布极其不均，使得分到不同DP组的样本差距很大，造成某些DP组中的样本很大，计算时间很长，成为短板。（5）而在DP组内，一个batch会在流水线过程中被分为多个micro-batch，且micro-batch之间的样本差距也很大，造成短板效应影响流水线效率。为了解决（1）中的并行策略问题，文章设计了ILP，对不同结构用不同并行策略（搜索细节略），效果如下图。设计一：为了解决不同大小数据的增强效果开销不同的问题，本文将预处理与计算分开，专门找了CPU集群处理数据集，传到GPU上。设计二：为了解决DP组之间数据大小分布差异大导致的短板效应问题，本文设计了贪心算法，思路是依次把最小的样本放到样本长度最大的DP组。设计三：DP组内micro-batch之间数据长短不同，导致的计算时间有差异（根据动机2），引入较多气泡。通过micro-batch位置重放，解决这个问题。核心算法思路如下（我让GPT生成了一个大白话）：",
+        "content_url": "https://zhuanlan.zhihu.com/p/2005603829324989784",
+        "question_id": "",
+        "title": "多模态系统文章总结整理",
+        "desc": "最近在抽空阅读多模态训推的文章，现在把一些论文的思想总结一下（持续更新）。 一、Optimus: Accelerating Large-Scale Multi-Modal LLM Training by Bubble Exploitation [图片] 这个文章来自哈佛和字节",
+        "created_time": 1770958132,
+        "updated_time": 1773329353,
+        "voteup_count": 19,
+        "comment_count": 2,
+        "source_keyword": "多模态",
+        "user_id": "49d6b972a19bc12584d2317302210ea7",
+        "user_link": "https://www.zhihu.com/people/pinging-92",
+        "user_nickname": "Pinging-ZJU",
+        "user_avatar": "https://pica.zhimg.com/50/v2-38bb93888aacbd32a2e2fdddc01d7ed8_l.jpg?source=4e949a73",
+        "user_url_token": "pinging-92",
+        "last_modify_ts": 1776038740388
+    }
+]

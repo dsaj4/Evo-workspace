@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1992656747463206864",
+        "content_type": "answer",
+        "content_text": "其实大概20多年前，软件业界吹过一阵UML风，就是设计师按照UML规范画图，包括展示数据结构、逻辑、模块划分等的静态图，以及运行时的时序、状态迁移等动态图，然后由UML软件转化成代码。反向也可以，就是从代码生成图。当时比较著名UML软件的如Rational Rose，Enterprise Architect，以及JUDE。其实当时真正能生成的只是程序框架，并不能生成真正可以跑的代码。某种意义属于夸大宣传。但是，也许今天可以借助AI的能力，来重新审视一下过去的这些努力。倒不是说要复活UML，而是说可能需要一种介于完全自然语言和高级语言之间的，架构级别的领域结构化语言去更加精确地描述需求，同时限制AI的幻觉，并记录软件制作的过程。否则，AI生成了一个程序，用用也许还可以，到后面要进行维护增减功能了，可能就是噩梦了。就好比一个机械零件，你会发现用自然语言去精确描述它是很难的，远不如机械制图。",
+        "content_url": "https://www.zhihu.com/question/1991926456759105516/answer/1992656747463206864",
+        "question_id": "1991926456759105516",
+        "title": "未来生成式AI和程序员要如何协作？",
+        "desc": "让DeepSeek能读懂代码，直接用源代码跟它对话效率很高，但是自然语言到代码这种逻辑语言的转换必须人工完成。",
+        "created_time": 1767866390,
+        "updated_time": 1767920516,
+        "voteup_count": 19,
+        "comment_count": 4,
+        "source_keyword": "生成式AI",
+        "user_id": "f34421c66b88d3f703fdefd24f4b1904",
+        "user_link": "https://www.zhihu.com/people/netwarm007",
+        "user_nickname": "文礼",
+        "user_avatar": "https://pica.zhimg.com/50/v2-f3ef123959d86274a1227bcac238c0df_l.jpg?source=4e949a73",
+        "user_url_token": "netwarm007",
+        "last_modify_ts": 1776035699419
+    }
+]

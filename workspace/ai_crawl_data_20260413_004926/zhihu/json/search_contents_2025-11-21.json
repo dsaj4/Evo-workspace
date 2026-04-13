@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1975345390929848295",
+        "question_id": "",
+        "title": "使用claude，降低论文AIgc",
+        "desc": "",
+        "created_time": 1763773155,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "aigc",
+        "user_id": "2afc7d47522055f1312b34ae1cf3ca59",
+        "user_link": "https://www.zhihu.com/people/ai-25-28-6",
+        "user_nickname": "阿坦说ai",
+        "user_avatar": "https://picx.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "ai-25-28-6",
+        "last_modify_ts": 1775888298121
+    },
+    {
+        "content_id": "1975505584490034777",
+        "content_type": "answer",
+        "content_text": "感谢邀请，这题我回答比刘若川老师的那条邀请稍微专业点，周志华老师的当选是因为他在国际机器学习领域长达二十余年的系统性创新，他开创的决策域概念和面向开放环境的机器学习理论框架，从根本上解决了传统模型在面对数据不充分，概念多义和动态环境时的核心瓶颈，这是基础理论的突破，也让周老师获得了两项国家自然科学二等奖，并推动中国在人工智能基础研究领域跻身国际前沿，作为国际人工智能联合会（IJCAI）首位来自中国大陆的理事会主席，他不仅实现了华人学者在人工智能顶级学术组织领导层的突破，更通过创建南京大学人工智能学院这一完整的本硕博培养体系，成功将前沿研究转化为教育实践，他提出的产-学-研-用闭环培养模式，以及被全球百余高校采用的《机器学习》（西瓜书）教材，共同构建了中国人工智能人才培育的标杆范式，周老师当选既是对他在基础理论，国际影响与教育创新三个方面突出贡献的认定，也标志着中国在人工智能基础研究领域已形成从理论突破，国际话语权构建到人才培养体系创新的完整生态，彰显了周老师的学术追求与国家科技战略发展的深度共鸣",
+        "content_url": "https://www.zhihu.com/question/1975152430225326104/answer/1975505584490034777",
+        "question_id": "1975152430225326104",
+        "title": "如何看待南京大学副校长、人工智能领域知名学者周志华当选为中国科学院院士？",
+        "desc": "https://baijiahao.baidu.com/s?id=1849364532403671690&amp;wfr=spider&amp;for=pc",
+        "created_time": 1763777234,
+        "updated_time": 1763777336,
+        "voteup_count": 42,
+        "comment_count": 13,
+        "source_keyword": "人工智能",
+        "user_id": "2196eb7ecbaef964a4053a8fd339d567",
+        "user_link": "https://www.zhihu.com/people/agamemnon-57",
+        "user_nickname": "Agamemnon",
+        "user_avatar": "https://picx.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "agamemnon-57",
+        "last_modify_ts": 1775893739589
+    }
+]

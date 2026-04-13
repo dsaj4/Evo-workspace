@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2020508038600083089",
+        "content_type": "answer",
+        "content_text": "推荐openteams，我开发的多agent协作产品，开源免费，只需要你有api key。支持一键开启你的AI团队，体验支配AI的乐趣。（温馨提示：多agent消耗token更快，请捂好你的钱包～）",
+        "content_url": "https://www.zhihu.com/question/1908081686039733919/answer/2020508038600083089",
+        "question_id": "1908081686039733919",
+        "title": "有什么好用的 AI Agent 工具？",
+        "desc": "推荐openteams，我开发的多agent协作产品，开源免费，只需要你有api key。支持一键开启你的",
+        "created_time": 1774506655,
+        "updated_time": 1774506721,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "b8788d63d7b5792b90ff56f8d5e81746",
+        "user_link": "https://www.zhihu.com/people/ga-ga-ga-ga-ga-ga-ga-ga-ga-95",
+        "user_nickname": "Mingy",
+        "user_avatar": "https://picx.zhimg.com/50/v2-9b13c3f251874f1c9adfbe85ac8f53fd_l.jpg?source=4e949a73",
+        "user_url_token": "ga-ga-ga-ga-ga-ga-ga-ga-ga-95",
+        "last_modify_ts": 1776003649072
+    },
+    {
+        "content_id": "2020502631425011776",
+        "content_type": "answer",
+        "content_text": "我觉得这个要先定义清楚AI Agent的概念，然后再才能去推荐符合定义的产品。以目前最广泛的定义AI Agent包含四个主要特征：LLM大脑，工具使用，记忆，反馈感知。那我们来看符合定义的产品有哪些。首先是最流行的code agent：codex/gpt agent, claude code/cowork, opencode/opencowork, kilo code等等这里面毋庸置疑，claude是断档领先，对于很多通用任务他都能胜任。然后就是宣称的通用智能体，比如manus, openclaw, devin等。他们和code agent最大的差异是提供了一套适合agent运行的专属环境，这也是它们最大的优势，不去限制LLM做任何探索，任务效果也会更好，尽管底层用的都是同样的模型。这一类应该说manus的效果是最好的。还有其他没涉及到的，其他朋友可以补充。如果你不认同我的观点，那么请提出你的看法我们一起交流。",
+        "content_url": "https://www.zhihu.com/question/12665738671/answer/2020502631425011776",
+        "question_id": "12665738671",
+        "title": "有哪些好用的AI agent推荐?",
+        "desc": "AI agent是对个人工作提效的利器，推荐你使用过比较好用的",
+        "created_time": 1774505366,
+        "updated_time": 1774505366,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "b8788d63d7b5792b90ff56f8d5e81746",
+        "user_link": "https://www.zhihu.com/people/ga-ga-ga-ga-ga-ga-ga-ga-ga-95",
+        "user_nickname": "Mingy",
+        "user_avatar": "https://pica.zhimg.com/50/v2-9b13c3f251874f1c9adfbe85ac8f53fd_l.jpg?source=4e949a73",
+        "user_url_token": "ga-ga-ga-ga-ga-ga-ga-ga-ga-95",
+        "last_modify_ts": 1776003649073
+    }
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "comment_id": "11445303031",
+        "parent_comment_id": "0",
+        "content": "这必须提到AiPy了，skill本质上就是工作流，将已有的东西丢给ai学习，整理出一套流程，再遇到类似的问题直接触发复用我把我写的十篇文章丢给AiPy，让aipy分析和学习写作结构和风格并打包成skill，aipy直接从分析开始，打包成skill之后一句话就能调用，写的文章可以直接用",
+        "publish_time": 1774252227,
+        "ip_location": "北京",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2012493085192528374",
+        "content_type": "article",
+        "user_id": "8c7f7b550a0a34cd321a8754d82e363b",
+        "user_link": "https://www.zhihu.com/people/wswyf7tv",
+        "user_nickname": "AI工程师",
+        "user_avatar": "https://picx.zhimg.com/v2-25ac7c0d6225fc37e7f4419d75895b22_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776000572295
+    }
+]

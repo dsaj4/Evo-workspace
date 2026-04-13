@@ -1,0 +1,62 @@
+[
+    {
+        "user_id": "3546860354538082",
+        "nickname": "硅谷101播客",
+        "sex": "保密",
+        "sign": "这是一档分享当下最新鲜的技术、知识与思想的科技播客。旗下同名视频栏目：硅谷101",
+        "avatar": "https://i1.hdslb.com/bfs/face/1ced3d5b3600201f2747cbc346748a7e6655597d.jpg",
+        "last_modify_ts": 1774588739614,
+        "total_fans": 84419,
+        "total_liked": 54509,
+        "user_rank": 5,
+        "is_official": -1
+    },
+    {
+        "user_id": "9142182",
+        "nickname": "CoCoVii",
+        "sex": "保密",
+        "sign": "欢迎回来",
+        "avatar": "https://i0.hdslb.com/bfs/face/1d813531129b01ad3c5c2d53f60d10a55092a3d5.jpg",
+        "last_modify_ts": 1774588739622,
+        "total_fans": 628880,
+        "total_liked": 1540557,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "3546566589679687",
+        "nickname": "废才俱乐部Club",
+        "sex": "保密",
+        "sign": "每期更新一集AIGC保姆教程",
+        "avatar": "https://i1.hdslb.com/bfs/face/919872919951548987577c57d6c2e054ab455faa.jpg",
+        "last_modify_ts": 1774588739637,
+        "total_fans": 55991,
+        "total_liked": 50658,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "1612794",
+        "nickname": "英国小哥KalexWillzy",
+        "sex": "男",
+        "sign": "英国小哥KalexWillzy官方频道\n合作联系 助理vx：1085391953（注明来意）\n加粉丝群联系：1525662318",
+        "avatar": "https://i0.hdslb.com/bfs/face/ab3e788c3e9f381c8367560f9c0c192b3da00a58.jpg",
+        "last_modify_ts": 1774588739650,
+        "total_fans": 439688,
+        "total_liked": 2838712,
+        "user_rank": 6,
+        "is_official": 0
+    },
+    {
+        "user_id": "3546666563012657",
+        "nickname": "通用人工智障",
+        "sex": "保密",
+        "sign": "人工智障扎堆的AI公司",
+        "avatar": "https://i2.hdslb.com/bfs/face/8e01c4496da5655f491c16ecc1b2f3656e695e9e.jpg",
+        "last_modify_ts": 1774588739662,
+        "total_fans": 1185,
+        "total_liked": 3480,
+        "user_rank": 3,
+        "is_official": -1
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1985368505298739369",
+        "content_type": "answer",
+        "content_text": "国产端侧npu，感觉要拥抱triton了。难道国产训练卡要拥抱tilelang了吗？感觉所有工作变为了如何在拥抱torch的基础上，把torch算子导向自己的计算硬件。",
+        "content_url": "https://www.zhihu.com/question/1985357653854151432/answer/1985368505298739369",
+        "question_id": "1985357653854151432",
+        "title": "国产ai芯片热浪下，tilelang是不是要把tvm救活了？",
+        "desc": "最近火热的国产芯片上市并市值纷纷超越百度。我最近用了tilelang一下，确实不用关注mma的形状和matirx的load了，那是不是tilelang成为了事实上的国产高性能算子的大旗了。我的个人经验发现虽然tvm再多后端上言过其实，但是针对nvidia平台没有问题，多后端支持力度不够是因为没有人适配。如果不考虑端侧arm，只考虑x86 ubuntu下，我感觉没问题呀。我个人发现（单纯个人观点），可能tvm适配新硬件比triton的mlir更简单。那是不是tilelang成为了国产芯片高性能算子的一个比较佳的dsl选择呢？",
+        "created_time": 1766128738,
+        "updated_time": 1766129302,
+        "voteup_count": 10,
+        "comment_count": 2,
+        "source_keyword": "AI芯片",
+        "user_id": "92e125ef94ab001bb0c3d96ea03eb2f7",
+        "user_link": "https://www.zhihu.com/people/wang-yang-37-99",
+        "user_nickname": "王多鱼",
+        "user_avatar": "https://picx.zhimg.com/50/v2-774d0909f010e7459b8883bd5b673836_l.jpg?source=4e949a73",
+        "user_url_token": "wang-yang-37-99",
+        "last_modify_ts": 1776066213085
+    },
+    {
+        "content_id": "1985355534883395518",
+        "content_type": "answer",
+        "content_text": "Nanobanana Pro啊，最近玩的挺爽的！！这个就是做图神器，下面就分享一下我在imini上用Nanobanana Pro生成的图。当然这个图是有问题的，但是重新生成一下就行了。此外，还可以去做其他事情，比如雪地里作画。还有其他角色的拆解。",
+        "content_url": "https://www.zhihu.com/question/652529546/answer/1985355534883395518",
+        "question_id": "652529546",
+        "title": "大家目前用的都是哪款Ai？",
+        "desc": "Nanobanana Pro啊，最近玩的挺爽的！！这个就是做图神器，下面就分享一下我在imini上用Nanobanana Pro生成的图。&lt;/",
+        "created_time": 1766125645,
+        "updated_time": 1766125645,
+        "voteup_count": 164,
+        "comment_count": 21,
+        "source_keyword": "AI芯片",
+        "user_id": "937bd6ae15b9e52fb2f3a965c297c635",
+        "user_link": "https://www.zhihu.com/people/qian-jiu-se",
+        "user_nickname": "卖鱼很强",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-07ec190ca9c9d61d4f503d06de65633f_l.jpg?source=4e949a73",
+        "user_url_token": "qian-jiu-se",
+        "last_modify_ts": 1776066364871
+    }
+]

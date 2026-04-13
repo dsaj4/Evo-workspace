@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2001985411640217769",
+        "content_type": "answer",
+        "content_text": "先说结论，给个不太讨喜、但我认为比较真实的判断：现在绝大多数被称为“Agent 自进化”的系统，本质上还停留在可控策略更新+外部评价驱动阶段，而不是完整意义上的自进化。 但这不意味着这个方向是空谈—— 恰恰相反，我们已经第一次看到“可工程化的进化雏形”。最近一年，从 Meta FAIR 的 SPiCE 到 腾讯 AI Lab 西雅图实验室的 R-Zero 再到 上海交通大学 的 SEAgent、 以及 Google DeepMind 的 Evo-Memory 评测体系大家都在用一个词：Self-Evolving Agent。但问题在于，这个词目前没有一个工程层面的共识定义，于是出现了三种常见“混用”：把 持续学习 叫自进化  把 在线学习 叫自进化  把 策略参数会变 叫自进化 这些在论文里也许说得通，但在系统工程里，不够用。如果非要给一个可操作的定义，我会这么说：Agent 的自进化，是指系统在无人工规则介入的前提下，能够基于自身运行结果，持续重构其“能力结构”，并在长期尺度上表现出可验证的性能跃迁。注意几个关键词：无人工规则介入重构能力结构长期尺度可验证跃迁这几个词，基本把“噱头”和“真实进化”区分开了。",
+        "content_url": "https://www.zhihu.com/question/2001807131335223283/answer/2001985411640217769",
+        "question_id": "2001807131335223283",
+        "title": "AI Agent的「自进化」到底指什么?该用什么标准来判断一个系统是否真正实现了自进化?",
+        "desc": "从Meta FAIR实验室的SPiCE框架到腾讯AI西雅图实验室的R-Zero系统，从上海交通大学的SEAgent到Google DeepMind的Evo-Memory评测体系... 2025年涌现的数十项顶会研究共同指向一个事实：Agent的自我进化已经从理论猜想走向了技术现实。那么对于 Agent「自进化」，是否有一个相对清晰、可操作的定义？如何区分“持续学习”“在线学习”“策略更新”与真正意义上的“自进化”？是否可以建立一套核心判据或理解框架，来判断一个系统是否具备自进化能力？来AI AMA一起讨论~AI AMA首期深度圆桌 | Agent如何“在经验中成长”：关于自进化的关键问题与技术路径对谈",
+        "created_time": 1770090517,
+        "updated_time": 1770090517,
+        "voteup_count": 9,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "88e8db4c7702ff5ca9137c064e0a4e0e",
+        "user_link": "https://www.zhihu.com/people/fanstuck",
+        "user_nickname": "fanstuck",
+        "user_avatar": "https://pica.zhimg.com/50/v2-646cb8cc89cdaff500c2fe8c74a606b1_l.jpg?source=4e949a73",
+        "user_url_token": "fanstuck",
+        "last_modify_ts": 1776003978026
+    }
+]

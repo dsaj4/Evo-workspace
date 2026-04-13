@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2017935562867234566",
+        "content_type": "answer",
+        "content_text": "无法解决每个人的责任都只能由自己来负责这个世界是不存在完美假设回答和应对策略的",
+        "content_url": "https://www.zhihu.com/question/2017198338651469682/answer/2017935562867234566",
+        "question_id": "2017198338651469682",
+        "title": "AI 医疗普及过程中，数据隐私、算法偏见和责任归属等伦理问题如何平衡解决？",
+        "desc": "AI 在医疗决策中越来越重要，但如果 AI 诊断错误，责任谁来承担？患者数据被用来训练算法，隐私如何保障？这些都是我们不能回避的现实问题。",
+        "created_time": 1773893329,
+        "updated_time": 1773893329,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI医疗",
+        "user_id": "f6556cfbf24307ee5dc94524accc605d",
+        "user_link": "https://www.zhihu.com/people/wang-jin-cheng-18-1",
+        "user_nickname": "恶语向壬",
+        "user_avatar": "https://picx.zhimg.com/50/v2-e06a58f4720c1284c7f20d550b049035_l.jpg?source=4e949a73",
+        "user_url_token": "wang-jin-cheng-18-1",
+        "last_modify_ts": 1776064529264
+    },
+    {
+        "content_id": "2017916150655255345",
+        "content_type": "answer",
+        "content_text": "在今年两会中，全国人大代表、好医生集团董事长耿福能呼吁国家鼓励支持基层医生使用 AI 智能体并设立专项补助金，这一建言精准切中了基层医疗诊疗能力不足、优质医疗资源匮乏的行业痛点，而 AI 好医生诊疗支持系统正是应基层医疗发展需求打造的专属智能诊疗辅助产品，是科技赋能基层医疗的核心落地载体。好医生云医疗集团打造的AI好医生诊疗支持系统，精准对接基层医疗诊疗能力不足、优质资源匮乏的痛点，以专业的AI技术为基层医生赋能。近期，其专业实力也得到了行业的高度认可，继同源底层基座模型——全诊医学大模型（Trizen-Med-Omni）获评MedAIBench测评榜“优秀国产医疗大模型”的基础上，它又在博鳌企业论坛暨博鳌健康产业论坛中斩获“AI人工智能卓越产品”。这不仅是行业对该系统技术实力与产品价值的双重肯定，更是对好医生云医疗集团以科技赋能基层医疗、践行民生服务理念的高度认可。",
+        "content_url": "https://www.zhihu.com/question/65159722/answer/2017916150655255345",
+        "question_id": "65159722",
+        "title": "医疗+AI 还是 医疗+金融？？？",
+        "desc": "当前要决定工作方向了，有点困惑，求大神指点。坐标北京，学校211 985，大龄，18年毕业，本科学医，硕士应用统计，现在在一家医疗AI创业公司实习，做的是影像识别。能用Python，TensorFlow，水平不高，刚刚能自己琢磨解决实际问题的那种。没有金融行业实习经验，没有金融相关证书。马上要开始求职了，请问医疗AI行业和券商医疗板块，哪个比较有前途，或者说，钱多？请原谅我如此世俗求大神解惑",
+        "created_time": 1773888701,
+        "updated_time": 1773888701,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI医疗",
+        "user_id": "677b8e399ee2247c849e27867588804f",
+        "user_link": "https://www.zhihu.com/people/7-69-46-77-95",
+        "user_nickname": "好医生云医疗",
+        "user_avatar": "https://picx.zhimg.com/50/v2-db9fa219c4a13217eb30283581a7594c_l.jpg?source=4e949a73",
+        "user_url_token": "7-69-46-77-95",
+        "last_modify_ts": 1776064529265
+    }
+]

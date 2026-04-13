@@ -1,0 +1,44 @@
+{
+  "summary": {
+    "total_comments": 142426.0,
+    "insecurity_comments": 1679.0,
+    "insecurity_ratio": 0.01178857792818727,
+    "platform_count": 4.0,
+    "unique_dates": 380.0
+  },
+  "platform_test": {
+    "rate_a": 0.021902960851280025,
+    "rate_b": 0.008568220764639839,
+    "rate_diff": 0.013334740086640186,
+    "z_score": 19.833015976182573,
+    "p_value": 1.5449260477547415e-87
+  },
+  "query_test": {
+    "chi_square": 113.45572973613277,
+    "p_value": 0.0001999600079984003,
+    "iterations": 5000.0,
+    "eligible_query_count": 11.0
+  },
+  "trend_test": {
+    "slope": 2.293009577436799e-05,
+    "intercept": -0.000868207628412315,
+    "p_value": 0.0001999600079984003,
+    "start_value": 0.0,
+    "end_value": 0.0,
+    "mean_value": 0.003316534850409843,
+    "n_days": 366.0,
+    "first_date": "2024-10-12",
+    "last_date": "2026-03-30"
+  },
+  "overall_trend_test": {
+    "slope": 3.8521406200417235e-05,
+    "intercept": -0.0005453471157833519,
+    "p_value": 0.0001999600079984003,
+    "start_value": 0.0,
+    "end_value": 0.011089367253750815,
+    "mean_value": 0.006754459359195711,
+    "n_days": 380.0,
+    "first_date": "2024-10-12",
+    "last_date": "2026-04-13"
+  }
+}

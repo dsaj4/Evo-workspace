@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1989831503203563076",
+        "content_type": "answer",
+        "content_text": "其实AS上面可能也就30tflops，优化kernel要的精力和技术一个不少。但b卡已经到bf16 2000tflops， fp4 已经15pflops，中间差了两三个数量级。做AS收益不大。",
+        "content_url": "https://www.zhihu.com/question/633585779/answer/1989831503203563076",
+        "question_id": "633585779",
+        "title": "如何看待苹果发布的 MLX 机器学习框架？",
+        "desc": "其实AS上面可能也就30tflops，优化kernel要的精力和技术一个不少。但b卡已经到bf16 2000tflops， fp4 已经15pflops，中间差了两三个数量级。做AS收益不大。",
+        "created_time": 1767192799,
+        "updated_time": 1767192799,
+        "voteup_count": 17,
+        "comment_count": 12,
+        "source_keyword": "机器学习",
+        "user_id": "a36194d78020e6da6e43e4d40c739604",
+        "user_link": "https://www.zhihu.com/people/CPAPCF",
+        "user_nickname": "CPAPCF",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-a2bda54e4cc4f338dffa947755531b70_l.jpg?source=4e949a73",
+        "user_url_token": "CPAPCF",
+        "last_modify_ts": 1776005032706
+    }
+]

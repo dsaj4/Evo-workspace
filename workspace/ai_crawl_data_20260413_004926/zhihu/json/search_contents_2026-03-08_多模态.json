@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2014315190431270382",
+        "content_type": "answer",
+        "content_text": "本期解析字节大模型面试题：“多模态大模型的动态分辨率是怎么做的？”  目前主流的两种动态分辨率方案：  原生动态分辨率（Native Dynamic Resolution）  基于切片的动态分辨率（Dynamic Tiling）",
+        "content_url": "https://www.zhihu.com/question/2014313212640797318/answer/2014315190431270382",
+        "question_id": "2014313212640797318",
+        "title": "解释一下多模态大模型动态分辨率原理？",
+        "desc": "本期解析字节大模型面试题：“多模态大模型的动态分辨率是怎么做的？” 目前主流的两种动态分辨率方案： 原生动态分辨率（Native Dynamic Resolution） 基于切片的动态分辨率（Dynamic Tiling）",
+        "created_time": 1773030165,
+        "updated_time": 1773030165,
+        "voteup_count": 11,
+        "comment_count": 0,
+        "source_keyword": "多模态",
+        "user_id": "8bbf5fdfecee441128d0dacb56e2eb0d",
+        "user_link": "https://www.zhihu.com/people/kylin_7070",
+        "user_nickname": "古希腊代码之神",
+        "user_avatar": "https://picx.zhimg.com/50/v2-8a836789dacacb485776c1bf2ccbc771_l.jpg?source=4e949a73",
+        "user_url_token": "kylin_7070",
+        "last_modify_ts": 1776038618333
+    }
+]

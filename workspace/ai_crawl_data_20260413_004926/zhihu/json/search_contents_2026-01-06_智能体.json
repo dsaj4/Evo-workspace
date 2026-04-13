@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1992038949431043233",
+        "content_type": "answer",
+        "content_text": "Agent 比LLM的概念早40年，通用智能领域的概念，长期被Agent 霸占，比如DeepMind的AlphaStar ，OpenAI的Hide and Seek，Five，这些都是智能体，我们每个人想象的狭义上的、最符合直觉的AI，必然是个能自主行动的Agent，而不会是一问一答的App。但这些行为主义AI，都不是最终目标，目标是更通用，是AGI，甚至我们当时并不知道缺了什么。LLM天然有智能通用性，它实际上对“语言”这个已经被压缩过的世界符号，又重新进行了二次压缩，使得LLM可以掌握非常大量的世界知识。不再需要通过数亿次的失败，去学习“开门需要转动把手”，它通过阅读文本就已经知道了这个物理常识。这就是Karpathy 说的用来冷启动的“基因”。一个由Gemini驱动的机器人，看到门把手，绝对不会用力去撞。所以，不是我们在LLM上发现了Agent的议题，LLM 是AI Agent数十年来，一直想要找的那个通用大脑。比如AutoGPT，它在GPT4发布之后，很快就出现了。这说明人类对LLM Agent 已经急不可耐。单一的强化学习，没有办法达到通用性。虽然Sonnet 3.6已经具备了Agent能力和computer use这些功能。但直到ReAct，边想边做，这个概念的成熟，AI Agent才迎来了全新的革命。最早比较惊艳的Agent，应该就是Claude Code和OpenAI o3吧。",
+        "content_url": "https://www.zhihu.com/question/1890676371006674485/answer/1992038949431043233",
+        "question_id": "1890676371006674485",
+        "title": "我们对智能体的了解少之又少，为什么是在大模型语言出现之后才被发现？",
+        "desc": "我们都知道很多人是在大模型语言出现之后，才知道智能体在很早就出现了，我们难道是没有发现他潜在的威力吗？",
+        "created_time": 1767719095,
+        "updated_time": 1767719095,
+        "voteup_count": 44,
+        "comment_count": 0,
+        "source_keyword": "智能体",
+        "user_id": "bea84fe95aee12a6939ee59dde16d1b3",
+        "user_link": "https://www.zhihu.com/people/yu-you-56-63",
+        "user_nickname": "Trisimo崔思莫",
+        "user_avatar": "https://picx.zhimg.com/50/v2-f85c56a14245993531a1c36c47721ee4_l.jpg?source=4e949a73",
+        "user_url_token": "yu-you-56-63",
+        "last_modify_ts": 1776003386968
+    }
+]

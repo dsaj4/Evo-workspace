@@ -1,0 +1,53 @@
+[
+    {
+        "comment_id": "11428372220",
+        "parent_comment_id": "0",
+        "content": "其实垂直类根本没用，通用大模型能力更强，只要有上下文，比你专业样本训练出来的东西都好。",
+        "publish_time": 1772464620,
+        "ip_location": "爱尔兰",
+        "sub_comment_count": 0,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "2011375952995845226",
+        "content_type": "answer",
+        "user_id": "2685e02eaf725a279fc86e9b6b3e2de1",
+        "user_link": "https://www.zhihu.com/people/zheng-xiao-bin-92",
+        "user_nickname": "郑晓斌",
+        "user_avatar": "https://picx.zhimg.com/v2-d70ddd82b5740d4cdb7ef4c2dc232241_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775927631565
+    },
+    {
+        "comment_id": "11428952514",
+        "parent_comment_id": "0",
+        "content": "有个评论说的很对：experienced lawyers have enough leverage and knowledge to turn their AI tools into a real working partner However, for new law grads, who are probably crazy about AI and haven’t Developed their own experience and skill,",
+        "publish_time": 1772460178,
+        "ip_location": "中国香港",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2011375952995845226",
+        "content_type": "answer",
+        "user_id": "60faddcd78510391b8aaa82222cef663",
+        "user_link": "https://www.zhihu.com/people/canizares",
+        "user_nickname": "张曰",
+        "user_avatar": "https://pica.zhimg.com/80edde155_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775927631566
+    },
+    {
+        "comment_id": "11428575089",
+        "parent_comment_id": "11428952514",
+        "content": "ai对于某个领域的纯外行，可以快速并相对准确的提输出一点最基本的常识。一旦提升输出要求，就需要使用者自身的知识储备和能力。否则连提出准确的问题都做不到。",
+        "publish_time": 1772461406,
+        "ip_location": "北京",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2011375952995845226",
+        "content_type": "answer",
+        "user_id": "c0285c839e1b9ed75ffcf44355894e98",
+        "user_link": "https://www.zhihu.com/people/shihuabuhaoting",
+        "user_nickname": "文开石",
+        "user_avatar": "https://pic1.zhimg.com/v2-9aca55f87f85ade46882a697ecd1efdc_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775927633342
+    }
+]

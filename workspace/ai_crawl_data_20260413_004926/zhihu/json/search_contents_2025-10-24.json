@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1965400246227011482",
+        "content_type": "answer",
+        "content_text": "这个问题涉及到一个重要问题：我们如何理解今天的AI。详细可以参考此文：2025年理解人工智能的核心视角：任何可解决且易于验证的任务最终都将被人工智能征服过去几年AI的快速发展，容易的问题基本已经接近完美解决，证据就是很多原来的测试集接近100%正确。如下图：GPT-5在AIME25上的为满分接下来很长的阶段，AI的进展将成锯齿状前景，不同领域进展速度不同，甚至有些领域会长期停滞不前",
+        "content_url": "https://www.zhihu.com/question/1961333690845099804/answer/1965400246227011482",
+        "question_id": "1961333690845099804",
+        "title": "当前人工智能的发展是否已经进入瓶颈期？",
+        "desc": "过去几年，人工智能（尤其是大模型和生成式 AI）取得了惊人的进展。从 GPT、Claude 到国产模型，技术迭代速度前所未有。然而，最近也有人认为 AI 创新似乎在放缓：模型趋于同质化，成本高企，实际应用落地仍有限。我想请教大家：当前的 AI 发展是否真的到了一个“瓶颈期”？ 未来几年 AI 的突破方向可能会在哪里？（例如多模态智能、Agent、自主学习、符号推理等） 你如何看待人工智能研究与应用的长期趋势？希望能听到科研人员、从业者以及普通用户的不同视角。",
+        "created_time": 1761367934,
+        "updated_time": 1761468918,
+        "voteup_count": 23,
+        "comment_count": 7,
+        "source_keyword": "人工智能",
+        "user_id": "646e30948d93aa29e766eb4a6b11a1ba",
+        "user_link": "https://www.zhihu.com/people/kevin-71-87-23",
+        "user_nickname": "数据与AI爱好者",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-a0aa0a20b8ad92c04f7878e96fbdb424_l.jpg?source=4e949a73",
+        "user_url_token": "kevin-71-87-23",
+        "last_modify_ts": 1775894367362
+    },
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1965310398778565538",
+        "question_id": "",
+        "title": "ONNX人工智能技术与开发实践-第18讲",
+        "desc": "ONNX人工智能技术与开发实践-第18讲",
+        "created_time": 1761346564,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "人工智能",
+        "user_id": "95d525fd72264217208bbed33e549c6b",
+        "user_link": "https://www.zhihu.com/people/wujianming_110117",
+        "user_nickname": "吴建明wujianming",
+        "user_avatar": "https://pica.zhimg.com/50/v2-28c009e0dd42aec7069702709fd40989_l.jpg?source=4e949a73",
+        "user_url_token": "wujianming_110117",
+        "last_modify_ts": 1775894367365
+    }
+]

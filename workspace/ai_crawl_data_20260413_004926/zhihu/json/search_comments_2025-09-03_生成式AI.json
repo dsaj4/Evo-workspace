@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11279762882",
+        "parent_comment_id": "0",
+        "content": "确实，在AI技术的快速普及之下，我们有时会出现一些常识性的错误，这点确实是我们需要注意和加强的，赞同友友[赞同][赞同][赞同]",
+        "publish_time": 1756996361,
+        "ip_location": "辽宁",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1946860614636012927",
+        "content_type": "answer",
+        "user_id": "58960decb4ec8f9f972fe4ea4b31ed5c",
+        "user_link": "https://www.zhihu.com/people/88-72-77-47-23",
+        "user_nickname": "梅香寒",
+        "user_avatar": "https://picx.zhimg.com/v2-51f61d1a7ebc082591d857c33f60c487_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776035991313
+    },
+    {
+        "comment_id": "11282254742",
+        "parent_comment_id": "11279762882",
+        "content": "[感谢]",
+        "publish_time": 1757254251,
+        "ip_location": "甘肃",
+        "sub_comment_count": 0,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "1946860614636012927",
+        "content_type": "answer",
+        "user_id": "29c2f3bf4ceef7fe240a19c9247b4673",
+        "user_link": "https://www.zhihu.com/people/53-10-80-35-7",
+        "user_nickname": "兔子慧",
+        "user_avatar": "https://pic1.zhimg.com/v2-bedb54cf6c70e34293debf56ce49fe5d_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776035992015
+    }
+]

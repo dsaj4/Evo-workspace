@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1989675980193805637",
+        "question_id": "",
+        "title": "AI Agent（智能体）",
+        "desc": "#股票#概念股#AI Agent（智能体）#更多最新概念股：http://www.macd888.com",
+        "created_time": 1767155784,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "智能体",
+        "user_id": "80df9180cb8b65d981fd54a89bf5771d",
+        "user_link": "https://www.zhihu.com/people/25-80-31-33",
+        "user_nickname": "泡股",
+        "user_avatar": "https://pica.zhimg.com/50/v2-d25f2d862768ebcf30f6adf2b5dc316f_l.jpg?source=4e949a73",
+        "user_url_token": "25-80-31-33",
+        "last_modify_ts": 1776003386971
+    },
+    {
+        "content_id": "1989527732929970803",
+        "content_type": "answer",
+        "content_text": "小扎认证，必属废品。现在不会有好团队（一个还有业务理想的）公司，想被一个连LLM都没有的公司并购。这意味着你能拿到一笔钱，而公司的业务会在Meta人事绞肉机里走向荒废。某种意义上说，Manus接受收购，意思是：这公司我不要了，换点钱吧。Meta 可以称为 “AI独角兽公墓”。它通过天价收购来吸纳市场上所有具备威胁的创新芽孢，然后把它们塞进 Meta AI 那个混乱的、平庸的黑盒子里。我特别能理解小扎，就是那种自己做“甲方”时，仍不住要去指导“乙方”，而你自己又并不是特别懂，只是怕“乙方”像计程车一样带着你绕远路。小扎现在就陷入了“微观管理”的状态，极度焦虑，想手推进度，Alexandr Wang 老员工都受不了了。现在的Meta AI就是一锅煮沸的水，谁下锅谁熟。现在的小扎谁都不相信。一旦你选了“乙方”或者负责人，那就是一次赌博，你最好就是安单一点，不要去微观管理。如果感到焦虑，就去办公室卢一发。",
+        "content_url": "https://www.zhihu.com/question/1989274996632204228/answer/1989527732929970803",
+        "question_id": "1989274996632204228",
+        "title": "Meta 以数十亿美元收购 Manus，扎克伯格的个人背书对 AI 智能体发展有何影响？",
+        "desc": "扎克伯格是manus忠实用户",
+        "created_time": 1767120375,
+        "updated_time": 1767120375,
+        "voteup_count": 160,
+        "comment_count": 0,
+        "source_keyword": "智能体",
+        "user_id": "bea84fe95aee12a6939ee59dde16d1b3",
+        "user_link": "https://www.zhihu.com/people/yu-you-56-63",
+        "user_nickname": "Trisimo崔思莫",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-f85c56a14245993531a1c36c47721ee4_l.jpg?source=4e949a73",
+        "user_url_token": "yu-you-56-63",
+        "last_modify_ts": 1776003386972
+    }
+]

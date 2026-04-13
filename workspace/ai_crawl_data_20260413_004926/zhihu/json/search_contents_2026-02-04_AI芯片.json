@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2002768107991761771",
+        "content_type": "answer",
+        "content_text": "就着这个PPT看，坐着的动机大概就LLM解码阶段之前是内存瓶颈，但是MoE之类结构其实云端趋向于计算瓶颈/网络瓶颈。然后CPU比GPU有灵活性好开发（当年RNN时代好像也有这说法外加串行更快）。引入的设计就是高带宽L2 cache，异步GEMM，MXFP8。一点一点看：第一个L2cache部分，我觉得emmm，这玩意是在用GPU思路做NPU，这个高带宽L2如果改个名Shared memory（另外gpu还有reg file）。大概流程对比这样，GPGPU:HBM-&gt;L2&gt;Shared Memory-&gt;RegFile-&gt;Tensor CoreXSAU:DDR-&gt;HBL2-&gt;Matrix Unit如果考虑到regfile带宽，GPU应该还是好看不少，但是XSAI的话可能单个指令延迟会好看。第二个异步GEMM，这个活类似协处理器，CPU异步的调用计算单元处理。具体和CPU链接应该可以参考ARM SME那玩意的读取方式，不过那玩意同步的（倒是能OoO执行点别的东西）。Hopper也有似的TMA来做一些一部操作。相比Apple Silicon的ANE之类，XSAI是紧耦合计算完成后延迟低不少。第三个，没啥好说的。总的来看XSAI我觉得是把NV现在计算单元异步跑的特性放到CPU里，做一个更好的AI处理器，同时把读写瓶颈解决了下，挺有趣的增量工作？",
+        "content_url": "https://www.zhihu.com/question/1934918378545456675/answer/2002768107991761771",
+        "question_id": "1934918378545456675",
+        "title": "如何评价香山AI芯片架构设计?",
+        "desc": "视频地址：https://www.bilibili.com/video/BV1iJbSz9E2p 从 32:00 开始slides地址：XSAI (ξ) : Hardware Support for Modern LLM Kernels in a CPU Paradigm",
+        "created_time": 1770277126,
+        "updated_time": 1770277214,
+        "voteup_count": 25,
+        "comment_count": 0,
+        "source_keyword": "AI芯片",
+        "user_id": "1f18035e582cd4b246889f7b2fdfd1f4",
+        "user_link": "https://www.zhihu.com/people/Bluebear",
+        "user_nickname": "Bluebear",
+        "user_avatar": "https://picx.zhimg.com/50/v2-e12df1ed4b06d0d351d7a1408f6856af_l.jpg?source=4e949a73",
+        "user_url_token": "Bluebear",
+        "last_modify_ts": 1776065901808
+    }
+]

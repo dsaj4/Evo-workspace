@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11457662529",
+        "parent_comment_id": "0",
+        "content": "AiPy内置多种大模型，需要哪个都可以一键调用，结合LLM+Python，打破ai只能动手不能动脑的局限，开创ai运作新范式",
+        "publish_time": 1775644701,
+        "ip_location": "北京",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2025273563263805004",
+        "content_type": "article",
+        "user_id": "8c7f7b550a0a34cd321a8754d82e363b",
+        "user_link": "https://www.zhihu.com/people/wswyf7tv",
+        "user_nickname": "AI工程师",
+        "user_avatar": "https://pic1.zhimg.com/v2-25ac7c0d6225fc37e7f4419d75895b22_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775928720293
+    },
+    {
+        "comment_id": "11457390124",
+        "parent_comment_id": "0",
+        "content": "写了 8 年代码，这些工具我每天必用，今天整理一下分享给兄弟们。**1. JSON 格式化**接口调试必备，一键美化压缩验证。以前用 Chrome 插件，现在直接网页版，多浏览器通用。最爽的是支持三种操作：- 美化：4 空格缩进，嵌套层级一目了然- 压缩：去掉空格换行，直接粘贴到代码里- 验证：JSON 不合法直接报错，不用瞎找括号**2. Base64 编解码**前后端联调必备。特别是图片转 Base64 这个功能，做 Data URI 贼方便。我常用场景：- 小图标转 Base64 内嵌，减少 HTTP 请求- 接口参数加密解密- 图片预览不用上传服务器**3. 时间戳转换**再也不用心算时区了，支持毫秒级，UTC/北京时间一键互转。做日志分析、接口调试的时候，这个功能使用频率极高。**4. Markdown 转公众号**写技术博客的人懂，复制粘贴就能排版，微信公众号那个破编辑器谁用谁知道有多难用。支持：- 代码块高亮- 表格渲染- 图片居中- 一键复制到公众号后台**5. PDF 合并/拆分**合并合同、拆分资料页，之前都得开 Adobe Acrobat，现在浏览器搞定。我一般用来：- 把多个接口文档合并成一个 PDF- 从几百页的规范里提取需要的章节**这些工具我都在用 GenTools：**- 全免费，不用注册- 无广告，界面干净- 浏览器即用，不需要装软件- 本地处理，接口文档不用担心泄露**网站：http://www.gentools.com.cn**我一般用完就收藏了，书签栏一直保留着。有需要的兄弟可以试试。",
+        "publish_time": 1775717651,
+        "ip_location": "湖北",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2025273563263805004",
+        "content_type": "article",
+        "user_id": "5b438be6c56197e1504fbc33c5c63f93",
+        "user_link": "https://www.zhihu.com/people/gai-3-86",
+        "user_nickname": "GAI",
+        "user_avatar": "https://pic1.zhimg.com/v2-f2804feb3240c932f952b9e4496da3f6_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775928720293
+    }
+]

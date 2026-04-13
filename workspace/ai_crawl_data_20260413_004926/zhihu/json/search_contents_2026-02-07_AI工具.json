@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2003814331087869321",
+        "content_type": "article",
+        "content_text": "用Claude Code写代码的人，终于不用每次开新会话都从头解释项目背景了。顶GitHub开源热榜的一款持久化记忆系统Claude-Mem，直击AI编程助手最致命的痛点：跨会话失忆。Claude-Mem本身100%免费，还能帮你省token钱。它通过”三层渐进式披露”的检索架构，常规使用下能节省90% Token，测试阶段的“无尽模式”更是能把Token消耗砍掉95%，工具调用次数上限直接拉高20倍。给Claude Code装上”长期记忆”传统AI编程助手有个绕不开的问题，每次新会话都是一张白纸。昨天刚聊完的架构设计、上周敲定的编码规范、刚刚那些踩过的坑，AI统统不记得。开发者只能一遍遍重复解释，时间和Token都在这种“复读”中白白流失。Claude-Mem的解法是在本地环境搭建一套完整的记忆系统。它采用事件驱动架构，通过五个生命周期钩子（SessionStart、UserPromptSubmit、PostToolUse、Stop、SessionEnd）在后台静默运行。每当Claude Code执行文件读写、代码编辑、命令执行这类工具调用，系统都会自动把这些操作捕获下来，存成“观察记录”。存储方案走的是混合路线：SQLite配合FTS5负责全文检索，Chroma向量数据库则用来做语义搜索。所有数据都躺在用户本地的目录里，隐私方面不用担心。会话结束时系统会调用Claude Agent SDK，把整个会话期间那些冗长的原始工具使用记录，压缩成结构化的精炼摘要。包含调查内容、学习成果、已完成工作、后续步骤这几个关键模块。下次开新会话时，系统自动查库、检索、注入上下文，无缝衔接上回的工作。三层检索省下10倍TokenClaude-Mem最大的亮点是一套“渐进式披露”检索工作流。传统记忆系统做法把所有历史记录一股脑塞进上下文窗口，简单粗暴但极其烧钱。Claude-Mem反其道而行，把检索拆成三层：第一层是索引层，用search工具拉一个只包含ID、标题和类型的紧凑列表，每条结果大约只吃50到100个Token；第二层是时间线层，用timeline工具获取某条感兴趣记录前后的时序上下文；第三层才是完整细节，用get_observations根据筛选出的具体ID批量获取详情，单条成本在500到1000 Token之间。这套分层策略作用下，一个原本需要20000 Token才能完整加载的上下文，经过筛选后可能只需要3000 Token就能拿到所有必要信息，而且相关度是100%。处于测试阶段的无尽模式（Endless Mode）则更激进，它把工具输出实时压缩成大约500 Token的观察记录，Token节省率直接拉到95%。由于上下文窗口占用率大幅下降，工具调用次数上限也跟着水涨船高，提升了约20倍，处理那些又长又复杂的任务也不用担心不够用了。两条命令完成安装功能之外，Claude-Mem在用户体验上也下了功夫。它内置了mem-search技能，支持自然语言查询项目历史。想知道“上周修复了哪些bug”直接问就行。系统还提供了一个本地Web界面，可以实时查看记忆流、会话摘要，也能在稳定版和Beta版之间切换配置。隐私控制方面，用户可以用标签阻止敏感信息被记录，新版本还引入了双标签系统，控制粒度更细。安装流程走的是Claude Code插件市场，两条命令加一次重启就能搞定，不需要折腾复杂的环境配置。GitHubhttps://github.com/thedotmack/claude-mem—完—@量子位 · 追踪AI技术和产品新动态深有感触的朋友，欢迎赞同、关注、分享三连վ&#39;ᴗ&#39; ի ❤",
+        "content_url": "https://zhuanlan.zhihu.com/p/2003814331087869321",
+        "question_id": "",
+        "title": "AI编程节省95% token，工具调用上限狂飙20倍，开源记忆系统登顶GitHub热榜",
+        "desc": "顶GitHub开源热榜的一款持久化记忆系统Claude-Mem，直击AI编程助手最致命的痛点：跨会话失忆。 [图片] Claude-Mem本身100%免费，还能帮你省token钱。 它通过”三层渐进式披露”的检索架构，常规使用下能节省90% Token，测试阶段的“无尽模式”更是能把Token消耗砍掉95%，工具调用次数上限直接拉高20倍",
+        "created_time": 1770526696,
+        "updated_time": 1770526696,
+        "voteup_count": 149,
+        "comment_count": 20,
+        "source_keyword": "AI工具",
+        "user_id": "36f69162230003d316d0b8a6d8da20ba",
+        "user_link": "https://www.zhihu.com/people/liang-zi-wei-48",
+        "user_nickname": "量子位",
+        "user_avatar": "https://pica.zhimg.com/50/v2-ca6e7ffc10a0d10edbae635cee82d007_l.jpg?source=4e949a73",
+        "user_url_token": "liang-zi-wei-48",
+        "last_modify_ts": 1776000614515
+    }
+]

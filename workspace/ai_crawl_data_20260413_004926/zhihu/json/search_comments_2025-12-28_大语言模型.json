@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11396530512",
+        "parent_comment_id": "0",
+        "content": "+1 全部推倒重来",
+        "publish_time": 1768806321,
+        "ip_location": "浙江",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1988924815969653111",
+        "content_type": "answer",
+        "user_id": "e50a8664cba703b57aa5da5b9d129792",
+        "user_link": "https://www.zhihu.com/people/ctin-28",
+        "user_nickname": "老实的搬砖工人",
+        "user_avatar": "https://pic1.zhimg.com/v2-85e19b90872a4d39de165be5a20d92a9_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038181984
+    },
+    {
+        "comment_id": "11397035929",
+        "parent_comment_id": "11396530512",
+        "content": "知识没有倒，还是能用的，进入一个新的领域，走一遍从 0 开始的学习",
+        "publish_time": 1768836667,
+        "ip_location": "北京",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1988924815969653111",
+        "content_type": "answer",
+        "user_id": "8596a81a9a3f34103c39203aeb3f3485",
+        "user_link": "https://www.zhihu.com/people/cswuyg",
+        "user_nickname": "银光",
+        "user_avatar": "https://picx.zhimg.com/e6c4edf400c12730a71fafa8c5531377_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776038182338
+    }
+]

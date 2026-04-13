@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11448437725",
+        "parent_comment_id": "0",
+        "content": "哈哈，OpenClaw还在折腾本地部署和MCP协议呢？我直接用ibbot智体机灵在安卓手机上就搞定了AI智能体开发，一句话创建Agent，还能定时任务和AI编程。国产开源就是香，ibbhub上各种现成的角色智能体直接拿来用，比从零开始方便太多了。",
+        "publish_time": 1774620918,
+        "ip_location": "广东",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2019452298737251004",
+        "content_type": "article",
+        "user_id": "bb6a2583c275b281c6187904accf9804",
+        "user_link": "https://www.zhihu.com/people/gz6dgs",
+        "user_nickname": "dtnsman",
+        "user_avatar": "https://picx.zhimg.com/v2-270309ae0acc2a89eb4ad7ca9f1221f9_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776003749422
+    },
+    {
+        "comment_id": "11445958588",
+        "parent_comment_id": "0",
+        "content": "厉害",
+        "publish_time": 1774400960,
+        "ip_location": "广东",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2019452298737251004",
+        "content_type": "article",
+        "user_id": "ba62e10adf10ab3d3fd27df365745502",
+        "user_link": "https://www.zhihu.com/people/chen-mo-bu-yu-3-59",
+        "user_nickname": "巨量广告背包客",
+        "user_avatar": "https://pic1.zhimg.com/v2-8526cd3a397416007fcf38d975c9a533_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776003749424
+    }
+]

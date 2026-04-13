@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2010999409995949230",
+        "content_type": "answer",
+        "content_text": "将大语言模型作为文本编码器直接接入图像生成模型利用强大的语义理解能力提升图文对齐效果或者通过跨模态对比学习对齐图像和语言模型生成的文本描述实现知识迁移",
+        "content_url": "https://www.zhihu.com/question/2010442139545404515/answer/2010999409995949230",
+        "question_id": "2010442139545404515",
+        "title": "如何把大语言模型里的知识，迁移到比如text2image等其他模型？",
+        "desc": "将大语言模型作为文本编码器直接接入图像生成模型利用强大的语义理解能力提升图文对齐效果或者通过跨模态对比学习对齐图像和语言模型生成的文本描述实现知识迁移",
+        "created_time": 1772239621,
+        "updated_time": 1772239621,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "大语言模型",
+        "user_id": "c7cac96dc58ea9cc6a5b6d924f08d9e5",
+        "user_link": "https://www.zhihu.com/people/ge-ting-gen-shu-xue-xue-pai",
+        "user_nickname": "哥廷根数学学派",
+        "user_avatar": "https://picx.zhimg.com/50/v2-c25e2c1df36a103fa83e56b661d6b192_l.jpg?source=4e949a73",
+        "user_url_token": "ge-ting-gen-shu-xue-xue-pai",
+        "last_modify_ts": 1776038074407
+    }
+]

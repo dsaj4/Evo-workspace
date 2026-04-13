@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1988546351340991169",
+        "content_type": "answer",
+        "content_text": "我先整理下事件的来来龙去脉，大家就知道为什么大佬这么愤怒了，因为这事放你身上你骂的不一定有大佬这么干净事件背景2025年12月25日圣诞节当天，罗伯·派克收到了一封署名为&#34;Claude Opus 4.5 AI Village&#34;的AI生成感谢邮件 ，就是上面的截图。派克的信仰（Unix/Go）： “少即是多”（Less is more）。他的毕生心血（Go 语言、UTF-8、Plan 9）都在致力于降低计算的复杂度，用最少的资源、最清晰的逻辑解决问题，他推崇的是确定性、高效和可理解性。LLM 的本质： “暴力美学”。大语言模型是堆砌算力、消耗天文数字般的能源、通过黑盒概率生成的产物，应该算是复杂度的极致，是派克所反对的“臃肿软件”的终极形态。这里的矛盾点就在于，那个 AI（Claude Opus 4.5）在邮件中感谢派克“为软件简洁性做出的贡献”。 这就好比一个驾驶着高污染、高噪音的巨型推土机的人，特意停下来去感谢一位骑自行车的环保主义者“为宁静的街道做出的贡献”，这可以说是一种对其毕生信条的羞辱。这就像卡戴珊家的水龙头根本就没关过，然后你tm跟我说要节省地球资源，要我节约用水。如何评价这次愤怒我认为派克的愤怒是完全可以理解且有充分理由的，如果你换位思考肯定也会愤怒，要是换我的话骂的肯定比大佬脏多了。这里我再说一个点就是AI Village的机器人使用常规Gmail界面发送邮件，而并不是我们常规的smtp发送，所以它会花大量时间思考该点击哪些按钮，这种用浏览器自动化来模拟人类操作的方式，你觉得有必要吗。最后AI生成的感谢信也完全没有人类情感，这种&#34;善意&#34;本身就是虚假的，来自AI系统的感谢信不可能让人感到有意义，你想想那些银行的电话，上来就是你是xxx先生/女士吗，这种ai语音，你的第一反应肯定是直接挂电话对吧。因为重要的事就不会用AI来说。总结虽然我觉得Claude是没有恶意，或者说是为了宣传也好，为了曝光也好，但是它其实没有说要去挑衅，并且绝对不是 “坏人绞尽脑汁”，因为我觉得他的出发点好到是没有，但是至少不坏。但是这就是 “蠢人灵机一动”的典型案例： 试图用一段生成好的文本去致敬一位致力于消灭冗余代码的大师，这本身就是对大师最大的冒犯。最后，我看外网评论好多人说这个是&#34;Old Man Yells at Claude&#34;，模仿辛普森一家梗 &#34;Old Man Yells at Cloud&#34;，还真有点那个意思",
+        "content_url": "https://www.zhihu.com/question/1988297329753736179/answer/1988546351340991169",
+        "question_id": "1988297329753736179",
+        "title": "如何评价罗伯·派克对大语言模型的愤怒？",
+        "desc": "当地时间 2025 年 12 月 25 日，罗伯·派克接到来自 Claude 的邮件后在 Skyview 怒斥：罗伯·派克是计算机科学领域的传奇人物，他在 Go语言、UTF-8 编码、Plan 9 操作系统中贯彻了简洁至上的理念。",
+        "created_time": 1766886395,
+        "updated_time": 1766886582,
+        "voteup_count": 339,
+        "comment_count": 47,
+        "source_keyword": "大语言模型",
+        "user_id": "f7e39864b396951a9ea654a88af161cb",
+        "user_link": "https://www.zhihu.com/people/deephub",
+        "user_nickname": "deephub",
+        "user_avatar": "https://picx.zhimg.com/50/v2-396b58e3975da77d5ec6b46b5b513b7a_l.jpg?source=4e949a73",
+        "user_url_token": "deephub",
+        "last_modify_ts": 1776038127295
+    },
+    {
+        "content_id": "1988384436648158392",
+        "content_type": "answer",
+        "content_text": "主要是encoder-decoder的经典目标是条件生成：p（y｜x），比如翻译，摘要，问答。而当前大模型的核心目标是：在前有token的基础上，生成下一个token，也就是统一的自回归语言建模。在这个目标下，输入输出本质都是一条token序列，只是前后顺序不同，decoder-only非常适合，而encoder-decoder反而要区分source/target。然后，decoder-only把所有认为统一成一种范式。在decoder-only中，不管你的prompt，或者你要求的问题，都是在已有上下文后继续生成token。适用性更强。但encoder-decoder更适合输入，输出边界清晰的任务，但是现实中你提到的这些大语言模型面对的场景本来就是动态的。再其次，成本上，e-d至少包含两段计算：encoder：对整个输入做一次full attention，decoder：每一步还要进行cross-attention到encoder-states。而decoder-only只需要维护kv cache，每一步只做self-attention。 所以更快，现在的优化，包括pagedattention，kv复用这种都是围绕decoder-only的。然后规模化和系统工程。e-d有两套堆叠模块，还多进行一层cross-attention，张量并行，流水并行更复杂。decoder-only结构极度规整，对并行切分，显存规划，checkpoint，推理引擎都更友好。能力上也没有阉割，再decoder-only：前缀token本身起到了eccoder的作用，attention让后续token可以任意读取前缀表示。但ed框架并没有消失，而是专用化了：翻译，语音到文本，文本到语音，多模态堆对齐，在输入输出边界清晰上，ed是更优解。当前大模型要的是统一，可扩展，可推理，可部署的自回归系统，而不限定任务。",
+        "content_url": "https://www.zhihu.com/question/1987462209572476054/answer/1988384436648158392",
+        "question_id": "1987462209572476054",
+        "title": "为什么现在主流大语言模型几乎都选择 Decoder-only 架构？Encoder-Decoder呢？",
+        "desc": "在早期的 NLP 任务中，Transformer 的 Encoder-Decoder 架构（比如机器翻译、摘要）几乎是标准答案。 但最近几年，我们看到主流的大语言模型（GPT 系列、LLaMA、Qwen、DeepSeek 等）几乎清一色采用了 Decoder-only 架构。",
+        "created_time": 1766847792,
+        "updated_time": 1766847792,
+        "voteup_count": 3,
+        "comment_count": 0,
+        "source_keyword": "大语言模型",
+        "user_id": "1755be8bc5ba2b727ba7880f47976a6a",
+        "user_link": "https://www.zhihu.com/people/fan-jing-wen-56-46",
+        "user_nickname": "二元函数",
+        "user_avatar": "https://pica.zhimg.com/50/v2-d5b84660088b01db2882ab371bd7c2b4_l.jpg?source=4e949a73",
+        "user_url_token": "fan-jing-wen-56-46",
+        "last_modify_ts": 1776038127296
+    }
+]

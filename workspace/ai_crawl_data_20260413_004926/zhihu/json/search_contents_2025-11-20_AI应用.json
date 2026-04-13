@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1974968351865462853",
+        "content_type": "answer",
+        "content_text": "目前跑通PMF领域的 AI应用:AI助手:  豆包、联想PC小助手Coding: Cursor还有国内的Trae CatPaw等等语音助手: Plaud协同办公加持: 飞书 钉钉 天工等，这个算super app的AI加持个人比较看好: 营销类像Canva等以上，自从Manus去了国外就不怎么看好国内的AI App，基本上都是在老故事的AI重塑，包含不限美团的生活小助手 抖音的AI搜索，并没有颠覆的习惯",
+        "content_url": "https://www.zhihu.com/question/1974941386244630247/answer/1974968351865462853",
+        "question_id": "1974941386244630247",
+        "title": "国民级AI 应用（Super App）最有可能出现在哪些领域？",
+        "desc": "此问题由知乎科技 2025 年终策划「AI 中场时刻」提出，欢迎知友参与更多玩法  「AI 中场时刻」活动主会场 随着大模型能力趋于普及，新一代「国民级应用」似乎已经在路上。它会诞生在办公、社交、教育，还是一个完全意想不到的场景？你认为最有可能改变亿万人日常生活的应用会是什么？",
+        "created_time": 1763649148,
+        "updated_time": 1763649148,
+        "voteup_count": 17,
+        "comment_count": 4,
+        "source_keyword": "AI应用",
+        "user_id": "63ad9aafd81eed11f74339f8fe5e340e",
+        "user_link": "https://www.zhihu.com/people/Jerret321",
+        "user_nickname": "Jerret",
+        "user_avatar": "https://pica.zhimg.com/50/v2-25ad026054ed6b9129203c2ddd8eeae7_l.jpg?source=4e949a73",
+        "user_url_token": "Jerret321",
+        "last_modify_ts": 1775927625732
+    },
+    {
+        "content_id": "1974920517417996823",
+        "content_type": "answer",
+        "content_text": "原因其实很简单：AI在训练阶段“吃”了太多基于 Tailwind UI 构建的网站，而 Tailwind UI 的默认主色调就是蓝紫色。于是，模型把“做界面 ≈ 用蓝紫色”当成了某种“常识”。。。更恐怖的是，这套逻辑已经开始自我繁殖：如今 AI 生成的网站遍地蓝紫，未来的模型又会把这些新网站重新吞下，继续强化“界面就该蓝紫”的先验。循环往复，到时候网页设计可能真的会迎来一个真正的“蓝紫色奇点”蓝紫色设计",
+        "content_url": "https://www.zhihu.com/question/7755106347/answer/1974920517417996823",
+        "question_id": "7755106347",
+        "title": "为什么AI相关的网站，应用啥的都大量使用蓝紫渐变配色？",
+        "desc": "这个有个什么讲究吗？",
+        "created_time": 1763637743,
+        "updated_time": 1763637743,
+        "voteup_count": 140,
+        "comment_count": 7,
+        "source_keyword": "AI应用",
+        "user_id": "10304bf21f49ba02a1754e068f46ac7f",
+        "user_link": "https://www.zhihu.com/people/wang-xuan-ce-34",
+        "user_nickname": "王玄策",
+        "user_avatar": "https://picx.zhimg.com/50/v2-4dc08ff0332a0bee1c82d3e003d0fff6_l.jpg?source=4e949a73",
+        "user_url_token": "wang-xuan-ce-34",
+        "last_modify_ts": 1775927625733
+    }
+]

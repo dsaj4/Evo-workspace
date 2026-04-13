@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1998757078681007726",
+        "content_type": "article",
+        "content_text": "📊 核心观点：AI 工具分化加剧：通用型 AI 增长乏力，垂直领域工具成新引擎；颠覆范围扩大：从搜索、设计到旅游、教育，9大行业面临重构；头部玩家洗牌：OpenAI 增速放缓，Gemini、Inworld 等后起之秀强势突围；用户需求升级：定制化、场景化工具更受青睐，纯技术展示类产品遇冷。一、11类 AI 工具生死榜：谁在暴涨？谁在沉沦？✅ 逆势暴涨的 “黑马赛道”（1月增速 TOP5）Travel AI（旅游 AI）：Magictravel 以3121% 增速封神！12周内从近乎归零飙升至行业前列，主打智能行程规划、实时票务优化，直接冲击携程、飞猪等 OTA 平台。Code Completion（代码补全）：Base44 增速46%，Lovable 达 43%。开发者工具嵌入 IDE 成为趋势，独立平台靠 “精准补全 + 错误预警” 抢占市场， Freelance 编程平台遭冲击。Voice Generation（语音生成）：Elevenlabs（34%）、Retellai（41%）、Vapi（30%）集体爆发，自然语音合成、多语种转换需求激增，广播、有声书行业面临变革。Video Generation（视频生成）：Klingai（42%）、Lumalabs（27%）领跑，文本转视频技术成熟，营销短视频、产品介绍片制作效率提升 10 倍，影视行业前期创作流程被重构。Character &amp; Chat（角色聊天）：Inworld 增速336%，打破 Character AI 垄断，个性化虚拟陪伴、游戏 NPC 定制成为新增长点，娱乐、社交赛道迎来新玩法。❌ 增长承压的 “传统赛道”General AI（通用 AI）：OpenAI 1 月增速-9%，Copilot -9%，用户对 “万能工具” 新鲜感消退，转向更专业的垂直工具；Design &amp; Image（设计图像）：整体增速-4%，Deepai（-35%）、Ideogram（-29%）下滑明显，Midjourney（-7%）靠生态闭环勉强维持；Browser Automation（浏览器自动化）：整体下滑37%，Browserbase 暴跌51%，技术门槛低、应用场景有限导致同质化竞争严重；Writing &amp; Content（写作内容）：Growthbarseo 直接归零，整体增速-5%，纯文本生成工具饱和，“AI + 行业知识” 的垂直产品（如法律文书生成）成破局关键。📈 平稳增长的 “中坚力量”Voice Generation（语音生成）：整体增速20%， Elevenlabs、Speechify 稳居头部，应用场景从自媒体配音延伸至智能客服、导航语音；Music Generation（音乐生成）：整体增速16%，Suno（26%）、Boomy（49%）领跑，版权合规的 AI 作曲成为广告、短视频行业刚需。二、9 大行业颠覆实录：下一个谁会被替代？🔴 重灾区：这些行业已被 AI 深度渗透Search（传统搜索）：Google 增速-2%，Bing -11%，百度-15%，Perplexity 等 AI 搜索工具以 “精准答案 + 多源整合” 抢占用户，传统搜索引擎流量持续流失；Digital Freelance（数字自由职业）：整体增速-1%，Fiverr、Upwork 订单量下滑，设计、写作、编程类基础服务被 AI 工具替代，高端定制化服务成唯一出路；Consumer EdTech（消费教育）：Chegg（-68%）、Mathway（-63%）暴跌，AI 个性化辅导、错题解析工具崛起，传统题库类产品生存空间被挤压；Stock Media（素材库）：Bigstockphoto（-43%）、Picmonkey（-24%）下滑，AI 生成图片、音乐可直接商用，免费素材库面临 “生成式替代” 危机。🟡 观察区：即将被颠覆的行业Web &amp; Shop Builders（建站工具）：整体增速5%，但 Shopify（-12%）、Woocommerce（-27%）下滑，AI 建站工具 “输入需求→自动生成网站”，零代码门槛冲击传统平台；Customer Support（客服）：AI 客服工具整体增速2%，但智能问答、工单自动处理率达 80%，传统外包客服行业面临裁员潮；Publishing（出版）：AI 写作 + 语音生成 + 排版工具形成闭环，书籍、杂志出版周期从数月缩短至数周，编辑、排版岗位需求减少。🟢 安全区：暂时免疫的行业Design Platforms（设计平台）：Canva 仍保持增速19%，Figma 9%，专业设计师更依赖 “AI 辅助 + 人工创意”，纯 AI 生成难以替代原创设计思维；Discussion Forums（论坛社区）：Reddit 增速15%，Discord 4%，真人互动、情感共鸣类场景，AI 暂无法替代。三、头部玩家洗牌：新老势力的较量🏆 新晋王者（增速 TOP3）Gemini（通用 AI）：1月增速69%，依托谷歌生态，搜索 + AI 深度融合，成为 ChatGPT 最强对手；Inworld（角色聊天）：1月增速336%，主打 “情感化交互”，虚拟恋人、游戏 NPC 定制需求暴增；Base44（代码补全）：1月增速46%，支持多语言代码补全、云端协作，开发者渗透率快速提升。📉 老牌玩家的挑战OpenAI：从8月5%增速跌至1月-9%，免费用户体验下降、付费套餐性价比不足，用户转向更灵活的垂直工具；Midjourney：增速-7%，面临 Skylum（52%）、Stablediffusionweb（8%）挤压，用户更青睐 “快速生成 + 低成本商用” 的工具；Character AI：增速5%，被 Inworld 的 “高拟真度角色” 超越，产品创新不足导致用户流失。四、2026 AI 行业三大趋势预测垂直化深耕：“AI + 行业” 的细分工具将持续爆发，如法律 AI、医疗 AI、工业 AI，通用型工具需靠生态整合维持竞争力；技术嵌入式发展：AI 功能将更多嵌入现有软件（如 Office、Photoshop），独立工具需打造 “不可替代的场景化体验”；合规化成为门槛：版权、数据隐私问题凸显，具备合规资质的 AI 工具将获得更多企业客户青睐，“野蛮生长” 时代结束。🎯 给从业者的 3 条建议个人：深耕垂直领域，掌握 “AI 工具 + 行业知识” 的复合技能，避免被基础工具替代；企业：放弃 “大而全” 思路，聚焦细分场景打造爆款功能，建立用户壁垒；投资者：重点关注 Travel AI、Voice Generation、Code Completion 赛道，避开纯技术展示、缺乏场景的产品。本文基于Similarweb 最新发布的《AI Global：Global Sector Trends on Generative AI》研究报告整理，数据来自全球 400+AI 工具的域名访问量统计（不含 API 调用），反映用户真实使用趋势。了解更多AI资讯，请关注公众号：米勒AI学堂",
+        "content_url": "https://zhuanlan.zhihu.com/p/1998757078681007726",
+        "question_id": "",
+        "title": "生成式AI行业正在经历“冰火两重天”",
+        "desc": "用户需求升级：定制化、场景化工具更受青睐，纯技术展示类产品遇冷。一、11类 AI 工具生死榜：谁在暴涨？谁在沉沦？ 逆势暴涨的 “黑马赛道”（1月增速 TOP5）Travel AI（旅游 AI）：Magictravel 以3121% 增速…",
+        "created_time": 1769321280,
+        "updated_time": 1769321280,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "生成式AI",
+        "user_id": "e78c50d7592bc77ecda63a4c0844d4e2",
+        "user_link": "https://www.zhihu.com/people/kevin-51-92-60",
+        "user_nickname": "逍遥子",
+        "user_avatar": "https://pica.zhimg.com/50/v2-3c08154e1b8456fbb9218af4f1acbbc5_l.jpg?source=4e949a73",
+        "user_url_token": "kevin-51-92-60",
+        "last_modify_ts": 1776035552649
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1967357202500129081",
+        "question_id": "",
+        "title": "一图读懂 Dify 架构：AI 原生应用拆解",
+        "desc": "AI 原生应用落地难？一图拆解 Dify 架构！解决上下文管理、插件集成、工作流编排痛点，详解模型适配、RAG、GraphEngine 核心模块，附场景建议，助快速搭 AI 应用～#Dify 架构 #AI 原生应用 #RAG#领码SPARK",
+        "created_time": 1761834512,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI应用",
+        "user_id": "4fd5f88dd5a143717f9b017713b78722",
+        "user_link": "https://www.zhihu.com/people/qin-yan-ke-ji-86",
+        "user_nickname": "领码科技",
+        "user_avatar": "https://picx.zhimg.com/50/v2-9db192315f7ddff66e86093e894b5f7b_l.jpg?source=4e949a73",
+        "user_url_token": "qin-yan-ke-ji-86",
+        "last_modify_ts": 1775927964893
+    }
+]

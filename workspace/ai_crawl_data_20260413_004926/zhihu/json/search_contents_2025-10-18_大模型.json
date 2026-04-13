@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1962899814313341002",
+        "content_type": "answer",
+        "content_text": "从达成的落地应用及产生的价值来看大语言模型LLM 完爆 知识图谱KG相较于LLM那种直接的强大的语言推理能力，KG对于推理的贡献是通过理论架构间接达成的。具体来讲，知识图谱嵌入模型KGE（Knowledge Graph Embedding）一般是通过显示的数学、几何关系等去建模推理的数学过程。但是其准确率、即使在很小的KG数据集也不尽人意。如经典的TransE、RotatE、QuatE等，乃至state-of-the-art的KGE模型，在FB15k-237知识图谱数据集的推理准确率也超不过40%。虽然性能远落后于LLM，KGE的数学架构却在间接地加速Transformer等大模型架构的进化。比如RotatE、QuatE等基于旋转向量的KGE模型，启发了基于旋转平移等变注意力网络的新的Transformer架构[1]。",
+        "content_url": "https://www.zhihu.com/question/611978235/answer/1962899814313341002",
+        "question_id": "611978235",
+        "title": "知识图谱和大模型哪个才是大方向？",
+        "desc": "现在知识图谱的瓶颈是什么？为什么现在都在推大模型而不是用大模型去推动知识图谱呢？知识图谱这种可解释的白盒不是更好的方向么？",
+        "created_time": 1760771784,
+        "updated_time": 1760772001,
+        "voteup_count": 8,
+        "comment_count": 0,
+        "source_keyword": "大模型",
+        "user_id": "f1a4a59eadb9dce35cb11e43a9c22faa",
+        "user_link": "https://www.zhihu.com/people/chai-jing-xuan",
+        "user_nickname": "Norstc",
+        "user_avatar": "https://picx.zhimg.com/50/v2-e94e1691a1bfc4eebb49bb6a9b127341_l.jpg?source=4e949a73",
+        "user_url_token": "chai-jing-xuan",
+        "last_modify_ts": 1775901222747
+    }
+]

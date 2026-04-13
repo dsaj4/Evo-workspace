@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1971368367693734018",
+        "content_type": "answer",
+        "content_text": "首先我不同意大语言模型是概率预测的说法。可以参考辛顿的演讲《什么是理解》。另外我也同意辛顿的另一个观点，人脑的本质是类比推理，这一点上和大语言模型很像。",
+        "content_url": "https://www.zhihu.com/question/14821661304/answer/1971368367693734018",
+        "question_id": "14821661304",
+        "title": "人脑的智能或者说思考模式会不会也像大语言模型llm一样只是概率预测？",
+        "desc": "最好提出自己的见解，不要完全用llm输出。根据最近的研究，人脑的思考过程肯定是包含概率预测的，但是不是只有概率预测，这是一个重要问题。",
+        "created_time": 1762790845,
+        "updated_time": 1762790845,
+        "voteup_count": 1,
+        "comment_count": 1,
+        "source_keyword": "大语言模型",
+        "user_id": "1fc563424d99cb7b2ce1da882fb0f550",
+        "user_link": "https://www.zhihu.com/people/javasli",
+        "user_nickname": "加瓦木工",
+        "user_avatar": "https://picx.zhimg.com/50/v2-79e5f3a88e72d0c8d8f883268d4551d9_l.jpg?source=4e949a73",
+        "user_url_token": "javasli",
+        "last_modify_ts": 1776038395185
+    }
+]

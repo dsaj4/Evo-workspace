@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1976776670104016611",
+        "content_type": "answer",
+        "content_text": "机器学习之间差异巨大，不仅取决于你跑的模型，更取决于你是用ai推理还是训练：----------------------------------通常的MLP，SVM,  树模型+集成学习，： 选购三手乃至十八手日本废弃笔记本电脑，这些洋垃圾配置了5-8年前的主流处理器，费用不超过1000大元；十八手洋垃圾的一个好处是会让你更认真的做特征工程+选择更小的模型（顺带也不那么容易过拟合 + 小的算力），以及学会人工拆笔记本电脑加内存。 狗头~~----------------------------------CNN，RNN，LSTM，处理语音视频图像等等： 主线Intel/AMD处理器，取决于你的数据量；此外内存大总是不吃亏的，单条DDR5 容量大一点一定没有副作用；做训练的话显存大小取决于你要干啥。如果数据海量，更大RAM + 一块好的SSD都有帮助（虽然现在内存和SSD价格都不便宜）----------------------------------Attention is all you need:      正儿八经的LLM 不推荐自家电脑，如果非要自己搭建推理，可以考虑惠普Z系列、Lenovo Thinkstation 的工作站；如果是做LLM训练，那么还是推荐1000元购买十八手日本洋垃圾笔记本电脑，然后ssh到贵司的服务器上即可，狗头x2至于非LLM的Transformer：同上",
+        "content_url": "https://www.zhihu.com/question/416661663/answer/1976776670104016611",
+        "question_id": "416661663",
+        "title": "做机器学习具体要什么配置？",
+        "desc": "什么机箱？什么显卡？几条显卡？几核几纳米CPU？几个CPU？多大储存？多大内存……",
+        "created_time": 1764080284,
+        "updated_time": 1765896005,
+        "voteup_count": 4,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "66efead017211b1db3b2c1a89f85ef42",
+        "user_link": "https://www.zhihu.com/people/tu-tu-2-56-73",
+        "user_nickname": "兔兔",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "tu-tu-2-56-73",
+        "last_modify_ts": 1776005106469
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1953416627455525696",
+        "content_type": "answer",
+        "content_text": "推荐一波我的导师肖桐老师今年写的大模型入门书《Foundations of Large Language Models》 (大语言模型基础) Foundations of Large Language Models 。这本书的内容非常基础，主要是对大语言模型相关的概念进行介绍，也有很多前沿内容的介绍。总体来说，了解大模型的核心概念和基础模型、算法是非常适合的。个人认为这本书最有特点的一个地方是，整体文字很简单且流畅，阅读起来一点都不像那些难懂的学术论文，尤其是里面一些比较复杂的知识或技术点，都通过举例和简单易懂的方式来讲解，可以让大家无痛快速入门。而且书中包含了大量的图例进行解释，全部是用LaTeX画的图，非常精致，阅读起来很舒服，对初学者非常友好。BTW，对于想学习LaTeX画图的同学来说，这是一本不可多得的样例大全。全书共分为五章，包括预训练技术、生成式模型、提示工程、对齐技术和模型推断方法。基本上涵盖了大模型的主要方面。一个可能需要注意的地方是，书中没有花很多篇幅去讲 Transformer 这类基础架构。不过我觉得这反而是一个优点，让这本书能把所有内容都集中在大模型本身，而不是一些大家可能已经很熟悉的背景知识上。如果觉得这本书还不过瘾，肖桐老师在六月份还出了一个完整版，叫NLPBook，《Natural Language Processing: Neural Networks and Large Language Models》 https://http://github.com/NiuTrans/NLPBook 。它完全涵盖了Foundations of Large Language Models的内容，同时做了大量扩展，总共11章。如果想了解NLP和深度学习相关技术的，也是非常推荐的。放一下书的目录，可以看下这本书在海外的关注度也非常高， Twitter 和 Linkedin 上已经有不少技术圈的博主在讨论，国内的小红书上也能找到一些学习笔记。感兴趣的同学可以自行搜索。最近，我们也开发了一个LaTex翻译工具LaTexTrans https://http://github.com/NiuTrans/LaTeXTrans ，用大模型把书的内容都翻译成了中文等多个语言版本，大家也可以直接阅读中文版，比阅读英文内容要省力很多https://http://github.com/NiuTrans/NLPBookTranslations 。",
+        "content_url": "https://www.zhihu.com/question/644285055/answer/1953416627455525696",
+        "question_id": "644285055",
+        "title": "初学者怎么入门大语言模型（LLM）？",
+        "desc": "初学者怎么入门大语言模型（LLM）？",
+        "created_time": 1758510816,
+        "updated_time": 1758511306,
+        "voteup_count": 150,
+        "comment_count": 5,
+        "source_keyword": "大语言模型",
+        "user_id": "4d21a2c9f17009af5deb5053e6b53e8e",
+        "user_link": "https://www.zhihu.com/people/shi-jie-ru-liu-46",
+        "user_nickname": "那很OK啊",
+        "user_avatar": "https://pica.zhimg.com/50/v2-a66641e6f82b24c8efb93d113f92deb9_l.jpg?source=4e949a73",
+        "user_url_token": "shi-jie-ru-liu-46",
+        "last_modify_ts": 1776038431815
+    }
+]

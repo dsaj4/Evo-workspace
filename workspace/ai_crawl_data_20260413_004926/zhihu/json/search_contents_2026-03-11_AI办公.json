@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2015430293385946987",
+        "content_type": "answer",
+        "content_text": "问了一下AI，回答是这样的：不过，我觉得AI对职场和职业的改变和塑造已经不限于以下这些技能了，这些都应该算是最基本的技能，更多的是利用AI创造别人不可替代的价值。1. 提示词工程（Prompt Engineering）会写清晰、结构化、可复用的指令让 AI 写文案、做方案、改报告、出大纲、润色文字这是所有岗位通用的底层技能2. AI 办公自动化Word/Excel/PPT 批量处理用 AI 做表格分析、自动生成 PPT、总结会议纪要适合：行政、财务、运营、产品、管理岗3. AI 数据分析与可视化用 AI 读数据、做报表、找规律、出结论快速生成图表、业务诊断、周报月报适合：市场、运营、销售、管理、数据分析岗4. AI 内容创作（文案 / 短视频 / 图文）AI 写标题、脚本、文案、推文、课程内容AI 做封面、配图、短视频脚本适合：自媒体、新媒体、品牌、营销、讲师5. AI 设计与图文处理用 AI 做海报、PPT 排版、信息图简单修图、生成素材适合：运营、市场、行政、个人品牌6. AI 代码与工具使用（低代码 / 无代码）让 AI 写简单脚本、做小工具、爬取信息不用自己编程，会指挥 AI 写就行适合：产品、运营、数据分析、技术转管理7. AI 搜索与信息整合用 AI 快速查资料、做行业分析、写调研报告提炼文献、政策、行业报告核心观点适合：咨询、研究、备考、写论文、管理岗8. AI 工作流搭建（把 AI 变成你的助理）把重复工作交给 AI：日报、周报、复盘、方案初稿建立个人 AI 工作流程，一天干三天的活所有岗位都刚需",
+        "content_url": "https://www.zhihu.com/question/2015417647811043635/answer/2015430293385946987",
+        "question_id": "2015417647811043635",
+        "title": "职场中最值得掌握的AI技能有哪些？",
+        "desc": "问了一下AI，回答是这样的：不过，我觉得AI对职场和职业的改变和塑造已经不限于以下这些技能了，这些都应该算是最基本的技能，更多的是利用AI创造别人不可替代的价值。1. 提示词工程（Prompt Engineering）会写清晰、结构化、可复用的指令让 AI 写文案、做方案、改报告、出大纲、润色文字这是所有岗位通用的底层技能2",
+        "created_time": 1773296026,
+        "updated_time": 1773296026,
+        "voteup_count": 2,
+        "comment_count": 1,
+        "source_keyword": "AI办公",
+        "user_id": "7aee35513637013e17b3b8075640f940",
+        "user_link": "https://www.zhihu.com/people/bodhi-l",
+        "user_nickname": "熵值财经纪元",
+        "user_avatar": "https://pica.zhimg.com/50/v2-e84cbcad653ad48b48239bc3815a340d_l.jpg?source=4e949a73",
+        "user_url_token": "bodhi-l",
+        "last_modify_ts": 1776053314838
+    },
+    {
+        "content_id": "2015194167198893849",
+        "content_type": "answer",
+        "content_text": "工作中当然会使用AI啊，有一些很无聊的文案工作。其实完全可以用AI来代替。但是要注意一点的是千万不要被你们的同事或领导知道你使用了AI。让自己显得笨一点。也许你的生活会变得更好。",
+        "content_url": "https://www.zhihu.com/question/1984939791742157212/answer/2015194167198893849",
+        "question_id": "1984939791742157212",
+        "title": "你在工作中会使用AI吗？怎么使用的？",
+        "desc": "你在工作中会使用AI吗？具体怎么使用的？使用场景、效果如何？",
+        "created_time": 1773239729,
+        "updated_time": 1773239729,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI办公",
+        "user_id": "b20bab82c5aac5e3edea49405cb3a38b",
+        "user_link": "https://www.zhihu.com/people/fei-lu-65-20",
+        "user_nickname": "飞陆",
+        "user_avatar": "https://picx.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "fei-lu-65-20",
+        "last_modify_ts": 1776053314840
+    }
+]

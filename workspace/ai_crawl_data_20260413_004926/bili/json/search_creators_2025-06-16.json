@@ -1,0 +1,62 @@
+[
+    {
+        "user_id": "3546880474614341",
+        "nickname": "AI视频教程学习",
+        "sex": "保密",
+        "sign": "关注我！自动获取AI视频全套资料包！",
+        "avatar": "https://i2.hdslb.com/bfs/face/e56b35cfa7efd00549996404816245756c1eb99f.jpg",
+        "last_modify_ts": 1774805489562,
+        "total_fans": 3605,
+        "total_liked": 8667,
+        "user_rank": 4,
+        "is_official": -1
+    },
+    {
+        "user_id": "53171446",
+        "nickname": "码士集团-小森",
+        "sex": "保密",
+        "sign": "视频所有笔记、源码、面试资料都可联系官方小助理【bjmsb15】免费领取",
+        "avatar": "https://i1.hdslb.com/bfs/face/8bb597ea76bd2573b6ae83f41cb954d6da8712f1.jpg",
+        "last_modify_ts": 1774805489576,
+        "total_fans": 12625,
+        "total_liked": 93641,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "1945493325",
+        "nickname": "PyTorch深度学习课堂",
+        "sex": "保密",
+        "sign": "行走的人工智能课程库",
+        "avatar": "https://i0.hdslb.com/bfs/face/29c6fd7a29ffa040e59bcf5e39d8f58330417d22.jpg",
+        "last_modify_ts": 1774805489598,
+        "total_fans": 26418,
+        "total_liked": 30740,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "15452596",
+        "nickname": "月球大叔",
+        "sex": "男",
+        "sign": "每个人都可以享受到AI的乐趣。言论仅代表自己，不代表公司和任何人",
+        "avatar": "https://i1.hdslb.com/bfs/face/527e5869a77cb3257c2a97bd4a0ebcaa622f5cff.jpg",
+        "last_modify_ts": 1774805489613,
+        "total_fans": 21315,
+        "total_liked": 34654,
+        "user_rank": 5,
+        "is_official": -1
+    },
+    {
+        "user_id": "314482247",
+        "nickname": "平面设计教程慕雪",
+        "sex": "保密",
+        "sign": "专注平面设计教程分享，软件素材和更多学习资料速领+企鹅裙835489915交流学习哦~",
+        "avatar": "https://i2.hdslb.com/bfs/face/1ccbe59b0d30097516e40a8b6557588700152920.jpg",
+        "last_modify_ts": 1774805489630,
+        "total_fans": 18890,
+        "total_liked": 36868,
+        "user_rank": 6,
+        "is_official": -1
+    }
+]

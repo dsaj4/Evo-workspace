@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2003444620433049026",
+        "content_type": "answer",
+        "content_text": "推荐仔细读一读《Agent Design Pattern》,Google出品，非常系统第介绍AI Agent，包含如下的内容：1.Agent设计模式（一）:提示链2.Agent设计模式（二）：路由3.Agent设计模式（三）：并性化4.Agent设计模式（四）：反思5.Agent设计模式（五）：工具使用6.Agent设计模式（六）：规划7.Agent设计模式（七）：多Agent协作8.Agent设计模式（八）：记忆管理9.Agent设计模式（九）：学习与适应10.Agent设计模式（十）：MCP11.Agent设计模式（十一）：目标设定与监控12.Agent设计模式（十二）：异常处理和故障恢复13.Agent设计模式（十三）：人在回路中（Human-in-the-Loop）14.Agent设计模式（十四）：检索增强（RAG）15.Agent设计模式（十五）：Agent间通信（A2A）16.Agent设计模式（十六）：资源感知优化17.Agent设计模式（十七）：推理技术18.Agent设计模式（十八）：护栏 / 安全模式19.Agent设计模式（十九）：评估和监控20.Agent设计模式（二十）：优先级排序21.Agent设计模式（二十一）：探索与发现22.Agent设计模式（二十二）：结论Agent",
+        "content_url": "https://www.zhihu.com/question/2003271732925063580/answer/2003444620433049026",
+        "question_id": "2003271732925063580",
+        "title": "现在有什么好的书介绍AI agent？",
+        "desc": "深度学习的书已经有不少了，不知道有什么讲agent的书值得推荐",
+        "created_time": 1770438419,
+        "updated_time": 1770438419,
+        "voteup_count": 174,
+        "comment_count": 0,
+        "source_keyword": "AI agent",
+        "user_id": "646e30948d93aa29e766eb4a6b11a1ba",
+        "user_link": "https://www.zhihu.com/people/kevin-71-87-23",
+        "user_nickname": "数据与AI爱好者",
+        "user_avatar": "https://picx.zhimg.com/50/v2-a0aa0a20b8ad92c04f7878e96fbdb424_l.jpg?source=4e949a73",
+        "user_url_token": "kevin-71-87-23",
+        "last_modify_ts": 1776003850335
+    }
+]

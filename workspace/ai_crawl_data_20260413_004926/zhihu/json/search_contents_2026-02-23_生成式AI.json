@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2009636503089866717",
+        "content_type": "answer",
+        "content_text": "骗局？你生活的社会就是一场巨大的骗局。你以为征收的税款、发放的养老金，是基于某种“真理”、“正义”的形式逼近吗？实际上，这不过是掌权者针对你们青蛙腿的抽搐反应，在预测下一步加多少水温而已。同理，你也别笑AI只会预测下一个token，给你的只是概率路径。你以为你的肉体凡胎真的理解什么叫真理、什么叫真实？给你的前庭施加电信号，你以为的直走，完全可以是被人用遥控器控制的，这个实验十几年前就做过了。所以，人类世界上没有所谓的客观真实，永远只有被人为定义出来的“有效”和“无效”。AI也是同理，一种技术如果在被定义出来的“有效”边界内，表现出可重复的有效，那么它就不是骗局。反之，不论你感觉它多真实，它都是骗局。",
+        "content_url": "https://www.zhihu.com/question/1904162925549160234/answer/2009636503089866717",
+        "question_id": "1904162925549160234",
+        "title": "生成式ai是骗局吗？openai的奥特曼是否在忽悠全人类?",
+        "desc": "生成式ai是真的aigc通道吗？奥特曼是否在忽悠全人类?",
+        "created_time": 1771914679,
+        "updated_time": 1771914679,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "生成式AI",
+        "user_id": "b5577c63922430ca078582c221c7c7f0",
+        "user_link": "https://www.zhihu.com/people/17-54-82-65-61",
+        "user_nickname": "大火葬",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-be1bfd90b41134f167de3594a1548fb1_l.jpg?source=4e949a73",
+        "user_url_token": "17-54-82-65-61",
+        "last_modify_ts": 1776035471919
+    },
+    {
+        "content_id": "2009612698552378943",
+        "content_type": "article",
+        "content_text": "当生成式AI开始大量书写病历，会发生什么？随着生成式AI逐渐进入医疗系统，越来越多的病历、影像报告和临床文本开始由AI参与生成。我们在一项最新研究中发现一个值得警惕的现象：当AI生成的临床文本再次被用于训练下一代AI时，一些罕见但关键的病理信息会在数据中悄然消失，整体诊断可靠性在群体尺度上逐步下降。在多代自我训练循环中：关键罕见病理逐渐被“平均化”模型表面信心上升，但真实诊断能力下降错误“无异常” reassurance 的比例可上升至3倍这可能不是单个模型的问题，而是未来医疗AI数据生态需要面对的系统性风险。我们也提出了一些可直接整合进现有临床工作流的缓解策略，希望能在AI全面进入医疗前提供可操作的安全路径。完整预印：AI-generated data contamination erodes pathological variability and diagnostic reliability",
+        "content_url": "https://zhuanlan.zhihu.com/p/2009612698552378943",
+        "question_id": "",
+        "title": "当生成式AI开始大量书写病历，会发生什么？",
+        "desc": "[图片] 当生成式AI开始大量书写病历，会发生什么？ 随着生成式AI逐渐进入医疗系统，越来越多的病历、影像报告和临床文本开始由AI参与生成。 我们在一项最新研究中发现一个值得警惕的现象： 当AI生成的临床文本再次被用于训练下一代AI时， 一些罕见但关键的病理信息会在数据中悄然消失",
+        "created_time": 1771909103,
+        "updated_time": 1771909103,
+        "voteup_count": 2,
+        "comment_count": 0,
+        "source_keyword": "生成式AI",
+        "user_id": "ca0c640e7a52d965006c1d15999bb37d",
+        "user_link": "https://www.zhihu.com/people/kai-yuan-mi-fen-33",
+        "user_nickname": "开元米粉",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-1604728c728cebc1c925b999f27c57ea_l.jpg?source=4e949a73",
+        "user_url_token": "kai-yuan-mi-fen-33",
+        "last_modify_ts": 1776035471920
+    }
+]

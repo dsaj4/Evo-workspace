@@ -1,0 +1,62 @@
+[
+    {
+        "user_id": "493282299",
+        "nickname": "OpenBMB",
+        "sex": "保密",
+        "sign": "OpenBMB（Open Lab for Big Model Base）旨在构建迈向通用人工智能的基础模型和系统。",
+        "avatar": "https://i0.hdslb.com/bfs/face/939504acdfa92429c6dffa1937768b5c0e191d5d.jpg",
+        "last_modify_ts": 1774802161086,
+        "total_fans": 43730,
+        "total_liked": 30751,
+        "user_rank": 6,
+        "is_official": -1
+    },
+    {
+        "user_id": "479332937",
+        "nickname": "肖恩君Sean",
+        "sex": "保密",
+        "sign": "yt.seanchen.io, 在谷歌/MIT呆过, 喜欢宝可梦/海贼王, 创业者@AutoManus",
+        "avatar": "https://i2.hdslb.com/bfs/face/6ee8467b3f0ce00c3fee002ed07c9ff46e93d0ac.jpg",
+        "last_modify_ts": 1774802161096,
+        "total_fans": 12187,
+        "total_liked": 10381,
+        "user_rank": 5,
+        "is_official": -1
+    },
+    {
+        "user_id": "507524288",
+        "nickname": "NICE学术",
+        "sex": "保密",
+        "sign": "全球一线青年学者发起的AI分享平台，聚焦「学术-落地-创业」闭环。 合作/投稿/加入我们 请联系：zenrran@gmail.com",
+        "avatar": "https://i2.hdslb.com/bfs/face/9fa3dc70f834ea54f9a69984d7d4e3cfcf610308.jpg",
+        "last_modify_ts": 1774802161115,
+        "total_fans": 23058,
+        "total_liked": 24103,
+        "user_rank": 5,
+        "is_official": -1
+    },
+    {
+        "user_id": "3494360769366305",
+        "nickname": "我刷手机不辛苦",
+        "sex": "保密",
+        "sign": "饿了",
+        "avatar": "https://i2.hdslb.com/bfs/face/65de56977a863108bf33815d157e1cb11ecbca89.jpg",
+        "last_modify_ts": 1774802161128,
+        "total_fans": 2127,
+        "total_liked": 23565,
+        "user_rank": 5,
+        "is_official": -1
+    },
+    {
+        "user_id": "3546606171327011",
+        "nickname": "AnotherWorld-",
+        "sex": "保密",
+        "sign": "寻找那些未曾存在\n但令我们向往的世界与故事",
+        "avatar": "https://i2.hdslb.com/bfs/face/6e50d935bcdf799adbae9cea4a8eea2a39c7fc71.jpg",
+        "last_modify_ts": 1774802161140,
+        "total_fans": 6132,
+        "total_liked": 163402,
+        "user_rank": 4,
+        "is_official": -1
+    }
+]

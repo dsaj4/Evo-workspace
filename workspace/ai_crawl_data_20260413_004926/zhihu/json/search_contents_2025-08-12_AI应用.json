@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1938935862508361305",
+        "question_id": "",
+        "title": "AI技术如何在垂直落地场景中规模化应用？",
+        "desc": "施耐德电气全球高级副总裁、首席人工智能官Philippe Rambach在WAIC产业发展论坛上表示：“AI技术正快速迭代，其规模化应用将全面推进能源、工业等关键领域的结构性变革。”更多精彩观点，欢迎查看完整视频！",
+        "created_time": 1755058777,
+        "updated_time": 0,
+        "voteup_count": 2,
+        "comment_count": 1,
+        "source_keyword": "AI应用",
+        "user_id": "6df4155c94d8b81e295b3393f0ba222f",
+        "user_link": "https://www.zhihu.com/people/shi-nai-de-dian-qi-90",
+        "user_nickname": "施耐德电气",
+        "user_avatar": "https://picx.zhimg.com/50/v2-ed6504c4ddf2829e069240a716f22820_l.jpg?source=4e949a73",
+        "user_url_token": "shi-nai-de-dian-qi-90",
+        "last_modify_ts": 1775928454149
+    },
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1938665024320144754",
+        "question_id": "",
+        "title": "AI应用的3个阶段",
+        "desc": "AI应用的三个阶段：从卖工具，到卖协作，最终走向卖成果，AI市场规模将是互联网市场规模的数十倍#AI #AI时代 #人工智能 #科学前沿 #AI工具 #干货分享 #AI商业思维",
+        "created_time": 1754993764,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI应用",
+        "user_id": "f8fc695efa3647fff0cf4b11b2e17882",
+        "user_link": "https://www.zhihu.com/people/ru-meng-fu-sheng-93",
+        "user_nickname": "毛药师AI商业思维",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-b3ed129e9da47642de6a23bcb57dd179_l.jpg?source=4e949a73",
+        "user_url_token": "ru-meng-fu-sheng-93",
+        "last_modify_ts": 1775928454150
+    }
+]

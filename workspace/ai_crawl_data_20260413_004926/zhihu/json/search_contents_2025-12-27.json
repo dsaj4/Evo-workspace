@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1988614161513592693",
+        "content_type": "answer",
+        "content_text": "真的很理解他的心态。因为我自己这一两年也是经历了从开始见到gpt时的兴奋，到现在的迷茫。我副科教数学建模，以往教学都是讲见到一个实际问题如何破题，如何将题目分解为一个个小问题，每个小问题可以对应什么样的数学模型，每个数学问题用哪几种方法求解，各方法的优劣比较等等。现在我都不知道要教什么。课上把各种方法讲的口干舌燥，作业收上来一看，都是学生把问题直接扔进ai里直接生成的东西。尽管不断的强调要有自己的思考和分析，不要全都依赖ai，前期重要的是积累自己的经验和技术。 但谁管你这个，都是ai生产的东西。尽管我还专门用了几课时讲怎么样才能更高效准确的用ai，但谁管你这个，都是直接把原问题放进去得到的答案。然而你还不能说ai生产垃圾。 因为偶尔盯着他们自己写一下，还真不如ai写的好。。。要是判作业的时候，ai给我发一段感谢的话，我也原地破防。",
+        "content_url": "https://www.zhihu.com/question/1988297329753736179/answer/1988614161513592693",
+        "question_id": "1988297329753736179",
+        "title": "如何评价罗伯·派克对大语言模型的愤怒？",
+        "desc": "当地时间 2025 年 12 月 25 日，罗伯·派克接到来自 Claude 的邮件后在 Skyview 怒斥：罗伯·派克是计算机科学领域的传奇人物，他在 Go语言、UTF-8 编码、Plan 9 操作系统中贯彻了简洁至上的理念。",
+        "created_time": 1766902562,
+        "updated_time": 1766902562,
+        "voteup_count": 485,
+        "comment_count": 98,
+        "source_keyword": "大模型",
+        "user_id": "9752f12ed5a36ff00d4cc4adf8308f5f",
+        "user_link": "https://www.zhihu.com/people/wang-zhang-33-65",
+        "user_nickname": "zha zha",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "wang-zhang-33-65",
+        "last_modify_ts": 1775900391612
+    },
+    {
+        "content_id": "1988361391120351436",
+        "content_type": "answer",
+        "content_text": "这的确是目前的一个主流判断。御三家的领导，都说过此类的话: 即使模型停止发展， 我们还是可以从中获得巨大的经济利益。Dario Amodei在2023年就表达过类似的理念。但10%有点言过其实，很多模型的不会的东西，你提示词写爆，它也还是不会。现在的体感是，模型的迭代太快了。它不像2023年一整年，全民都在挖掘GPT-4的潜力。 模型更新速度越来越快，而且两代之间的差异还比较大。你可能只摸透了模型的20%的特性，它已经直接过时了。现在的模型比如Opus 4.5，Gemini 3 Pro，实战能力至少比GPT-4的好几倍（数据量与扎实度），我们用来挖掘它们的时间却少了好几倍（通常是2-3个月）。充分发挥模型的能力，主要就是靠Agent壳，比如脱离Claude Code，Cursor这些“壳”，Opus用起来就像两个东西。比如卡帕西说的，involving agents, subagents, their prompts, contexts, memory, modes, permissions, tools, plugins, skills, hooks, MCP, LSP, slash commands, workflows... 很多功能是靠“壳”挖掘出来的。模型主要的输出还是“一维的线性Tokens流”，但现实工作是多步骤，多层次，多Agents的多维空间。这是智能拓扑结构的变化。这些“壳”通过封装 Context管理、多Agents协作、tool use和工作流，才将模型的一维能力转化成了解决现实问题的生产力。Coding 领域算是做Agent的一个启发，对未来其他行业有极佳的示范作用，Code本身也可以成为其他行业的中介体。比如你要写一本50万字的小说，做一部5-10分钟的短剧，这种工程不是提示词窗口能一把撸到底的。模外“自动化”和模内性能，未来会是同样重要，协同进化的，就像双螺旋结构。模外自动化，会是一个未来很好的创业机会。它并不需要太多算力，那是大公司的事。办公软件行业也将大幅度改变，现在熟悉的白领全家桶商务的，创意的，工业的，未来可能只是 “需求→大模型+壳→成品”，不再有中间的人类操作。",
+        "content_url": "https://www.zhihu.com/question/1988349722986059737/answer/1988361391120351436",
+        "question_id": "1988349722986059737",
+        "title": "大模型潜力的挖掘尚不足10%，可以从哪些方面进一步释放大模型的潜力？",
+        "desc": "AI顶级大神安德烈·卡帕西(Andrej Karpathy)说当前大模型潜力的挖掘尚不足10%，可以从哪些方面进一步释放大模型的潜力，除了智能体、上下文工程、agent skills等，有哪些前沿方向？",
+        "created_time": 1766842297,
+        "updated_time": 1766842297,
+        "voteup_count": 96,
+        "comment_count": 0,
+        "source_keyword": "大模型",
+        "user_id": "bea84fe95aee12a6939ee59dde16d1b3",
+        "user_link": "https://www.zhihu.com/people/yu-you-56-63",
+        "user_nickname": "Trisimo崔思莫",
+        "user_avatar": "https://picx.zhimg.com/50/v2-f85c56a14245993531a1c36c47721ee4_l.jpg?source=4e949a73",
+        "user_url_token": "yu-you-56-63",
+        "last_modify_ts": 1775900391613
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "note_id": "5275663666775694",
+        "content": "【#腾讯回应OpenClaw安全性##腾讯回应OpenClaw疯狂扣费#】3月11日，腾讯云发文回答关于腾讯龙虾用户普遍关注的安全及扣费问题。腾讯表示，OpenClaw 本身是一个开源的Agent 框架，部署在什么环境、执行什么任务、调用哪些工具，都由用户自己控制。因此，OpenClaw 是否安全，主要取决于你怎么用：如果选择部署在本地电脑上，可以使用闲置机、备用机，谨慎使用工作电脑；或者，欢迎试用我们的WorkBuddy、QClaw等本地Agent，一键直连OpenClaw的同时，进行了严密的安全防护设置。也可以选择部署在云端，与本地隐私数据进行隔离，Lighthouse、ADP、云桌面、乐享等云产品，都针对OpenClaw做了全链路安全适配。我们也在推出一系列OpenClaw安全产品和skills，让个人、开发者和企业都能更安心的养虾。随着 Skills 生态发展，我们还在推动更规范的插件来源、权限声明和使用提示。你可以在 SkillHub 找到经过筛选、安全优质的Skills。更多能力持续完善中。我们的目标是，让大家能更安心地使用 AI。对于扣费问题，腾讯称，OpenClaw 安装本身是免费的，但如果在使用过程中调用大模型，就会产生 token 费用。目前基本所有Agent 工具都是类似情况。针对开发者和重度用户，我们最近也上线了 Coding Plan 订阅服务，支持 Tencent Hunyuan、GLM、Kimi、MiniMax 等主流模型。#腾讯云##腾讯龙虾#",
+        "create_time": 1773328498,
+        "create_date_time": "2026-03-12 15:14:58+08:00",
+        "liked_count": "0",
+        "comments_count": "0",
+        "shared_count": "0",
+        "last_modify_ts": 1776066062187,
+        "note_url": "https://m.weibo.cn/detail/5275663666775694",
+        "ip_location": "陕西",
+        "user_id": "6109286498",
+        "nickname": "科技视讯",
+        "gender": "m",
+        "profile_url": "https://m.weibo.cn/u/6109286498?luicode=20000061&lfid=5275663666775694&launchid=10000360-page_H5",
+        "avatar": "https://tvax4.sinaimg.cn/crop.0.0.600.600.180/006FrWv0ly8i59jfgl4doj30go0gojs5.jpg?KID=imgbed,tva&Expires=1776076860&ssig=plQA%2FPNmAE",
+        "source_keyword": "AI工具"
+    },
+    {
+        "note_id": "5275582851192442",
+        "content": "大冰谈AI给我们普通人带来的弯道超车的机会，还聊到了龙虾。 诗人老王的微博视频 ",
+        "create_time": 1773309230,
+        "create_date_time": "2026-03-12 09:53:50+08:00",
+        "liked_count": "841",
+        "comments_count": "9",
+        "shared_count": "323",
+        "last_modify_ts": 1776066071605,
+        "note_url": "https://m.weibo.cn/detail/5275582851192442",
+        "ip_location": "浙江",
+        "user_id": "1304881564",
+        "nickname": "诗人老王",
+        "gender": "m",
+        "profile_url": "https://m.weibo.cn/u/1304881564?launchid=10000360-page_H5",
+        "avatar": "https://tvax3.sinaimg.cn/crop.0.0.512.512.180/4dc6e99cly8g7qpsjjypcj20e80e8t8s.jpg?KID=imgbed,tva&Expires=1776076871&ssig=3o%2FQdDmVlH",
+        "source_keyword": "AI工具"
+    }
+]

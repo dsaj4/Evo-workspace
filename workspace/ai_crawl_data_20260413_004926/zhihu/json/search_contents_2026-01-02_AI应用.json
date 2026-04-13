@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1990527692051870396",
+        "content_type": "answer",
+        "content_text": "目前，只不过出现了一波，一大波可以自然语言对话的AI，在AI应用中，使用这些llm模型，至少最后一哆嗦我现在急需的AI应用简要需求如下：可以阅读CAD图纸，包括其中的图层，以及图纸中出现的各种专业元素可以阅读我喂给它的专业资料/方案/说明/技术规范……，并理解之可以阅读我喂给它的行业规范、国标、行标，以及各种补充标准，并理解之……其他资料、文档，包括且不限于以上所列，以及工业过程实时数据库、历史数据库、工单、工作票、故障记录、维修记录、更换记录等等应用成品在经过上述数据投喂、训练等后，可以根据我提供的新项目的基础资料，自动生成技术方案、图纸、施工方案、运行维护方案，以及重点说明项目中关键点所在，包括应对措施等以上，是我们在做的所谓的AI项目，难！很难！属于那种为了解决问题A，需要先解决问题B~Z",
+        "content_url": "https://www.zhihu.com/question/1990348621011503015/answer/1990527692051870396",
+        "question_id": "1990348621011503015",
+        "title": "如果让你设计一款AI应用，你会怎么设计？",
+        "desc": "大开脑洞，尽情想象。",
+        "created_time": 1767358784,
+        "updated_time": 1767358784,
+        "voteup_count": 2,
+        "comment_count": 1,
+        "source_keyword": "AI应用",
+        "user_id": "d6f276e7ff73db2267f8c0e065ce866a",
+        "user_link": "https://www.zhihu.com/people/hen-ming-xian-23",
+        "user_nickname": "很明显",
+        "user_avatar": "https://pica.zhimg.com/50/v2-2bf5e04aed98b9e08c1fa09ea80216ec_l.jpg?source=4e949a73",
+        "user_url_token": "hen-ming-xian-23",
+        "last_modify_ts": 1775927407272
+    }
+]

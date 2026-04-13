@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1993881551549781129",
+        "content_type": "answer",
+        "content_text": "编程能力第一梯队目前公认编程最强的是：Claude 4 系列（Sonnet/Opus）— 在复杂代码理解、重构、系统设计方面表现突出，特别是长上下文代码分析GPT-4o / o1 — 推理能力强，o1 在算法题和数学相关编程上有优势Gemini 3 — Google 最新的模型，代码能力很强我个人实际开发中，Claude 和 Gemini 系列用得最多，各有所长。Claude 在理解意图、生成结构化代码方面我个人觉得更顺手。国内大模型的差距坦白说，差距在缩小但仍然存在：相对接近的：DeepSeek V3 / Coder — 开源界的惊喜，编程能力相当不错，性价比高Qwen 2.5 Coder — 阿里的编程专用模型，在特定benchmark上表现亮眼主要差距体现在：复杂系统设计和架构建议长上下文代码理解（几千行以上）边缘case处理和debug能力对英文技术文档/库的理解深度国内模型的优势：中文注释和文档生成更自然部署灵活，合规性好成本通常更低",
+        "content_url": "https://www.zhihu.com/question/1991556499282080603/answer/1993881551549781129",
+        "question_id": "1991556499282080603",
+        "title": "最适合编程的大模型是什么，国内的大模型差距有多大？",
+        "desc": "在算法题和数学相关编程上有优势Gemini 3 — Google 最新的模型，代码能力很强我个人实际开发中，Claude 和 Gemini 系列用得最多，各有所长。Claude 在理解意图、生成结构化代码方面我个人觉得更顺手。国内大模型的差距坦白说，差距在缩小但仍然存在：相对接近的：",
+        "created_time": 1768158406,
+        "updated_time": 1768158406,
+        "voteup_count": 10,
+        "comment_count": 10,
+        "source_keyword": "大语言模型",
+        "user_id": "a9f84f36a68eab72b198f2c7709f1622",
+        "user_link": "https://www.zhihu.com/people/gangtao",
+        "user_nickname": "陶刚",
+        "user_avatar": "https://picx.zhimg.com/50/v2-741a8d9495d92b6e5076ba5c4f851452_l.jpg?source=4e949a73",
+        "user_url_token": "gangtao",
+        "last_modify_ts": 1776038074420
+    }
+]

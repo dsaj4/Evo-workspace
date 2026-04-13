@@ -1,0 +1,53 @@
+[
+    {
+        "comment_id": "11303841691",
+        "parent_comment_id": "0",
+        "content": "第一次接触 ai coding就想到这不就是把日式开发里的外包老中换成AI了么[尴尬]",
+        "publish_time": 1759221128,
+        "ip_location": "上海",
+        "sub_comment_count": 0,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "1955755883096158824",
+        "content_type": "answer",
+        "user_id": "fdea49b38e17b275969f63280cd1c496",
+        "user_link": "https://www.zhihu.com/people/nukezhihu",
+        "user_nickname": "nukezhihu",
+        "user_avatar": "https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776004409205
+    },
+    {
+        "comment_id": "11302492297",
+        "parent_comment_id": "0",
+        "content": "规模大了以后是这样的，技术全靠供应链，核心能力在市场教育和产品定义。[发呆]",
+        "publish_time": 1759115854,
+        "ip_location": "陕西",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1955755883096158824",
+        "content_type": "answer",
+        "user_id": "0df2dfb75d7e0012cf815ba046b53d9f",
+        "user_link": "https://www.zhihu.com/people/li-hao-bo",
+        "user_nickname": "李浩博",
+        "user_avatar": "https://pic1.zhimg.com/1a03d814a_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776004409214
+    },
+    {
+        "comment_id": "11302292288",
+        "parent_comment_id": "0",
+        "content": "一时不明白是夸还是骂[发呆]",
+        "publish_time": 1759115758,
+        "ip_location": "四川",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1955755883096158824",
+        "content_type": "answer",
+        "user_id": "b3e130f87b5cc1c6dad6a27e51cb5399",
+        "user_link": "https://www.zhihu.com/people/mo-hei-gao-yang",
+        "user_nickname": "墨黑羔羊",
+        "user_avatar": "https://picx.zhimg.com/v2-78663a4568a032e245d74e3d00c41c5a_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776004409222
+    }
+]

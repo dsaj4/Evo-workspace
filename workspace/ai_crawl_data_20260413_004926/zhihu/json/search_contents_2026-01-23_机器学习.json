@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1989265094471872609",
+        "question_id": "",
+        "title": "多模态医疗数据采用机器学习预测肿瘤罕见病诊断",
+        "desc": "",
+        "created_time": 1769225413,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "6e09751db6f4cacef905ab50fda31ec2",
+        "user_link": "https://www.zhihu.com/people/3-78-98-52-20",
+        "user_nickname": "影像组学服务",
+        "user_avatar": "https://picx.zhimg.com/50/v2-bd789be55f25c8fa5284d05120f15681_l.jpg?source=4e949a73",
+        "user_url_token": "3-78-98-52-20",
+        "last_modify_ts": 1776004710951
+    },
+    {
+        "content_id": "1998328113550103241",
+        "content_type": "answer",
+        "content_text": "如果只是下载让模型跑起来，简单优化一下，数学并不是必需的，把模型理解成一个黑盒就行。但要理解大模型为什么有效，如何在高维空间中确定一个函数，就需要深入学习相关数学工具。机器学习表面上算法最重要，但本质是数据建模，而构建模型的行为离不开数学工具。推荐一本专门为机器学习量身定做的数学书籍《Mathematics for Machine Learning》，几乎包含机器学习会用到的所有数学概念，例如线性代数、多变量微积分、概率论、函数逼近等，并用这些概念推导了四种核心的机器学习方法：线性回归、主成分分析、高斯混合模型和支持向量机。可能是从数学角度理解机器学习最好的书籍之一。大模型可以看作是一个有海量参数的超级大函数，但学完本书，你可能会回答，大模型是空间中的一个子空间。本书能教会你如何通过线性代数看到几何结构，还能教会你梯度下降不单纯是数学公式，而是空间中的优化方向，模型的训练过程就是不断的优化过程。那么有的模型为什么会过拟合呢？这就需要概率论的知识来回答，原因多种多样，不过一般情况下，主要原因是模型的容量过大或者样本量不足。这个时候机器学习的过程，表面上看是曲线的拟合，而本质上是对未知数据进行概率推断的过程。本书作者Marc Peter Deisenroth是伦敦大学计算机教授，参与过DeepMind和Google Brain的研发，作者写作本书的主要目的是为了让大家对机器学习中的数学知识有一个较深的了解。思维导图使用苹果应用GraphMind+Gemini生成",
+        "content_url": "https://www.zhihu.com/question/597884858/answer/1998328113550103241",
+        "question_id": "597884858",
+        "title": "要入行机器学习是不是非学数学不可？要学到什么程度，如何才能提高数学水平？",
+        "desc": "如何在高维空间中确定一个函数，就需要深入学习相关数学工具。机器学习表面上算法最重要，但本质是数据建模，而构建模型的行为离不开数学工具。推荐一本专门为机器学习量身定做的数学书籍《Mathematics for Machine Learning》，几乎包含机器学习会用到的所有数学概念",
+        "created_time": 1769218549,
+        "updated_time": 1769391869,
+        "voteup_count": 2,
+        "comment_count": 0,
+        "source_keyword": "机器学习",
+        "user_id": "9ac2c52b78d9114e125d5cda96c6627a",
+        "user_link": "https://www.zhihu.com/people/Mrthis",
+        "user_nickname": "袖飘风",
+        "user_avatar": "https://picx.zhimg.com/50/v2-3ba5a5557d99b67f1f82fac1e9c0eba4_l.jpg?source=4e949a73",
+        "user_url_token": "Mrthis",
+        "last_modify_ts": 1776004944508
+    }
+]

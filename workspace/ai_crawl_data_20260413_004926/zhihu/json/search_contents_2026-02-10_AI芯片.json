@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2004921494199870049",
+        "content_type": "article",
+        "content_text": "一、通用GPU / 全功能GPU路线海光信息（DCU，类CUDA架构）摩尔线程（全功能GPU，MUSA架构）沐曦股份（高性能训推一体GPU）壁仞科技（高端GPU）天数智芯（通用GPU）景嘉微（国产通用GPU量产）二、专用AI芯片（ASIC路线）寒武纪（云端/边缘AI芯片，自研指令集）昇腾（华为，Ascend系列AI加速芯片）昆仑芯（百度，XPU架构AI芯片）平头哥（阿里，PPU+CPU，芯云一体）燧原科技（AI训练/推理加速芯片）云天励飞（端侧/边缘AI芯片）芯原股份（IP授权，含AI加速IP）三、可重构计算 / 软件定义硬件清微智能（可重构架构，TX81芯片）四、AI推理 + 视频/渲染融合瀚博半导体（AI推理+云端渲染双引擎）五、RISC-V架构AI CPU进迭时空（RISC-V AI CPU，全栈式）六、车载/边缘AI芯片地平线（征程系列，自动驾驶AI芯片）瑞芯微（AI应用处理器，覆盖端侧）七、其他关联企业（含部分布局或生态参与）TCL科技（面板+算力基础设施投资）紫光国微（安全芯片+潜在AI协处理）复旦微电（FPGA+AI加速潜力）澜起科技（内存接口+AI服务器配套）",
+        "content_url": "https://zhuanlan.zhihu.com/p/2004921494199870049",
+        "question_id": "",
+        "title": "AI芯片概念相关企业的分类汇总",
+        "desc": "景嘉微（国产通用GPU量产） 二、专用AI芯片（ASIC路线） 寒武纪（云端/边缘AI芯片，自研指令集） 昇腾（华为，Ascend系列AI加速芯片） 昆仑芯（百度，XPU架构AI芯片） 平头哥（阿里，PPU+CPU，芯云一体） 燧原科技（AI训练/推理加速芯片） 云天励飞（端侧/",
+        "created_time": 1770790565,
+        "updated_time": 1770790565,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI芯片",
+        "user_id": "04485c2396735e5092faee3757ecf0d8",
+        "user_link": "https://www.zhihu.com/people/70-83-50-16",
+        "user_nickname": "落叶知势",
+        "user_avatar": "https://picx.zhimg.com/50/v2-f4e9b25cda19147f27afe94f688d0646_l.jpg?source=4e949a73",
+        "user_url_token": "70-83-50-16",
+        "last_modify_ts": 1776066213042
+    },
+    {
+        "content_id": "2004591349681391158",
+        "content_type": "answer",
+        "content_text": "国产 AI 芯片在场景适配、成本控制、本土生态协同等方面具备独特优势，同时在高端工艺、生态成熟度等维度仍有提升空间，是行业发展中逐步追赶与突破的体现。",
+        "content_url": "https://www.zhihu.com/question/2004150517681652256/answer/2004591349681391158",
+        "question_id": "2004150517681652256",
+        "title": "国产 AI 芯片与国际巨头相比，有哪些独特优势或待提升之处？",
+        "desc": "AI 时代，算力需求猛增，国产 AI 芯片能否抓住机会，实现弯道超车，关键点在哪里？",
+        "created_time": 1770711821,
+        "updated_time": 1770711821,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI芯片",
+        "user_id": "8a9c3ff1b1b48871996bb6e9cf60199a",
+        "user_link": "https://www.zhihu.com/people/ai-fu-te-ji-qi-ren",
+        "user_nickname": "埃夫特机器人",
+        "user_avatar": "https://picx.zhimg.com/50/v2-a36738d0a22b5eddc5cc8cea0f6ab1c4_l.jpg?source=4e949a73",
+        "user_url_token": "ai-fu-te-ji-qi-ren",
+        "last_modify_ts": 1776066213044
+    }
+]

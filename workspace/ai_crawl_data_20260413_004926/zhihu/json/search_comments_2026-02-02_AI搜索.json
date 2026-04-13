@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11408947257",
+        "parent_comment_id": "0",
+        "content": "今天我就碰上了很基础的问题，ai错了我问他26000用德语怎么说，他回答我zweiundzwanzig（这是22000），要不是我稍微会一点，我就被ai给坑了[图片]",
+        "publish_time": 1770142025,
+        "ip_location": "山东",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2001978776855274854",
+        "content_type": "answer",
+        "user_id": "1c24d6d44ead4b47d0a8333e2586ad24",
+        "user_link": "https://www.zhihu.com/people/lewis-young-95",
+        "user_nickname": "Lewis Young",
+        "user_avatar": "https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776043551011
+    },
+    {
+        "comment_id": "11408836648",
+        "parent_comment_id": "11408947257",
+        "content": "[赞]",
+        "publish_time": 1770168177,
+        "ip_location": "湖北",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2001978776855274854",
+        "content_type": "answer",
+        "user_id": "eb0687811f1818c8fb7f83a65d43a3e6",
+        "user_link": "https://www.zhihu.com/people/si-shui-liu-nian-30-37",
+        "user_nickname": "Penn Hu",
+        "user_avatar": "https://pica.zhimg.com/v2-24b8b31790909d4edb3836ad1bec7650_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776043551751
+    }
+]

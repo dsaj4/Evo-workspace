@@ -1,0 +1,53 @@
+[
+    {
+        "comment_id": "11452188244",
+        "parent_comment_id": "0",
+        "content": "codex不是开源的吗？",
+        "publish_time": 1775054145,
+        "ip_location": "陕西",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2003119552129689389",
+        "content_type": "article",
+        "user_id": "38efd9f6d28b1955cbc8f1c9a683f657",
+        "user_link": "https://www.zhihu.com/people/xi-shou-14",
+        "user_nickname": "犀首",
+        "user_avatar": "https://picx.zhimg.com/v2-0eb3f220747347cc55257e4d2e9c01b4_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776001648029
+    },
+    {
+        "comment_id": "11412316396",
+        "parent_comment_id": "0",
+        "content": "正好在用Claude Code做项目，这篇横评很及时！想请教一下，在处理大型代码库时，Claude Code和OpenAI Codex的上下文管理能力哪个更强？另外，OpenClaw这个新工具稳定性如何？",
+        "publish_time": 1770547247,
+        "ip_location": "上海",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2003119552129689389",
+        "content_type": "article",
+        "user_id": "70e46b99d75cdc7488b43291d8c7e325",
+        "user_link": "https://www.zhihu.com/people/28-15-36-67-53",
+        "user_nickname": "自学Agent产品",
+        "user_avatar": "https://pic1.zhimg.com/v2-22dfe7094375e34e38695123acd219db_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776001648032
+    },
+    {
+        "comment_id": "11412955376",
+        "parent_comment_id": "11412316396",
+        "content": "最新的claude code opus 4.6上下文已经突破百万，是目前来讲我认为最强的大模型，openclaw作为一个电脑助理的角色，需要你赋予它更多的技能，它的主要能力还是在于你的远程指令，给本机claude code这些agent下达指令，不能把它作为任务主体",
+        "publish_time": 1770554256,
+        "ip_location": "河南",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2003119552129689389",
+        "content_type": "article",
+        "user_id": "ee3c69c63d2142b85c9a51edf64f634e",
+        "user_link": "https://www.zhihu.com/people/lin-da-ge-41",
+        "user_nickname": "林大哥",
+        "user_avatar": "https://pic1.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776001648724
+    }
+]

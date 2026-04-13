@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1981913682905670444",
+        "content_type": "answer",
+        "content_text": "简单来说，不需要，但是如果对AI芯片（此处专指非通用的架构，例如GPGPU）架构没有了解的话，是难写出在当前芯片上高效执行的代码的，既然是和架构相关的代码，大概率就需要你的代码针对特定架构有改动，现在的AI编译器其实没有那么智能",
+        "content_url": "https://www.zhihu.com/question/1977080347117249589/answer/1981913682905670444",
+        "question_id": "1977080347117249589",
+        "title": "市面上五花八门的AI芯片，开发者是否需要为每一种芯片都重写一遍代码？",
+        "desc": "简单来说，不需要，但是如果对AI芯片（此处专指非通用的架构，例如GPGPU）架构没有了解的话，是难写出在当前芯片上高效执行的代码的，既然是和架构相关的代码，大概率就需要你的代码针对特定架构有改动，现在的AI编译器其实没有那么智能",
+        "created_time": 1765305044,
+        "updated_time": 1765305044,
+        "voteup_count": 4,
+        "comment_count": 0,
+        "source_keyword": "AI芯片",
+        "user_id": "88c9f9970b9e8353031f1a369ea5200d",
+        "user_link": "https://www.zhihu.com/people/lao-bai-de-bai",
+        "user_nickname": "老白的白",
+        "user_avatar": "https://pica.zhimg.com/50/v2-58a683af79dfe8294447e7a34ef344fa_l.jpg?source=4e949a73",
+        "user_url_token": "lao-bai-de-bai",
+        "last_modify_ts": 1776066364882
+    }
+]

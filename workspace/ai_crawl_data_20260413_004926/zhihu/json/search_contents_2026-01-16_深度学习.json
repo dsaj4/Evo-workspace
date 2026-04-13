@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1989256804119642895",
+        "question_id": "",
+        "title": "图像与文本描述采用深度学习预测关节炎类型",
+        "desc": "",
+        "created_time": 1768620617,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "深度学习",
+        "user_id": "6e09751db6f4cacef905ab50fda31ec2",
+        "user_link": "https://www.zhihu.com/people/3-78-98-52-20",
+        "user_nickname": "影像组学服务",
+        "user_avatar": "https://picx.zhimg.com/50/v2-bd789be55f25c8fa5284d05120f15681_l.jpg?source=4e949a73",
+        "user_url_token": "3-78-98-52-20",
+        "last_modify_ts": 1776005671532
+    },
+    {
+        "content_id": "1995829121050252594",
+        "content_type": "answer",
+        "content_text": "在内存硬盘暴涨之后，组装主机早就没有什么性价比优势了（主机的价格也从来不是只看主机，难道屏幕键盘鼠标这些都是白送的么），至于品牌主机，从来也没太大的性价比优势，这类产品主要卖的就是上手简单和保修了。而如果要买游戏本的话，题主的问题就是预算太低...在现在内存硬盘暴涨的情况下，哪怕有国补，7k的预算也很难买到一个没有明显短板的主流高性能游戏本。而且这还是在内存只选择勉强够用的16G的情况下，如果需要32G，情况就更不乐观了...具体机器的话，可以看看暗影精灵11的甜点版本，i7-14650HX+RTX5060+16/1T的甜点配置，整机没有什么特别大的亮点，就是一线品牌+性价比高这两点。如果买到之后题主有机会，可以再买一条16G的内存，组32G的双通道，基本上就能满足你的大部分需求了。其实如果是买游戏本，可以考虑把老的轻薄本卖掉，日常实际上两台电脑是用不上的，这样还能给你的游戏本增加一些可用预算。",
+        "content_url": "https://www.zhihu.com/question/1995625876633695133/answer/1995829121050252594",
+        "question_id": "1995625876633695133",
+        "title": "深度学习方向准研究生，选择轻薄本+主机连接还是游戏本？",
+        "desc": "本人大四即将读研（三年学硕），应用数学专业，要做深度学习方向，目前使用的是一台轻薄本（配置附图），打算更换设备（考虑到学习的需要和打游戏的诱惑），听说轻薄本连接主机也能达到不错效果，并且同价位主机的性价比较高，来问下大家建议选配个主机连现在这台轻薄本还是新买一台游戏本呢？能否给一些配置建议呢？（预算希望控制在六七千之内，满足要求的情况下越便宜越好）",
+        "created_time": 1768622743,
+        "updated_time": 1768622743,
+        "voteup_count": 13,
+        "comment_count": 2,
+        "source_keyword": "深度学习",
+        "user_id": "606db0ed52cb9e22e36998a17fb6b3a5",
+        "user_link": "https://www.zhihu.com/people/Tian-Qi-05-25",
+        "user_nickname": "天启",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-90e4d9022df2fd6f71611af45e71e4d9_l.jpg?source=4e949a73",
+        "user_url_token": "Tian-Qi-05-25",
+        "last_modify_ts": 1776024219544
+    }
+]

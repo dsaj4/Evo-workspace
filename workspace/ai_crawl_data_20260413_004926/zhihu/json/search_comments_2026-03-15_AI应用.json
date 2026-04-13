@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11439081873",
+        "parent_comment_id": "0",
+        "content": "对于代码检查错误、优化sql语句还是非常不错的，省去了手动处理的繁琐[发呆]",
+        "publish_time": 1773629887,
+        "ip_location": "江苏",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2016784053236428835",
+        "content_type": "answer",
+        "user_id": "c69884ff2d8da9fb1481da91b41e47d5",
+        "user_link": "https://www.zhihu.com/people/xiao-ming-14-23-15",
+        "user_nickname": "IT技术分享社区",
+        "user_avatar": "https://picx.zhimg.com/v2-a1296edaa79a8c594a9efecad4c47b7e_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775927284038
+    },
+    {
+        "comment_id": "11439606593",
+        "parent_comment_id": "11439081873",
+        "content": "那倒是，对于处理代码的IT来说，解决了检查错漏核对的功夫",
+        "publish_time": 1773642093,
+        "ip_location": "广东",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2016784053236428835",
+        "content_type": "answer",
+        "user_id": "39c98655aabe6c6ed5127e7c7a4f4cd9",
+        "user_link": "https://www.zhihu.com/people/bi-bai-du-zen-yao-yang",
+        "user_nickname": "十二点前的契约",
+        "user_avatar": "https://picx.zhimg.com/v2-29098a9875023474339125e99c7d2c5a_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1775927285806
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11459082044",
+        "parent_comment_id": "0",
+        "content": "AI画图只是工具,只有艺术家能够驾驭它,给一个从来没见过PS的传统画师看PS疯狂后退他怎么想?现在的AI就是工具,艺术家用起来会更好.",
+        "publish_time": 1775822060,
+        "ip_location": "日本",
+        "sub_comment_count": 1,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2025914743794201014",
+        "content_type": "answer",
+        "user_id": "a7d88b9b659f88ffcc8b6434e841b741",
+        "user_link": "https://www.zhihu.com/people/fwdgpq",
+        "user_nickname": "知乎用户fWDGPQ",
+        "user_avatar": "https://pic1.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776057667147
+    },
+    {
+        "comment_id": "11459064369",
+        "parent_comment_id": "11459082044",
+        "content": "本质上说，创作者可以让ai生成自己专业领域内的材料，但如果创作者自己都不懂，根本就没办法判断ai的材料到底行不行。ai只是作为便捷工具解放部分生产力。",
+        "publish_time": 1775870706,
+        "ip_location": "浙江",
+        "sub_comment_count": 0,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "2025914743794201014",
+        "content_type": "answer",
+        "user_id": "9a128116473503b3b8a7f3102b236720",
+        "user_link": "https://www.zhihu.com/people/lily-28-3",
+        "user_nickname": "Thoughtful",
+        "user_avatar": "https://picx.zhimg.com/v2-9278c3a59bb81358752ebbe72a02c3d6_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776057667503
+    }
+]

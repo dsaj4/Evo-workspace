@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2012130344695001463",
+        "content_type": "answer",
+        "content_text": "核心结论：搭建智能体不难，难在想清楚”它要干什么”。───三种路线，按需选择路线一：用现成平台，零代码上手• Coze、Dify、FastGPT • 拖拽配置，接工具、挂知识库、设工作流 • 适合：想快速验证想法，不想写代码路线二：用框架自己搭，灵活可控• LangChain / LangGraph：生态最成熟，资料最多 • OpenAI Agents SDK：官方出品，接 GPT 工具链最顺滑 • CrewAI：多 Agent 角色扮演，上手快 • 适合：有 Python 基础，想定制化路线三：自托管完整 Agent 系统• 用 OpenClaw 这类开源项目，部署在自己机器上 • 能接 Telegram/微信，有记忆、会主动推送、能执行真实操作 • 适合：想要一个真正”在你机器上干活”的 Agent───搭之前先想清楚这三件事它要完成什么任务？ 越具体越好，”帮我做所有事”是死路它需要哪些工具？ 搜索、代码执行、发邮件、查数据库……失败了怎么处理？ Agent 出错会级联放大，要有兜底逻辑───最快的起步方式用 OpenAI Agents SDK，10行跑起来一个最简 Agentfrom agents import Agent, Runneragent = Agent(name=&#34;assistant&#34;,\ninstructions=&#34;你是一个helpful的助手&#34;,) result = Runner.run_sync(agent, “帮我搜索今天的AI新闻”) print(result.final_output)先跑通，再加工具，再加记忆，迭代着来。───关注公众号「数字物种」——帮你看清 AI 世界的真实走向。",
+        "content_url": "https://www.zhihu.com/question/5758209685/answer/2012130344695001463",
+        "question_id": "5758209685",
+        "title": "如何搭建自己的智能体？",
+        "desc": "核心结论：搭建智能体不难，难在想清楚”它要干什么”。───三种路线，按需选择路线一：用现成平台，零代码上手• Coze、Dify、FastGPT • 拖拽配置，接工具、挂知识库、设工作流 • 适合：想快速验证想法，不想写代码路线二：用框架自己搭，灵活可控• LangChain",
+        "created_time": 1772509257,
+        "updated_time": 1772509257,
+        "voteup_count": 4,
+        "comment_count": 0,
+        "source_keyword": "智能体",
+        "user_id": "dc6f8622d25320a2a124317cc8d93f21",
+        "user_link": "https://www.zhihu.com/people/mapleoooooo",
+        "user_nickname": "数字物种",
+        "user_avatar": "https://picx.zhimg.com/50/v2-6fec84db819346b2e97e973783997739_l.jpg?source=4e949a73",
+        "user_url_token": "mapleoooooo",
+        "last_modify_ts": 1776003085705
+    },
+    {
+        "content_id": "2012100719017235446",
+        "content_type": "answer",
+        "content_text": "2026年AI时代・备战金三银四必学高质量5 星好评AI 智能体开发实战教程，采用企业级开发的解决方案。从零开始，到企业级项目落地，为你提供最完整的学习路径。采用：视频 + 文档 + 源码 的教学模式，给到你沉浸式的学习体验，降低 AI 智能体的学习门槛。长期霸占【AI人工智能】领域榜首：AI人工智能视频课程排行榜_新课榜_近一年热卖排行榜-51CTO学堂排行榜从零开始，到企业级项目落地，不管你是初学者还是有一定经验的开发者，都能在这里获得实实在在的成长和提升。课程大纲一、课程介绍1.1 为什么学？1.2 能学到什么？1.3 AI智能体效果演示二、系统设计2.1 系统架构设计2.2 钉钉消息处理流程设计2.3 Agent决策流程设计2.4 工具调用人工干预机制设计三、开发环境3.1 获取相关资源3.2 Miniconda安装配置3.3 Poetry安装配置3.4 创建虚拟环境3.5 Redis安装配置3.6 Qdrant安装配置3.7 VSCode安装配置与快捷键大全3.8 PyCharm安装配置3.9 开发环境运行源码四、开发架构4.1 项目结构规划4.2 初始化项目4.3 安装项目依赖4.4 全局参数配置4.5 全局日志配置4.6 使用Flask集成swagger在线文档4.7 集成大模型DeepSeek-V3和bge-m34.8 集成Qdrant构建知识库4.9 封装网络爬虫工具4.10 使用Flask蓝图模块化知识库服务4.11 集成Redis构建对话记忆存储服务4.12 集成SerpApi构建实时检索服务4.13 集成Tavily构建实时检索服务4.14 集成钉钉机器人服务五、提示词模板5.1 动态加载历史摘要提示词模板5.2 动态加载情感分析提示词模板5.3 动态加载意图识别提示词模板5.4 动态加载工具选择提示词模板5.5 动态加载生成响应提示词模板六、工具插件6.1 增强LangChain注册工具插件6.2 动态注册搜索工具6.3 封装与钉钉API交互的工具6.4 动态注册钉钉待办工具6.5 动态注册钉钉日程工具七、数据模型7.1 用户消息和情感分析模型7.2 工具调用和Agent响应输出模型7.3 Agent决策状态模型和JSON输出解析器八、核心业务8.1 对话历史Agent8.2 情感分析Agent8.3 意图识别Agent8.4 工具选择Agent8.5 知识库检索Agent8.6 响应生成Agent8.7 Agent决策流程管理器8.8 工具调用确认决策流程管理器8.9 全局主控Agent8.10 钉钉服务集成全局主控Agent8.11 使用Flask蓝图模块化AI智能体服务九、运维部署9.1 集成LangSmith实现全链路追踪9.2 生产环境日志文件的管理9.3 使用Flask蓝图模块化系统监控服务9.4 集成Prometheus监控系统9.5 搭建Prometheus服务器9.6 编写Dockerfile部署脚本9.7 编写docker-compose部署脚本9.8 使用docker部署应用服务每一位腾友的支持，都是腾飞开源的无限动力，感恩遇见！！！#AI智能体 #​人工智能 #学习资料 #保姆级教程 #Agent #AI智能体开发 #AI应用开发 #企业级项目 #开发实战",
+        "content_url": "https://www.zhihu.com/question/664245982/answer/2012100719017235446",
+        "question_id": "664245982",
+        "title": "如何系统地学习智能体？",
+        "desc": "星好评AI 智能体开发实战教程，采用企业级开发的解决方案。从零开始，到企业级项目落地，为你提供最完整的学习路径。采用：视频 + 文档 + 源码 的教学模式，给到你沉浸式的学习体验，降低 AI 智能体的学习门槛。长期霸占【AI人工智能】领域榜首：AI人工智能视频课程",
+        "created_time": 1772502194,
+        "updated_time": 1772502194,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "智能体",
+        "user_id": "6a1a1051366684e2ea0a1cced22c7906",
+        "user_link": "https://www.zhihu.com/people/tfos.org",
+        "user_nickname": "腾飞开源",
+        "user_avatar": "https://picx.zhimg.com/50/v2-d6d80e5f36400ca63d510a6b5d2ad153_l.jpg?source=4e949a73",
+        "user_url_token": "tfos.org",
+        "last_modify_ts": 1776003085707
+    }
+]

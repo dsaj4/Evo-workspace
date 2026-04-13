@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1951207022801450317",
+        "question_id": "",
+        "title": "人工智能概念的三次变迁",
+        "desc": "大语言模型是多层神经网络的算法框架，如ChatGPT、DeepSeek等是探索成果。人工智能历经三次发展：基于逻辑和规则的专家系统，通过数据训练模型的统计机器学习，基于多层神经网络的深度学习。",
+        "created_time": 1757984498,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "人工智能",
+        "user_id": "b26ad318d9182647c648d57bc65616bc",
+        "user_link": "https://www.zhihu.com/people/cai-wu-yun-52",
+        "user_nickname": "财务云",
+        "user_avatar": "https://picx.zhimg.com/50/v2-301140c7a74c807dc18adfe94335b0b4_l.jpg?source=4e949a73",
+        "user_url_token": "cai-wu-yun-52",
+        "last_modify_ts": 1775894798866
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11382312018",
+        "parent_comment_id": "0",
+        "content": "工科写代码还得用gptgemini，国内的AI写的代码满足不了要求，写文档豆包deep都行",
+        "publish_time": 1767280395,
+        "ip_location": "山东",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 1,
+        "content_id": "1986223811008418339",
+        "content_type": "answer",
+        "user_id": "5d72ea71fcd49dfdf7cb593e0c0e6219",
+        "user_link": "https://www.zhihu.com/people/man-cheng-jin-dai-huang-jin-jia-28-1",
+        "user_nickname": "木鱼水心",
+        "user_avatar": "https://picx.zhimg.com/v2-0ce030fea0a6b8e94f045d10779905b3_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776003437558
+    },
+    {
+        "comment_id": "11441012595",
+        "parent_comment_id": "0",
+        "content": "联想应用商店里有，不过我没试过卸载了重装。",
+        "publish_time": 1773794520,
+        "ip_location": "江苏",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "1986223811008418339",
+        "content_type": "answer",
+        "user_id": "d9b6dd372f06a1a59c37ecbfcb0d2646",
+        "user_link": "https://www.zhihu.com/people/ktqfzz-45",
+        "user_nickname": "努力成仙的凡人",
+        "user_avatar": "https://pic1.zhimg.com/v2-1abe7b115ea0ab9e5dfe334d5a1fef38_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776003437558
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2016659914391564642",
+        "content_type": "answer",
+        "content_text": "1.使用的benchmark数据集，如果你的数据需要预处理，最好是预处理完版本的benchmark。数据集规模也要是相同的，多少个正类，多少个负类，要对齐。避雷私人不开源数据集。这样你后面复现不出来，无法判断是模型的问题还是数据集的问题。2.不要选最新的最sota的模型，大概率你是复现不出来这个准确率的。3.不要选过于复杂的堆砌工作量的模型，大概率你换哪一块，准确率都是会下去的。而且极容易过拟合。4.选择大家都用的经典的模型当baseline。有两个方法可以判断，一是里程碑模型，它可能是你这个方向第一个或前几个深度学习模型。二是在你看的论文里results表格丽反复出现的被拿来对比指标的模型。",
+        "content_url": "https://www.zhihu.com/question/391145736/answer/2016659914391564642",
+        "question_id": "391145736",
+        "title": "深度学习如何选择合适的baseline？",
+        "desc": "最近对于深度学习做实验选baseline的问题产生了疑问。比如，提出的新模型和老模型相比，把老模型论文中的准确率直接搬过来做baseline，还是将老模型在自己的环境下跑一遍做baseline，又或者是将新模型在老模型的环境下跑一遍，与老模型进行比较？请教一下大家。",
+        "created_time": 1773589191,
+        "updated_time": 1773589191,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "深度学习",
+        "user_id": "ba6189531c1c7d744418804a092faee4",
+        "user_link": "https://www.zhihu.com/people/austin-41-12-28",
+        "user_nickname": "Rapunzel",
+        "user_avatar": "https://picx.zhimg.com/50/v2-bae64ba273e9a7f6c494ba0042021cc0_l.jpg?source=4e949a73",
+        "user_url_token": "austin-41-12-28",
+        "last_modify_ts": 1776005527758
+    }
+]

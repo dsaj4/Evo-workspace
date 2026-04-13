@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1986093406775173283",
+        "question_id": "",
+        "title": "LogParseLLM日志解析大模型",
+        "desc": "混合架构设计\n方案采用&#34;高速分拣+专家诊断&#34;双层架构：\n前端高速分拣：基于前缀树数据结构构建初筛引擎，99%的重复日志在此极速匹配归类，无需LLM介入\n后端LLM专家：仅对1%的未知模式调用LLM，利用其语义理解生成新模板，并动态回注知识库实现自我优化\n这种设计使LLM调用次数从&#34;日志总行数&#34;锐减至&#34;日志模板总数&#34;，从根本上解决了效率与成本矛盾。",
+        "created_time": 1766301632,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "大模型",
+        "user_id": "3a1d3601bfa89200c37656ebd0fae4b4",
+        "user_link": "https://www.zhihu.com/people/megadotnet",
+        "user_nickname": "TDream Edge",
+        "user_avatar": "https://picx.zhimg.com/50/v2-735949cc869418bb6707cd7e3064d0d6_l.jpg?source=4e949a73",
+        "user_url_token": "megadotnet",
+        "last_modify_ts": 1775900969208
+    },
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1986093406775173283",
+        "question_id": "",
+        "title": "LogParseLLM日志解析大模型",
+        "desc": "混合架构设计\n方案采用&#34;高速分拣+专家诊断&#34;双层架构：\n前端高速分拣：基于前缀树数据结构构建初筛引擎，99%的重复日志在此极速匹配归类，无需LLM介入\n后端LLM专家：仅对1%的未知模式调用LLM，利用其语义理解生成新模板，并动态回注知识库实现自我优化\n这种设计使LLM调用次数从&#34;日志总行数&#34;锐减至&#34;日志模板总数&#34;，从根本上解决了效率与成本矛盾。",
+        "created_time": 1766301632,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "大模型",
+        "user_id": "3a1d3601bfa89200c37656ebd0fae4b4",
+        "user_link": "https://www.zhihu.com/people/megadotnet",
+        "user_nickname": "TDream Edge",
+        "user_avatar": "https://picx.zhimg.com/50/v2-735949cc869418bb6707cd7e3064d0d6_l.jpg?source=4e949a73",
+        "user_url_token": "megadotnet",
+        "last_modify_ts": 1775926423962
+    }
+]

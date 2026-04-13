@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2007951556784461281",
+        "content_type": "answer",
+        "content_text": "有可能用非冯架构，做数据流计算，这样就能不用考虑内存墙问题。其实国外有类似的产品，Cerebras的WSE系列就是这样的谷歌花200亿美元收购的Groq也类似",
+        "content_url": "https://www.zhihu.com/question/1897785206687139705/answer/2007951556784461281",
+        "question_id": "1897785206687139705",
+        "title": "中国的AI芯片如何弯道超车呢？",
+        "desc": "在中美关税战的大环境下，中国的AI芯片如何弯道超车呢？",
+        "created_time": 1771512957,
+        "updated_time": 1771513218,
+        "voteup_count": 1,
+        "comment_count": 0,
+        "source_keyword": "AI芯片",
+        "user_id": "0a09d14d4b2c2f4427670eefd0c78ca6",
+        "user_link": "https://www.zhihu.com/people/skyyrie",
+        "user_nickname": "skyyrie",
+        "user_avatar": "https://pica.zhimg.com/50/v2-77d8bb4d5bb60266aa03bc4043fa7267_l.jpg?source=4e949a73",
+        "user_url_token": "skyyrie",
+        "last_modify_ts": 1776065901802
+    }
+]

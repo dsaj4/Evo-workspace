@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1957785534026998102",
+        "content_type": "answer",
+        "content_text": "比如化学研究中接力催化路径智能推荐方法，结合大语言模型与自建催化知识图谱Cat-KG比如农业中农作物病虫害知识图谱CropDP-KG大语言模型负责处理与生成海量非结构化语义信息，而知识图谱提供精确的结构化知识滤波与路由这种结合实质上是将大语言模型的概率性语义流通过知识图谱的确定性拓扑结构进行引导与校准，从而提升输出的准确性与可解释性知乎学术咨询https://www.http://zhihu.com/consult/people/792359672131756032?isMe=1担任《Mechanical System and Signal Processing》《中国电机工程学报》《宇航学报》《控制与决策》等期刊审稿专家，擅长领域：信号滤波/降噪，机器学习/深度学习，时间序列预分析/预测，设备故障诊断/缺陷检测/异常检测",
+        "content_url": "https://www.zhihu.com/question/614057235/answer/1957785534026998102",
+        "question_id": "614057235",
+        "title": "在大语言模型结合知识图谱方面，有没有真实可用的案例？",
+        "desc": "请问，在大语言模型结合知识图谱方面，有没有真实可用的案例？如能回复，不胜感激",
+        "created_time": 1759552445,
+        "updated_time": 1759552445,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "大语言模型",
+        "user_id": "c7cac96dc58ea9cc6a5b6d924f08d9e5",
+        "user_link": "https://www.zhihu.com/people/ge-ting-gen-shu-xue-xue-pai",
+        "user_nickname": "哥廷根数学学派",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-c25e2c1df36a103fa83e56b661d6b192_l.jpg?source=4e949a73",
+        "user_url_token": "ge-ting-gen-shu-xue-xue-pai",
+        "last_modify_ts": 1776038431813
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1990211838571467388",
+        "content_type": "article",
+        "content_text": "本文主要探索多模态的全流程，需要你有基本的线性代数、深度学习背景。内容包括：Contrastive Learning: 对比学习，InfoNCE等。Reconstruction: MAE等。Early Multi-Modal Model：CLIP，BLIP等。Vision-Language Model：LLaVa, Qwen-vl等。第一阶段：对比学习的直觉与核心想象一下，你是个鉴宝师，但我只给了你一堆照片，没有告诉你哪些是真品，哪些是赝品（即无监督/自监督）。 为了学会区分，你采用了一个简单的策略：拉近（Alignment）： 把同一个花瓶的不同角度照片放在一起，认为它们是“一对”（Positive Pair）。推远（Uniformity）： 把这个花瓶的照片和其他杯子、碗的照片尽量分开（Negative Pairs）。这就是对比学习的灵魂：Embedding Space（特征空间）的重排。为了在计算机中实现“拉近”和“推远”，我们需要度量两个特征向量（Vector）之间的距离或相似度。🔥 实习面试热身题 (数学基础)：为了在计算机中实现“拉近”和“推远”，我们需要度量两个特征向量（Vector）之间的距离或相似度。请告诉我：在对比学习（如 SimCLR, MoCo）中，我们通常使用什么数学运算来衡量两个向量  和  之间的相似度？为什么在做这个运算之前，通常会对向量做  归一化（Normalization）？用点积。归一化过后就退化为余弦相似度，余弦相似度的范围实际上是 [-1, 1]。为什么要归一化？除了你说的变成余弦相似度，还有一个关键点：防止模型“作弊”。如果不归一化，模型只需要单纯把向量模长（Length）变大，点积就会变大，而不需要真正去学习特征的方向（语义）。归一化强制把所有特征投影到一个单位超球面上 (Unit Hypersphere)。第二阶段：InfoNCE Loss —— 对比学习的引擎有了相似度度量（Sim），我们怎么告诉模型：“把正样本拉近，把负样本推远”？ 这时就轮到 InfoNCE Loss 登场了。它的公式通常长这样：其中： 是查询向量 (Query)。 是正样本 (Positive key)。 包含正样本和所有负样本 (Negatives)。 是温度系数 (Temperature)。🔥 实习面试进阶题 (直觉理解)：盯着这个公式看，去掉  和  之后，剩下的分式部分结构非常眼熟。这本质上是在做一个什么任务？（提示：想一想分类问题中的 Softmax）。公式的分母中包含了负样本。如果负样本的数量  越来越多，对模型的学习有什么影响？为什么是分类任务？InfoNCE 本质上就是把问题变成了一个  类的分类问题。模型只需要回答一个问题：“在这一堆  个样本里（1个正样本 + 个负样本），哪一个是真品？”为什么  越大越好？原理可以从两个角度解释，也是面试时的加分项：互信息（Mutual Information）的下界： 数学上证明，InfoNCE 实际上是在最大化输入和特征之间的互信息。负样本  越多，这个估计就越准（下界越紧），学到的特征就越丰富。难负样本（Hard Negatives）： 想象一下，如果负样本只有“猫”和“汽车”，模型很容易就能区分出“狗”（正样本）。但如果  很大，里面混入了“狼”或者“狐狸”（难负样本），模型就被迫去学习更细微的特征（比如耳朵的形状、尾巴的毛色）才能把“狗”认出来。第三阶段：从原理到代码 (InfoNCE Implementation)面试官经常会让你手写或者解释 InfoNCE 的代码实现细节。这里有一个非常经典的 trick。假设我们有一个 Batch 的图像，大小为 。我们对每张图做两次增强，得到特征集合  和 （维度都是 ）。我们直接计算相似度矩阵：logits = matmul(A, B.T)这会得到一个  的矩阵。🔥 实习面试代码题：在这个  的 logits 矩阵中：正样本（Positive Pairs）位于矩阵的什么位置？当我们使用 CrossEntropyLoss 来计算损失时，由于它是分类任务，我们需要提供“标签（Labels）”。这个 Labels 应该是什么样子的？（提示：这就好比告诉模型第几列是正确答案）。正样本位于对角线上，Labels应该是  。我想先问一下分母当中包含了正样本本身的分数指数吗在 PyTorch 中，实现这个对比学习损失函数（InfoNCE）的核心代码其实就这两行：# logits 是 (N, N) 的相似度矩阵\n# 每一行看作一个样本，每一列看作一个类别\nlabels = torch.arange(N).to(device)  # 生成 [0, 1, ..., N-1]\nloss = F.cross_entropy(logits / temperature, labels)这就是 SimCLR 和 CLIP 训练时最核心的几行代码。面试时能写出这个 torch.arange 和 cross_entropy 的组合，说明你真的懂它的“分类本质”。",
+        "content_url": "https://zhuanlan.zhihu.com/p/1990211838571467388",
+        "question_id": "",
+        "title": "大模型实习笔记 之 多模态(Contrastive Learning篇)",
+        "desc": "本文主要探索多模态的全流程，需要你有基本的线性代数、深度学习背景。内容包括： Contrastive Learning: 对比学习，InfoNCE等。Reconstruction: MAE等。Early Multi-Modal Model：CLIP，BLIP等",
+        "created_time": 1767284387,
+        "updated_time": 1767284889,
+        "voteup_count": 8,
+        "comment_count": 1,
+        "source_keyword": "多模态",
+        "user_id": "01aa7ef4762c2a51f9ed1fc1891b2ad7",
+        "user_link": "https://www.zhihu.com/people/itheresaapocalypse",
+        "user_nickname": "iTheresaApocalypse",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-411b1024728bb3407f617c56ddc9cf28_l.jpg?source=4e949a73",
+        "user_url_token": "itheresaapocalypse",
+        "last_modify_ts": 1776038872339
+    }
+]

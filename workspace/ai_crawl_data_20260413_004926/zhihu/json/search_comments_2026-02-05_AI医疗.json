@@ -1,0 +1,53 @@
+[
+    {
+        "comment_id": "11411175046",
+        "parent_comment_id": "0",
+        "content": "好像AI不会进步，看专家比看AI方便很多一样。",
+        "publish_time": 1770371203,
+        "ip_location": "上海",
+        "sub_comment_count": 2,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2003057524711121460",
+        "content_type": "article",
+        "user_id": "16d8542b44d0e8f9f13282ab612fe283",
+        "user_link": "https://www.zhihu.com/people/rehalian",
+        "user_nickname": "Regalian",
+        "user_avatar": "https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776065059489
+    },
+    {
+        "comment_id": "11411460323",
+        "parent_comment_id": "11411175046",
+        "content": "强ai的话那确实到了可以替代的地步了，如果只是现在这种大模型，那还差的远呢",
+        "publish_time": 1770379236,
+        "ip_location": "江苏",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2003057524711121460",
+        "content_type": "article",
+        "user_id": "e856a04b6bded4eca61c99dbafa2d162",
+        "user_link": "https://www.zhihu.com/people/wu-shang-82-30",
+        "user_nickname": "近月侵衣",
+        "user_avatar": "https://picx.zhimg.com/v2-e8cf9fb28d4d8c851b0ac3989bd0b406_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776065060502
+    },
+    {
+        "comment_id": "11411057021",
+        "parent_comment_id": "11411460323",
+        "content": "？？跟专家比差15%那跟不是专家的医生比呢。",
+        "publish_time": 1770380301,
+        "ip_location": "上海",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2003057524711121460",
+        "content_type": "article",
+        "user_id": "16d8542b44d0e8f9f13282ab612fe283",
+        "user_link": "https://www.zhihu.com/people/rehalian",
+        "user_nickname": "Regalian",
+        "user_avatar": "https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776065060517
+    }
+]

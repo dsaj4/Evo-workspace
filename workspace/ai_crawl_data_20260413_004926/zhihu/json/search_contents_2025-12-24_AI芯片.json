@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1987427789327062223",
+        "content_type": "answer",
+        "content_text": "我先后面试了亚马逊的annapurna lab和tt的推荐系统infra，然后在犹豫选择哪个offer的时候，我又面试了一家康奈尔教授的初创公司，在和教授聊offer的时候，我提到了这两个选择。然后他说，虽然我最希望你来我们公司，但是平心而论，如果是他的话，他会选择tt的推荐组，因为可迁移性高，亚马逊的Annapurna lab是设计专为ML的ASIC芯片架构，架构体系和编程语言以及编译器与其他公司的区别很大，而且长远来看，硬件端的盈利率不如应用端。推荐系统是目前盈利规模最大的领域，它支撑起了谷歌和meta的现金流。而且最重要的，应用端不开花，硬件端是没有以后的果子吃的。AI芯片的岗位数是要远远少于mlsys应用端开发的，选择芯片岗就是走入了一个更狭窄的路。另外推荐下我的面试经验贴：）：AI infra 面试经验贴",
+        "content_url": "https://www.zhihu.com/question/1902485242608088530/answer/1987427789327062223",
+        "question_id": "1902485242608088530",
+        "title": "ai芯片架构和mlsys两个方向哪个更好？",
+        "desc": "请麻烦从薪资待遇，晋升路径，市场机会等方面比较",
+        "created_time": 1766619709,
+        "updated_time": 1766619709,
+        "voteup_count": 58,
+        "comment_count": 5,
+        "source_keyword": "AI芯片",
+        "user_id": "e4b5621a2b623b38cd74d51cd2a009a1",
+        "user_link": "https://www.zhihu.com/people/windrunner-93",
+        "user_nickname": "抠抠歪",
+        "user_avatar": "https://picx.zhimg.com/50/v2-b9153ac0393d88272585922007401e8c_l.jpg?source=4e949a73",
+        "user_url_token": "windrunner-93",
+        "last_modify_ts": 1776066213084
+    }
+]

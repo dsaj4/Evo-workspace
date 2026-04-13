@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2011847396599035345",
+        "content_type": "answer",
+        "content_text": "「多模态大模型」这个词可能相对还是有点太泛了，现在的含义已经不是之前做CLIP这一种多模态的范式。你指的可以是做AIGC的Text-to-X Generation Models，也可以是LLM导向的Multimodal Large Language Models（MLLM），甚至随着生成和理解统一的一系列工作逐渐发展之后，这类Omni-X形式的工作也能算是多模态了。我觉得正好可以借这个回答，聊聊一些这几年我们看到的关于「多模态模型」的发展历程。一、AIGC中的多模态大模型发展路线生成这一块从2025年开始最大的趋势就是，随着FLUX等DiT架构的基座模型出现，现有研究开始逐渐转向Diffusion Transformer的应用上，这其中从U-Net转向Diffusion Transformer，又带来了很多新鲜的研究问题和任务。回顾Text-to-Image Generation这个任务的发展，早期的DDPM、SD 1.x系列以及后来的SDXL主要还是由CNN-based的U-Net架构统治的。虽然说U-Net主导的基模确实是有高光的，但是整个生态上来看还是不够成熟，最大的问题就是难以找到成熟的scaling law。DiT的出现直接打破了这个僵局，它用Transformer架构替换掉了U-Net架构的noise predictor，这样一来，任何形式的image、condition都可以转换为latent patch，进而视为token送进Transformer block，利用self-attention处理全局依赖关系的学习。具体的一些工作相信大家都很熟悉了，比方说：SD 3引入的MM-DiT架构，将text token和image token分流处理，最后又通过attention交互；后续的FLUX，包括后来的Qwen-Image、FLUX Kontext以及后续版本模型、去年年底的Z-Image，等等。比较有意思的是Pixel-Space DiT开始呈现文艺复兴的趋势，这类工作主要是针对LDM中VAE容易丢失高频细节的问题，直接将Diffusion Transformer的建模过程搬到pixel space中去做，通过attention或者是patch size的调整让DiT能够直接处理原生的image pixels信息。然而我们都知道，Transformer本身是更倾向于拟合低频信息的，而图像生成又对于高频细节有一定要求，所以如何让Pixel-Space DiT能够合成出有精细纹理的图片，也是目前相关研究关注的一个方向。二、MLLM中的多模态大模型发展路线MLLM个人感觉的难点一直在视觉信息处理这一端，而并非是LLM本身。 早期类似LLaVA、MiniGPT-4这样的MLLM工作，在设计上还是相对比较启发式，这些架构通过一个简单的linear projector（如MLP或Q-Former）把CLIP image encoder的特征强行映射到LLM的embedding space上，从而赋予LLM多模态的能力。这种范式虽然work，但因为CLIP（ViT）本身固有问题——比方说固定分辨率（通常是224或336）导致输入图片存在resize变形的问题，模型根本看不清文档里的微小字体。尽管随后出现了Fuyu、SOLO这种encoder-free MLLM的形式，试图让MLLM具备原生支持多模态的能力，从而规避现有visual encoder的问题，然而最终并没有成为主流形式。目前MLLM广泛采用的方式是NaViT引领的动态分辨率路线，典型代表是Qwen2-VL和InternVL 2.5等后续经典MLLM代表工作。它们打破了固定宽高比的限制，利用2D-RoPE和M-RoPE处理任意分辨率的输入，采用sequence packing技术将不同尺寸的图片token打包进同一个batch训练，让模型具备了处理原生分辨率图像信息的能力。",
+        "content_url": "https://www.zhihu.com/question/1935543050836381935/answer/2011847396599035345",
+        "question_id": "1935543050836381935",
+        "title": "多模态大模型现在发展到什么地步了？",
+        "desc": "这类Omni-X形式的工作也能算是多模态了。我觉得正好可以借这个回答，聊聊一些这几年我们看到的关于「多模态模型」的发展历程。一、AIGC中的多模态大模型发展路线生成这一块从2025年开始最大的趋势就是，随着FLUX等DiT架构的基座模型出现，现有研究开始逐渐转向Diffusion Transformer的应用上",
+        "created_time": 1772441797,
+        "updated_time": 1772441797,
+        "voteup_count": 10,
+        "comment_count": 0,
+        "source_keyword": "大模型",
+        "user_id": "1b388c9a25e7b0a9b824723b8fa5d8b6",
+        "user_link": "https://www.zhihu.com/people/liu-chang-82-34-78",
+        "user_nickname": "叫我Alonzo就好了",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-39bd4a8e7a90b823ff18259df74edf2d_l.jpg?source=4e949a73",
+        "user_url_token": "liu-chang-82-34-78",
+        "last_modify_ts": 1775900969189
+    }
+]

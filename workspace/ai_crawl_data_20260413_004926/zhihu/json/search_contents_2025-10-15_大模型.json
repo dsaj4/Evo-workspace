@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1961852120144799016",
+        "content_type": "answer",
+        "content_text": "不是做基座的，无责任瞎猜一波.sparse attention和linear attention还有超稀疏moe会逐渐增多并且成为主流。去年就开始逐渐变多但是大家还都在观望。推广搜线上和离线会进一步拥抱大模型，毕竟是现在落地转换相对最容易出结果的领域。线上的一些serving可能（已经）直接上一些较小的大模型。Agentic能力会进一步提升. Agent RL变的更多。GUI理解和操作能力变强,应用上，对用户层面上下文context的理解能力会变强。基座模型的能力发展进一步放缓，应用层变多。",
+        "content_url": "https://www.zhihu.com/question/1936187957108254587/answer/1961852120144799016",
+        "question_id": "1936187957108254587",
+        "title": "2026大模型的发展趋势是什么？",
+        "desc": "大模型在智能体、深度推理等方面都有不同程度的发展，2026年以后的发展趋势如何，你有什么观点和看法？",
+        "created_time": 1760521994,
+        "updated_time": 1760699193,
+        "voteup_count": 117,
+        "comment_count": 4,
+        "source_keyword": "大模型",
+        "user_id": "ecc6b9a6b7d0c051771ee40ca2b707d3",
+        "user_link": "https://www.zhihu.com/people/algorithm-supplement",
+        "user_nickname": "数字生命自动机",
+        "user_avatar": "https://picx.zhimg.com/50/v2-1c65838085639bd9d0a2b52f088191c2_l.jpg?source=4e949a73",
+        "user_url_token": "algorithm-supplement",
+        "last_modify_ts": 1775901222748
+    }
+]

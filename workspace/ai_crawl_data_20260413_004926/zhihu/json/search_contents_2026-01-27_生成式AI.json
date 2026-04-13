@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1999573601658094669",
+        "content_type": "answer",
+        "content_text": "建议本地直接部署 Z-Image（如果你的显存大于 4G 都能跑），十几秒一张图，无限出图，爽的很。有个白嫖 30 小时 4070 的镜像：Z-Image",
+        "content_url": "https://www.zhihu.com/question/2329528786/answer/1999573601658094669",
+        "question_id": "2329528786",
+        "title": "推荐一些好用的文生图和图生图AI？",
+        "desc": "国内国外都推荐一些。",
+        "created_time": 1769515496,
+        "updated_time": 1769515496,
+        "voteup_count": 10,
+        "comment_count": 1,
+        "source_keyword": "生成式AI",
+        "user_id": "ed44f186486d89091e1fbe4346511d80",
+        "user_link": "https://www.zhihu.com/people/gpuduoduo",
+        "user_nickname": "AI多多",
+        "user_avatar": "https://picx.zhimg.com/50/v2-aee56fa9e96124f8ec903c46b6967948_l.jpg?source=4e949a73",
+        "user_url_token": "gpuduoduo",
+        "last_modify_ts": 1776035552646
+    }
+]

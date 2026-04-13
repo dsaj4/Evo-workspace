@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "1993890506787297092",
+        "content_type": "answer",
+        "content_text": "有但是目前来看训练芯片费点劲用在边缘设备上应该是有前景的",
+        "content_url": "https://www.zhihu.com/question/1993849891101893385/answer/1993890506787297092",
+        "question_id": "1993849891101893385",
+        "title": "现在AI芯片领域，存算一体类脑芯片到底有没有前景？能不能颠覆英伟达那种传统芯片？",
+        "desc": "有但是目前来看训练芯片费点劲用在边缘设备上应该是有前景的",
+        "created_time": 1768160541,
+        "updated_time": 1768160541,
+        "voteup_count": 0,
+        "comment_count": 1,
+        "source_keyword": "AI芯片",
+        "user_id": "b1f3deaa15871d264e1901f4e2d1cea9",
+        "user_link": "https://www.zhihu.com/people/xsu0960",
+        "user_nickname": "时空涟漪",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-d98581ac628d45562b2e2a6efd37db2a_l.jpg?source=4e949a73",
+        "user_url_token": "xsu0960",
+        "last_modify_ts": 1776066213065
+    },
+    {
+        "content_id": "1993860389293806451",
+        "content_type": "answer",
+        "content_text": "英伟达已经开始用硅光技术和光电集成了",
+        "content_url": "https://www.zhihu.com/question/1993849387667986265/answer/1993860389293806451",
+        "question_id": "1993849387667986265",
+        "title": "现在AI芯片领域，光子芯片到底有没有前景？能不能颠覆英伟达那种传统芯片？",
+        "desc": "英伟达已经开始用硅光技术和光电集成了",
+        "created_time": 1768153360,
+        "updated_time": 1768153360,
+        "voteup_count": 2,
+        "comment_count": 0,
+        "source_keyword": "AI芯片",
+        "user_id": "3fd2541c094e55114e4269c4aec4204f",
+        "user_link": "https://www.zhihu.com/people/25-2-44-21-31",
+        "user_nickname": "鱼你在一起",
+        "user_avatar": "https://picx.zhimg.com/50/v2-c9dbb1abc69a1442c2b0309b9084419f_l.jpg?source=4e949a73",
+        "user_url_token": "25-2-44-21-31",
+        "last_modify_ts": 1776066213069
+    }
+]

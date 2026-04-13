@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": null,
+        "content_type": "zvideo",
+        "content_text": "",
+        "content_url": "https://www.zhihu.com/zvideo/1986378407056015473",
+        "question_id": "",
+        "title": "影像组学对比深度学习提取肿瘤稳健分类特征",
+        "desc": "",
+        "created_time": 1766880032,
+        "updated_time": 0,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "深度学习",
+        "user_id": "fee90dd3b206a04fdda40b23799cde84",
+        "user_link": "https://www.zhihu.com/people/xing-yun-de-dan-dan-9",
+        "user_nickname": "影像组学工作站",
+        "user_avatar": "https://pic1.zhimg.com/50/v2-26cf3ddf6ab0b9a83f22e9b2a216b291_l.jpg?source=4e949a73",
+        "user_url_token": "xing-yun-de-dan-dan-9",
+        "last_modify_ts": 1776005750145
+    },
+    {
+        "content_id": "1988366146211180719",
+        "content_type": "answer",
+        "content_text": "深度学习不可能没前景和钱景。深度学习的应用型很强啊！我刚实习的时候是2018年初。那会儿卷积神经网络如火如荼。各大直播公司把神经网络做到手机端去让主播开美颜。再后来Transformer在NLP领域大放异彩。ChatGPT带火了AI。中国在这个时候开始在大模型领域追赶美国。原创性工作本来就很难。能够把别人的原创性工作理解并掌握，然后将其应用到具体的业务领域，有这个能力就能在工业界找到一份不错的工作了。我见过不少工作三四年就年薪百万的，基本上都是出自深度学习领域。你不要老是想着做原创。搞搞工程挺好的。能想出牛顿三大定律这些原创性工作的就牛顿一个人。但是人类的工程技术发展，也需要大量的人去理解掌握牛顿三大定律并将其应用到具体的工程领域。先脚踏实地掌握前人的工程，有能力就做原创，没有就老老实实做工程应用。要搞深度学习，你需要一定的数学基础、Python编程基础，然后再去学深度学习的训练框架PyTorch。数学储备：数学知识就是大一大二学的工科数学三件套：高等数学（实际就是微积分），线性代数和概率论。这些数学知识在《深度学习》这本书有过汇总。除了这本理论书外，最近有一本新上市的中译本《理解深度学习》。这本书总结了深度学习领域的最新进展，并且给出了数学表示。编程储备：现在深度学习的前端语言用的是Python。底层算法的实现用的是C++。Python比C++更容易上手，而且能够让你快速复现一些深度学习网络结构。学习PyTorchPyTorch是主流的深度学习训练框架，在学术界和工业界应用最广泛。以下两本书可以任选一本，学习PyTorch的基本用法。然后广泛做项目刷经验。学完这些之后，基本的理论储备和代码储备都够了。接下来，就是实战了。多做项目，在项目中解决问题，积累实战经验。",
+        "content_url": "https://www.zhihu.com/question/525434524/answer/1988366146211180719",
+        "question_id": "525434524",
+        "title": "深度学习研究生，觉得自己做深度学习很没前景，怎么办?",
+        "desc": "本科期间就开始接触深度学习，也读了很多论文，做了很多模型，也实践了一些有意思的想法，但是越来越觉得自己难以做出真正对业界有贡献的模型（放到我熟悉的nlp领域，就是transformer，bert这样改变整个领域的工作，或者lstm+crf这种引领应用场景的工作，最少是Albert这种对现有模型大幅度改进的工作）。自己的工作也只是照猫画虎搞出一大堆四不像而已，如果不接着去博士生涯照猫画虎，到头来还是去企业找个开发岗了事，倒不如当初本科毕业直接去来的爽快，还能多几年钱和工作经验。现在真的特别希望自己能去做一些实实在在的，基础性、应用性略强的事情，比如程序分析、计算机体系结构。但是现在的状态似乎是进退两难，回去重新考研，以现在的竞争激烈程度来说不见的去得到一个好地方（比如去nju做软件工程，或者计算所去做芯片）家里人也不会理解；换方向重来，也没有合适的导师；出国，自己所有的背景都是关于nlp的。希望各位介绍点经验",
+        "created_time": 1766843431,
+        "updated_time": 1766843431,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "深度学习",
+        "user_id": "85f877703f0b8e2cace4db2bb63566a1",
+        "user_link": "https://www.zhihu.com/people/tian-shi-89",
+        "user_nickname": "天使",
+        "user_avatar": "https://pica.zhimg.com/50/v2-8aa875fecd09f0bcc5ee613fa21da871_l.jpg?source=4e949a73",
+        "user_url_token": "tian-shi-89",
+        "last_modify_ts": 1776005750146
+    }
+]

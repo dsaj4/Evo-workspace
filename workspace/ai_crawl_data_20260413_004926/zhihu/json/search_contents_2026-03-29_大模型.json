@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "2021899256496145325",
+        "content_type": "article",
+        "content_text": "大模型知识图谱\n├── 第零层：算力与基础设施 [NEW]\n│   ├── 异构计算与 AI 芯片\n│   ├── 分布式计算与并行策略 (DP/TP/PP/SP)\n│   ├── 显存优化技术 (ZeRO, Checkpoint)\n│   └── 训练/推理框架 (Megatron, DeepSpeed)\n├── 第一层：基础原理\n│   ├── 表示学习\n│   │   ├── 分布式语义（Distributional Semantics）\n│   │   └── Embedding\n│   ├── Transformer 与序列建模\n│   ├── 语言建模目标\n│   │   └── BERT &amp; GPT\n│   ├── Token 与上下文机制\n│   │   ├── Tokenier BPE (Byte-Pair Encoding) 算法\n│   │   └── RoPE - 旋转位置编码\n│   ├── Scaling Law 与能力涌现\n│   ├── 推理与泛化基础\n│   └── 多模态基础\n├── 第二层：模型形成\n│   ├── 数据体系 (含数据清洗、合成数据 [NEW])\n│   ├── 预训练\n│   ├── 微调 / 指令微调\n│   ├── 参数高效微调 (PEFT / LoRA) [NEW]\n│   ├── 偏好对齐 (RLHF, DPO)\n│   ├── 安全对齐\n│   ├── 架构演进 (MoE, 线性 RNN/Mamba [NEW])\n│   └── 模型压缩 (蒸馏) [NEW]\n├── 第三层：运行时系统\n│   ├── 推理引擎与加速 (vLLM, KV Cache, 投机解码) [NEW]\n│   ├── 模型部署与量化 (PTQ, AWQ, GGUF) [NEW]\n│   ├── Prompting\n│   ├── Context Engineering\n│   ├── RAG (检索增强生成)\n│   ├── Tool Use\n│   ├── Memory\n│   ├── Inference-time Reasoning (如 CoT, 搜索树)\n│   └── Long Context\n├── 第四层：任务编排与应用系统\n│   ├── Workflow\n│   ├── Agent (包含规划、反思组件 [NEW])\n│   ├── Multi-Agent\n│   ├── 多模态应用系统\n│   ├── 垂直领域应用 (代码、医疗、端侧等) [NEW]\n│   └── 应用架构\n└── 第五层：评测、安全、可信与治理\n    ├── 能力评测\n    ├── 风险与攻击 (Prompt Injection, 越狱) [NEW]\n    ├── 防御与对齐\n    ├── 可信输出与溯源 (事实性与幻觉控制) [NEW]\n    └── 治理与合规",
+        "content_url": "https://zhuanlan.zhihu.com/p/2021899256496145325",
+        "question_id": "",
+        "title": "大模型知识图谱",
+        "desc": "[图片] 大模型知识图谱 ├── 第零层：算力与基础设施 [NEW] │ ├── 异构计算与 AI 芯片 │ ├── 分布式计算与并行策略 (DP/TP/PP/SP) │ ├── 显存优化技术 (ZeRO, Checkpoint) │ └── 训练/推理框架 (Megatron",
+        "created_time": 1774838458,
+        "updated_time": 1774838458,
+        "voteup_count": 1,
+        "comment_count": 2,
+        "source_keyword": "大模型",
+        "user_id": "20c51bda99744d5d907acc7115ca33ff",
+        "user_link": "https://www.zhihu.com/people/elvoos",
+        "user_nickname": "小孩",
+        "user_avatar": "https://picx.zhimg.com/50/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg?source=4e949a73",
+        "user_url_token": "elvoos",
+        "last_modify_ts": 1775926097906
+    }
+]

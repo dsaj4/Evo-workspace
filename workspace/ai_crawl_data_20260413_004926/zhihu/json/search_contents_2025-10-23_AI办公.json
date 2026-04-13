@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1964825266514801806",
+        "content_type": "answer",
+        "content_text": "现在的方式可以使用 codex 或 Claude code + Crevo，然后设置固定工作流，subagent 等，就可以自动化。可以关注一下我们，会持续分享这类型文章。",
+        "content_url": "https://www.zhihu.com/question/594150259/answer/1964825266514801806",
+        "question_id": "594150259",
+        "title": "程序员如何利用 AI 将自己的工作完全自动化？",
+        "desc": "随着人工智能的发展，AI 确实能帮助我们减轻工作量，那么程序员能不能将自己的工作结合自身的能力通过编写程序 +AI 的方式让工作完全自动化？在软件测试领域存在自动化测试，但那也是半自动化。就如大家平时学习 java 中的 IO 接口流一样，将创建文件、写文件、读文件应用代码来完成，那么 IT 行业是否也能利用这种方法通过写程序现实现呢？不知道大家怎么看？",
+        "created_time": 1761230848,
+        "updated_time": 1761230848,
+        "voteup_count": 6,
+        "comment_count": 0,
+        "source_keyword": "AI办公",
+        "user_id": "308f84946ba05a8d36ec3f2d66dc6f33",
+        "user_link": "https://www.zhihu.com/people/aurakl-crevo",
+        "user_nickname": "Aurakl Crevo",
+        "user_avatar": "https://pica.zhimg.com/50/v2-a187fc116bbce2578f0e69db2c419383_l.jpg?source=4e949a73",
+        "user_url_token": "aurakl-crevo",
+        "last_modify_ts": 1776053643980
+    }
+]

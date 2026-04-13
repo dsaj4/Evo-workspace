@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1981067475706716171",
+        "content_type": "article",
+        "content_text": "文/猫哥AI量化ps：2000字朋友们，晚上好。之前领导给过一个任务，就是AI培训，在单位推广AI的使用。最近工作虽然比较忙，但这项工作并没有落下。很多同事并没有编程基础，所以想来想去，既可以提高工作效率，又能简单易上手的AI工具，非Claude Code莫属，而且它新推出的 Claude Skills 机制，非常便于拓展。前阵子单位搞了个表情包大赛，我就使用Claude Code+即梦4.0接口 批量制作了一堆表情包去投稿（后面感兴趣可以细讲）。如果使用 Claude Code，我建议通过 Vscode 的插件，它是 Anthropic 公司推出的，使用非常流畅。这样既可以看代码，也可以看AI干活。以下内容都是来自我的课件，零基础也能轻松安装使用：1.Python安装（如果已安装可跳过）真正的零基础，从安装编程语言开始。Python估计很多人都听说过，已安装的可以跳过，没安装过的也不需要了解太多，只需要知道安装这个，可以让AI帮我们完成更多的任务就行。下载地址：https://www.python.org/downloads/点击上图红框，就能下载安装包。请注意Win7无法安装，需要升级到Win10操作系统。然后在D盘新建一个文件夹，命名为Python。双击安装包，全部勾选下方选框，然后点击第2个 Customize installation：全部勾选，然后点击下一步：然后选择D盘，安装地址选择刚才新建的Python文件夹，其他按照默认，一直点下一步即可。（安装到E、F、G等硬盘也可以）2.安装Node.js（如果已安装可跳过）1. 访问Node.js官网：https://nodejs.org/zh-cn2. 下载LTS版本（推荐版本）3. 双击安装包，按提示完成安装，一直默认点击下一步就行4. 安装完成之后，验证安装：1.按下Win + R，输入cmd，回车2.在命令行中输入：node --version3.显示版本号即安装成功3.安装Git（如果已安装可跳过）下载地址：https://git-scm.com/downloads下载之后，一路默认安装下一步就行4.安装Claude Code（如果已安装可跳过）输入以下命令并回车：npm install -g @anthropic-ai/claude-code验证安装：claude --version5.安装Vscode（重点）下载地址：https://code.visualstudio.com/安装很简单，一直点下一步就行。安装完成之后，因为软件是英文的，需要下载一个中文插件。点击左侧这个图标，搜索 chinese，安装此插件：然后输入 python ，安装这个插件：重点来了！搜索 claude code 安装这个插件！！！安装完成之后，点击小齿轮按钮：点击设置勾选上面的按钮，然后点击下面的 在settings.json中 编辑：然后将下面这几行代码完整复制粘贴过去（注意先清空之前的）：{\n    &#34;explorer.confirmDelete&#34;:false,\n    &#34;extensions.ignoreRecommendations&#34;:true,\n    &#34;security.workspace.trust.untrustedFiles&#34;:&#34;open&#34;,\n    &#34;python.createEnvironment.trigger&#34;:&#34;off&#34;,\n\n    &#34;claudeCode.allowDangerouslySkipPermissions&#34;:true,\n\n    &#34;claudeCode.environmentVariables&#34;:[\n        \n        \n        {\n            &#34;name&#34;:&#34;ANTHROPIC_BASE_URL&#34;,\n            &#34;value&#34;:&#34;https://open.bigmodel.cn/api/anthropic&#34;\n        },\n        {\n            &#34;name&#34;:&#34;ANTHROPIC_AUTH_TOKEN&#34;,\n            &#34;value&#34;:&#34;*******************************&#34;\n        },\n        &#34;permissions&#34;:{\n                &#34;defaultMode&#34;:&#34;bypassPermissions&#34;\n            },\n    ]\n}然后键盘按 Ctrl+S 保存。ANTHROPIC_BASE_URL 是输入大模型的网址，这里输入智谱的网址，可以不用改；下面的 ANTHROPIC_AUTH_TOKEN （***的位置）需要填入你智谱的API-KEY。（可以在 https://bigmodel.cn/usercenter/proj-mgmt/apikeys 领取）PS： Claude Code对于 Tokens的消耗是非常大的所以如果使用量比较大的话，建议直接购买智谱的包月套餐网址：https://zhipuaishengchan.datasink.sensorsdata.cn/t/Ud6.案例演示我们在桌面建一个文件夹，例如&#34;AI加油站&#34;。然后打开 Vscode，左上角 文件-打开文件夹，打开 AI加油站 文件夹。双击屏幕中间位置，然后右上角会出现一个 橙色图标，点击一下就能进入 AI助手界面：中间是对话区域：提示词：写一首形容秋天的古诗提示词：写一个 通知，明天10点在会议室开会，会议主题是 AI加油站，保存为记事本格式可以看到AI直接在文件夹生成了一个文件：以上就是安装过程，个人觉得除了编程开发一些产品、网站、写量化策略，对于普通人在工作中的用途也非常大，可以帮助我们提高效率，减少枯燥重复的劳动。看看大家是否感兴趣，后面有机会继续更新一些AI提效的文章~",
+        "content_url": "https://zhuanlan.zhihu.com/p/1981067475706716171",
+        "question_id": "",
+        "title": "如果只能学会一个AI工具，我推荐 Claude Code for VSCode（保姆级教程）",
+        "desc": "文/猫哥AI量化 ps：2000字朋友们，晚上好。 之前领导给过一个任务，就是AI培训，在单位推广AI的使用。最近工作虽然比较忙，但这项工作并没有落下。很多同事并没有编程基础，所以想来想去，既可以提高工作效率，又能简单易上手的AI工具，非Claude Code莫属",
+        "created_time": 1765103419,
+        "updated_time": 1765103419,
+        "voteup_count": 67,
+        "comment_count": 7,
+        "source_keyword": "AI编程",
+        "user_id": "d2efc39aa981e949d590487092e696f4",
+        "user_link": "https://www.zhihu.com/people/qu-yue-52",
+        "user_nickname": "猫哥AI量化",
+        "user_avatar": "https://pica.zhimg.com/50/v2-712e5b4d1e491297228d8624497e0f2f_l.jpg?source=4e949a73",
+        "user_url_token": "qu-yue-52",
+        "last_modify_ts": 1776001857371
+    }
+]

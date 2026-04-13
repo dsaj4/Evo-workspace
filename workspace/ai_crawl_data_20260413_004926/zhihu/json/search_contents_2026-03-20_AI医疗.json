@@ -1,0 +1,42 @@
+[
+    {
+        "content_id": "2018702219768284134",
+        "content_type": "answer",
+        "content_text": "大医院的肿瘤内科本院医生不需要ai这么low的东西，大把规培生、进修生、crc排队等着帮忙开药和写病历，全是临床试验的病人。本院医生现在就是专心做科研。",
+        "content_url": "https://www.zhihu.com/question/2017587522562180801/answer/2018702219768284134",
+        "question_id": "2017587522562180801",
+        "title": "如何看待肿瘤科医生用ai管理上千病人，大医院能推广吗？",
+        "desc": "大医院医生忙于管理病人无空科研，如果可以用ai帮医生管理病人，那么医生就不用去病房可以安心做科研了，岂不是甚好?",
+        "created_time": 1774076114,
+        "updated_time": 1774076114,
+        "voteup_count": 6,
+        "comment_count": 0,
+        "source_keyword": "AI医疗",
+        "user_id": "8079684eefd8e2db4abb9f9e3b06c6b4",
+        "user_link": "https://www.zhihu.com/people/song-yun-92-67",
+        "user_nickname": "松韵",
+        "user_avatar": "https://picx.zhimg.com/50/v2-adfb0f7f59d73bdccb2848a8a77d9982_l.jpg?source=4e949a73",
+        "user_url_token": "song-yun-92-67",
+        "last_modify_ts": 1776064604722
+    },
+    {
+        "content_id": "2018478531982684633",
+        "content_type": "article",
+        "content_text": "本周AI医疗与生物科技资讯（2026/03/16–03/20）本周AI医疗领域多项进展集中在：算力基础设施、医疗AI产品发布、精准医疗应用以及商业化探索。一、制药企业加大AI算力投入Roche扩建AI计算基础设施Roche披露其正在扩建AI计算基础设施，计划部署约：2176颗GPU（基于最新架构）用于支持药物研发相关计算任务。应用方向（披露信息）小分子药物设计临床试验设计优化多组学数据分析（基因组 / 病理数据）二、Microsoft发布医疗AI助手Copilot Health已披露功能自动生成临床文档（clinical notes）医疗问答（基于医疗知识库）医生辅助决策支持同期公司动作Amazon：推出面向用户的健康AI助手（整合线上服务与线下医疗网络）Google：持续推进医疗大模型（Med-PaLM系列）使用场景（公开描述）门诊记录整理医患对话转写临床信息检索三、Caris Life Sciences公司发布新AI工具该工具识别卵巢癌患者对铂类化疗的早期耐药风险数据来源（官方披露）基因组数据临床数据历史病例数据目标提前识别潜在耐药患者为治疗方案调整提供参考四、DeepHealth发布影像AI解决方案组合在欧洲放射学大会（ECR 2026）发布平台平台覆盖多个环节：病灶检测（Detection）影像诊断（Diagnosis）随访与追踪（Follow-up）支持模态CTMRIX-ray集成能力对接医院影像系统（PACS）对接放射信息系统（RIS）五、Translucent公司完成A轮2700万美元融资投资方：GV产品方向产品方向：医院收入管理成本控制财务数据分析目标客户医疗系统医院财务部门  本周信息总结本周信息主要集中在以下几个方向：1. AI基础设施投入增加制药公司开始部署大规模GPU资源用于药物研发相关计算任务2. 医疗AI产品持续发布科技公司推进医疗助手功能覆盖文档生成、问答、辅助决策3. AI在精准医疗中的应用用于预测治疗反应（如耐药性）结合基因组与临床数据4. 医疗AI平台化发展从单一模型扩展到多功能系统覆盖检测、诊断、随访5. 商业化方向扩展除诊断外，AI进入财务与支付流程包括收入管理与保险处理❤️关注了解更多内容#AI医疗每天4000万人向AI问诊：OpenAI报告揭示医疗AI如何成为8亿用户的“深夜自救指南”一周两连发：OpenAI（1/8）+ Anthropic（1/12)医疗AI风向彻底变了2025 数字健康趋势年终度盘：回暖之下的集中化AI医疗| 1亿美元买“四人团队”？OpenAI 押注的是什么？亚马逊 One Medical 上线 Health AI：一款在 2026 年正式落地的智能健康助理AI 驱动药物研发：Takeda × Iambic 重磅合作 &amp; Galux 完成 2900 万美元融资一项Nature Medicine 研究：医疗大模型从“考试高分”到“真实对话失灵”澳大利亚创业者借助chatGPT给狗狗“定制 mRNA 疫苗”刷屏之后从“肿瘤”到“疫苗”：AI 到底帮他做了什么？",
+        "content_url": "https://zhuanlan.zhihu.com/p/2018478531982684633",
+        "question_id": "",
+        "title": "本周AI医疗资讯",
+        "desc": "本周AI医疗与生物科技资讯（2026/03/16–03/20） 本周AI医疗领域多项进展集中在： 算力基础设施、医疗AI产品发布、精准医疗应用以及商业化探索。 一、制药企业加大AI算力投入Roche扩建AI计算基础设施 Roche披露其正在扩建AI计算基础设施",
+        "created_time": 1774022783,
+        "updated_time": 1774022783,
+        "voteup_count": 0,
+        "comment_count": 0,
+        "source_keyword": "AI医疗",
+        "user_id": "b914889fc87cefb366ca6dd5412701dc",
+        "user_link": "https://www.zhihu.com/people/chen-lilian",
+        "user_nickname": "Biolink",
+        "user_avatar": "https://picx.zhimg.com/50/v2-974f58d0d7d767461bbc34c29dc10a10_l.jpg?source=4e949a73",
+        "user_url_token": "chen-lilian",
+        "last_modify_ts": 1776064894264
+    }
+]

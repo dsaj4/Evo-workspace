@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1970410009360826387",
+        "content_type": "answer",
+        "content_text": "我主要用这几个：Claude Code / Codex：主要用来编码，基本上现在90%的代码都是这两写的了。GLM 4.6：这个搭配 Claude Code 来用，主要做一些自动化的事情，量大管饱，不用担心额度的问题，也很好用。ChatGPT / Gemini：日常使用，讨论问题、做规划、搜索等等，现在 GPT5 发布以后，慢慢就转到 Gemini 上了，GPT5 真是一坨。豆包 / jimeng：主要用来作图，非常强Cherry Studio：接大模型 API 做一些事情，各个模型一个软件里直接解决了",
+        "content_url": "https://www.zhihu.com/question/644320395/answer/1970410009360826387",
+        "question_id": "644320395",
+        "title": "目前有哪些你自己在用的（免费、收费）感觉很好用的AI工具？",
+        "desc": "GPT5 真是一坨。豆包 / jimeng：主要用来作图，非常强Cherry Studio：接大模型 API 做一些事情，各个模型一个软件里直接解决了",
+        "created_time": 1762562354,
+        "updated_time": 1762562354,
+        "voteup_count": 12,
+        "comment_count": 0,
+        "source_keyword": "AI应用",
+        "user_id": "1752badcd3efdb5ce79050bb870d20e6",
+        "user_link": "https://www.zhihu.com/people/5a59",
+        "user_nickname": "张翼ZYi",
+        "user_avatar": "https://picx.zhimg.com/50/v2-7e36d706fdce08e10939ad4077bf00a1_l.jpg?source=4e949a73",
+        "user_url_token": "5a59",
+        "last_modify_ts": 1775927625743
+    }
+]

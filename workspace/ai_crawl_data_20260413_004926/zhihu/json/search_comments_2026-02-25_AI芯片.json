@@ -1,0 +1,36 @@
+[
+    {
+        "comment_id": "11428872231",
+        "parent_comment_id": "0",
+        "content": "这么说很快也要被替代了啊[捂脸]",
+        "publish_time": 1772490978,
+        "ip_location": "江西",
+        "sub_comment_count": 0,
+        "like_count": 1,
+        "dislike_count": 0,
+        "content_id": "2010382558320410875",
+        "content_type": "answer",
+        "user_id": "806bdf9712802edf9953b32fe5727c91",
+        "user_link": "https://www.zhihu.com/people/dai-94-88",
+        "user_nickname": "真实姓名",
+        "user_avatar": "https://picx.zhimg.com/v2-401dac5ad1ed4a0451732807ee606326_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776065888226
+    },
+    {
+        "comment_id": "11434132460",
+        "parent_comment_id": "0",
+        "content": "你说的这种，Ai只是变向帮助你学习了。",
+        "publish_time": 1773102769,
+        "ip_location": "江苏",
+        "sub_comment_count": 0,
+        "like_count": 0,
+        "dislike_count": 0,
+        "content_id": "2010382558320410875",
+        "content_type": "answer",
+        "user_id": "9949685f5d7b35ac47e5150bd5053c5b",
+        "user_link": "https://www.zhihu.com/people/yu-huai-34-71",
+        "user_nickname": "YvHuai",
+        "user_avatar": "https://pic1.zhimg.com/v2-31e329dbe1da6a7d5a775dfdd9dd8e92_l.jpg?source=06d4cd63",
+        "last_modify_ts": 1776065888229
+    }
+]

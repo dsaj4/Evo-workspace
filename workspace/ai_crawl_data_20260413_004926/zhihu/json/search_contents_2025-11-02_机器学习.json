@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1968668562479645642",
+        "content_type": "answer",
+        "content_text": "这问题舍本逐末。最简单也最基本的问题：经济学的目标到底是什么？就是为了GDP增值吗？那以后不需要经济学家，找些游戏数值策划不就行了吗？米哈游《原神》团队的数值策划就很不错。机器学习的底层是统计学，统计学对于理论经济学而言是工具，而你所期望的理论经济学研究的其实是目标，如果你想用机器学习去实现金融工具创新，那是可以的，但这是应用经济学范畴，而非理论经济学但想要实现经济学理论创新不太可能，客观来说经济学理论研究本身实际上是数学无关的，它实际上关注的是经济现象背后的经济规律与经济思想，只有到了要将某项经济学理论落地应用时，才会加入数学工具进行建模，这时候如果有合理的数据，机器学习建模或许会比传统的数学建模更精准些",
+        "content_url": "https://www.zhihu.com/question/320514976/answer/1968668562479645642",
+        "question_id": "320514976",
+        "title": "机器学习在理论经济学研究中有哪些可能的应用前景？",
+        "desc": "目前已有的讨论：https://www.zhihu.com/question/37870042 从我粗浅地认识来看，目前将机器学习应用于经济学的主要方式可以笼统地分为两个方面：无监督学习用于提取数据（如文本/图象识别，聚类，数据降维）；有监督学习用于改善计量方法（如LASSO，使用Cross-Validation）可以看出，这两类应用都偏向于实证或计量方面的研究，对于理论经济学来说似乎机器学习有点遥远。然而，最近我偶然了解到Harvard CS的Parkes教授的工作，利用强化学习来研究不同拍卖机制下的最优bidding function，其结果不仅符合一些简单情形下已知的analytical form，而且可以相对快速地求解更大规模、更复杂且目前没有解析解的问题（如multi-bidder, multi-item） （以上根据朋友转述，根据Parkes教授的主页，他的兴趣似乎在于利用ML做Mechanism Design相关的工作）此外，在Quora的某篇回答中提到，Peysakhovich和Naecker的某篇SSRN论文利用ML检验了一些行为经济学的理论。许多行为经济学理论试图通过复杂的模型提高解释程度，但这不可避免地会导致over-fitting，也许一些简单模型反而表现更佳。在理论经济学领域，是否存在其它类似地应用到机器学习的工作？或者笼统地说，理论经济学方面的哪些研究，可能存在哪些特点，使得机器学习方法能够在其中有所作为？",
+        "created_time": 1762147161,
+        "updated_time": 1763679982,
+        "voteup_count": 2,
+        "comment_count": 2,
+        "source_keyword": "机器学习",
+        "user_id": "b7da7ffa63ed0f93376f894b9cdebfd7",
+        "user_link": "https://www.zhihu.com/people/duan-wei-hong-83",
+        "user_nickname": "黄昏近晚霞",
+        "user_avatar": "https://picx.zhimg.com/50/v2-81d3cdba66f024490366b1e117899708_l.jpg?source=4e949a73",
+        "user_url_token": "duan-wei-hong-83",
+        "last_modify_ts": 1776005192893
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "content_id": "1976007600828081272",
+        "content_type": "answer",
+        "content_text": "恰好本人在芯片公司和大模型公司都干过训练AI Infra（当然我啥都搞，东厂解决不了的， 我都搞，除了硬件），  所以简单说下。互联网 AI Infra做的是Pytorch之上的事, torch基本不会动，    主要分推理和训练两波人,    推理的话就是MAAS,    比如开源vllm/sglang,  各种模型性能优化; 训练就是FSDP/Megatron配合算法新模型设计及适配、MFU优化,    目前RL是其最复杂的工作,  他们的目标是生产模型,   并配合内部业务团建接入模型,  供内外用户使用,   服务对象是算法和业务团队,   推理训练故障、模型精度、性能等问题,  他们是核心的背锅侠;芯片公司AI infra做的Pytorch适配,   移植接入各家芯片软件后端(torch op的dispatch),   基于各家pytorch patch建设各种开源框架,  训练如FSDP/Megatron,  推理如vllm/sglang等,   更多的是跑通,    不生产模型,  需要建设一套类NV的AI生态,  目标是让外部用户更好更可靠能使用自己算力卡,  比如互联网公司AI infra是其服务方,   帮公司售卖更多算力;所以这两波人, 技术上是有重叠的,  互联网公司更多的生产模型服务于业务,  所以他们更懂模型,  芯片公司 AI Infra,   虽做的事情更有挑战,  但是没有生产场景,  实际沦为软件的QA,   反馈的很多软件问题他们解不了 ,   但是这两者大部分不懂软硬件架构,   很多人cuda都不会写.",
+        "content_url": "https://www.zhihu.com/question/1974639585519759501/answer/1976007600828081272",
+        "question_id": "1974639585519759501",
+        "title": "在互联网公司做ai infra和在芯片公司做ai infra，日常工作有啥区别?",
+        "desc": "求问",
+        "created_time": 1763896924,
+        "updated_time": 1763902669,
+        "voteup_count": 385,
+        "comment_count": 24,
+        "source_keyword": "AI芯片",
+        "user_id": "f2ee177a9cf9a5d252b0e6e687a337c4",
+        "user_link": "https://www.zhihu.com/people/nian-qi-hua-sheng-bc",
+        "user_nickname": "菽陌松囿",
+        "user_avatar": "https://picx.zhimg.com/50/v2-22dfe7094375e34e38695123acd219db_l.jpg?source=4e949a73",
+        "user_url_token": "nian-qi-hua-sheng-bc",
+        "last_modify_ts": 1776066364888
+    }
+]
