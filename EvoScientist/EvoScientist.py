@@ -136,17 +136,27 @@ def _load_mcp_tools_cached() -> dict[str, list]:
 
 
 def _inject_subagent_middleware(subs: list[dict]) -> None:
-    """Ensure every subagent gets ToolErrorHandlerMiddleware.
+    """Ensure every subagent gets error handling and context management middleware.
 
     Without this, subagent tool errors are caught by LangGraph's default
     ToolNode handler which produces terse messages without tracebacks or
     retry guidance — reducing the subagent's ability to self-recover.
     """
-    from .middleware import ContextOverflowMapperMiddleware, ToolErrorHandlerMiddleware
+    from .middleware import (
+        ContextOverflowMapperMiddleware,
+        ToolErrorHandlerMiddleware,
+        create_context_editing_middleware,
+    )
 
     for sa in subs:
         sa.setdefault("middleware", []).extend(
-            [ToolErrorHandlerMiddleware(), ContextOverflowMapperMiddleware()]
+            [
+                # Uses main agent's model for trigger — subagents currently
+                # share the same model, so context window matches.
+                create_context_editing_middleware(),
+                ToolErrorHandlerMiddleware(),
+                ContextOverflowMapperMiddleware(),
+            ]
         )
 
 
@@ -253,6 +263,7 @@ def _get_default_backend():
     set_active_workspace(workspace_dir)
     memory_dir = str(_paths_mod.MEMORY_DIR)
     user_skills_dir = str(_paths_mod.USER_SKILLS_DIR)
+    global_skills_dir = str(_paths_mod.GLOBAL_SKILLS_DIR)
 
     ws_backend = CustomSandboxBackend(
         root_dir=workspace_dir,
@@ -261,6 +272,7 @@ def _get_default_backend():
     )
     sk_backend = MergedReadOnlyBackend(
         primary_dir=user_skills_dir,
+        global_dir=global_skills_dir,
         secondary_dir=SKILLS_DIR,
     )
     mem_backend = FilesystemBackend(
@@ -281,18 +293,23 @@ def _get_default_middleware():
     from .middleware import (
         ContextOverflowMapperMiddleware,
         ToolErrorHandlerMiddleware,
+        create_context_editing_middleware,
         create_memory_middleware,
+        create_tool_selector_middleware,
     )
 
     cfg = _ensure_config()
+    model = _ensure_chat_model()
     memory_dir = str(_paths_mod.MEMORY_DIR)
     mw = [
+        create_context_editing_middleware(model),
         ContextOverflowMapperMiddleware(),
         ToolErrorHandlerMiddleware(),
-        create_memory_middleware(memory_dir, extraction_model=_ensure_chat_model()),
+        *create_tool_selector_middleware(),
+        create_memory_middleware(memory_dir, extraction_model=model),
     ]
 
-    if cfg.enable_ask_user and not cfg.auto_approve:
+    if cfg.enable_ask_user and not cfg.auto_mode:
         from .middleware.ask_user import AskUserMiddleware
 
         mw.insert(0, AskUserMiddleware())
@@ -358,7 +375,9 @@ def create_cli_agent(workspace_dir: str | None = None, checkpointer=None, config
     from .middleware import (
         ContextOverflowMapperMiddleware,
         ToolErrorHandlerMiddleware,
+        create_context_editing_middleware,
         create_memory_middleware,
+        create_tool_selector_middleware,
     )
 
     cfg = _ensure_config(config)
@@ -382,6 +401,7 @@ def create_cli_agent(workspace_dir: str | None = None, checkpointer=None, config
     # Read paths dynamically so runtime set_workspace_root() changes are picked up
     _mem_dir = str(_paths.MEMORY_DIR)
     _usr_skills_dir = str(_paths.USER_SKILLS_DIR)
+    _global_skills_dir = str(_paths.GLOBAL_SKILLS_DIR)
 
     # Always construct fresh backends from current paths (avoids stale
     # module-level backend when workspace root changed at runtime).
@@ -393,6 +413,7 @@ def create_cli_agent(workspace_dir: str | None = None, checkpointer=None, config
     )
     sk_backend = MergedReadOnlyBackend(
         primary_dir=_usr_skills_dir,
+        global_dir=_global_skills_dir,
         secondary_dir=SKILLS_DIR,
     )
     # Memory always uses SHARED directory (not per-session) for cross-session persistence
@@ -408,12 +429,15 @@ def create_cli_agent(workspace_dir: str | None = None, checkpointer=None, config
         },
     )
 
+    model = _ensure_chat_model()
     mw: list[AgentMiddleware] = [
+        create_context_editing_middleware(model),
         ContextOverflowMapperMiddleware(),
         ToolErrorHandlerMiddleware(),
-        create_memory_middleware(_mem_dir, extraction_model=_ensure_chat_model()),
+        *create_tool_selector_middleware(),
+        create_memory_middleware(_mem_dir, extraction_model=model),
     ]
-    if cfg.enable_ask_user and not cfg.auto_approve:
+    if cfg.enable_ask_user and not cfg.auto_mode:
         from .middleware.ask_user import AskUserMiddleware
 
         mw.insert(0, AskUserMiddleware())

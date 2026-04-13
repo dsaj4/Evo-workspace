@@ -39,11 +39,40 @@ AGENT_NAME = "EvoScientist"
 # ---------------------------------------------------------------------------
 
 
+def _to_short_path(path: str) -> str:
+    """Try to convert a Windows path to its 8.3 short form.
+
+    On Windows, sqlite3 may fail to open databases at paths containing
+    non-ASCII characters (e.g., Chinese usernames).  Short paths are
+    ASCII-safe when available, but conversion is best-effort: it fails
+    when 8.3 name generation is disabled, on non-NTFS volumes, or for
+    nonexistent targets.  Returns the original path on non-Windows or
+    on failure.
+    """
+    import sys
+
+    if sys.platform != "win32":
+        return path
+    import ctypes
+
+    buf = ctypes.create_unicode_buffer(32767)
+    if ctypes.windll.kernel32.GetShortPathNameW(path, buf, len(buf)):
+        return buf.value
+    return path
+
+
 def get_db_path() -> Path:
-    """Return ``~/.config/evoscientist/sessions.db``, creating parents."""
-    db_dir = Path.home() / ".config" / "evoscientist"
+    """Return the sessions database path, creating parents.
+
+    Reuses ``get_config_dir()`` for XDG_CONFIG_HOME support, then applies
+    a best-effort Windows 8.3 short-path conversion on the *directory*
+    (which exists after ``mkdir``) so sqlite3 can handle non-ASCII paths.
+    """
+    from .config.settings import get_config_dir
+
+    db_dir = get_config_dir()
     db_dir.mkdir(parents=True, exist_ok=True)
-    return db_dir / "sessions.db"
+    return Path(_to_short_path(str(db_dir))) / "sessions.db"
 
 
 def generate_thread_id() -> str:
@@ -83,22 +112,60 @@ async def _load_checkpoint_messages(
 
     Returns a list of LangChain message objects, or an empty list on failure.
     """
+    channel_values = await _load_checkpoint_channel_values(conn, thread_id, serde)
+    messages = channel_values.get("messages", [])
+    if not isinstance(messages, list):
+        return []
+    event = channel_values.get("_summarization_event")
+    return _apply_summarization_event(
+        messages, event if isinstance(event, dict) else None
+    )
+
+
+async def _load_checkpoint_channel_values(
+    conn: aiosqlite.Connection,
+    thread_id: str,
+    serde: JsonPlusSerializer,
+) -> dict:
+    """Load channel_values from the most recent checkpoint for *thread_id*."""
     query = """
         SELECT type, checkpoint
         FROM checkpoints
         WHERE thread_id = ?
+          AND json_extract(metadata, '$.agent_name') = ?
         ORDER BY checkpoint_id DESC
         LIMIT 1
     """
-    async with conn.execute(query, (thread_id,)) as cur:
+    async with conn.execute(query, (thread_id, AGENT_NAME)) as cur:
         row = await cur.fetchone()
         if not row or not row[0] or not row[1]:
-            return []
+            return {}
         try:
             data = serde.loads_typed((row[0], row[1]))
-            return data.get("channel_values", {}).get("messages", [])
+            channel_values = data.get("channel_values", {})
+            return channel_values if isinstance(channel_values, dict) else {}
         except (ValueError, TypeError, KeyError):
-            return []
+            return {}
+
+
+def _apply_summarization_event(messages: list, event: dict | None) -> list:
+    """Return the effective message list after applying a summarization event."""
+    if not event:
+        return list(messages)
+
+    try:
+        summary_message = event["summary_message"]
+        cutoff_index = int(event["cutoff_index"])
+    except (KeyError, TypeError, ValueError):
+        return list(messages)
+
+    if summary_message is None:
+        return list(messages)
+
+    if cutoff_index < 0 or cutoff_index > len(messages):
+        return list(messages)
+
+    return [summary_message, *messages[cutoff_index:]]
 
 
 async def _count_messages(
@@ -346,4 +413,7 @@ async def get_thread_messages(thread_id: str) -> list:
             if not await cur.fetchone():
                 return []
         serde = JsonPlusSerializer()
-        return await _load_checkpoint_messages(conn, thread_id, serde)
+        channel_values = await _load_checkpoint_channel_values(conn, thread_id, serde)
+        messages = channel_values.get("messages", [])
+        event = channel_values.get("_summarization_event")
+        return _apply_summarization_event(messages, event)

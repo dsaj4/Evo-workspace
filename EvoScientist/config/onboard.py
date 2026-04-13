@@ -479,6 +479,63 @@ def validate_dashscope_key(api_key: str) -> tuple[bool, str]:
         return False, f"Error: {e}"
 
 
+def validate_moonshot_key(api_key: str) -> tuple[bool, str]:
+    """Validate a Moonshot API key by making a test request.
+
+    Returns:
+        Tuple of (is_valid, message).
+    """
+    if not api_key:
+        return True, "Skipped (no key provided)"
+
+    try:
+        import openai
+
+        client = openai.OpenAI(
+            api_key=api_key,
+            base_url="https://api.moonshot.cn/v1",
+        )
+        client.models.list()
+        return True, "Valid"
+    except Exception as e:
+        error_str = str(e).lower()
+        if any(
+            k in error_str for k in ("401", "unauthorized", "invalid", "authentication")
+        ):
+            return False, "Invalid API key"
+        return False, f"Error: {e}"
+
+
+def validate_kimi_key(api_key: str) -> tuple[bool, str]:
+    """Validate a Kimi Coding Plan API key by making a test request.
+
+    Uses the Anthropic-compatible endpoint at api.kimi.com/coding/.
+
+    Returns:
+        Tuple of (is_valid, message).
+    """
+    if not api_key:
+        return True, "Skipped (no key provided)"
+
+    try:
+        import anthropic
+
+        client = anthropic.Anthropic(
+            api_key=api_key,
+            base_url="https://api.kimi.com/coding/",
+            default_headers={"User-Agent": "claude-code/0.1.0"},
+        )
+        client.models.list()
+        return True, "Valid"
+    except Exception as e:
+        error_str = str(e).lower()
+        if any(
+            k in error_str for k in ("401", "unauthorized", "invalid", "authentication")
+        ):
+            return False, "Invalid API key"
+        return False, f"Error: {e}"
+
+
 def validate_tavily_key(api_key: str) -> tuple[bool, str]:
     """Validate a Tavily API key by making a test request.
 
@@ -652,6 +709,14 @@ def _step_provider(config: EvoScientistConfig) -> str:
             title="DeepSeek (DeepSeek-R1, DeepSeek-V3)",
             value="deepseek",
         ),
+        Choice(
+            title="Moonshot (月之暗面 — Moonshot models)",
+            value="moonshot",
+        ),
+        Choice(
+            title="Kimi Coding Plan (Kimi 代码计划 — coding-focused)",
+            value="kimi-coding",
+        ),
         # Local
         Choice(title="Ollama (local models)", value="ollama"),
         # Third-party / aggregator
@@ -750,6 +815,16 @@ def _provider_key_info(config: EvoScientistConfig, provider: str):
             "DashScope",
             config.dashscope_api_key or os.environ.get("DASHSCOPE_API_KEY", ""),
             validate_dashscope_key,
+        ),
+        "moonshot": (
+            "Moonshot",
+            config.moonshot_api_key or os.environ.get("MOONSHOT_API_KEY", ""),
+            validate_moonshot_key,
+        ),
+        "kimi-coding": (
+            "Kimi Coding Plan",
+            config.kimi_api_key or os.environ.get("KIMI_API_KEY", ""),
+            validate_kimi_key,
         ),
         "custom-openai": (
             "OpenAI-compatible",
@@ -1291,6 +1366,43 @@ def _step_model(
         model = provider_models[0]
         console.print(f"  [dim]Using default: {model}[/dim]")
     return model
+
+
+def _step_reasoning_effort(config: EvoScientistConfig) -> str:
+    """Step 3.5: Configure OpenRouter reasoning effort level.
+
+    Only shown when the selected provider is OpenRouter. See:
+    https://openrouter.ai/docs/guides/best-practices/reasoning-tokens
+
+    Args:
+        config: Current configuration.
+
+    Returns:
+        Selected reasoning effort level, or empty string to use default.
+    """
+    effort_choices = [
+        Choice(title="xhigh  — ~95% of max_tokens for reasoning", value="xhigh"),
+        Choice(title="high   — ~80% of max_tokens (recommended)", value="high"),
+        Choice(title="medium — ~50% of max_tokens", value="medium"),
+        Choice(title="low    — ~20% of max_tokens", value="low"),
+        Choice(title="minimal — ~10% of max_tokens", value="minimal"),
+        Choice(title="none   — disable reasoning entirely", value="none"),
+    ]
+
+    current = config.reasoning_effort or "high"
+    effort = questionary.select(
+        "Select reasoning effort level:",
+        choices=effort_choices,
+        default=current,
+        style=WIZARD_STYLE,
+        qmark=QMARK,
+        use_indicator=True,
+    ).ask()
+
+    if effort is None:
+        raise KeyboardInterrupt()
+
+    return effort
 
 
 def _step_tavily_key(
@@ -1923,7 +2035,7 @@ def _step_mcp_servers() -> list[str]:
     all_installed = all(srv.name in existing_config for srv in servers)
     if all_installed:
         console.print(
-            "  [green]\u2713 All recommended MCP servers are already configured.[/green]"
+            "[green]\u2713 All recommended MCP servers are already configured.[/green]"
         )
         return []
 
@@ -2752,6 +2864,8 @@ def run_onboard(skip_validation: bool = False) -> bool:
             "zhipu-code": "zhipu_api_key",
             "volcengine": "volcengine_api_key",
             "dashscope": "dashscope_api_key",
+            "moonshot": "moonshot_api_key",
+            "kimi-coding": "kimi_api_key",
             "custom-openai": "custom_openai_api_key",
             "custom-anthropic": "custom_anthropic_api_key",
         }
@@ -2773,6 +2887,11 @@ def run_onboard(skip_validation: bool = False) -> bool:
             config, provider, ollama_detected_models=ollama_detected_models
         )
         config.model = model
+
+        # Step 3.5: Reasoning Effort (OpenRouter only)
+        if provider == "openrouter":
+            effort = _step_reasoning_effort(config)
+            config.reasoning_effort = effort
 
         # Step 4: Tavily Key
         new_tavily_key = _step_tavily_key(config, skip_validation)

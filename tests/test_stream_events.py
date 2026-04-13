@@ -6,7 +6,13 @@ from unittest.mock import AsyncMock, MagicMock
 
 from langchain_core.messages import AIMessageChunk
 
-from EvoScientist.stream.events import _extract_tool_content, stream_agent_events
+from EvoScientist.stream.events import (
+    _extract_summary_message_text,
+    _extract_tool_content,
+    _find_summarization_event_payload,
+    _process_chunk_content,
+    stream_agent_events,
+)
 
 
 class TestExtractToolContent:
@@ -89,6 +95,60 @@ class TestExtractToolContent:
         content, is_image = _extract_tool_content(msg)
         assert is_image is False
         assert content == "some result"
+
+
+# =============================================================================
+# _process_chunk_content — string content passthrough
+# =============================================================================
+
+
+class TestProcessChunkContentStrings:
+    """Verify _process_chunk_content handles string content correctly.
+
+    After removing strip_thinking_tags (ccproxy >=0.2.7 no longer embeds
+    <thinking> tags), string content is emitted verbatim.  These tests
+    serve as a regression baseline: if a future ccproxy version re-introduces
+    tags, the raw tags will be visible and these tests will document that.
+    """
+
+    def _emit(self, content: str) -> list:
+        from EvoScientist.stream.emitter import StreamEventEmitter
+        from EvoScientist.stream.tracker import ToolCallTracker
+
+        emitter = StreamEventEmitter()
+        tracker = ToolCallTracker()
+        chunk = AIMessageChunk(content=content)
+        return list(_process_chunk_content(chunk, emitter, tracker))
+
+    def test_plain_text_passthrough(self):
+        events = self._emit("Hello world")
+        assert len(events) == 1
+        assert events[0].type == "text"
+        assert events[0].data["content"] == "Hello world"
+
+    def test_thinking_tags_stripped(self):
+        """Legacy <thinking> tags from older ccproxy are stripped."""
+        raw = "<thinking>some reasoning</thinking>The answer is 42."
+        events = self._emit(raw)
+        assert len(events) == 1
+        assert "<thinking>" not in events[0].data["content"]
+        assert events[0].data["content"] == "The answer is 42."
+
+    def test_thinking_tags_only_yields_nothing(self):
+        """Content that is only a thinking block yields no events."""
+        events = self._emit("<thinking>just reasoning</thinking>")
+        assert events == []
+
+    def test_thinking_tags_preserve_surrounding_whitespace(self):
+        """Stripping tags does not swallow adjacent spaces."""
+        raw = "before <thinking>x</thinking> after"
+        events = self._emit(raw)
+        assert len(events) == 1
+        assert events[0].data["content"] == "before  after"
+
+    def test_empty_string_no_events(self):
+        events = self._emit("")
+        assert events == []
 
 
 # =============================================================================
@@ -189,9 +249,132 @@ class TestMultiModeChunkUnpacking:
             )
         )
         events = _collect_events(mock_agent)
+        summary_start_events = [
+            e for e in events if e.get("type") == "summarization_start"
+        ]
+        assert len(summary_start_events) == 1
+        summary_events = [e for e in events if e.get("type") == "summarization"]
+        assert len(summary_events) == 1
+        assert summary_events[0]["content"] == "synthetic summary"
         text_events = [e for e in events if e.get("type") == "text"]
         assert len(text_events) == 1
         assert text_events[0]["content"] == "real content"
+
+    def test_updates_mode_summarization_event_emitted(self):
+        """_summarization_event updates should emit a summarization event."""
+        summary_message = SimpleNamespace(
+            content="Here is a summary of the conversation to date:\n\nKey facts",
+        )
+        chunk_real = _make_ai_chunk("real content")
+        mock_agent = AsyncMock()
+        mock_agent.astream = MagicMock(
+            return_value=_async_iter(
+                [
+                    (
+                        (),
+                        "updates",
+                        {
+                            "agent": {
+                                "_summarization_event": {
+                                    "summary_message": summary_message,
+                                    "cutoff_index": 12,
+                                    "file_path": None,
+                                }
+                            }
+                        },
+                    ),
+                    ((), "messages", (chunk_real, {})),
+                ]
+            )
+        )
+        events = _collect_events(mock_agent)
+        summary_start_events = [
+            e for e in events if e.get("type") == "summarization_start"
+        ]
+        assert len(summary_start_events) == 1
+        summary_events = [e for e in events if e.get("type") == "summarization"]
+        assert len(summary_events) == 1
+        assert summary_events[0]["content"] == "Key facts"
+
+    def test_updates_mode_does_not_duplicate_streamed_summarization(self):
+        """If streamed summarization already emitted, updates fallback should not duplicate it."""
+        chunk_synth = _make_ai_chunk("synthetic summary")
+        summary_message = SimpleNamespace(
+            content="Here is a summary of the conversation to date:\n\nKey facts"
+        )
+        chunk_real = _make_ai_chunk("real content")
+        mock_agent = AsyncMock()
+        mock_agent.astream = MagicMock(
+            return_value=_async_iter(
+                [
+                    ((), "messages", (chunk_synth, {"lc_source": "summarization"})),
+                    (
+                        (),
+                        "updates",
+                        {
+                            "_summarization_event": {
+                                "summary_message": summary_message,
+                                "cutoff_index": 12,
+                                "file_path": None,
+                            }
+                        },
+                    ),
+                    ((), "messages", (chunk_real, {})),
+                ]
+            )
+        )
+        events = _collect_events(mock_agent)
+        summary_start_events = [
+            e for e in events if e.get("type") == "summarization_start"
+        ]
+        assert len(summary_start_events) == 1
+        summary_events = [e for e in events if e.get("type") == "summarization"]
+        assert len(summary_events) == 1
+        assert summary_events[0]["content"] == "synthetic summary"
+
+    def test_updates_mode_does_not_reemit_existing_summarization_event(self):
+        """Persisted _summarization_event from a prior turn should not be replayed."""
+        summary_message = SimpleNamespace(
+            content="Here is a summary of the conversation to date:\n\nKey facts",
+        )
+        chunk_real = _make_ai_chunk("real content")
+        mock_agent = AsyncMock()
+        mock_agent.aget_state = AsyncMock(
+            return_value=SimpleNamespace(
+                values={
+                    "_summarization_event": {
+                        "summary_message": summary_message,
+                        "cutoff_index": 12,
+                        "file_path": None,
+                    }
+                }
+            )
+        )
+        mock_agent.astream = MagicMock(
+            return_value=_async_iter(
+                [
+                    (
+                        (),
+                        "updates",
+                        {
+                            "_summarization_event": {
+                                "summary_message": summary_message,
+                                "cutoff_index": 12,
+                                "file_path": None,
+                            }
+                        },
+                    ),
+                    ((), "messages", (chunk_real, {})),
+                ]
+            )
+        )
+        events = _collect_events(mock_agent)
+        summary_start_events = [
+            e for e in events if e.get("type") == "summarization_start"
+        ]
+        assert summary_start_events == []
+        summary_events = [e for e in events if e.get("type") == "summarization"]
+        assert summary_events == []
 
 
 class TestUsageStatsExtraction:
@@ -235,6 +418,36 @@ class TestUsageStatsExtraction:
         events = _collect_events(mock_agent)
         usage_events = [e for e in events if e.get("type") == "usage_stats"]
         assert len(usage_events) == 0
+
+
+class TestSummarizationHelpers:
+    """Summarization extraction helpers."""
+
+    def test_extract_summary_message_text_from_summary_tag(self):
+        message = SimpleNamespace(
+            content="Before\n<summary>\nImportant facts\n</summary>\nAfter",
+        )
+        assert _extract_summary_message_text(message) == "Important facts"
+
+    def test_extract_summary_message_text_accepts_output_text_blocks(self):
+        message = SimpleNamespace(
+            content=[{"type": "output_text", "text": "Summary body"}],
+        )
+        assert _extract_summary_message_text(message) == "Summary body"
+
+    def test_find_summarization_event_payload_nested(self):
+        payload = {
+            "node": {
+                "response": {
+                    "_summarization_event": {
+                        "summary_message": SimpleNamespace(content="Summary body"),
+                    }
+                }
+            }
+        }
+        event = _find_summarization_event_payload(payload)
+        assert event is not None
+        assert event["summary_message"].content == "Summary body"
 
     def test_zero_tokens_not_emitted(self):
         """Zero input and output tokens should not emit usage_stats."""
